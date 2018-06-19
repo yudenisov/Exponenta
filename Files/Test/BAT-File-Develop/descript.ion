@@ -7,3 +7,7 @@ reg_del_node.bat -- reg_del_node.bat is a script to delete of a Windows Registry
 reg_export_reserve.bat -- reg_export_reserve.bat is a script to maka of a reserved copy of the Windows Registry Node\nrem script returns 0 if success, 1 if node not found and 2 if bad syntaxis and 3 if cause general error at file saving\nrem If Old reserve copy is present, it is assigned name backupp1-5 with warning and then return warning or general error\nrem Usage: > reg_inport_fale.bat <node> <file name with extension>\nВ
 reg_import_file.bat -- reg_import_file.bat is a script to add into the Windows Registry a file <file> with check of his presistens\nrem script returns 0 if success, 1 if file not found and 2 if cause general error at file adding\nrem Usage: > reg_inport_fale.bat <file name with extension>\nВ
 uninstall-Template.bat -- (Бонус) The template of command file for uninstallation users' packets\nВ
+curdaterename.bat -- (Бонус) программа для вставки в конец имени файла текущей даты и времени
+curdatetimerename.bat -- (Бонус) программа для вставки в конец имени файла текущей даты и времени
+reg_add_envvar.bat -- командный файл добавления системной переменной окружения вместе со значением\nВ
+reg_addtopath.bat -- командный файл для добавления пути к системной переменной Path\nВ
