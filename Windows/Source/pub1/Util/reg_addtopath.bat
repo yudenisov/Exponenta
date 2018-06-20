@@ -7,12 +7,12 @@ setlocal enableextensions enabledelayedexpansion
 set Key=HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 
 
-:: ╙ърч√трхь фюсрты хь√щ ърЄрыюу
+:: Указываем добавляемый каталог
 set FolderToAdd=%1
 
-:: ╧юыєўрхь Єхъє∙хх чэрўхэшх Path
+:: Получаем текущее значение Path
 For /f "tokens=2*" %%a In ('Reg.exe query "!Key!" /v Path^|%SystemRoot%\System32\find "Path"') do set "CurPath=%%~b"
 
-:: ─юяшё√трхь эют√щ ърЄрыюу
+:: Дописываем новый каталог
 reg.exe add "!Key!" /v Path /t REG_EXPAND_SZ /d "!CurPath!;!FolderToAdd!" /F
 

@@ -10,10 +10,10 @@ reg query !node! /ve 2>&1 | %SystemRoot%\system32\find.exe >nul 2>nul /I "Ошибка
 reg query !node! /ve 2>&1 | %SystemRoot%\system32\find.exe >nul 2>nul /I "Ошибка: Не удается найти указанный раздел или параметр в реестре." && goto reg_Absent
 goto reg_Present
 :reg_Absent
-echo Данное звено в реестре отсутствует
+echo "This node is present in the Windows Registry."
 rem exit 1
 goto reg_Finish
 :reg_Present
-echo Данное звено в реестре присутствует
+echo "This node is absent in the Windows Registry."
 rem exit 0
 :reg_Finish

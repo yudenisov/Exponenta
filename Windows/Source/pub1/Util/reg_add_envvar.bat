@@ -15,15 +15,15 @@ Reg Add "!Key!" /v "!sParam!" /t REG_SZ /d "%2" /f 2>&1 | %SystemRoot%\system32\
 goto Success
 
 :UnSuccess
-echo The variable not Added
+echo "The variable not Added."
 goto Finish
 
 :Success
-echo The variable %1 is added.
+echo "The variable is added."
 goto Finish
 
 :ch_NoParam
-echo Syntax Error
+echo "Syntax Error"
 echo "Usage > reg_add_envvar.bat <variable name> <Variable Value>"
 goto Finish
 

@@ -1,7 +1,7 @@
 @echo off
-rem reg_export_reserve.bat is a script to maka of a reserved copy of the Windows Registry Node
-rem script returns 0 if success, 1 if node not found and 2 if bad syntaxis and 3 if cause general error at file saving
-rem If Old reserve copy is present, it is assigned name backupp1-5 with warning and then return warning or general error
+rem reg_export_reserve.bat is a script to make of a reserved copy of the Windows Registry Node
+rem script returns 0 if success, 1 if node not found and 2 if bad syntax and 3 if cause general error at file saving
+rem If Old reserve copy is present, it is assigned name backup1-5 with warning and then return warning or general error
 rem Usage: > reg_export_reserve.bat <node> <file name with extension>
 
 setlocal enableextensions enabledelayedexpansion
@@ -11,7 +11,7 @@ set sParam2=%~2
 
 if not defined sParam1 goto ch_NoParam
 if not defined sParam2 goto ch_NoParam
-rem Cycle for check a prethence of the file and its reserve copy
+rem Cycle for check a presence of the file and its reserve copy
 :NoBackup
 if not exist %2 goto ch_NoFile
 if not exist %2.backup1 goto Backup1
@@ -48,7 +48,7 @@ reg query !sParam1! /ve 2>&1 | %SystemRoot%\system32\find.exe >nul 2>nul /I "Оши
 goto reg_Present
 
 :reg_Absent
-echo Данное звено в реестре отсутствует
+echo "This node is absent in the Windows Register."
 goto Finish
 
 :reg_Present
@@ -57,11 +57,11 @@ if errorlevel == 0 goto ch_Ok
 goto ch_General
 
 :ch_Ok
-echo "Test. Export is succces!"
+echo "Export is success!"
 goto Finish
 
 :ch_General
-echo "Test. General Error in Adding file."
+echo "General Error in Adding file."
 goto Finish
 
 :ch_NoParam

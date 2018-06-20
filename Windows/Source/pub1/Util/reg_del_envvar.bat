@@ -1,5 +1,5 @@
 @echo off
-rem reg_del_envvar.bat is a script which delete the evnviroment variable from the shell
+rem reg_del_envvar.bat is a script which delete the environment variable from the shell
 rem Usage > reg_del_envvar.bat <variable name>
 
 setlocal enableextensions enabledelayedexpansion
@@ -13,17 +13,15 @@ Reg delete "!Key!" /v "!sParam!" /f 2>&1 | %SystemRoot%\system32\find.exe /I "Žè
 goto Success
 
 :UnSuccess
-echo The variable not Deleted
+echo "The variable not Deleted."
 goto Finish
 
 :Success
-echo The variable Hacker_User is deleted. See dump...
-echo Hacker_User = %Hacker_User%
-rem exit 0
+echo "Success. The variable is Deleted."
 goto Finish
 
 :ch_NoParam
-echo Syntax Error
+echo "Syntax Error"
 echo "Usage > reg_del_envvar.bat <variable name>"
 rem exit 1
 goto Finish
