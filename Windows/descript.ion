@@ -1,3 +1,3 @@
-Install_MainExponenta.bat -- Командный файл установки пакета Elevation (инсталлятор, с внедрением кода для преобразорвания в EXE формат\nВ
 Source -- каталог с исходными кодами пакета стайлера Exponenta for Windows
 Plugins -- Плагины к стайлеру Exponenta for Windows\nВ
+Dest -- установочные файлы дистрибутива\nВ
