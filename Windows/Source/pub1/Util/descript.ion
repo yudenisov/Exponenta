@@ -11,7 +11,6 @@ reg_export_reserve.bat -- reg_export_reserve.bat is a script to make of a reserv
 reg_import_file.bat -- reg_import_file.bat is a script to add into the Windows Registry a file <file> with check of his presistens\nUsage: > reg_import_file.bat <file name with extension>\nСкрипт, импортирующий файл в реестр Windows с проверкой файла на существование\nВ
 example_check_uname_admin.bat -- пример программы, проверяющей, имеет ли текущая запись права локального администратора.\nВ
 user_dayly1.bat -- Пакетный файл Windows, исполняющийся каждый день на компьютере жертвы\nВ
-onsysload.bat -- сценарий Windows, выполняющийся при входе любого пользователя в систему
 sendfile.cmd -- сценарий оффлайн отправки результатов работы ботнета владельцу
 getip_1.cmd -- программа для получения внешнего ip адреса системы с помощью сайта ipinfo и программы curl. Программа сохраняет найденный IP АДРЕС В c:\pub1\Util\MyIp.txt
 win7telnet.bat -- (Бонус). Программа для открытия удалённого доступа к компьютеру по протоколу telnet. Работает в Windows XP-8.1. В Windows 10 работает частично (не устанавливается telnet сервер, только клиент).
@@ -24,3 +23,4 @@ User_Hourly_Tasks1.xml -- Настройки планировщика задач на ежечасный запуск\nВ
 User_OnStart_Task1.xml -- Настройки планировщика задач при входе в систему\nВ
 user_onstart1.bat -- Пакетный файл Windows, исполняющийся на компьютере жертве каждый раз при входе в систему\nВ
 user_hourly1.bat -- Пакетный файл Windows, исполняющийся каждый час на компьютере жертвы\nВ
+onsysload.bat -- сценарий Windows, выполняющийся при входе любого пользователя в систему

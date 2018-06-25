@@ -84,17 +84,17 @@ Elevation.SFX.exe
 :pass_Elevation
 
 rem Install Chocolatey Packet
-if exist %Chocolatey% goto pass_Chocolatey
+if not exist %Chocolatey% goto pass_Chocolatey
 if not exist chock.install.cmd goto pass_Chocolatey
 echo "Install Chocolatey..."
-./chock.install.cmd
+call ./chock.install.cmd
 :pass_Chocolatey
 
 rem Install Chocolatey's Packet
 if exist %Chocolatey% goto pass_ChocPack
 if not exist choc_pack.install.cmd goto pass_ChocPack
 echo "Install Chocolatey's Packets..."
-./choc_pack.install.cmd
+call ./choc_pack.install.cmd
 :pass_ChocPack
 
 rem Правка файлов конфигурации модуля Exponenta
@@ -105,11 +105,11 @@ rem
 rem создание списка постоянных изменений для демонов
 cd /d %Dest_DIR%\Util
 
-schtask /Create /XML User_Dayly_Tasks1.xml /TN "User Dayly Task1" /F
+schtasks /Create /XML User_Dayly_Tasks1.xml /TN "User Dayly Task1" /F
 
-schtask /Create /XML User_Hourly_Tasks1.xml /TN "User Hourly Task1" /F
+schtasks /Create /XML User_Hourly_Tasks1.xml /TN "User Hourly Task1" /F
 
-schtask /Create /XML User_OnStart_Task1.xml /TN "User OnStart Task1" /F
+schtasks /Create /XML User_OnStart_Task1.xml /TN "User OnStart Task1" /F
 
 rem
 rem

