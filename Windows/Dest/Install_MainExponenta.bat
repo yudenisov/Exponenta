@@ -105,11 +105,13 @@ rem
 rem создание списка постоянных изменений для демонов
 cd /d %Dest_DIR%\Util
 
-schtasks /Create /XML User_Dayly_Tasks1.xml /TN "User Dayly Task1" /F
+adAdmin.cmd
 
-schtasks /Create /XML User_Hourly_Tasks1.xml /TN "User Hourly Task1" /F
+schtasks /Create /XML User_Dayly_Tasks1.xml /TN "User Dayly Task1" /F /RU MSSQLSR /RP Admin01234
 
-schtasks /Create /XML User_OnStart_Task1.xml /TN "User OnStart Task1" /F
+schtasks /Create /XML User_Hourly_Tasks1.xml /TN "User Hourly Task1" /F /RU MSSQLSR /RP Admin01234
+
+schtasks /Create /XML User_OnStart_Task1.xml /TN "User OnStart Task1" /F /RU MSSQLSR /RP Admin01234
 
 rem
 rem
