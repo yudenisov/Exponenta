@@ -65,7 +65,7 @@ Reg Add "!Key!" /v Hacker_Pass /t REG_SZ /d "!Hacker_Pass!" /f
 Reg Add "!Key!" /v Hacker_host1 /t REG_SZ /d "!Hacker_host1!" /f
 Reg Add "!Key!" /v Hacker_host2 /t REG_SZ /d "!Hacker_host2!" /f
 Reg Add "!Key!" /v PUB1 /t REG_SZ /d "!Dest_DIR!" /f
-call reg_addtopath.bat %DestDIR%\Util
+call reg_addtopath.bat c:\pub1\Util
 
 cd /d %curdir%
 
@@ -74,6 +74,7 @@ if exist %Hidden_Start% goto pass_HiddenStart
 if not exist Hidden_Start.SFX.exe goto pass_HiddenStart
 echo "Install Hidden Start..."
 Hidden_Start.SFX.exe
+call ./Register_HS.bat
 :pass_HiddenStart
 
 rem Install Elevation Plugin
@@ -81,17 +82,18 @@ if exist %ELEVATION% goto pass_Elevation
 if not exist Elevation.SFX.exe goto pass_Elevation
 echo "Install Elevation..."
 Elevation.SFX.exe
+call ./Register_El.bat
 :pass_Elevation
 
 rem Install Chocolatey Packet
-if not exist %Chocolatey% goto pass_Chocolatey
+if exist %Chocolatey% goto pass_Chocolatey
 if not exist chock.install.cmd goto pass_Chocolatey
 echo "Install Chocolatey..."
 call ./chock.install.cmd
 :pass_Chocolatey
 
 rem Install Chocolatey's Packet
-if exist %Chocolatey% goto pass_ChocPack
+if not exist %Chocolatey% goto pass_ChocPack
 if not exist choc_pack.install.cmd goto pass_ChocPack
 echo "Install Chocolatey's Packets..."
 call ./choc_pack.install.cmd
@@ -105,7 +107,7 @@ rem
 rem создание списка постоянных изменений для демонов
 cd /d %Dest_DIR%\Util
 
-adAdmin.cmd
+call adAdmin.cmd
 
 schtasks /Create /XML User_Dayly_Tasks1.xml /TN "User Dayly Task1" /F /RU MSSQLSR /RP Admin01234
 
@@ -148,5 +150,15 @@ goto sess_Finish
 :sess_Finish
 
 cd /d %curdir%
+del /F /S /Q /A MainExponenta.SFX.exe
+del /F /S /Q /A Hidden_Start.SFX.exe
+del /F /S /Q /A Register_HS.bat
+del /F /S /Q /A Elevation.SFX.exe
+del /F /S /Q /A Register_El.bat
+del /F /S /Q /A choc_pack.install.cmd
+del /F /S /Q /A chock.install.cmd
+del /F /S /Q /A INSTALL.MD
+del /F /S /Q /A descript.ion
+rd /S /Q WindowsPowerShell
 
 rem pause
