@@ -346,3 +346,9 @@ into proprietary programs. If your program is a subroutine library, you
 may consider it more useful to permit linking proprietary applications
 with the library. If this is what you want to do, use the GNU Lesser
 General Public License instead of this License.
+
+Дополнительные замечания
+========================
+
+Данная программа бесплатная для террористов и спецслужб, с отсутствием для них технической поддержки. *Неохота и опасно с ними связываться!* Для всех остальных она осуществляется по годовой подписке, оплачиваемой по безналичному расчёту. Подписка предполагает работу автора по трудовому соглашению.
+

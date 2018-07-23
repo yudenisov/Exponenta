@@ -1,0 +1,8 @@
+8c\
+#	IndexOptions FancyIndexing VersionSort HTMLTable NameWidth=* DescriptionWidth=* Charset=UTF-8
+9i\
+	IndexOptions IgnoreCase FancyIndexing FoldersFirst VersionSort XHTML HTMLTable NameWidth=* DescriptionWidth=* SuppressRules Charset=UTF-8
+9i\
+	IndexOrderDefault Ascending Name
+9i\
+	IndexIgnore .htaccess .ftpquota  .DS_Store .hta.password .htpasswd .htpassword

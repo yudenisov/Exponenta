@@ -1,0 +1,24 @@
+4a\
+deb http://archive.ubuntu.com/ubuntu xenial universe
+4a\
+deb http://archive.ubuntu.com/ubuntu xenial-updates universe
+4a\
+deb http://archive.ubuntu.com/ubuntu xenial multiverse
+4a\
+deb http://archive.ubuntu.com/ubuntu xenial-updates multiverse
+4a\
+# deb http://archive.ubuntu.com/ubuntu xenial-backports main restricted universe multiverse
+4a\
+deb http://security.ubuntu.com/ubuntu xenial-security universe
+4a\
+deb http://security.ubuntu.com/ubuntu xenial-security multiverse
+4a\
+deb http://security.ubuntu.com/ubuntu xenial-security main restricted
+4a\
+
+4a\
+deb http://download.webmin.com/download/repository sarge contrib
+4a\
+deb http://webmin.mirror.sommersettechsolutions.co.uk/repository sarge contrib
+3c\
+# deb http://security.ubuntu.com/ubuntu xenial-security main restricted universe multiverse

@@ -1,0 +1,1536 @@
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.15.2).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh19866
+# Made on 2018-07-16 00:02 EDT by <root@server>.
+# Source directory was '/root'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#   5356 -rw-r--r-- .conf_init/origin/etc/proftpd/proftpd.conf
+#    292 -rw-r--r-- .conf_init/origin/etc/apt/sources.list.origin
+#   1332 -rw-r--r-- .conf_init/origin/etc/apache2/sites-available/000-default.conf
+#   7115 -rw-r--r-- .conf_init/origin/etc/apache2/apache2.conf
+#   3374 -rw-r--r-- .conf_init/origin/etc/apache2/mods-available/autoindex.conf
+#    423 -rw-r--r-- .conf_init/origin/etc/apache2/mods-available/userdir.conf
+#   1283 -rw-r--r-- .conf_init/proftpd.conf.mydiff
+#   1202 -rw-r--r-- .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf
+#      0 -rw-r----- .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log
+#      0 -rw-r----- .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log
+#      3 -rw-r--r-- .conf_init/000-default.conf.mydiff
+#     89 -rw-r--r-- .conf_init/apache2.conf.mydiff
+#    807 -rw-r--r-- .conf_init/sources.list.mydiff
+#    365 -rw-r--r-- .conf_init/autoindex.conf.mydiff
+#   1295 -rwxr-x--- .conf_init/scripts/new-apache.sh
+#    233 -rwxr-x--- .conf_init/scripts/new-user.sh
+#    667 -rwxr-x--- .conf_init/scripts/del_userwebsite.sh
+#   1456 -rwxr-x--- .conf_init/scripts/new_userwebsite.sh
+#    425 -rwxr-x--- .conf_init/scripts/new-ubuntuinit.sh
+#     58 -rw-r--r-- .conf_init/scripts/repla.tmp
+#    289 -rwxr-x--- .conf_init/scripts/new-proftpd.sh
+#    214 -rw-r--r-- .conf_init/userdir.conf.mydiff
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if   touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and
+installing GNU '\''touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= .conf_init/origin/etc/proftpd/proftpd.conf ==============
+if test ! -d '.conf_init'; then
+  mkdir '.conf_init'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init."
+else ${echo} "x - failed to create directory .conf_init."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/origin'; then
+  mkdir '.conf_init/origin'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin."
+else ${echo} "x - failed to create directory .conf_init/origin."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/origin/etc'; then
+  mkdir '.conf_init/origin/etc'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc."
+else ${echo} "x - failed to create directory .conf_init/origin/etc."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/origin/etc/proftpd'; then
+  mkdir '.conf_init/origin/etc/proftpd'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc/proftpd."
+else ${echo} "x - failed to create directory .conf_init/origin/etc/proftpd."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/origin/etc/proftpd/proftpd.conf'
+then
+${echo} "x - SKIPPING .conf_init/origin/etc/proftpd/proftpd.conf (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/origin/etc/proftpd/proftpd.conf (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/origin/etc/proftpd/proftpd.conf
+M(PHC("]E=&,O<')O9G1P9"]P<F]F='!D+F-O;F8@+2T@5&AI<R!I<R!A(&)A
+M<VEC(%!R;T944$0@8V]N9FEG=7)A=&EO;B!F:6QE+@HC(%1O(')E86QL>2!A
+M<'!L>2!C:&%N9V5S+"!R96QO860@<')O9G1P9"!A9G1E<B!M;V1I9FEC871I
+M;VYS+"!I9@HC(&ET(')U;G,@:6X@9&%E;6]N(&UO9&4N($ET(&ES(&YO="!R
+M97%U:7)E9"!I;B!I;F5T9"]X:6YE=&0@;6]D92X*(R`*"B,@26YC;'5D97,@
+M1%-/(&UO9'5L97,*26YC;'5D92`O971C+W!R;V9T<&0O;6]D=6QE<RYC;VYF
+M"@HC(%-E="!O9F8@=&\@9&ES86)L92!)4'8V('-U<'!O<G0@=VAI8V@@:7,@
+M86YN;WEI;F<@;VX@25!V-"!O;FQY(&)O>&5S+@I5<V5)4'8V"0D)"6]N"B,@
+M268@<V5T(&]N('EO=2!C86X@97AP97)I96YC92!A(&QO;F=E<B!C;VYN96-T
+M:6]N(&1E;&%Y(&EN(&UA;GD@8V%S97,N"DED96YT3&]O:W5P<PD)"6]F9@H*
+M4V5R=F5R3F%M90D)"2)$96)I86XB"E-E<G9E<E1Y<&4)"0ES=&%N9&%L;VYE
+M"D1E9F5R5V5L8V]M90D)"6]F9@H*375L=&EL:6YE4D9#,C(R.`D);VX*1&5F
+M875L=%-E<G9E<@D)"6]N"E-H;W=3>6UL:6YK<PD)"6]N"@I4:6UE;W5T3F]4
+M<F%N<V9E<@D)-C`P"E1I;65O=713=&%L;&5D"0D)-C`P"E1I;65O=71)9&QE
+M"0D),3(P,`H*1&ES<&QA>4QO9VEN("`@("`@("`@("`@("`@("`@("!W96QC
+M;VUE+FUS9PI$:7-P;&%Y0VAD:7(@("`@("`@("`@("`@("`)+FUE<W-A9V4@
+M=')U90I,:7-T3W!T:6]N<R`@("`@("`@("`@("`@("`)(BUL(@H*1&5N>49I
+M;'1E<@D)"5PJ+BHO"@HC(%5S92!T:&ES('1O(&IA:6P@86QL('5S97)S(&EN
+M('1H96ER(&AO;65S(`HC($1E9F%U;'12;V]T"0D)?@H*(R!5<V5R<R!R97%U
+M:7)E(&$@=F%L:60@<VAE;&P@;&ES=&5D(&EN("]E=&,O<VAE;&QS('1O(&QO
+M9VEN+@HC(%5S92!T:&ES(&1I<F5C=&EV92!T;R!R96QE87-E('1H870@8V]N
+M<W1R86EN+@HC(%)E<75I<F5686QI9%-H96QL"0EO9F8*"B,@4&]R="`R,2!I
+M<R!T:&4@<W1A;F1A<F0@1E10('!O<G0N"E!O<G0)"0D),C$*"B,@26X@<V]M
+M92!C87-E<R!Y;W4@:&%V92!T;R!S<&5C:69Y('!A<W-I=F4@<&]R=',@<F%N
+M9V4@=&\@8GDM<&%S<PHC(&9I<F5W86QL(&QI;6ET871I;VYS+B!%<&AE;65R
+M86P@<&]R=',@8V%N(&)E('5S960@9F]R('1H870L(&)U=`HC(&9E96P@9G)E
+M92!T;R!U<V4@82!M;W)E(&YA<G)O=R!R86YG92X*(R!087-S:79E4&]R=',@
+M("`@("`@("`@("`@("`@("`T.3$U,B`V-34S-`H*(R!)9B!Y;W5R(&AO<W0@
+M=V%S($Y!5'1E9"P@=&AI<R!O<'1I;VX@:7,@=7-E9G5L(&EN(&]R9&5R('1O
+M"B,@86QL;W<@<&%S<VEV92!T<F%N9F5R<R!T;R!W;W)K+B!9;W4@:&%V92!T
+M;R!U<V4@>6]U<B!P=6)L:6,*(R!A9&1R97-S(&%N9"!O<&5N:6YG('1H92!P
+M87-S:79E('!O<G1S('5S960@;VX@>6]U<B!F:7)E=V%L;"!A<R!W96QL+@HC
+M($UA<W%U97)A9&5!9&1R97-S"0DQ+C(N,RXT"@HC(%1H:7,@:7,@=7-E9G5L
+M(&9O<B!M87-Q=65R861I;F<@861D<F5S<R!W:71H(&1Y;F%M:6,@25!S.@HC
+M(')E9G)E<V@@86YY(&-O;F9I9W5R960@36%S<75E<F%D94%D9')E<W,@9&ER
+M96-T:79E<R!E=F5R>2`X(&AO=7)S"CQ)9DUO9'5L92!M;V1?9'EN;6%S<2YC
+M/@HC($1Y;DUA<W%2969R97-H(#(X.#`P"CPO269-;V1U;&4^"@HC(%1O('!R
+M979E;G0@1&]3(&%T=&%C:W,L('-E="!T:&4@;6%X:6UU;2!N=6UB97(@;V8@
+M8VAI;&0@<')O8V5S<V5S"B,@=&\@,S`N("!)9B!Y;W4@;F5E9"!T;R!A;&QO
+M=R!M;W)E('1H86X@,S`@8V]N8W5R<F5N="!C;VYN96-T:6]N<PHC(&%T(&]N
+M8V4L('-I;7!L>2!I;F-R96%S92!T:&ES('9A;'5E+B`@3F]T92!T:&%T('1H
+M:7,@3TY,62!W;W)K<PHC(&EN('-T86YD86QO;F4@;6]D92P@:6X@:6YE=&0@
+M;6]D92!Y;W4@<VAO=6QD('5S92!A;B!I;F5T9"!S97)V97(*(R!T:&%T(&%L
+M;&]W<R!Y;W4@=&\@;&EM:70@;6%X:6UU;2!N=6UB97(@;V8@<')O8V5S<V5S
+M('!E<B!S97)V:6-E"B,@*'-U8V@@87,@>&EN971D*0I-87A);G-T86YC97,)
+M"0DS,`H*(R!3970@=&AE('5S97(@86YD(&=R;W5P('1H870@=&AE('-E<G9E
+M<B!N;W)M86QL>2!R=6YS(&%T+@I5<V5R"0D)"7!R;V9T<&0*1W)O=7`)"0D)
+M;F]G<F]U<`H*(R!5;6%S:R`P,C(@:7,@82!G;V]D('-T86YD87)D('5M87-K
+M('1O('!R979E;G0@;F5W(&9I;&5S(&%N9"!D:7)S"B,@*'-E8V]N9"!P87)M
+M*2!F<F]M(&)E:6YG(&=R;W5P(&%N9"!W;W)L9"!W<FET86)L92X*56UA<VL)
+M"0D),#(R("`P,C(*(R!.;W)M86QL>2P@=V4@=V%N="!F:6QE<R!T;R!B92!O
+M=F5R=W)I=&5A8FQE+@I!;&QO=T]V97)W<FET90D)"6]N"@HC(%5N8V]M;65N
+M="!T:&ES(&EF('EO=2!A<F4@=7-I;F<@3DE3(&]R($Q$05`@=FEA($Y34R!T
+M;R!R971R:65V92!P87-S=V]R9',Z"B,@4&5R<VES=&5N=%!A<W-W9`D);V9F
+M"@HC(%1H:7,@:7,@<F5Q=6ER960@=&\@=7-E(&)O=&@@4$%-+6)A<V5D(&%U
+M=&AE;G1I8V%T:6]N(&%N9"!L;V-A;"!P87-S=V]R9',*(R!!=71H3W)D97()
+M"0EM;V1?875T:%]P86TN8RH@;6]D7V%U=&A?=6YI>"YC"@HC($)E('=A<FYE
+M9#H@=7-E(&]F('1H:7,@9&ER96-T:79E(&EM<&%C=',@0U!5(&%V97)A9V4@
+M;&]A9"$*(R!5;F-O;6UE;G0@=&AI<R!I9B!Y;W4@;&EK92!T;R!S964@<')O
+M9W)E<W,@86YD('1R86YS9F5R(')A=&4@=VET:"!F='!W:&\*(R!I;B!D;W=N
+M;&]A9',N(%1H870@:7,@;F]T(&YE961E9"!F;W(@=7!L;V%D<R!R871E<RX*
+M(PHC(%5S95-E;F1&:6QE"0D);V9F"@I4<F%N<V9E<DQO9R`O=F%R+VQO9R]P
+M<F]F='!D+WAF97)L;V<*4WES=&5M3&]G("`@+W9A<B]L;V<O<')O9G1P9"]P
+M<F]F='!D+FQO9PH*(R!,;V=G:6YG(&]N=&\@+W9A<B]L;V<O;&%S=&QO9R!I
+M<R!E;F%B;&5D(&)U="!S970@=&\@;V9F(&)Y(&1E9F%U;'0*(U5S94QA<W1L
+M;V<@;VX*"B,@26X@;W)D97(@=&\@:V5E<"!L;V<@9FEL92!D871E<R!C;VYS
+M:7-T96YT(&%F=&5R(&-H<F]O="P@=7-E('1I;65Z;VYE(&EN9F\*(R!F<F]M
+M("]E=&,O;&]C86QT:6UE+B`@268@=&AI<R!I<R!N;W0@<V5T+"!A;F0@<')O
+M9G1P9"!I<R!C;VYF:6=U<F5D('1O"B,@8VAR;V]T("AE+F<N($1E9F%U;'12
+M;V]T(&]R(#Q!;F]N>6UO=7,^*2P@:70@=VEL;"!U<V4@=&AE(&YO;BUD87EL
+M:6=H=`HC('-A=FEN9W,@=&EM97IO;F4@<F5G87)D;&5S<R!O9B!W:&5T:&5R
+M($135"!I<R!I;B!E9F9E8W0N"B-3971%;G8@5%H@.B]E=&,O;&]C86QT:6UE
+M"@H\269-;V1U;&4@;6]D7W%U;W1A=&%B+F,^"E%U;W1A16YG:6YE(&]F9@H\
+M+TEF36]D=6QE/@H*/$EF36]D=6QE(&UO9%]R871I;RYC/@I2871I;W,@;V9F
+M"CPO269-;V1U;&4^"@H*(R!$96QA>2!E;F=I;F4@<F5D=6-E<R!I;7!A8W0@
+M;V8@=&AE('-O+6-A;&QE9"!4:6UI;F<@071T86-K(&1E<V-R:6)E9"!I;@HC
+M(&AT='`Z+R]W=W<N<V5C=7)I='EF;V-U<RYC;VTO8FED+S$Q-#,P+V1I<V-U
+M<W,*(R!)="!I<R!O;B!B>2!D969A=6QT+B`*/$EF36]D=6QE(&UO9%]D96QA
+M>2YC/@I$96QA>45N9VEN92!O;@H\+TEF36]D=6QE/@H*/$EF36]D=6QE(&UO
+M9%]C=')L<RYC/@I#;VYT<F]L<T5N9VEN92`@("`@("`@;V9F"D-O;G1R;VQS
+M36%X0VQI96YT<R`@("`R"D-O;G1R;VQS3&]G("`@("`@("`@("`O=F%R+VQO
+M9R]P<F]F='!D+V-O;G1R;VQS+FQO9PI#;VYT<F]L<TEN=&5R=F%L("`@("`@
+M-0I#;VYT<F]L<U-O8VME="`@("`@("`@+W9A<B]R=6XO<')O9G1P9"]P<F]F
+M='!D+G-O8VL*/"])9DUO9'5L93X*"CQ)9DUO9'5L92!M;V1?8W1R;'-?861M
+M:6XN8SX*061M:6Y#;VYT<F]L<T5N9VEN92!O9F8*/"])9DUO9'5L93X*"B,*
+M(R!!;'1E<FYA=&EV92!A=71H96YT:6-A=&EO;B!F<F%M97=O<FMS"B,*(TEN
+M8VQU9&4@+V5T8R]P<F]F='!D+VQD87`N8V]N9@HC26YC;'5D92`O971C+W!R
+M;V9T<&0O<W%L+F-O;F8*"B,*(R!4:&ES(&ES('5S960@9F]R($944%,@8V]N
+M;F5C=&EO;G,*(PHC26YC;'5D92`O971C+W!R;V9T<&0O=&QS+F-O;F8*"B,*
+M(R!5<V5F=6P@=&\@:V5E<"!6:7)T=6%L2&]S="]6:7)T=6%L4F]O="!D:7)E
+M8W1I=F5S('-E<&%R871E9`HC"B-);F-L=61E("]E=&,O<')O9G1P9"]V:7)T
+M=6%L<RYC;VYF"@HC($$@8F%S:6,@86YO;GEM;W5S(&-O;F9I9W5R871I;VXL
+M(&YO('5P;&]A9"!D:7)E8W1O<FEE<RX*"B,@/$%N;VYY;6]U<R!^9G1P/@HC
+M("`@57-E<@D)"0EF='`*(R`@($=R;W5P"0D)"6YO9W)O=7`*(R`@(",@5V4@
+M=V%N="!C;&EE;G1S('1O(&)E(&%B;&4@=&\@;&]G:6X@=VET:"`B86YO;GEM
+M;W5S(B!A<R!W96QL(&%S(")F='`B"B,@("!5<V5R06QI87,)"0EA;F]N>6UO
+M=7,@9G1P"B,@("`C($-O<VUE=&EC(&-H86YG97,L(&%L;"!F:6QE<R!B96QO
+M;F=S('1O(&9T<"!U<V5R"B,@("!$:7)&86ME57-E<@EO;B!F='`*(R`@($1I
+M<D9A:V5'<F]U<"!O;B!F='`*(R`*(R`@(%)E<75I<F5686QI9%-H96QL"0EO
+M9F8*(R`*(R`@(",@3&EM:70@=&AE(&UA>&EM=6T@;G5M8F5R(&]F(&%N;VYY
+M;6]U<R!L;V=I;G,*(R`@($UA>$-L:65N=',)"0DQ,`HC(`HC("`@(R!792!W
+M86YT("=W96QC;VUE+FUS9R<@9&ES<&QA>65D(&%T(&QO9VEN+"!A;F0@)RYM
+M97-S86=E)R!D:7-P;&%Y960*(R`@(",@:6X@96%C:"!N97=L>2!C:&1I<F5D
+M(&1I<F5C=&]R>2X*(R`@($1I<W!L87E,;V=I;@D)"7=E;&-O;64N;7-G"B,@
+M("!$:7-P;&%Y0VAD:7()"2YM97-S86=E"B,@"B,@("`C($QI;6ET(%=2251%
+M(&5V97)Y=VAE<F4@:6X@=&AE(&%N;VYY;6]U<R!C:')O;W0*(R`@(#Q$:7)E
+M8W1O<GD@*CX*(R`@("`@/$QI;6ET(%=2251%/@HC("`@("`@($1E;GE!;&P*
+M(R`@("`@/"],:6UI=#X*(R`@(#PO1&ER96-T;W)Y/@HC(`HC("`@(R!5;F-O
+M;6UE;G0@=&AI<R!I9B!Y;W4G<F4@8G)A=F4N"B,@("`C(#Q$:7)E8W1O<GD@
+M:6YC;VUI;F<^"B,@("`C("`@(R!5;6%S:R`P,C(@:7,@82!G;V]D('-T86YD
+M87)D('5M87-K('1O('!R979E;G0@;F5W(&9I;&5S(&%N9"!D:7)S"B,@("`C
+M("`@(R`H<V5C;VYD('!A<FTI(&9R;VT@8F5I;F<@9W)O=7`@86YD('=O<FQD
+M('=R:71A8FQE+@HC("`@(R`@(%5M87-K"0D)"3`R,B`@,#(R"B,@("`C("`@
+M("`@("`@("`@/$QI;6ET(%)%040@5U))5$4^"B,@("`C("`@("`@("`@("`@
+M1&5N>4%L;`HC("`@(R`@("`@("`@("`@(#PO3&EM:70^"B,@("`C("`@("`@
+M("`@("`@/$QI;6ET(%-43U(^"B,@("`C("`@("`@("`@("`@06QL;W=!;&P*
+M(R`@(",@("`@("`@("`@("`\+TQI;6ET/@HC("`@(R`\+T1I<F5C=&]R>3X*
+M(R`*(R`\+T%N;VYY;6]U<SX*"B,@26YC;'5D92!O=&AE<B!C=7-T;VT@8V]N
+M9FEG=7)A=&EO;B!F:6QE<PI);F-L=61E("]E=&,O<')O9G1P9"]C;VYF+F0O
+!"FEG
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 44 35 '.conf_init/origin/etc/proftpd/proftpd.conf'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/origin/etc/proftpd/proftpd.conf'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/origin/etc/proftpd/proftpd.conf failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/origin/etc/proftpd/proftpd.conf': 'MD5 check failed'
+       ) << \SHAR_EOF
+675c09519f746b8154dec38df20103c0  .conf_init/origin/etc/proftpd/proftpd.conf
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/origin/etc/proftpd/proftpd.conf'` -ne 5356 && \
+  ${echo} "restoration warning:  size of '.conf_init/origin/etc/proftpd/proftpd.conf' is not 5356"
+  fi
+fi
+# ============= .conf_init/origin/etc/apt/sources.list.origin ==============
+if test ! -d '.conf_init/origin/etc/apt'; then
+  mkdir '.conf_init/origin/etc/apt'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc/apt."
+else ${echo} "x - failed to create directory .conf_init/origin/etc/apt."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/origin/etc/apt/sources.list.origin'
+then
+${echo} "x - SKIPPING .conf_init/origin/etc/apt/sources.list.origin (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/origin/etc/apt/sources.list.origin (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/origin/etc/apt/sources.list.origin
+M9&5B(&AT='`Z+R]A<F-H:79E+G5B=6YT=2YC;VTO=6)U;G1U('AE;FEA;"!M
+M86EN(')E<W1R:6-T960@=6YI=F5R<V4*9&5B(&AT='`Z+R]A<F-H:79E+G5B
+M=6YT=2YC;VTO=6)U;G1U('AE;FEA;"UU<&1A=&5S(&UA:6X@<F5S=')I8W1E
+M9"!U;FEV97)S90ID96(@:'1T<#HO+W-E8W5R:71Y+G5B=6YT=2YC;VTO=6)U
+M;G1U('AE;FEA;"US96-U<FET>2!M86EN(')E<W1R:6-T960@=6YI=F5R<V4@
+M;75L=&EV97)S90ID96(@:'1T<#HO+V%R8VAI=F4N8V%N;VYI8V%L+F-O;2]U
+68G5N='4@>&5N:6%L('!A<G1N97(*"F%R
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 09 02 34 '.conf_init/origin/etc/apt/sources.list.origin'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/origin/etc/apt/sources.list.origin'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/origin/etc/apt/sources.list.origin failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/origin/etc/apt/sources.list.origin': 'MD5 check failed'
+       ) << \SHAR_EOF
+15729b3092a529a7da8814d4fe75fae9  .conf_init/origin/etc/apt/sources.list.origin
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/origin/etc/apt/sources.list.origin'` -ne 292 && \
+  ${echo} "restoration warning:  size of '.conf_init/origin/etc/apt/sources.list.origin' is not 292"
+  fi
+fi
+# ============= .conf_init/origin/etc/apache2/sites-available/000-default.conf ==============
+if test ! -d '.conf_init/origin/etc/apache2'; then
+  mkdir '.conf_init/origin/etc/apache2'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc/apache2."
+else ${echo} "x - failed to create directory .conf_init/origin/etc/apache2."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/origin/etc/apache2/sites-available'; then
+  mkdir '.conf_init/origin/etc/apache2/sites-available'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc/apache2/sites-available."
+else ${echo} "x - failed to create directory .conf_init/origin/etc/apache2/sites-available."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/origin/etc/apache2/sites-available/000-default.conf'
+then
+${echo} "x - SKIPPING .conf_init/origin/etc/apache2/sites-available/000-default.conf (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/origin/etc/apache2/sites-available/000-default.conf (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/origin/etc/apache2/sites-available/000-default.conf
+M/%9I<G1U86Q(;W-T("HZ.#`^"@DC(%1H92!397)V97).86UE(&1I<F5C=&EV
+M92!S971S('1H92!R97%U97-T('-C:&5M92P@:&]S=&YA;64@86YD('!O<G0@
+M=&AA=`H)(R!T:&4@<V5R=F5R('5S97,@=&\@:61E;G1I9GD@:71S96QF+B!4
+M:&ES(&ES('5S960@=VAE;B!C<F5A=&EN9PH)(R!R961I<F5C=&EO;B!54DQS
+M+B!);B!T:&4@8V]N=&5X="!O9B!V:7)T=6%L(&AO<W1S+"!T:&4@4V5R=F5R
+M3F%M90H)(R!S<&5C:69I97,@=VAA="!H;W-T;F%M92!M=7-T(&%P<&5A<B!I
+M;B!T:&4@<F5Q=65S="=S($AO<W0Z(&AE861E<B!T;PH)(R!M871C:"!T:&ES
+M('9I<G1U86P@:&]S="X@1F]R('1H92!D969A=6QT('9I<G1U86P@:&]S="`H
+M=&AI<R!F:6QE*2!T:&ES"@DC('9A;'5E(&ES(&YO="!D96-I<VEV92!A<R!I
+M="!I<R!U<V5D(&%S(&$@;&%S="!R97-O<G0@:&]S="!R96=A<F1L97-S+@H)
+M(R!(;W=E=F5R+"!Y;W4@;75S="!S970@:70@9F]R(&%N>2!F=7)T:&5R('9I
+M<G1U86P@:&]S="!E>'!L:6-I=&QY+@H)(U-E<G9E<DYA;64@=W=W+F5X86UP
+M;&4N8V]M"@H)4V5R=F5R061M:6X@=V5B;6%S=&5R0&QO8V%L:&]S=`H)1&]C
+M=6UE;G12;V]T("]V87(O=W=W+VAT;6P*"@DC($%V86EL86)L92!L;V=L979E
+M;',Z('1R86-E."P@+BXN+"!T<F%C93$L(&1E8G5G+"!I;F9O+"!N;W1I8V4L
+M('=A<FXL"@DC(&5R<F]R+"!C<FET+"!A;&5R="P@96UE<F<N"@DC($ET(&ES
+M(&%L<V\@<&]S<VEB;&4@=&\@8V]N9FEG=7)E('1H92!L;V=L979E;"!F;W(@
+M<&%R=&EC=6QA<@H)(R!M;V1U;&5S+"!E+F<N"@DC3&]G3&5V96P@:6YF;R!S
+M<VPZ=V%R;@H*"45R<F]R3&]G("1[05!!0TA%7TQ/1U]$25)]+V5R<F]R+FQO
+M9PH)0W5S=&]M3&]G("1[05!!0TA%7TQ/1U]$25)]+V%C8V5S<RYL;V<@8V]M
+M8FEN960*"@DC($9O<B!M;W-T(&-O;F9I9W5R871I;VX@9FEL97,@9G)O;2!C
+M;VYF+6%V86EL86)L92\L('=H:6-H(&%R90H)(R!E;F%B;&5D(&]R(&1I<V%B
+M;&5D(&%T(&$@9VQO8F%L(&QE=F5L+"!I="!I<R!P;W-S:6)L92!T;PH)(R!I
+M;F-L=61E(&$@;&EN92!F;W(@;VYL>2!O;F4@<&%R=&EC=6QA<B!V:7)T=6%L
+M(&AO<W0N($9O<B!E>&%M<&QE('1H90H)(R!F;VQL;W=I;F<@;&EN92!E;F%B
+M;&5S('1H92!#1TD@8V]N9FEG=7)A=&EO;B!F;W(@=&AI<R!H;W-T(&]N;'D*
+M"2,@869T97(@:70@:&%S(&)E96X@9VQO8F%L;'D@9&ES86)L960@=VET:"`B
+M83)D:7-C;VYF(BX*"2-);F-L=61E(&-O;F8M879A:6QA8FQE+W-E<G9E+6-G
+M:2UB:6XN8V]N9@H\+U9I<G1U86Q(;W-T/@H*(R!V:6TZ('-Y;G1A>#UA<&%C
+;:&4@=',]-"!S=STT('-T<STT('-R(&YO970*
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 11 59 '.conf_init/origin/etc/apache2/sites-available/000-default.conf'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/origin/etc/apache2/sites-available/000-default.conf'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/origin/etc/apache2/sites-available/000-default.conf failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/origin/etc/apache2/sites-available/000-default.conf': 'MD5 check failed'
+       ) << \SHAR_EOF
+f3066f67070ab9b1ad9bab81ca05330a  .conf_init/origin/etc/apache2/sites-available/000-default.conf
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/origin/etc/apache2/sites-available/000-default.conf'` -ne 1332 && \
+  ${echo} "restoration warning:  size of '.conf_init/origin/etc/apache2/sites-available/000-default.conf' is not 1332"
+  fi
+fi
+# ============= .conf_init/origin/etc/apache2/apache2.conf ==============
+if test -n "${keep_file}" && test -f '.conf_init/origin/etc/apache2/apache2.conf'
+then
+${echo} "x - SKIPPING .conf_init/origin/etc/apache2/apache2.conf (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/origin/etc/apache2/apache2.conf (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/origin/etc/apache2/apache2.conf
+M(R!4:&ES(&ES('1H92!M86EN($%P86-H92!S97)V97(@8V]N9FEG=7)A=&EO
+M;B!F:6QE+B`@270@8V]N=&%I;G,@=&AE"B,@8V]N9FEG=7)A=&EO;B!D:7)E
+M8W1I=F5S('1H870@9VEV92!T:&4@<V5R=F5R(&ET<R!I;G-T<G5C=&EO;G,N
+M"B,@4V5E(&AT='`Z+R]H='1P9"YA<&%C:&4N;W)G+V1O8W,O,BXT+R!F;W(@
+M9&5T86EL960@:6YF;W)M871I;VX@86)O=70*(R!T:&4@9&ER96-T:79E<R!A
+M;F0@+W5S<B]S:&%R92]D;V,O87!A8VAE,B]214%$344N1&5B:6%N(&%B;W5T
+M($1E8FEA;B!S<&5C:69I8PHC(&AI;G1S+@HC"B,*(R!3=6UM87)Y(&]F(&AO
+M=R!T:&4@07!A8VAE(#(@8V]N9FEG=7)A=&EO;B!W;W)K<R!I;B!$96)I86XZ
+M"B,@5&AE($%P86-H92`R('=E8B!S97)V97(@8V]N9FEG=7)A=&EO;B!I;B!$
+M96)I86X@:7,@<75I=&4@9&EF9F5R96YT('1O"B,@=7!S=')E86TG<R!S=6=G
+M97-T960@=V%Y('1O(&-O;F9I9W5R92!T:&4@=V5B('-E<G9E<BX@5&AI<R!I
+M<R!B96-A=7-E($1E8FEA;B=S"B,@9&5F875L="!!<&%C:&4R(&EN<W1A;&QA
+M=&EO;B!A='1E;7!T<R!T;R!M86ME(&%D9&EN9R!A;F0@<F5M;W9I;F<@;6]D
+M=6QE<RP*(R!V:7)T=6%L(&AO<W1S+"!A;F0@97AT<F$@8V]N9FEG=7)A=&EO
+M;B!D:7)E8W1I=F5S(&%S(&9L97AI8FQE(&%S('!O<W-I8FQE+"!I;@HC(&]R
+M9&5R('1O(&UA:V4@875T;VUA=&EN9R!T:&4@8VAA;F=E<R!A;F0@861M:6YI
+M<W1E<FEN9R!T:&4@<V5R=F5R(&%S(&5A<WD@87,*(R!P;W-S:6)L92X*"B,@
+M270@:7,@<W!L:70@:6YT;R!S979E<F%L(&9I;&5S(&9O<FUI;F<@=&AE(&-O
+M;F9I9W5R871I;VX@:&EE<F%R8VAY(&]U=&QI;F5D"B,@8F5L;W<L(&%L;"!L
+M;V-A=&5D(&EN('1H92`O971C+V%P86-H93(O(&1I<F5C=&]R>3H*(PHC"2]E
+M=&,O87!A8VAE,B\*(PE\+2T@87!A8VAE,BYC;VYF"B,)?`E@+2T@('!O<G1S
+M+F-O;F8*(PE\+2T@;6]D<RUE;F%B;&5D"B,)?`E\+2T@*BYL;V%D"B,)?`E@
+M+2T@*BYC;VYF"B,)?"TM(&-O;F8M96YA8FQE9`HC"7P)8"TM("HN8V]N9@HC
+M(`E@+2T@<VET97,M96YA8FQE9`HC"2`)8"TM("HN8V]N9@HC"B,*(R`J(&%P
+M86-H93(N8V]N9B!I<R!T:&4@;6%I;B!C;VYF:6=U<F%T:6]N(&9I;&4@*'1H
+M:7,@9FEL92DN($ET('!U=',@=&AE('!I96-E<PHC("`@=&]G971H97(@8GD@
+M:6YC;'5D:6YG(&%L;"!R96UA:6YI;F<@8V]N9FEG=7)A=&EO;B!F:6QE<R!W
+M:&5N('-T87)T:6YG('5P('1H90HC("`@=V5B('-E<G9E<BX*(PHC("H@<&]R
+M=',N8V]N9B!I<R!A;'=A>7,@:6YC;'5D960@9G)O;2!T:&4@;6%I;B!C;VYF
+M:6=U<F%T:6]N(&9I;&4N($ET(&ES"B,@("!S=7!P;W-E9"!T;R!D971E<FUI
+M;F4@;&ES=&5N:6YG('!O<G1S(&9O<B!I;F-O;6EN9R!C;VYN96-T:6]N<R!W
+M:&EC:"!C86X@8F4*(R`@(&-U<W1O;6EZ960@86YY=&EM92X*(PHC("H@0V]N
+M9FEG=7)A=&EO;B!F:6QE<R!I;B!T:&4@;6]D<RUE;F%B;&5D+RP@8V]N9BUE
+M;F%B;&5D+R!A;F0@<VET97,M96YA8FQE9"\*(R`@(&1I<F5C=&]R:65S(&-O
+M;G1A:6X@<&%R=&EC=6QA<B!C;VYF:6=U<F%T:6]N('-N:7!P971S('=H:6-H
+M(&UA;F%G92!M;V1U;&5S+`HC("`@9VQO8F%L(&-O;F9I9W5R871I;VX@9G)A
+M9VUE;G1S+"!O<B!V:7)T=6%L(&AO<W0@8V]N9FEG=7)A=&EO;G,L"B,@("!R
+M97-P96-T:79E;'DN"B,*(R`@(%1H97D@87)E(&%C=&EV871E9"!B>2!S>6UL
+M:6YK:6YG(&%V86EL86)L92!C;VYF:6=U<F%T:6]N(&9I;&5S(&9R;VT@=&AE
+M:7(*(R`@(')E<W!E8W1I=F4@*BUA=F%I;&%B;&4O(&-O=6YT97)P87)T<RX@
+M5&AE<V4@<VAO=6QD(&)E(&UA;F%G960@8GD@=7-I;F<@;W5R"B,@("!H96QP
+M97)S(&$R96YM;V0O83)D:7-M;V0L(&$R96YS:71E+V$R9&ES<VET92!A;F0@
+M83)E;F-O;F8O83)D:7-C;VYF+B!3964*(R`@('1H96ER(')E<W!E8W1I=F4@
+M;6%N('!A9V5S(&9O<B!D971A:6QE9"!I;F9O<FUA=&EO;BX*(PHC("H@5&AE
+M(&)I;F%R>2!I<R!C86QL960@87!A8VAE,BX@1'5E('1O('1H92!U<V4@;V8@
+M96YV:7)O;FUE;G0@=F%R:6%B;&5S+"!I;@HC("`@=&AE(&1E9F%U;'0@8V]N
+M9FEG=7)A=&EO;BP@87!A8VAE,B!N965D<R!T;R!B92!S=&%R=&5D+W-T;W!P
+M960@=VET:`HC("`@+V5T8R]I;FET+F0O87!A8VAE,B!O<B!A<&%C:&4R8W1L
+M+B!#86QL:6YG("]U<W(O8FEN+V%P86-H93(@9&ER96-T;'D@=VEL;"!N;W0*
+M(R`@('=O<FL@=VET:"!T:&4@9&5F875L="!C;VYF:6=U<F%T:6]N+@H*"B,@
+M1VQO8F%L(&-O;F9I9W5R871I;VX*(PH*(PHC(%-E<G9E<E)O;W0Z(%1H92!T
+M;W`@;V8@=&AE(&1I<F5C=&]R>2!T<F5E('5N9&5R('=H:6-H('1H92!S97)V
+M97(G<PHC(&-O;F9I9W5R871I;VXL(&5R<F]R+"!A;F0@;&]G(&9I;&5S(&%R
+M92!K97!T+@HC"B,@3D]412$@($EF('EO=2!I;G1E;F0@=&\@<&QA8V4@=&AI
+M<R!O;B!A;B!.1E,@*&]R(&]T:&5R=VES92!N971W;W)K*0HC(&UO=6YT960@
+M9FEL97-Y<W1E;2!T:&5N('!L96%S92!R96%D('1H92!-=71E>"!D;V-U;65N
+M=&%T:6]N("AA=F%I;&%B;&4*(R!A="`\55),.FAT='`Z+R]H='1P9"YA<&%C
+M:&4N;W)G+V1O8W,O,BXT+VUO9"]C;W)E+FAT;6PC;75T97@^*3L*(R!Y;W4@
+M=VEL;"!S879E('EO=7)S96QF(&$@;&]T(&]F('1R;W5B;&4N"B,*(R!$;R!.
+M3U0@861D(&$@<VQA<V@@870@=&AE(&5N9"!O9B!T:&4@9&ER96-T;W)Y('!A
+M=&@N"B,*(U-E<G9E<E)O;W0@(B]E=&,O87!A8VAE,B(*"B,*(R!4:&4@86-C
+M97!T('-E<FEA;&EZ871I;VX@;&]C:R!F:6QE($U54U0@0D4@4U1/4D5$($].
+M($$@3$]#04P@1$E32RX*(PI-=71E>"!F:6QE.B1[05!!0TA%7TQ/0TM?1$E2
+M?2!D969A=6QT"@HC"B,@4&ED1FEL93H@5&AE(&9I;&4@:6X@=VAI8V@@=&AE
+M('-E<G9E<B!S:&]U;&0@<F5C;W)D(&ET<R!P<F]C97-S"B,@:61E;G1I9FEC
+M871I;VX@;G5M8F5R('=H96X@:70@<W1A<G1S+@HC(%1H:7,@;F5E9',@=&\@
+M8F4@<V5T(&EN("]E=&,O87!A8VAE,B]E;G9V87)S"B,*4&ED1FEL92`D>T%0
+M04-(15]0241?1DE,17T*"B,*(R!4:6UE;W5T.B!4:&4@;G5M8F5R(&]F('-E
+M8V]N9',@8F5F;W)E(')E8V5I=F5S(&%N9"!S96YD<R!T:6UE(&]U="X*(PI4
+M:6UE;W5T(#,P,`H*(PHC($ME97!!;&EV93H@5VAE=&AE<B!O<B!N;W0@=&\@
+M86QL;W<@<&5R<VES=&5N="!C;VYN96-T:6]N<R`H;6]R92!T:&%N"B,@;VYE
+M(')E<75E<W0@<&5R(&-O;FYE8W1I;VXI+B!3970@=&\@(D]F9B(@=&\@9&5A
+M8W1I=F%T92X*(PI+965P06QI=F4@3VX*"B,*(R!-87A+965P06QI=F5297%U
+M97-T<SH@5&AE(&UA>&EM=6T@;G5M8F5R(&]F(')E<75E<W1S('1O(&%L;&]W
+M"B,@9'5R:6YG(&$@<&5R<VES=&5N="!C;VYN96-T:6]N+B!3970@=&\@,"!T
+M;R!A;&QO=R!A;B!U;FQI;6ET960@86UO=6YT+@HC(%=E(')E8V]M;65N9"!Y
+M;W4@;&5A=F4@=&AI<R!N=6UB97(@:&EG:"P@9F]R(&UA>&EM=6T@<&5R9F]R
+M;6%N8V4N"B,*36%X2V5E<$%L:79E4F5Q=65S=',@,3`P"@HC"B,@2V5E<$%L
+M:79E5&EM96]U=#H@3G5M8F5R(&]F('-E8V]N9',@=&\@=V%I="!F;W(@=&AE
+M(&YE>'0@<F5Q=65S="!F<F]M('1H90HC('-A;64@8VQI96YT(&]N('1H92!S
+M86UE(&-O;FYE8W1I;VXN"B,*2V5E<$%L:79E5&EM96]U="`U"@H*(R!4:&5S
+M92!N965D('1O(&)E('-E="!I;B`O971C+V%P86-H93(O96YV=F%R<PI5<V5R
+M("1[05!!0TA%7U)53E]54T52?0I'<F]U<"`D>T%004-(15]254Y?1U)/55!]
+M"@HC"B,@2&]S=&YA;65,;V]K=7!S.B!,;V<@=&AE(&YA;65S(&]F(&-L:65N
+M=',@;W(@:G5S="!T:&5I<B!)4"!A9&1R97-S97,*(R!E+F<N+"!W=W<N87!A
+M8VAE+F]R9R`H;VXI(&]R(#(P-"XV,BXQ,CDN,3,R("AO9F8I+@HC(%1H92!D
+M969A=6QT(&ES(&]F9B!B96-A=7-E(&ET)V0@8F4@;W9E<F%L;"!B971T97(@
+M9F]R('1H92!N970@:68@<&5O<&QE"B,@:&%D('1O(&MN;W=I;F=L>2!T=7)N
+M('1H:7,@9F5A='5R92!O;BP@<VEN8V4@96YA8FQI;F<@:70@;65A;G,@=&AA
+M=`HC(&5A8V@@8VQI96YT(')E<75E<W0@=VEL;"!R97-U;'0@:6X@050@3$5!
+M4U0@;VYE(&QO;VMU<"!R97%U97-T('1O('1H90HC(&YA;65S97)V97(N"B,*
+M2&]S=&YA;65,;V]K=7!S($]F9@H*(R!%<G)O<DQO9SH@5&AE(&QO8V%T:6]N
+M(&]F('1H92!E<G)O<B!L;V<@9FEL92X*(R!)9B!Y;W4@9&\@;F]T('-P96-I
+M9GD@86X@17)R;W),;V<@9&ER96-T:79E('=I=&AI;B!A(#Q6:7)T=6%L2&]S
+M=#X*(R!C;VYT86EN97(L(&5R<F]R(&UE<W-A9V5S(')E;&%T:6YG('1O('1H
+M870@=FER='5A;"!H;W-T('=I;&P@8F4*(R!L;V=G960@:&5R92X@($EF('EO
+M=2`J9&\J(&1E9FEN92!A;B!E<G)O<B!L;V=F:6QE(&9O<B!A(#Q6:7)T=6%L
+M2&]S=#X*(R!C;VYT86EN97(L('1H870@:&]S="=S(&5R<F]R<R!W:6QL(&)E
+M(&QO9V=E9"!T:&5R92!A;F0@;F]T(&AE<F4N"B,*17)R;W),;V<@)'M!4$%#
+M2$5?3$]'7T1)4GTO97)R;W(N;&]G"@HC"B,@3&]G3&5V96PZ($-O;G1R;VP@
+M=&AE('-E=F5R:71Y(&]F(&UE<W-A9V5S(&QO9V=E9"!T;R!T:&4@97)R;W)?
+M;&]G+@HC($%V86EL86)L92!V86QU97,Z('1R86-E."P@+BXN+"!T<F%C93$L
+M(&1E8G5G+"!I;F9O+"!N;W1I8V4L('=A<FXL"B,@97)R;W(L(&-R:70L(&%L
+M97)T+"!E;65R9RX*(R!)="!I<R!A;'-O('!O<W-I8FQE('1O(&-O;F9I9W5R
+M92!T:&4@;&]G(&QE=F5L(&9O<B!P87)T:6-U;&%R(&UO9'5L97,L(&4N9RX*
+M(R`B3&]G3&5V96P@:6YF;R!S<VPZ=V%R;B(*(PI,;V=,979E;"!W87)N"@HC
+M($EN8VQU9&4@;6]D=6QE(&-O;F9I9W5R871I;VXZ"DEN8VQU9&5/<'1I;VYA
+M;"!M;V1S+65N86)L960O*BYL;V%D"DEN8VQU9&5/<'1I;VYA;"!M;V1S+65N
+M86)L960O*BYC;VYF"@HC($EN8VQU9&4@;&ES="!O9B!P;W)T<R!T;R!L:7-T
+M96X@;VX*26YC;'5D92!P;W)T<RYC;VYF"@H*(R!3971S('1H92!D969A=6QT
+M('-E8W5R:71Y(&UO9&5L(&]F('1H92!!<&%C:&4R($A45%!$('-E<G9E<BX@
+M270@9&]E<PHC(&YO="!A;&QO=R!A8V-E<W,@=&\@=&AE(')O;W0@9FEL97-Y
+M<W1E;2!O=71S:61E(&]F("]U<W(O<VAA<F4@86YD("]V87(O=W=W+@HC(%1H
+M92!F;W)M97(@:7,@=7-E9"!B>2!W96(@87!P;&EC871I;VYS('!A8VMA9V5D
+M(&EN($1E8FEA;BP*(R!T:&4@;&%T=&5R(&UA>2!B92!U<V5D(&9O<B!L;V-A
+M;"!D:7)E8W1O<FEE<R!S97)V960@8GD@=&AE('=E8B!S97)V97(N($EF"B,@
+M>6]U<B!S>7-T96T@:7,@<V5R=FEN9R!C;VYT96YT(&9R;VT@82!S=6(M9&ER
+M96-T;W)Y(&EN("]S<G8@>6]U(&UU<W0@86QL;W<*(R!A8V-E<W,@:&5R92P@
+M;W(@:6X@86YY(')E;&%T960@=FER='5A;"!H;W-T+@H\1&ER96-T;W)Y("\^
+M"@E/<'1I;VYS($9O;&QO=U-Y;4QI;FMS"@E!;&QO=T]V97)R:61E($YO;F4*
+M"5)E<75I<F4@86QL(&1E;FEE9`H\+T1I<F5C=&]R>3X*"CQ$:7)E8W1O<GD@
+M+W5S<B]S:&%R93X*"4%L;&]W3W9E<G)I9&4@3F]N90H)4F5Q=6ER92!A;&P@
+M9W)A;G1E9`H\+T1I<F5C=&]R>3X*"CQ$:7)E8W1O<GD@+W9A<B]W=W<O/@H)
+M3W!T:6]N<R!);F1E>&5S($9O;&QO=U-Y;4QI;FMS"@E!;&QO=T]V97)R:61E
+M($YO;F4*"5)E<75I<F4@86QL(&=R86YT960*/"]$:7)E8W1O<GD^"@HC/$1I
+M<F5C=&]R>2`O<W)V+SX*(PE/<'1I;VYS($EN9&5X97,@1F]L;&]W4WEM3&EN
+M:W,*(PE!;&QO=T]V97)R:61E($YO;F4*(PE297%U:7)E(&%L;"!G<F%N=&5D
+M"B,\+T1I<F5C=&]R>3X*"@H*"B,@06-C97-S1FEL94YA;64Z(%1H92!N86UE
+M(&]F('1H92!F:6QE('1O(&QO;VL@9F]R(&EN(&5A8V@@9&ER96-T;W)Y"B,@
+M9F]R(&%D9&ET:6]N86P@8V]N9FEG=7)A=&EO;B!D:7)E8W1I=F5S+B`@4V5E
+M(&%L<V\@=&AE($%L;&]W3W9E<G)I9&4*(R!D:7)E8W1I=F4N"B,*06-C97-S
+M1FEL94YA;64@+FAT86-C97-S"@HC"B,@5&AE(&9O;&QO=VEN9R!L:6YE<R!P
+M<F5V96YT("YH=&%C8V5S<R!A;F0@+FAT<&%S<W=D(&9I;&5S(&9R;VT@8F5I
+M;F<*(R!V:65W960@8GD@5V5B(&-L:65N=',N"B,*/$9I;&5S36%T8V@@(EY<
+M+FAT(CX*"5)E<75I<F4@86QL(&1E;FEE9`H\+T9I;&5S36%T8V@^"@H*(PHC
+M(%1H92!F;VQL;W=I;F<@9&ER96-T:79E<R!D969I;F4@<V]M92!F;W)M870@
+M;FEC:VYA;65S(&9O<B!U<V4@=VET:`HC(&$@0W5S=&]M3&]G(&1I<F5C=&EV
+M92X*(PHC(%1H97-E(&1E=FEA=&4@9G)O;2!T:&4@0V]M;6]N($QO9R!&;W)M
+M870@9&5F:6YI=&EO;G,@:6X@=&AA="!T:&5Y('5S92`E3PHC("AT:&4@86-T
+M=6%L(&)Y=&5S('-E;G0@:6YC;'5D:6YG(&AE861E<G,I(&EN<W1E860@;V8@
+M)6(@*'1H92!S:7IE(&]F('1H90HC(')E<75E<W1E9"!F:6QE*2P@8F5C875S
+M92!T:&4@;&%T=&5R(&UA:V5S(&ET(&EM<&]S<VEB;&4@=&\@9&5T96-T('!A
+M<G1I86P*(R!R97%U97-T<RX*(PHC($YO=&4@=&AA="!T:&4@=7-E(&]F("5[
+M6"U&;W)W87)D960M1F]R?6D@:6YS=&5A9"!O9B`E:"!I<R!N;W0@<F5C;VUM
+M96YD960N"B,@57-E(&UO9%]R96UO=&5I<"!I;G-T96%D+@HC"DQO9T9O<FUA
+M="`B)78Z)7`@)6@@)6P@)74@)70@7"(E<EPB("4^<R`E3R!<(B5[4F5F97)E
+M<GUI7"(@7"(E>U5S97(M06=E;G1]:5PB(B!V:&]S=%]C;VUB:6YE9`I,;V=&
+M;W)M870@(B5H("5L("5U("5T(%PB)7)<(B`E/G,@)4\@7"(E>U)E9F5R97)]
+M:5PB(%PB)7M5<V5R+4%G96YT?6E<(B(@8V]M8FEN960*3&]G1F]R;6%T("(E
+M:"`E;"`E=2`E="!<(B5R7"(@)3YS("5/(B!C;VUM;VX*3&]G1F]R;6%T("(E
+M>U)E9F5R97)]:2`M/B`E52(@<F5F97)E<@I,;V=&;W)M870@(B5[57-E<BUA
+M9V5N='UI(B!A9V5N=`H*(R!);F-L=61E(&]F(&1I<F5C=&]R:65S(&EG;F]R
+M97,@961I=&]R<R<@86YD(&1P:V<G<R!B86-K=7`@9FEL97,L"B,@<V5E(%)%
+M041-12Y$96)I86X@9F]R(&1E=&%I;',N"@HC($EN8VQU9&4@9V5N97)I8R!S
+M;FEP<&5T<R!O9B!S=&%T96UE;G1S"DEN8VQU9&5/<'1I;VYA;"!C;VYF+65N
+M86)L960O*BYC;VYF"@HC($EN8VQU9&4@=&AE('9I<G1U86P@:&]S="!C;VYF
+M:6=U<F%T:6]N<SH*26YC;'5D94]P=&EO;F%L('-I=&5S+65N86)L960O*BYC
+M;VYF"@HC('9I;3H@<WEN=&%X/6%P86-H92!T<STT('-W/30@<W1S/30@<W(@
+%;F]E=`HC
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 11 59 '.conf_init/origin/etc/apache2/apache2.conf'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/origin/etc/apache2/apache2.conf'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/origin/etc/apache2/apache2.conf failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/origin/etc/apache2/apache2.conf': 'MD5 check failed'
+       ) << \SHAR_EOF
+da32fcc6a783acaebf0d74c17c726bf7  .conf_init/origin/etc/apache2/apache2.conf
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/origin/etc/apache2/apache2.conf'` -ne 7115 && \
+  ${echo} "restoration warning:  size of '.conf_init/origin/etc/apache2/apache2.conf' is not 7115"
+  fi
+fi
+# ============= .conf_init/origin/etc/apache2/mods-available/autoindex.conf ==============
+if test ! -d '.conf_init/origin/etc/apache2/mods-available'; then
+  mkdir '.conf_init/origin/etc/apache2/mods-available'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc/apache2/mods-available."
+else ${echo} "x - failed to create directory .conf_init/origin/etc/apache2/mods-available."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/origin/etc/apache2/mods-available/autoindex.conf'
+then
+${echo} "x - SKIPPING .conf_init/origin/etc/apache2/mods-available/autoindex.conf (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/origin/etc/apache2/mods-available/autoindex.conf (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/origin/etc/apache2/mods-available/autoindex.conf
+M/$EF36]D=6QE(&UO9%]A=71O:6YD97@N8SX*"2,@1&ER96-T:79E<R!C;VYT
+M<F]L;&EN9R!T:&4@9&ES<&QA>2!O9B!S97)V97(M9V5N97)A=&5D(&1I<F5C
+M=&]R>2!L:7-T:6YG<RX*"@DC"@DC($EN9&5X3W!T:6]N<SH@0V]N=')O;',@
+M=&AE(&%P<&5A<F%N8V4@;V8@<V5R=F5R+6=E;F5R871E9"!D:7)E8W1O<GD*
+M"2,@;&ES=&EN9W,N"@DC(%)E;6]V92]R97!L86-E('1H92`B0VAA<G-E=#U5
+M5$8M."(@:68@>6]U(&1O;B=T('5S92!55$8M."!F;W(@>6]U<B!F:6QE;F%M
+M97,N"@E);F1E>$]P=&EO;G,@1F%N8WE);F1E>&EN9R!697)S:6]N4V]R="!(
+M5$U,5&%B;&4@3F%M95=I9'1H/2H@1&5S8W)I<'1I;VY7:61T:#TJ($-H87)S
+M970]551&+3@*"@DC"@DC($%D9$EC;VXJ(&1I<F5C=&EV97,@=&5L;"!T:&4@
+M<V5R=F5R('=H:6-H(&EC;VX@=&\@<VAO=R!F;W(@9&EF9F5R96YT"@DC(&9I
+M;&5S(&]R(&9I;&5N86UE(&5X=&5N<VEO;G,N("!4:&5S92!A<F4@;VYL>2!D
+M:7-P;&%Y960@9F]R"@DC($9A;F-Y26YD97AE9"!D:7)E8W1O<FEE<RX*"4%D
+M9$EC;VY">45N8V]D:6YG("A#35`L+VEC;VYS+V-O;7!R97-S960N9VEF*2!X
+M+6-O;7!R97-S('@M9WII<"!X+6)Z:7`R"@H)061D26-O;D)Y5'EP92`H5%A4
+M+"]I8V]N<R]T97AT+F=I9BD@=&5X="\J"@E!9&1)8V]N0GE4>7!E("A)34<L
+M+VEC;VYS+VEM86=E,BYG:68I(&EM86=E+RH*"4%D9$EC;VY">51Y<&4@*%-.
+M1"PO:6-O;G,O<V]U;F0R+F=I9BD@875D:6\O*@H)061D26-O;D)Y5'EP92`H
+M5DE$+"]I8V]N<R]M;W9I92YG:68I('9I9&5O+RH*"@E!9&1)8V]N("]I8V]N
+M<R]B:6YA<GDN9VEF("YB:6X@+F5X90H)061D26-O;B`O:6-O;G,O8FEN:&5X
+M+F=I9B`N:'%X"@E!9&1)8V]N("]I8V]N<R]T87(N9VEF("YT87(*"4%D9$EC
+M;VX@+VEC;VYS+W=O<FQD,BYG:68@+G=R;"`N=W)L+F=Z("YV<FUL("YV<FT@
+M+FEV"@E!9&1)8V]N("]I8V]N<R]C;VUP<F5S<V5D+F=I9B`N6B`N>B`N=&=Z
+M("YG>B`N>FEP"@E!9&1)8V]N("]I8V]N<R]A+F=I9B`N<',@+F%I("YE<',*
+M"4%D9$EC;VX@+VEC;VYS+VQA>6]U="YG:68@+FAT;6P@+G-H=&UL("YH=&T@
+M+G!D9@H)061D26-O;B`O:6-O;G,O=&5X="YG:68@+G1X=`H)061D26-O;B`O
+M:6-O;G,O8RYG:68@+F,*"4%D9$EC;VX@+VEC;VYS+W`N9VEF("YP;"`N<'D*
+M"4%D9$EC;VX@+VEC;VYS+V8N9VEF("YF;W(*"4%D9$EC;VX@+VEC;VYS+V1V
+M:2YG:68@+F1V:0H)061D26-O;B`O:6-O;G,O=75E;F-O9&5D+F=I9B`N=74*
+M"4%D9$EC;VX@+VEC;VYS+W-C<FEP="YG:68@+F-O;F8@+G-H("YS:&%R("YC
+M<V@@+FMS:"`N=&-L"@E!9&1)8V]N("]I8V]N<R]T97@N9VEF("YT97@*"2,@
+M270G<R!A('-U9F9I>"!R=6QE+"!S;R!S:6UP;'D@;6%T8VAI;F<@(F-O<F4B
+M(&UA=&-H97,@(G-C;W)E(B!A<R!W96QL("$*"4%D9$EC;VX@+VEC;VYS+V)O
+M;6(N9VEF("]C;W)E"@E!9&1)8V]N("A33D0L+VEC;VYS+W-O=6YD,BYG:68I
+M("YO9V<*"4%D9$EC;VX@*%9)1"PO:6-O;G,O;6]V:64N9VEF*2`N;V=M"@H)
+M061D26-O;B`O:6-O;G,O8F%C:RYG:68@+BX*"4%D9$EC;VX@+VEC;VYS+VAA
+M;F0N<FEG:'0N9VEF(%)%041-10H)061D26-O;B`O:6-O;G,O9F]L9&5R+F=I
+M9B!>7D1)4D5#5$]265Y>"@E!9&1)8V]N("]I8V]N<R]B;&%N:RYG:68@7EY"
+M3$%.2TE#3TY>7@H*"2,@1&5F875L="!I8V]N<R!F;W(@3W!E;D1O8W5M96YT
+M(&9O<FUA=`H)061D26-O;B`O:6-O;G,O;V1F-F]D="TR,'@R,BYP;F<@+F]D
+M=`H)061D26-O;B`O:6-O;G,O;V1F-F]D<RTR,'@R,BYP;F<@+F]D<PH)061D
+M26-O;B`O:6-O;G,O;V1F-F]D<"TR,'@R,BYP;F<@+F]D<`H)061D26-O;B`O
+M:6-O;G,O;V1F-F]D9RTR,'@R,BYP;F<@+F]D9PH)061D26-O;B`O:6-O;G,O
+M;V1F-F]D8RTR,'@R,BYP;F<@+F]D8PH)061D26-O;B`O:6-O;G,O;V1F-F]D
+M9BTR,'@R,BYP;F<@+F]D9@H)061D26-O;B`O:6-O;G,O;V1F-F]D8BTR,'@R
+M,BYP;F<@+F]D8@H)061D26-O;B`O:6-O;G,O;V1F-F]D:2TR,'@R,BYP;F<@
+M+F]D:0H)061D26-O;B`O:6-O;G,O;V1F-F]D;2TR,'@R,BYP;F<@+F]D;0H*
+M"4%D9$EC;VX@+VEC;VYS+V]D9C9O='0M,C!X,C(N<&YG("YO='0*"4%D9$EC
+M;VX@+VEC;VYS+V]D9C9O=',M,C!X,C(N<&YG("YO=',*"4%D9$EC;VX@+VEC
+M;VYS+V]D9C9O='`M,C!X,C(N<&YG("YO='`*"4%D9$EC;VX@+VEC;VYS+V]D
+M9C9O=&<M,C!X,C(N<&YG("YO=&<*"4%D9$EC;VX@+VEC;VYS+V]D9C9O=&,M
+M,C!X,C(N<&YG("YO=&,*"4%D9$EC;VX@+VEC;VYS+V]D9C9O=&8M,C!X,C(N
+M<&YG("YO=&8*"4%D9$EC;VX@+VEC;VYS+V]D9C9O=&DM,C!X,C(N<&YG("YO
+M=&D*"4%D9$EC;VX@+VEC;VYS+V]D9C9O=&@M,C!X,C(N<&YG("YO=&@*"@DC
+M"@DC($1E9F%U;'1)8V]N(&ES('=H:6-H(&EC;VX@=&\@<VAO=R!F;W(@9FEL
+M97,@=VAI8V@@9&\@;F]T(&AA=F4@86X@:6-O;@H)(R!E>'!L:6-I=&QY('-E
+M="X*"41E9F%U;'1)8V]N("]I8V]N<R]U;FMN;W=N+F=I9@H*"2,*"2,@061D
+M1&5S8W)I<'1I;VX@86QL;W=S('EO=2!T;R!P;&%C92!A('-H;W)T(&1E<V-R
+M:7!T:6]N(&%F=&5R(&$@9FEL92!I;@H)(R!S97)V97(M9V5N97)A=&5D(&EN
+M9&5X97,N("!4:&5S92!A<F4@;VYL>2!D:7-P;&%Y960@9F]R($9A;F-Y26YD
+M97AE9`H)(R!D:7)E8W1O<FEE<RX*"2,@1F]R;6%T.B!!9&1$97-C<FEP=&EO
+M;B`B9&5S8W)I<'1I;VXB(&9I;&5N86UE"@DC061D1&5S8W)I<'1I;VX@(D=:
+M25`@8V]M<')E<W-E9"!D;V-U;65N="(@+F=Z"@DC061D1&5S8W)I<'1I;VX@
+M(G1A<B!A<F-H:79E(B`N=&%R"@DC061D1&5S8W)I<'1I;VX@(D=:25`@8V]M
+M<')E<W-E9"!T87(@87)C:&EV92(@+G1G>@H*"2,*"2,@4F5A9&UE3F%M92!I
+M<R!T:&4@;F%M92!O9B!T:&4@4D5!1$U%(&9I;&4@=&AE('-E<G9E<B!W:6QL
+M(&QO;VL@9F]R(&)Y"@DC(&1E9F%U;'0L(&%N9"!A<'!E;F0@=&\@9&ER96-T
+M;W)Y(&QI<W1I;F=S+@H)(PH)(R!(96%D97).86UE(&ES('1H92!N86UE(&]F
+M(&$@9FEL92!W:&EC:"!S:&]U;&0@8F4@<')E<&5N9&5D('1O"@DC(&1I<F5C
+M=&]R>2!I;F1E>&5S"@E296%D;65.86UE(%)%041-12YH=&UL"@E(96%D97).
+M86UE($A%041%4BYH=&UL"@H)(PH)(R!);F1E>$EG;F]R92!I<R!A('-E="!O
+M9B!F:6QE;F%M97,@=VAI8V@@9&ER96-T;W)Y(&EN9&5X:6YG('-H;W5L9"!I
+M9VYO<F4*"2,@86YD(&YO="!I;F-L=61E(&EN('1H92!L:7-T:6YG+B`@4VAE
+M;&PM<W1Y;&4@=VEL9&-A<F1I;F<@:7,@<&5R;6ET=&5D+@H)26YD97A)9VYO
+M<F4@+C\_*B`J?B`J(R!20U,@0U93("HL=B`J+'0*"CPO269-;V1U;&4^"@HC
+L('9I;3H@<WEN=&%X/6%P86-H92!T<STT('-W/30@<W1S/30@<W(@;F]E=`HC
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 11 59 '.conf_init/origin/etc/apache2/mods-available/autoindex.conf'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/origin/etc/apache2/mods-available/autoindex.conf'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/origin/etc/apache2/mods-available/autoindex.conf failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/origin/etc/apache2/mods-available/autoindex.conf': 'MD5 check failed'
+       ) << \SHAR_EOF
+bfba7d77669e02b869b92e98215d58fc  .conf_init/origin/etc/apache2/mods-available/autoindex.conf
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/origin/etc/apache2/mods-available/autoindex.conf'` -ne 3374 && \
+  ${echo} "restoration warning:  size of '.conf_init/origin/etc/apache2/mods-available/autoindex.conf' is not 3374"
+  fi
+fi
+# ============= .conf_init/origin/etc/apache2/mods-available/userdir.conf ==============
+if test ! -d '.conf_init/origin/etc/apache2/mods-available'; then
+  mkdir '.conf_init/origin/etc/apache2/mods-available'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/origin/etc/apache2/mods-available."
+else ${echo} "x - failed to create directory .conf_init/origin/etc/apache2/mods-available."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/origin/etc/apache2/mods-available/userdir.conf'
+then
+${echo} "x - SKIPPING .conf_init/origin/etc/apache2/mods-available/userdir.conf (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/origin/etc/apache2/mods-available/userdir.conf (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/origin/etc/apache2/mods-available/userdir.conf
+M/$EF36]D=6QE(&UO9%]U<V5R9&ER+F,^"@E5<V5R1&ER('!U8FQI8U]H=&UL
+M"@E5<V5R1&ER(&1I<V%B;&5D(')O;W0*"@D\1&ER96-T;W)Y("]H;VUE+RHO
+M<'5B;&EC7VAT;6P^"@D)06QL;W=/=F5R<FED92!&:6QE26YF;R!!=71H0V]N
+M9FEG($QI;6ET($EN9&5X97,*"0E/<'1I;VYS($UU;'1I5FEE=W,@26YD97AE
+M<R!3>6U,:6YK<TEF3W=N97)-871C:"!);F-L=61E<TYO17AE8PH)"3Q,:6UI
+M="!'150@4$]35"!/4%1)3TY3/@H)"0E297%U:7)E(&%L;"!G<F%N=&5D"@D)
+M/"],:6UI=#X*"0D\3&EM:71%>&-E<'0@1T54(%!/4U0@3U!424].4SX*"0D)
+M4F5Q=6ER92!A;&P@9&5N:65D"@D)/"],:6UI=$5X8V5P=#X*"3PO1&ER96-T
+M;W)Y/@H\+TEF36]D=6QE/@H*(R!V:6TZ('-Y;G1A>#UA<&%C:&4@=',]-"!S
+2=STT('-T<STT('-R(&YO970*
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 11 59 '.conf_init/origin/etc/apache2/mods-available/userdir.conf'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/origin/etc/apache2/mods-available/userdir.conf'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/origin/etc/apache2/mods-available/userdir.conf failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/origin/etc/apache2/mods-available/userdir.conf': 'MD5 check failed'
+       ) << \SHAR_EOF
+143f6c46903d32c98184186e30351dc2  .conf_init/origin/etc/apache2/mods-available/userdir.conf
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/origin/etc/apache2/mods-available/userdir.conf'` -ne 423 && \
+  ${echo} "restoration warning:  size of '.conf_init/origin/etc/apache2/mods-available/userdir.conf' is not 423"
+  fi
+fi
+# ============= .conf_init/proftpd.conf.mydiff ==============
+if test -n "${keep_file}" && test -f '.conf_init/proftpd.conf.mydiff'
+then
+${echo} "x - SKIPPING .conf_init/proftpd.conf.mydiff (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/proftpd.conf.mydiff (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/proftpd.conf.mydiff
+M,3@Y85P*/$=L;V)A;#X*,3@Y85P*4F]O=$QO9VEN"0D);VX*,3@Y85P*06QL
+M;W=2971R:65V95)E<W1A<G0@;VX*,3@Y85P*06QL;W=3=&]R95)E<W1A<G0@
+M;VX*,3@Y85P*36%X0VQI96YT<R`S"C$X.6%<"DUA>$-L:65N='-097)(;W-T
+M(#,*,3@Y85P*4&%S<VEV95!O<G1S(#4P,#`P(#4P-3`P"C$X.6%<"E-E<G9E
+M<DED96YT(&]N"C$X.6%<"B,@4F]O=$1E9F%U;'0)"0E^"C$X.6%<"CPO1VQO
+M8F%L/@HQ.#EA7`I4:6UE<T=-5"!O9F8*"C$X-F-<"CPO06YO;GEM;W5S/@H*
+M,38V+#$W,60*,38U85P*(R,@/$QI;6ET($Q/1TE./@HQ-C5A7`HC(PE!;&QO
+M=T%L;`HQ-C5A7`HC(SPO3&EM:70^"C$V-6%<"@HQ-C5A7`H@(",@3&EM:70@
+M5U))5$4@979E<GEW:&5R92!I;B!T:&4@86YO;GEM;W5S(&-H<F]O=`HQ-C5A
+M7`H@("`\1&ER96-T;W)Y("H^"C$V-6%<"B`@("`@/$QI;6ET(%=2251%/@HQ
+M-C5A7`H@("`@("`@1&5N>4%L;`HQ-C5A7`H@("`@(#PO3&EM:70^"C$V-6%<
+M"B`@(#PO1&ER96-T;W)Y/@H*,38S+#$V-&0*,38R85P*("`@1&ES<&QA>4QO
+M9VEN"0D)=V5L8V]M92YM<V<*,38R85P*("`@1&ES<&QA>4-H9&ER"0DN;65S
+M<V%G90H*,30W+#$U.60*,30V85P*/$%N;VYY;6]U<R`O<W)V+V9T<#X*,30V
+M85P*("!5<V5R"0D)"69T<`HQ-#9A7`H@($=R;W5P"0D)"6YO9W)O=7`*,30V
+M85P*("`C(%=E('=A;G0@8VQI96YT<R!T;R!B92!A8FQE('1O(&QO9VEN('=I
+M=&@@(F%N;VYY;6]U<R(@87,@=V5L;"!A<R`B9G1P(@HQ-#9A7`H@(%5S97)!
+M;&EA<PD)"6%N;VYY;6]U<R!F='`*,30V85P*("`C($-O<VUE=&EC(&-H86YG
+M97,L(&%L;"!F:6QE<R!B96QO;F=S('1O(&9T<"!U<V5R"C$T-F%<"B`@1&ER
+M1F%K955S97();VX@9G1P"C$T-F%<"B`@1&ER1F%K94=R;W5P(&]N(&9T<`HQ
+M-#9A7`H*,30V85P*("!297%U:7)E5F%L:613:&5L;`D);V9F"C$T-F%<"B`*
+M,30V85P*("`C($QI;6ET('1H92!M87AI;75M(&YU;6)E<B!O9B!A;F]N>6UO
+M=7,@;&]G:6YS"C$T-F%<"B`@36%X0VQI96YT<PD)"3$P"@HY,6%<"DUA>%-T
+M;W)E1FEL95-I>F4)"3$P,"!-8@HY,6%<"DUA>%)E=')I979E1FEL95-I>F4)
+M"3$P,"!-8@HY,6%<"@HX-V-<"E5S95-E;F1&:6QE"0D);V9F"@HU,6-<"DUA
+M<W%U97)A9&5!9&1R97-S"0DW-RXR,C`N,C$T+C$R,`H*-#9A7`I087-S:79E
+M4&]R=',)"0DU,#`P,"`U,#4P,`H*,S1C7`I$969A=6QT4F]O=`D)"7X*"C,R
+M85P*1&5L971E06)O<G1E9%-T;W)E<PD);VX*,S)A7`H*,35C7`I397)V97).
+786UE"0D)(DUY($944"!397)V97(B"@H)
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 07 28 15 '.conf_init/proftpd.conf.mydiff'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/proftpd.conf.mydiff'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/proftpd.conf.mydiff failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/proftpd.conf.mydiff': 'MD5 check failed'
+       ) << \SHAR_EOF
+9239c1c16602d4f342eadc293790c0a3  .conf_init/proftpd.conf.mydiff
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/proftpd.conf.mydiff'` -ne 1283 && \
+  ${echo} "restoration warning:  size of '.conf_init/proftpd.conf.mydiff' is not 1283"
+  fi
+fi
+# ============= .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf ==============
+if test ! -d '.conf_init/init'; then
+  mkdir '.conf_init/init'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init."
+else ${echo} "x - failed to create directory .conf_init/init."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/init/etc'; then
+  mkdir '.conf_init/init/etc'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/etc."
+else ${echo} "x - failed to create directory .conf_init/init/etc."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/init/etc/apache2'; then
+  mkdir '.conf_init/init/etc/apache2'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/etc/apache2."
+else ${echo} "x - failed to create directory .conf_init/init/etc/apache2."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/init/etc/apache2/sites-available'; then
+  mkdir '.conf_init/init/etc/apache2/sites-available'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/etc/apache2/sites-available."
+else ${echo} "x - failed to create directory .conf_init/init/etc/apache2/sites-available."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/init/etc/apache2/sites-available/zzz-user-default.conf'
+then
+${echo} "x - SKIPPING .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf
+M/%9I<G1U86Q(;W-T("HZ.#`^"@E397)V97).86UE($1!5$]3+G-E<G9E<BYG
+M<F%N9&MO>F5L+G)U"@H)1&]C=6UE;G12;V]T("]V87(O=W=W+T1!5$]3+G-E
+M<G9E<BYG<F%N9&MO>F5L+G)U+PH*"2,@079A:6QA8FQE(&QO9VQE=F5L<SH@
+M=')A8V4X+"`N+BXL('1R86-E,2P@9&5B=6<L(&EN9F\L(&YO=&EC92P@=V%R
+M;BP*"2,@97)R;W(L(&-R:70L(&%L97)T+"!E;65R9RX*"2,@270@:7,@86QS
+M;R!P;W-S:6)L92!T;R!C;VYF:6=U<F4@=&AE(&QO9VQE=F5L(&9O<B!P87)T
+M:6-U;&%R"@DC(&UO9'5L97,L(&4N9RX*"4QO9TQE=F5L(&EN9F\*"@E%<G)O
+M<DQO9R`D>T%004-(15],3T=?1$E2?2]$051/4RYS97)V97(N9W)A;F1K;WIE
+M;"YR=2UE<G)O<BYL;V<*"4-U<W1O;4QO9R`D>T%004-(15],3T=?1$E2?2]$
+M051/4RYS97)V97(N9W)A;F1K;WIE;"YR=2UA8V-E<W,N;&]G(&-O;6)I;F5D
+M"@H)/$1I<F5C=&]R>2`O=F%R+W=W=R]$051/4RYS97)V97(N9W)A;F1K;WIE
+M;"YR=2\^"@D)3W!T:6]N<R`K26YC;'5D97,@+4EN9&5X97,@*T9O;&QO=U-Y
+M;4QI;FMS("M-=6QT:59I97=S"@D)06QL;W=/=F5R<FED92!!;&P*"0E297%U
+M:7)E(&%L;"!G<F%N=&5D"@D\+T1I<F5C=&]R>3X*"3Q$:7)E8W1O<GD@+W9A
+M<B]W=W<O1$%43U,N<V5R=F5R+F=R86YD:V]Z96PN<G4O=V5B9&%V+SX*"0E/
+M<'1I;VYS("M);F-L=61E<R`K26YD97AE<R`K1F]L;&]W4WEM3&EN:W,*"0E!
+M;&QO=T]V97)R:61E($%L;`H)"41A=B!/;@H)"4%U=&A4>7!E($)A<VEC"@D)
+M075T:$YA;64@(G=E8F1A=B(*"0E!=71H57-E<D9I;&4@+W9A<B]W=W<O1$%4
+M3U,N<V5R=F5R+F=R86YD:V]Z96PN<G4O+FAT82YP87-S=V]R9`H)"5)E<75I
+M<F4@=F%L:60M=7-E<B!G<F%N=&5D"@D\+T1I<F5C=&]R>3X*"3Q&:6QE<TUA
+M=&-H(")>7"YH="(^"@D)4F5Q=6ER92!A;&P@9&5N:65D"@D\+T9I;&5S36%T
+M8V@^"@D\1FEL97--871C:"`B7EPN9G1P<75O=&$B/@H)"5)E<75I<F4@86QL
+M(&1E;FEE9`H)/"]&:6QE<TUA=&-H/@H)/$9I;&5S36%T8V@@(EY<+D137U-T
+M;W)E(CX*"0E297%U:7)E(&%L;"!D96YI960*"3PO1FEL97--871C:#X*"3Q&
+M:6QE<TUA=&-H(")>7"YF='!Q=6]T82(^"@D)4F5Q=6ER92!A;&P@9&5N:65D
+M"@D\+T9I;&5S36%T8V@^"CPO5FER='5A;$AO<W0^"@HC('9I;3H@<WEN=&%X
+@/6%P86-H92!T<STT('-W/30@<W1S/30@<W(@;F]E=`HC
+`
+end
+SHAR_EOF
+  (set 20 18 07 15 13 44 38 '.conf_init/init/etc/apache2/sites-available/zzz-user-default.conf'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/init/etc/apache2/sites-available/zzz-user-default.conf'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/init/etc/apache2/sites-available/zzz-user-default.conf': 'MD5 check failed'
+       ) << \SHAR_EOF
+525a9fe14a89b55c205dfc1b3a482b0e  .conf_init/init/etc/apache2/sites-available/zzz-user-default.conf
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/init/etc/apache2/sites-available/zzz-user-default.conf'` -ne 1202 && \
+  ${echo} "restoration warning:  size of '.conf_init/init/etc/apache2/sites-available/zzz-user-default.conf' is not 1202"
+  fi
+fi
+# ============= .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log ==============
+if test ! -d '.conf_init/init/var'; then
+  mkdir '.conf_init/init/var'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/var."
+else ${echo} "x - failed to create directory .conf_init/init/var."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/init/var/log'; then
+  mkdir '.conf_init/init/var/log'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/var/log."
+else ${echo} "x - failed to create directory .conf_init/init/var/log."
+     exit 1
+fi
+fi
+if test ! -d '.conf_init/init/var/log/apache2'; then
+  mkdir '.conf_init/init/var/log/apache2'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/var/log/apache2."
+else ${echo} "x - failed to create directory .conf_init/init/var/log/apache2."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log'
+then
+${echo} "x - SKIPPING .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log (empty)"
+ > '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log' &&
+  (set 20 18 07 15 13 27 58 '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log'
+   eval "${shar_touch}") && \
+  chmod 0640 '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log': 'MD5 check failed'
+       ) << \SHAR_EOF
+d41d8cd98f00b204e9800998ecf8427e  .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log'` -ne 0 && \
+  ${echo} "restoration warning:  size of '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-error.log' is not 0"
+  fi
+fi
+# ============= .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log ==============
+if test ! -d '.conf_init/init/var/log/apache2'; then
+  mkdir '.conf_init/init/var/log/apache2'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/init/var/log/apache2."
+else ${echo} "x - failed to create directory .conf_init/init/var/log/apache2."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log'
+then
+${echo} "x - SKIPPING .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log (empty)"
+ > '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log' &&
+  (set 20 18 07 15 13 28 28 '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log'
+   eval "${shar_touch}") && \
+  chmod 0640 '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log': 'MD5 check failed'
+       ) << \SHAR_EOF
+d41d8cd98f00b204e9800998ecf8427e  .conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log'` -ne 0 && \
+  ${echo} "restoration warning:  size of '.conf_init/init/var/log/apache2/DATOS.server.grandkozel.ru-access.log' is not 0"
+  fi
+fi
+# ============= .conf_init/000-default.conf.mydiff ==============
+if test -n "${keep_file}" && test -f '.conf_init/000-default.conf.mydiff'
+then
+${echo} "x - SKIPPING .conf_init/000-default.conf.mydiff (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/000-default.conf.mydiff (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/000-default.conf.mydiff
+#,3%D
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 07 28 15 '.conf_init/000-default.conf.mydiff'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/000-default.conf.mydiff'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/000-default.conf.mydiff failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/000-default.conf.mydiff': 'MD5 check failed'
+       ) << \SHAR_EOF
+45c1dc80686a615d9e6dd00c9b447fb4  .conf_init/000-default.conf.mydiff
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/000-default.conf.mydiff'` -ne 3 && \
+  ${echo} "restoration warning:  size of '.conf_init/000-default.conf.mydiff' is not 3"
+  fi
+fi
+# ============= .conf_init/apache2.conf.mydiff ==============
+if test -n "${keep_file}" && test -f '.conf_init/apache2.conf.mydiff'
+then
+${echo} "x - SKIPPING .conf_init/apache2.conf.mydiff (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/apache2.conf.mydiff (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/apache2.conf.mydiff
+M,38U8UP*(PE/<'1I;VYS($EN9&5X97,@1F]L;&]W4WEM3&EN:W,*,38U85P*
+L"4]P=&EO;G,@+4EN9&5X97,@*T9O;&QO=U-Y;4QI;FMS("M);F-L=61E<PH*
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 07 28 15 '.conf_init/apache2.conf.mydiff'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/apache2.conf.mydiff'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/apache2.conf.mydiff failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/apache2.conf.mydiff': 'MD5 check failed'
+       ) << \SHAR_EOF
+5f226a32e3b3fd5c6f6466b8deeaeebd  .conf_init/apache2.conf.mydiff
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/apache2.conf.mydiff'` -ne 89 && \
+  ${echo} "restoration warning:  size of '.conf_init/apache2.conf.mydiff' is not 89"
+  fi
+fi
+# ============= .conf_init/sources.list.mydiff ==============
+if test -n "${keep_file}" && test -f '.conf_init/sources.list.mydiff'
+then
+${echo} "x - SKIPPING .conf_init/sources.list.mydiff (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/sources.list.mydiff (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/sources.list.mydiff
+M-&%<"F1E8B!H='1P.B\O87)C:&EV92YU8G5N='4N8V]M+W5B=6YT=2!X96YI
+M86P@=6YI=F5R<V4*-&%<"F1E8B!H='1P.B\O87)C:&EV92YU8G5N='4N8V]M
+M+W5B=6YT=2!X96YI86PM=7!D871E<R!U;FEV97)S90HT85P*9&5B(&AT='`Z
+M+R]A<F-H:79E+G5B=6YT=2YC;VTO=6)U;G1U('AE;FEA;"!M=6QT:79E<G-E
+M"C1A7`ID96(@:'1T<#HO+V%R8VAI=F4N=6)U;G1U+F-O;2]U8G5N='4@>&5N
+M:6%L+75P9&%T97,@;75L=&EV97)S90HT85P*(R!D96(@:'1T<#HO+V%R8VAI
+M=F4N=6)U;G1U+F-O;2]U8G5N='4@>&5N:6%L+6)A8VMP;W)T<R!M86EN(')E
+M<W1R:6-T960@=6YI=F5R<V4@;75L=&EV97)S90HT85P*9&5B(&AT='`Z+R]S
+M96-U<FET>2YU8G5N='4N8V]M+W5B=6YT=2!X96YI86PM<V5C=7)I='D@=6YI
+M=F5R<V4*-&%<"F1E8B!H='1P.B\O<V5C=7)I='DN=6)U;G1U+F-O;2]U8G5N
+M='4@>&5N:6%L+7-E8W5R:71Y(&UU;'1I=F5R<V4*-&%<"F1E8B!H='1P.B\O
+M<V5C=7)I='DN=6)U;G1U+F-O;2]U8G5N='4@>&5N:6%L+7-E8W5R:71Y(&UA
+M:6X@<F5S=')I8W1E9`HT85P*"C1A7`ID96(@:'1T<#HO+V1O=VYL;V%D+G=E
+M8FUI;BYC;VTO9&]W;FQO860O<F5P;W-I=&]R>2!S87)G92!C;VYT<FEB"C1A
+M7`ID96(@:'1T<#HO+W=E8FUI;BYM:7)R;W(N<V]M;65R<V5T=&5C:'-O;'5T
+M:6]N<RYC;RYU:R]R97!O<VET;W)Y('-A<F=E(&-O;G1R:6(*,V-<"B,@9&5B
+M(&AT='`Z+R]S96-U<FET>2YU8G5N='4N8V]M+W5B=6YT=2!X96YI86PM<V5C
+J=7)I='D@;6%I;B!R97-T<FEC=&5D('5N:79E<G-E(&UU;'1I=F5R<V4*
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 09 01 56 '.conf_init/sources.list.mydiff'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/sources.list.mydiff'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/sources.list.mydiff failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/sources.list.mydiff': 'MD5 check failed'
+       ) << \SHAR_EOF
+80eba948afb04c80c45e8632b6b06e67  .conf_init/sources.list.mydiff
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/sources.list.mydiff'` -ne 807 && \
+  ${echo} "restoration warning:  size of '.conf_init/sources.list.mydiff' is not 807"
+  fi
+fi
+# ============= .conf_init/autoindex.conf.mydiff ==============
+if test -n "${keep_file}" && test -f '.conf_init/autoindex.conf.mydiff'
+then
+${echo} "x - SKIPPING .conf_init/autoindex.conf.mydiff (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/autoindex.conf.mydiff (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/autoindex.conf.mydiff
+M.&-<"B,)26YD97A/<'1I;VYS($9A;F-Y26YD97AI;F<@5F5R<VEO;E-O<G0@
+M2%1-3%1A8FQE($YA;657:61T:#TJ($1E<V-R:7!T:6]N5VED=&@]*B!#:&%R
+M<V5T/5541BTX"CEI7`H)26YD97A/<'1I;VYS($EG;F]R94-A<V4@1F%N8WE)
+M;F1E>&EN9R!&;VQD97)S1FER<W0@5F5R<VEO;E-O<G0@6$A434P@2%1-3%1A
+M8FQE($YA;657:61T:#TJ($1E<V-R:7!T:6]N5VED=&@]*B!3=7!P<F5S<U)U
+M;&5S($-H87)S970]551&+3@*.6E<"@E);F1E>$]R9&5R1&5F875L="!!<V-E
+M;F1I;F<@3F%M90HY:5P*"4EN9&5X26=N;W)E("YH=&%C8V5S<R`N9G1P<75O
+M=&$@("Y$4U]3=&]R92`N:'1A+G!A<W-W;W)D("YH='!A<W-W9"`N:'1P87-S
+%=V]R9`I$
+`
+end
+SHAR_EOF
+  (set 20 18 07 15 22 11 45 '.conf_init/autoindex.conf.mydiff'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/autoindex.conf.mydiff'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/autoindex.conf.mydiff failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/autoindex.conf.mydiff': 'MD5 check failed'
+       ) << \SHAR_EOF
+b4a8ee52e236f901d71acdf8bb27931d  .conf_init/autoindex.conf.mydiff
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/autoindex.conf.mydiff'` -ne 365 && \
+  ${echo} "restoration warning:  size of '.conf_init/autoindex.conf.mydiff' is not 365"
+  fi
+fi
+# ============= .conf_init/scripts/new-apache.sh ==============
+if test ! -d '.conf_init/scripts'; then
+  mkdir '.conf_init/scripts'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/scripts."
+else ${echo} "x - failed to create directory .conf_init/scripts."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/scripts/new-apache.sh'
+then
+${echo} "x - SKIPPING .conf_init/scripts/new-apache.sh (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/new-apache.sh (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/new-apache.sh
+M(R$O8FEN+V)A<V@*87!T+6=E="!I;G-T86QL("UY(&%P86-H93(@87!A8VAE
+M,BUD;V,*(R#ON[]A<'0M9V5T(&EN<W1A;&P@+7D@87!A8VAE,B!A<&%C:&1O
+M8PIS97)V:6-E(&%P86-H93(@<W1O<`IA,F1I<VUO9"!U<V5R9&ER"F$R9&ES
+M;6]D(&%U=&]I;F1E>"`M9@IA,F1I<VUO9"!R97=R:71E"F$R9&ES<VET92`P
+M,#`M9&5F875L=`IC<"`O971C+V%P86-H93(O87!A8VAE,BYC;VYF("]R;V]T
+M+RYC;VYF7VEN:70O;W)I9VEN+V5T8R]A<&%C:&4R+V%P86-H93(N8V]N9@IC
+M<"`O971C+V%P86-H93(O;6]D<RUA=F%I;&%B;&4O=7-E<F1I<BYC;VYF("]R
+M;V]T+RYC;VYF7VEN:70O;W)I9VEN+V5T8R]A<&%C:&4R+VUO9',M879A:6QA
+M8FQE+W5S97)D:7(N8V]N9@IC<"`O971C+V%P86-H93(O;6]D<RUA=F%I;&%B
+M;&4O875T;VEN9&5X+F-O;F8@+W)O;W0O+F-O;F9?:6YI="]O<FEG:6XO971C
+M+V%P86-H93(O;6]D<RUA=F%I;&%B;&4O875T;VEN9&5X+F-O;F8*<V5D("UF
+M("]R;V]T+RYC;VYF7VEN:70O87!A8VAE,BYC;VYF+FUY9&EF9B`O<F]O="\N
+M8V]N9E]I;FET+V]R:6=I;B]E=&,O87!A8VAE,B]A<&%C:&4R+F-O;F8@/B`O
+M971C+V%P86-H93(O87!A8VAE,BYC;VYF"G-E9"`M9B`O<F]O="\N8V]N9E]I
+M;FET+W5S97)D:7(N8V]N9BYM>61I9F8@+W)O;W0O+F-O;F9?:6YI="]O<FEG
+M:6XO971C+V%P86-H93(O;6]D<RUA=F%I;&%B;&4O=7-E<F1I<BYC;VYF(#X@
+M+V5T8R]A<&%C:&4R+VUO9',M879A:6QA8FQE+W5S97)D:7(N8V]N9@IS960@
+M+68@+W)O;W0O+F-O;F9?:6YI="]A=71O:6YD97@N8V]N9BYM>61I9F8@+W)O
+M;W0O+F-O;F9?:6YI="]O<FEG:6XO971C+V%P86-H93(O;6]D<RUA=F%I;&%B
+M;&4O875T;VEN9&5X+F-O;F8@/B`O971C+V%P86-H93(O;6]D<RUA=F%I;&%B
+M;&4O875T;VEN9&5X+F-O;F8*8W`@+V5T8R]A<&%C:&4R+W-I=&5S+6%V86EL
+M86)L92\P,#`M9&5F875L="YC;VYF("]R;V]T+RYC;VYF7VEN:70O;W)I9VEN
+M+V5T8R]A<&%C:&4R+W-I=&5S+6%V86EL86)L92\P,#`M9&5F875L="YC;VYF
+M"G-E9"`M9B`O<F]O="\N8V]N9E]I;FET+S`P,"UD969A=6QT+F-O;F8N;7ED
+M:69F("]R;V]T+RYC;VYF7VEN:70O;W)I9VEN+V5T8R]A<&%C:&4R+W-I=&5S
+M+6%V86EL86)L92\P,#`M9&5F875L="YC;VYF(#X@+V5T8R]A<&%C:&4R+W-I
+M=&5S+6%V86EL86)L92\P,#`M9&5F875L="YC;VYF"F$R96YM;V0@=7-E<F1I
+M<@IA,F5N;6]D(&%U=&]I;F1E>`IA,F5N;6]D(')E=W)I=&4*83)E;G-I=&4@
+C,#`P+61E9F%U;'0*"G-E<G9I8V4@87!A8VAE,B!S=&%R=`H*
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 07 37 '.conf_init/scripts/new-apache.sh'
+   eval "${shar_touch}") && \
+  chmod 0750 '.conf_init/scripts/new-apache.sh'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/new-apache.sh failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/new-apache.sh': 'MD5 check failed'
+       ) << \SHAR_EOF
+8bb6a9db1b14de49f2a23831eaa6daf9  .conf_init/scripts/new-apache.sh
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/new-apache.sh'` -ne 1295 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/new-apache.sh' is not 1295"
+  fi
+fi
+# ============= .conf_init/scripts/new-user.sh ==============
+if test ! -d '.conf_init/scripts'; then
+  mkdir '.conf_init/scripts'
+if test $? -eq 0
+then ${echo} "x - created directory .conf_init/scripts."
+else ${echo} "x - failed to create directory .conf_init/scripts."
+     exit 1
+fi
+fi
+if test -n "${keep_file}" && test -f '.conf_init/scripts/new-user.sh'
+then
+${echo} "x - SKIPPING .conf_init/scripts/new-user.sh (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/new-user.sh (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/new-user.sh
+M(R$O8FEN+V)A<V@*;6MP87-S=V0@)#(@+6T@<VAA+34Q,B`^('-A;'0N=&UP
+M"G)E860@04$@/"!S86QT+G1M<`IR;2!S86QT+G1M<`IU<V5R861D("UM("UP
+M("1!02`M8R`B3W)D:6YA<GD@57-E<B(@+7,@+V)I;B]B87-H("0Q"F%D9&=R
+M;W5P("0Q('=W=RUD871A"F%D9&=R;W5P("0Q('-U9&]U<V5R"F%D9&=R;W5P
+M("0Q('-U9&\*96-H;R`D,2`B04Q,/2A!3$PZ04Q,*2!!3$PB(#X^("]E=&,O
+(<W5D;V5R<PH*
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 09 05 57 '.conf_init/scripts/new-user.sh'
+   eval "${shar_touch}") && \
+  chmod 0750 '.conf_init/scripts/new-user.sh'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/new-user.sh failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/new-user.sh': 'MD5 check failed'
+       ) << \SHAR_EOF
+1799ccdf74d3ca8e70282dd56bc964a2  .conf_init/scripts/new-user.sh
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/new-user.sh'` -ne 233 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/new-user.sh' is not 233"
+  fi
+fi
+# ============= .conf_init/scripts/del_userwebsite.sh ==============
+if test -n "${keep_file}" && test -f '.conf_init/scripts/del_userwebsite.sh'
+then
+${echo} "x - SKIPPING .conf_init/scripts/del_userwebsite.sh (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/del_userwebsite.sh (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/del_userwebsite.sh
+M(R$@+V)I;B]B87-H"B,@5&AI<R!S8W)I<'0@9&5L971E<R!T:&4@<VET92!W
+M:71H(&1O;6%I;B`D2&%C:V5R7VAO<W0R(&9O<B!U<V5R("1(86-K97)?57-E
+M<@HC"DAA8VME<E]5<V5R/20Q"DAA8VME<E]087-S/20R"DAA8VME<E]H;W-T
+M,CTD,PH*(R!#<F5A=&4@3F5W(%5S97(*(R]R;V]T+RYC;VYF7VEN:70O<V-R
+M:7!T<R]N97=?=7-E<B`D2&%C:V5R7U5S97(@)$AA8VME<E]087-S"@HC(%-T
+M;W`@86YD($-O;F9I9W5R92!!<&%C:&4@4V5R=F5R"G-E<G9I8V4@87!A8VAE
+M,B!S=&]P"F$R9&ES;6]D(&1A=E]F<PIA,F1I<VUO9"!D878*83)D:7-S:71E
+M("1(86-K97)?:&]S=#(*"B,@4F5M;W9E('=E8B!U<V5R(&-A=&%L;V<*4V5R
+M=F5R4F]O=#TO=F%R+W=W=R\D2&%C:V5R7VAO<W0R"G)M("U2("1397)V97)2
+M;V]T"B,@<FUD:7(@)%-E<G9E<E)O;W0*"B,@1&5L971E(%5S97(G<R!S:71E
+M(&1I<F5C=&EV90H*<FT@+W9A<B]L;V<O87!A8VAE,B\D2&%C:V5R7VAO<W0R
+M+65R<F]R+FQO9PIR;2`O=F%R+VQO9R]A<&%C:&4R+R1(86-K97)?:&]S=#(M
+M86-C97-S+FQO9PIR;2`O971C+V%P86-H93(O<VET97,M879A:6QA8FQE+R1(
+M86-K97)?:&]S=#(N8V]N9@H*(R!0;W-T(&-O;F9I9W5R871I;VX@;V8@=&AE
+E($%P86-H92!397)V97(*"G-E<G9I8V4@87!A8VAE,B!S=&%R=&X@
+`
+end
+SHAR_EOF
+  (set 20 18 07 15 23 42 44 '.conf_init/scripts/del_userwebsite.sh'
+   eval "${shar_touch}") && \
+  chmod 0750 '.conf_init/scripts/del_userwebsite.sh'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/del_userwebsite.sh failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/del_userwebsite.sh': 'MD5 check failed'
+       ) << \SHAR_EOF
+34127d36648ac4ab8212722d51465493  .conf_init/scripts/del_userwebsite.sh
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/del_userwebsite.sh'` -ne 667 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/del_userwebsite.sh' is not 667"
+  fi
+fi
+# ============= .conf_init/scripts/new_userwebsite.sh ==============
+if test -n "${keep_file}" && test -f '.conf_init/scripts/new_userwebsite.sh'
+then
+${echo} "x - SKIPPING .conf_init/scripts/new_userwebsite.sh (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/new_userwebsite.sh (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/new_userwebsite.sh
+M(R$@+V)I;B]B87-H"B,@5&AI<R!S8W)I<'0@8G5I9',@=&AE('-I=&4@=VET
+M:"!D;VUA:6X@)$AA8VME<E]H;W-T,B!F;W(@=7-E<B`D2&%C:V5R7U5S97(*
+M(PI(86-K97)?57-E<CTD,0I(86-K97)?4&%S<STD,@I(86-K97)?:&]S=#(]
+M)#,*"B,@0W)E871E($YE=R!5<V5R"B,@+W)O;W0O+F-O;F9?:6YI="]S8W)I
+M<'1S+VYE=U]U<V5R("1(86-K97)?57-E<B`D2&%C:V5R7U!A<W,*"B,@4W1O
+M<"!A;F0@0V]N9FEG=7)E($%P86-H92!397)V97(*<V5R=FEC92!A<&%C:&4R
+M('-T;W`*83)E;FUO9"!D878*83)E;FUO9"!D879?9G,*"B,@0W)E871E('=E
+M8B!U<V5R(&-A=&%L;V<*4V5R=F5R4F]O=#TO=F%R+W=W=R\D2&%C:V5R7VAO
+M<W0R"FUK9&ER("1397)V97)2;V]T"FUK9&ER("1397)V97)2;V]T+U!R:79A
+M=&4*;6MD:7(@)%-E<G9E<E)O;W0O=V5B9&%V"B,@8W`@+W)O;W0O+F-O;F9?
+M:6YI="]V87(O=W=W+T1!5$]3+G-E<G9E<BYG<F%N9&MO>F5L+G)U+RH@)%-E
+M<G9E<E)O;W0O"@HC($UO9&EF>2!A;F0@8V]P>2!5<V5R)W,@<VET92!D:7)E
+M8W1I=F4*<F5P;&$]<R]$051/4RYS97)V97(N9W)A;F1K;WIE;"YR=2\D2&%C
+M:V5R7VAO<W0R+V<*96-H;R`D<F5P;&$@/B!R97!L82YT;7`*<V5D("UF(')E
+M<&QA+G1M<"`O<F]O="\N8V]N9E]I;FET+VEN:70O971C+V%P86-H93(O<VET
+M97,M879A:6QA8FQE+WIZ>BUU<V5R+61E9F%U;'0N8V]N9B`^("]E=&,O87!A
+M8VAE,B]S:71E<RUA=F%I;&%B;&4O)$AA8VME<E]H;W-T,BYC;VYF"F-P("U2
+M("]R;V]T+RYC;VYF7VEN:70O:6YI="]V87(O;&]G+V%P86-H93(O1$%43U,N
+M<V5R=F5R+F=R86YD:V]Z96PN<G4M97)R;W(N;&]G("]V87(O;&]G+V%P86-H
+M93(O)$AA8VME<E]H;W-T,BUE<G)O<BYL;V<*8W`@+5(@+W)O;W0O+F-O;F9?
+M:6YI="]I;FET+W9A<B]L;V<O87!A8VAE,B]$051/4RYS97)V97(N9W)A;F1K
+M;WIE;"YR=2UA8V-E<W,N;&]G("]V87(O;&]G+V%P86-H93(O)$AA8VME<E]H
+M;W-T,BUA8V-E<W,N;&]G"B-R;2!R97!L82YT;7`*"B,@0W)E871E($1A=B!#
+M<F5D96YT:6%L"@IH='!A<W-W9"`M8B`M8R`D4V5R=F5R4F]O="\N:'1A+G!A
+M<W-W;W)D("1(86-K97)?57-E<B`D2&%C:V5R7U!A<W,*"B,@4V5T(%!E<FUI
+M<W-I;VYS"@IC:&]W;B`M4B!W=W<M9&%T83IW=W<M9&%T82`D4V5R=F5R4F]O
+M=`IC:&UO9"`M4B`V-C`@)%-E<G9E<E)O;W0*8VAM;V0@+5(@82M8("1397)V
+M97)2;V]T"F-H;W=N(')O;W0Z=W=W+61A=&$@)%-E<G9E<E)O;W0O+FAT82YP
+M87-S=V]R9`IC:&UO9"`V-#`@)%-E<G9E<E)O;W0O+FAT82YP87-S=V]R9`IC
+M:&]W;B`M4B!R;V]T.F%D;2`O=F%R+VQO9R]A<&%C:&4R"F-H;6]D(#8T,"`O
+M=F%R+VQO9R]A<&%C:&4R+RH*"B,@4&]S="!C;VYF:6=U<F%T:6]N(&]F('1H
+M92!!<&%C:&4@4V5R=F5R"@IA,F5N<VET92`D2&%C:V5R7VAO<W0R"G-E<G9I
+08V4@87!A8VAE,B!S=&%R=`IA
+`
+end
+SHAR_EOF
+  (set 20 18 07 15 23 42 21 '.conf_init/scripts/new_userwebsite.sh'
+   eval "${shar_touch}") && \
+  chmod 0750 '.conf_init/scripts/new_userwebsite.sh'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/new_userwebsite.sh failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/new_userwebsite.sh': 'MD5 check failed'
+       ) << \SHAR_EOF
+6ebe1962f7ff87a62c873eb2a0ddf30d  .conf_init/scripts/new_userwebsite.sh
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/new_userwebsite.sh'` -ne 1456 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/new_userwebsite.sh' is not 1456"
+  fi
+fi
+# ============= .conf_init/scripts/new-ubuntuinit.sh ==============
+if test -n "${keep_file}" && test -f '.conf_init/scripts/new-ubuntuinit.sh'
+then
+${echo} "x - SKIPPING .conf_init/scripts/new-ubuntuinit.sh (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/new-ubuntuinit.sh (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/new-ubuntuinit.sh
+M(R$O8FEN+V)A<V@*"F-P("]E=&,O87!T+W-O=7)C97,N;&ES="`O<F]O="\N
+M8V]N9E]I;FET+V]R:6=I;B]E=&,O87!T+W-O=7)C97,N;&ES="YO<FEG:6X*
+M<V5D("UF("]R;V]T+RYC;VYF7VEN:70O<V]U<F-E<RYL:7-T+FUY9&EF9B`O
+M<F]O="\N8V]N9E]I;FET+V]R:6=I;B]E=&,O87!T+W-O=7)C97,N;&ES="YO
+M<FEG:6X@/B`O971C+V%P="]S;W5R8V5S+FQI<W0*=V=E="!H='1P.B\O=W=W
+M+G=E8FUI;BYC;VTO:F-A;65R;VXM:V5Y+F%S8PIA<'0M:V5Y(&%D9"!J8V%M
+M97)O;BUK97DN87-C"F%P="UG970@=7!D871E"F%P="UG970@:6YS=&%L;"`M
+M>2!N86YO"F%P="UG970@:6YS=&%L;"`M>2!M8R`*87!T+6=E="!I;G-T86QL
+M("UY(&%P=&ET=61E"F%P="UG970@:6YS=&%L;"`M>2!S8W)E96X*87!T+6=E
+4="!I;G-T86QL("UY('=E8FUI;@H@
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 56 37 '.conf_init/scripts/new-ubuntuinit.sh'
+   eval "${shar_touch}") && \
+  chmod 0750 '.conf_init/scripts/new-ubuntuinit.sh'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/new-ubuntuinit.sh failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/new-ubuntuinit.sh': 'MD5 check failed'
+       ) << \SHAR_EOF
+db445fa22cc1fc1c26f8874d194047e4  .conf_init/scripts/new-ubuntuinit.sh
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/new-ubuntuinit.sh'` -ne 425 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/new-ubuntuinit.sh' is not 425"
+  fi
+fi
+# ============= .conf_init/scripts/repla.tmp ==============
+if test -n "${keep_file}" && test -f '.conf_init/scripts/repla.tmp'
+then
+${echo} "x - SKIPPING .conf_init/scripts/repla.tmp (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/repla.tmp (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/repla.tmp
+M<R]$051/4RYS97)V97(N9W)A;F1K;WIE;"YR=2]Y=61E;BYS97)V97(N9W)A
+-;F1K;WIE;"YR=2]G"G(N
+`
+end
+SHAR_EOF
+  (set 20 18 07 15 23 44 07 '.conf_init/scripts/repla.tmp'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/scripts/repla.tmp'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/repla.tmp failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/repla.tmp': 'MD5 check failed'
+       ) << \SHAR_EOF
+585d7498a75d0a4f6938e1a0d5b2cd37  .conf_init/scripts/repla.tmp
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/repla.tmp'` -ne 58 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/repla.tmp' is not 58"
+  fi
+fi
+# ============= .conf_init/scripts/new-proftpd.sh ==============
+if test -n "${keep_file}" && test -f '.conf_init/scripts/new-proftpd.sh'
+then
+${echo} "x - SKIPPING .conf_init/scripts/new-proftpd.sh (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/scripts/new-proftpd.sh (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/scripts/new-proftpd.sh
+M(R$O8FEN+V)A<V@*87!T+6=E="!I;G-T86QL("UY('!R;V9T<&0M8F%S:6,*
+M<V5R=FEC92!P<F]F='!D('-T;W`*8W`@+V5T8R]P<F]F='!D+W!R;V9T<&0N
+M8V]N9B`O<F]O="\N8V]N9E]I;FET+V]R:6=I;B]E=&,O<')O9G1P9"]P<F]F
+M='!D+F-O;F8*<V5D("UF("]R;V]T+RYC;VYF7VEN:70O<')O9G1P9"YC;VYF
+M+FUY9&EF9B`O<F]O="\N8V]N9E]I;FET+V]R:6=I;B]E=&,O<')O9G1P9"]P
+M<F]F='!D+F-O;F8@/B`O971C+W!R;V9T<&0O<')O9G1P9"YC;VYF"G-E<G9I
+38V4@<')O9G1P9"!R97-T87)T"G!R
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 44 22 '.conf_init/scripts/new-proftpd.sh'
+   eval "${shar_touch}") && \
+  chmod 0750 '.conf_init/scripts/new-proftpd.sh'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/scripts/new-proftpd.sh failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/scripts/new-proftpd.sh': 'MD5 check failed'
+       ) << \SHAR_EOF
+ad8ae09b1d2abeb871b06be1ee4d36e1  .conf_init/scripts/new-proftpd.sh
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/scripts/new-proftpd.sh'` -ne 289 && \
+  ${echo} "restoration warning:  size of '.conf_init/scripts/new-proftpd.sh' is not 289"
+  fi
+fi
+# ============= .conf_init/userdir.conf.mydiff ==============
+if test -n "${keep_file}" && test -f '.conf_init/userdir.conf.mydiff'
+then
+${echo} "x - SKIPPING .conf_init/userdir.conf.mydiff (file already exists)"
+
+else
+${echo} "x - extracting .conf_init/userdir.conf.mydiff (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 .conf_init/userdir.conf.mydiff
+M-F-<"@D)(R,@06QL;W=/=F5R<FED92!&:6QE26YF;R!!=71H0V]N9FEG($QI
+M;6ET($EN9&5X97,*-V-<"@D)(R,@3W!T:6]N<R!-=6QT:59I97=S($EN9&5X
+M97,@4WEM3&EN:W-)9D]W;F5R36%T8V@@26YC;'5D97-.;T5X96,*.&E<"@D)
+M06QL;W=/=F5R<FED92!!;&P*.&E<"@D)3W!T:6]N<R!-=6QT:59I97=S(%-Y
+B;4QI;FMS269/=VYE<DUA=&-H($EN8VQU9&5S3F]%>&5C"FQT
+`
+end
+SHAR_EOF
+  (set 20 18 07 12 08 10 03 '.conf_init/userdir.conf.mydiff'
+   eval "${shar_touch}") && \
+  chmod 0644 '.conf_init/userdir.conf.mydiff'
+if test $? -ne 0
+then ${echo} "restore of .conf_init/userdir.conf.mydiff failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} '.conf_init/userdir.conf.mydiff': 'MD5 check failed'
+       ) << \SHAR_EOF
+728ad119e7c60f06c255841e91ae6cdb  .conf_init/userdir.conf.mydiff
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < '.conf_init/userdir.conf.mydiff'` -ne 214 && \
+  ${echo} "restoration warning:  size of '.conf_init/userdir.conf.mydiff' is not 214"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0

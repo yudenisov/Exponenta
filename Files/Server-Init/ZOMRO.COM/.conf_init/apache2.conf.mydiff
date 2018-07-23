@@ -1,0 +1,4 @@
+165c\
+#	Options Indexes FollowSymLinks
+165a\
+	Options -Indexes +FollowSymLinks +Includes
