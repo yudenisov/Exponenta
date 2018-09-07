@@ -1,0 +1,88 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Alexander Avdonin]
+
+[HKEY_CURRENT_USER\Software\Alexander Avdonin\Hidden Start]
+
+[HKEY_CURRENT_USER\Software\Alexander Avdonin\Hidden Start\4.0]
+"FlagsUI"=dword:0000000d
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Alexander Avdonin]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Alexander Avdonin\Hidden Start]
+@="C:\\Program Files\\Hidden Start"
+"VersionMajor"=dword:00000004
+"VersionMinor"=dword:00000005
+"VersionBuild"=dword:00000000
+"VersionRevision"=dword:00000000
+"RegName"="Юрий Денисов"
+"RegCode"="VTE8V-FQC48-98NGW"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hstart.exe]
+@="C:\\Program Files\\Hidden Start\\hstart.exe"
+"Path"="C:\\Program Files\\Hidden Start"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hstart64.exe]
+@="C:\\Program Files\\Hidden Start\\hstart64.exe"
+"Path"="C:\\Program Files\\Hidden Start"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Hidden Start]
+"UninstallString"=hex(2):43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,20,00,46,00,69,00,6c,00,65,00,73,00,5c,00,48,00,69,00,64,00,64,00,65,00,6e,00,20,00,53,00,74,00,61,00,72,00,74,00,5c,00,75,00,6e,00,69,00,6e,00,73,00,74,00,2e,00,65,00,78,00,65,00,00,00,00,00
+"InstallLocation"=hex(2):43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,20,00,46,00,69,00,6c,00,65,00,73,00,5c,00,48,00,69,00,64,00,64,00,65,00,6e,00,20,00,53,00,74,00,61,00,72,00,74,00,00,00,00,00
+"DisplayName"="Hidden Start"
+"DisplayIcon"="C:\\Program Files\\Hidden Start\\hstart.exe"
+"DisplayVersion"="4.5"
+"Readme"="C:\\Program Files\\Hidden Start\\ReadMe.txt"
+"Publisher"="NTWind Software"
+"URLInfoAbout"="mailto:support@ntwind.com"
+"HelpLink"="http://www.ntwind.com/software/hstart.html"
+"VersionMajor"=dword:00000004
+"VersionMinor"=dword:00000005
+"VersionBuild"=dword:00000000
+"VersionRevision"=dword:00000000
+"NoModify"=dword:00000001
+"NoRepair"=dword:00000001
+"NSIS_AllUsers"="Yes"
+"NSIS_StartMenuShortcuts"="Yes"
+"NSIS_DesktopShortcuts"="Yes"
+"NSIS_Language"="1033"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Alexander Avdonin]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Alexander Avdonin\Hidden Start]
+@="C:\\Program Files\\Hidden Start"
+"VersionMajor"=dword:00000004
+"VersionMinor"=dword:00000005
+"VersionBuild"=dword:00000000
+"VersionRevision"=dword:00000000
+"RegName"="Юрий Денисов"
+"RegCode"="VTE8V-FQC48-98NGW"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\hstart64.exe]
+@="C:\\Program Files\\Hidden Start\\hstart64.exe"
+"Path"="C:\\Program Files\\Hidden Start"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\hstart.exe]
+@="C:\\Program Files\\Hidden Start\\hstart.exe"
+"Path"="C:\\Program Files\\Hidden Start"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Hidden Start]
+"UninstallString"=hex(2):43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,20,00,46,00,69,00,6c,00,65,00,73,00,5c,00,48,00,69,00,64,00,64,00,65,00,6e,00,20,00,53,00,74,00,61,00,72,00,74,00,5c,00,75,00,6e,00,69,00,6e,00,73,00,74,00,2e,00,65,00,78,00,65,00,00,00,00,00
+"InstallLocation"=hex(2):43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,20,00,46,00,69,00,6c,00,65,00,73,00,5c,00,48,00,69,00,64,00,64,00,65,00,6e,00,20,00,53,00,74,00,61,00,72,00,74,00,00,00,00,00
+"DisplayName"="Hidden Start"
+"DisplayIcon"="C:\\Program Files\\Hidden Start\\hstart.exe"
+"DisplayVersion"="4.5"
+"Readme"="C:\\Program Files\\Hidden Start\\ReadMe.txt"
+"Publisher"="NTWind Software"
+"URLInfoAbout"="mailto:support@ntwind.com"
+"HelpLink"="http://www.ntwind.com/software/hstart.html"
+"VersionMajor"=dword:00000004
+"VersionMinor"=dword:00000005
+"VersionBuild"=dword:00000000
+"VersionRevision"=dword:00000000
+"NoModify"=dword:00000001
+"NoRepair"=dword:00000001
+"NSIS_AllUsers"="Yes"
+"NSIS_StartMenuShortcuts"="Yes"
+"NSIS_DesktopShortcuts"="Yes"
+"NSIS_Language"="1033"

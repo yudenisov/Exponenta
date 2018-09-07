@@ -19,7 +19,7 @@ set Chocolatey=%ALLUSERSPROFILE%\chocolatey
 
 rem Проверка зависимостей системного окружения
 rem
-if exist %Dest_DIR% goto already_Exist
+rem if exist %Dest_DIR% goto already_Exist
 
 rem checknewid_E
 rem if not exist <файлы манифеста зависимостей>
@@ -44,14 +44,6 @@ rem Автоматическая распаковка должна быть настроена отдельно
 rem Внимание! смотрите на назначение системных переменных!
 rem Совет. При программировании держите как сводку этот заполненный файл
 
-echo -
-echo Распаковываем дистрибутив...
-echo -
-MainExponenta.SFX.exe
-c:
-cd %Dest_DIR%
-cd Util
-
 rem Регистрация переменных, если нужно
 
 echo 
@@ -65,9 +57,12 @@ Reg Add "!Key!" /v Hacker_Pass /t REG_SZ /d "!Hacker_Pass!" /f
 Reg Add "!Key!" /v Hacker_host1 /t REG_SZ /d "!Hacker_host1!" /f
 Reg Add "!Key!" /v Hacker_host2 /t REG_SZ /d "!Hacker_host2!" /f
 Reg Add "!Key!" /v PUB1 /t REG_SZ /d "!Dest_DIR!" /f
-call reg_addtopath.bat c:\pub1\Util
+rem call reg_addtopath.bat c:\pub1\Util
 
+rem Insatall MainExponenta Files...
 cd /d %curdir%
+
+ExponentaHTTPStylerMainFiles151SetupRePack.exe /VERYSLIENT /NOCANCEL
 
 rem Install Duck Plugin
 echo "Install Duck..."
@@ -78,17 +73,15 @@ rem Install Hidden Start Plugin
 if exist %Hidden_Start% goto pass_HiddenStart
 if not exist Hidden_Start.SFX.exe goto pass_HiddenStart
 echo "Install Hidden Start..."
-Hidden_Start.SFX.exe
-call ./Register_HS.bat
+HiddenStart450SetupRePack.exe /VERYSLIENT /NOCANCEL
+
 :pass_HiddenStart
 
 rem Install Elevation Plugin
 if exist %ELEVATION% goto pass_Elevation
 if not exist Elevation.SFX.exe goto pass_Elevation
 echo "Install Elevation..."
-Elevation.SFX.exe
-call ./Register_El.bat
-:pass_Elevation
+ElevationExponentaPlugin202SetupRepack.exe:pass_Elevation
 
 rem Install Chocolatey Packet
 if exist %Chocolatey% goto pass_Chocolatey
