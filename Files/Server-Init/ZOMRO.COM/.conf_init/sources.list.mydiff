@@ -19,6 +19,6 @@ deb http://security.ubuntu.com/ubuntu xenial-security main restricted
 4a\
 deb http://download.webmin.com/download/repository sarge contrib
 4a\
-deb http://webmin.mirror.sommersettechsolutions.co.uk/repository sarge contrib
+deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib
 3c\
 # deb http://security.ubuntu.com/ubuntu xenial-security main restricted universe multiverse

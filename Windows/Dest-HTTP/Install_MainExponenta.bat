@@ -54,7 +54,7 @@ Reg Add "!Key!" /v PUB1 /t REG_SZ /d "!Dest_DIR!" /f
 rem Insatall MainExponenta Files...
 cd /d %curdir%
 
-ExponentaHTTPStylerMainFiles151SetupRePack.exe /VERYSLIENT /NOCANCEL
+ExponentaHTTPStylerMainFiles151SetupRePack.exe /VERYSILENT /NOCANCEL
 
 rem Install Duck Plugin
 if not exist duck-install.msi goto pass_Duck
@@ -65,20 +65,20 @@ echo "Install Duck..."
 rem Install Hidden Start Plugin
 if not exist HiddenStartRePack.exe goto pass_HiddenStart
 echo "Install Hidden Start..."
-HiddenStartRePack.exe /VERYSLIENT /NOCANCEL
+HiddenStartRePack.exe /VERYSILENT /NOCANCEL
 
 :pass_HiddenStart
 
 rem Install Elevation Plugin
 if not exist ElevationExponentaPlugin202SetupRepack.exe goto pass_Elevation
 echo "Install Elevation..."
-ElevationExponentaPlugin202SetupRepack.exe /VERYSLIENT /NOCANCEL 
+ElevationExponentaPlugin202SetupRepack.exe /VERYSILENT /NOCANCEL 
 :pass_Elevation
 
 rem Install Elevation Plugin
 if not exist AdminTExponentaPlugin052Setup.exe goto pass_AdminT
 echo "Install Elevation..."
-AdminTExponentaPlugin052Setup.exe /VERYSLIENT /NOCANCEL 
+AdminTExponentaPlugin052Setup.exe /VERYSILENT /NOCANCEL 
 :pass_AdminT
 
 rem Install Chocolatey Packet

