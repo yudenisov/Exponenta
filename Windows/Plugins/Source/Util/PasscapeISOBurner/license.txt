@@ -1,0 +1,21 @@
+==========================================
+SOFTWARE LICENSE AGREEMENT
+==========================================
+
+IMPORTANT-READ CAREFULLY: This is the End User License Agreement (the "Agreement") is a legal agreement between you, the end-user, and Passcape Software, the manufacturer and the copyright owner, for the use of the "Passcape ISO Burner" software product ("SOFTWARE"). 
+
+All copyrights to the SOFTWARE are exclusively owned by Passcape Software.
+
+The SOFTWARE and any documentation included in the distribution package are protected by national copyright laws and international treaties. Any unauthorized use of the SOFTWARE shall result in immediate and automatic termination of this license and may result in criminal and/or civil prosecution.
+
+The SOFTWARE is provided free of charge to use in home (non-commercial) environment. Occasionally the copyright owner may post a request for a donation in support of this SOFTWARE. This type of request does not change the classification of this SOFTWARE as freeware. Freeware software may be used as many times as you like, for as long as you like. The copyright owner reserves the right to reclassify the SOFTWARE as a non-freeware product at a later date. Doing so will not modify the license Agreement of previously distributed executables.
+
+The SOFTWARE may be freely copied or distributed, provided that you keep this copyright notice and the distribution package is not modified. You must not charge money or fees for the software product to anyone except to cover distribution costs.
+
+You agree not modify, decompile, disassemble, otherwise reverse engineer the SOFTWARE, unless such activity is expressly permitted by applicable law. 
+
+The SOFTWARE is provided "as is" without warranties of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of the SOFTWARE is with you. Should the SOFTWARE prove defective, you assume the cost of all necessary servicing, repair or correction. In no event will the copyright owner be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or inability to use the SOFTWARE (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the SOFTWARE to operate with any other programs). Passcape Software disclaims all other warranties with respect to the SOFTWARE, either express or implied. Some jurisdictions do not allow the exclusion of implied warranties or limitations on how long an implied warranty may last, do the above limitations or exclusions may not apply to you.
+
+All rights not expressly granted here are reserved by Passcape Software.
+
+Copyright (C) 2009, Passcape Software

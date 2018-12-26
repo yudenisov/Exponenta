@@ -1,0 +1,42 @@
+<HTML>
+<META NAME="description" CONTENT="this is the page description.">
+<META NAME="keywords" CONTENT="keyword1, keyword2, Add_as_many_of_these_as_is_necessary.">
+<HEAD>
+
+<TITLE>Title goes here</TITLE>
+
+<style type="text/css">
+<!--
+   A:link {text-decoration: none}
+   A:visited {text-decoration: none}
+   A:active {text-decoration: none}
+-->
+</style>
+
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+¥
+</SCRIPT>
+
+<SCRIPT LANGUAGE="VBScript">
+¥
+</SCRIPT>
+
+<BODY BGCOLOR="White">
+
+This Custom.txt file is kept in the same folder as the HTML Editor.
+<BR><BR>
+Once you've installed the program you can set up a right click option
+in windows to open the html file in the editor. Doing this is simple,
+in any window while browsing your hard drive, go to VIEW menu and click
+FOLDER OPTIONS. Hit the FILE TYPES tab, select the correct file type for
+html files usually "Microsoft HTML Document" and click EDIT. Click NEW,
+in action type OPEN WITH EDITOR, and in the Application used to preform
+action select the HTML Editor you have just installed, usually in
+c:\program_files\html_editor\html_editor.exe. So when you right click on
+a html file you will get the option to open it with the HTML Editor.!!!!
+<BR><BR>
+Or use the preferences palette to add or remove a send to link.
+</BODY>
+</HTML>

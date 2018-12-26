@@ -1,0 +1,13 @@
+`be=\begin{equation}|
+`ee=\end{equation}|
+`bean=\begin{eqnarray}{}|& \nonumber \\|\end{eqnarray}|
+`bea=\begin{eqnarray}{}|&\\|\end{eqnarray}|
+`t=\begin{table}|\begin{tabular}{}|\hline|\\|\hline|&\\|\hline|\end{tabular}|\end{table}|
+`ar=\begin{array}|\end{array}|
+`f=\begin{figure}|\label{}|\resizebox{\hsize}{!}{\includegraphics{.eps}}|\caption{}|\end{figure}|
+`s=\sum_{=1}^{}
+`i=\int{-\infty}^{\infty}{\,\rm d}|
+`b=\bibitem[
+'l=\Lambda(\Delta t)
+`aj={\em Acknowledgements.} The author is thankful to the alphabet for permission to use the letters.|
+`au=\author{I. L. Andronov}\\|\offprints{I. L. Andronov}\\|\institute{Department of Astronomy, Odessa National University,|T.G.Shevchenko park, UA 65014, Odessa, Ukraine,\\|\email{il-a@mail.od.ua}, {http://il-a.pochtamt.ru}|

@@ -1,0 +1,155 @@
+Portuguese Brazilian Language for BDV Notepad 4.1
+by Carlos D. O. Solana cdosolana@yahoo.com.br
+
+; Lines started with ";" are comments.
+; Precisely as, lines which are not containing even one "=".
+; The division on section is not necessary, it is made only for convenience.
+; Principle of construction:
+;
+; <Identifier> = <Caption> = <Hint>
+;
+; <Identifier> specifies, for what element will be applied caption and hint.
+; <Caption> - caption of a button, menu item or text in a window.
+; <Hint> specifies hint of element. Not necessary and can not be applied for 
+; some elements (In such case is ignored).
+;
+; You can make and send me additional language file to include it in a package 
+; in updating process. Your compatriots will be grateful to you for the help!
+
+----------------------- Menu "File" -------------------------
+File                = &Arquivo
+
+New                 = &Novo                      = Criar novo documento
+Open                = &Abrir..                   = Abrir documento
+Save                = &Salvar                    = Salvar documento
+Save As             = Salvar &como...            = Salvar documento como...
+Print               = &Imprimir...               = Imprimir documento
+Print Setup	    = C&onfigurar Página...      = Configurar Página para imprimir
+Send                = &Enviar...                 = Enviar documento por e-mail
+Last Used           = &Últimos arquivos usados
+Exit                = Sai&r
+
+----------------------- Menu "Edit" -------------------------
+Edit                = &Editar
+
+Undo                = &Desfazer                  = Desfazer última ação
+Redo                = &Refazer                   = Refazer
+Cut                 = Recor&tar                  = Recortar texto para Clipboard
+Copy                = &Copiar                    = Copiar texto para Clipboard
+Paste               = Col&ar                     = Colar texto do Clipboard
+Change Case         = Mu&dar Case
+  UpperCase         = &MAIÚSCULA
+  LowerCase         = mi&núscila
+  TitleCase         = &Inicial Maiúscula
+  SentCase          = &Início de frase maiúscula
+  ToggleCase        = iN&VERTIDO
+Insert              = Incluir
+  Insert Date       = &Data                      = Inserir data corrente
+  Insert Time       = &Hora                      = Inserir hora corrente
+  Insert File       = &Nome do Arquivo           = Inserir nome do arquivo
+  Insert Color      = &Cor                       = Inserir representação Hex de cor
+Convert             = Co&nverter
+Select All          = Selecionar &Tudo	         = Selecionar todo texto
+
+----------------------- Menu "View" -------------------------
+View                = &Ver
+
+Toolbars            = Barra &Ferramentas
+  Statusbar         = Barra &Estado
+  Toolbar File      = &Arquivo
+  Toolbar Edit      = &Editar
+  Toolbar Font      = F&ontes
+  Toolbar Case      = &Mudar Case
+  Toolbar Find      = B&uscar e Substituir
+  Toolbar Symbol    = S&ímbolo
+  Toolbar Filter    = Filtro Caracteres
+  Toolbar Settings  = Confi&guração
+  Toolbar About     = &Sobre
+Font Presets        = &Fontes Escolhidas
+Word Wrap           = &Quebra linha
+Show URLs           = Mostrar &URLs
+Start URLs          = &Iniciar URLs
+SpecChar            = &Caracteres Especiais
+Language            = &Linguagem
+  Load LNG          = &Selecionar Linguagem...
+
+----------------------- Menu "Search" -------------------------
+Search              = &Pesquisar
+
+Find F              = Pesquisar para Frente      = Pesquisar próxima
+Find B              = Pesquisar para Trás        = Pesquisar anterior
+Replace F           = Substituir para Frente     = Pesquisar e Substituir até o fim do documento
+Replace B           = Substituir para Trás       = Pesquisar e Substituir até o início do documento
+
+----------------------- Menu "Help" -------------------------
+Help                = &Ajuda
+
+ReadMe              = Ver LeiaMe
+Site                = Visitar Home-Page Internet
+E-mail              = Enviar Mensagem para Suporte Técnico
+
+------------- Captions and Items of Toolbars ----------------
+File Caption        = Arquivo
+Edit Caption        = Editar
+Font Caption        = Fontes Selecionadas
+  Other Colors      = Outras Cores...
+  Preset Name       = Nome Escolhido
+  Change Font       = Trocar Fonte
+  Change Background = Trocar Fundo
+Case Caption        = Escolher Case
+Find Caption        = Pesquisar e Substituir
+  Case Sens         = &Case Sensitive
+  Find Text         = Pesquisar Texto
+  Replace All       = Substituir T&udo
+  Replace Text      = Substituir texto
+Symbol Caption      = Simbolo
+Settings Caption    = Configurações
+  General Tab       = Geral
+    AutoSave        = Auto Salvamento
+    Save Every      = Salvar cada
+    Minutes         = Minutos
+    Exit Esc        = Sair com <Escape>
+    Clear Last Used = Limpar Lista Arquivos Usados
+  Edit Tab          = Editor
+    Undo Limit      = Limite Desfazer
+    Replace Tab     = Substituir Tab por Espaços
+    Replace Open    = Substituir Tab quando Abrir
+    Tab Size        = Tamanho Tabulação
+  Print Tab         = Imprimir
+    Printer Setup   = Configuração Página...
+    Top             = Margem Superior (mm)
+    Bottom          = Margem Inferior (mm)
+    Left            = Margem Esquerda (mm)
+    Right           = Margem Direita (mm)
+    Text Mode       = Modo &Texto
+  Associations Tab  = Associações
+    Assoc. Open     = Abrir (default)
+    Assoc. Edit     = Editar
+    Assoc. Print    = Imprimir
+Filter Caption      = Filtro Caracter
+  Start Char        = Iniciar pelo caracter...
+  End Char          = Terminar com caracter...
+  Do Operation      = Processar...
+  Replace Char      = Substituir pelo caracter...
+  Increment Value   = Incrementar valor
+  Prefix            = Prefixo
+  Postfix           = Sufixo
+  Apply             = Aplicar
+
+------------------------- Dialogs ---------------------------
+Can't save          = Não pude salvar o arquivo: "%s"!
+Can't open          = Não pude abrir o arquivo: "%s"!
+Can't find          = Texto não localizado.
+Can't print         = Erro imprimindo!
+Replaces            = %d substituição terminada.
+Changed             = Arquivo "%s" foi modificado. Você quer salvar as alterações?
+CP Error            = Error na página de código do arquivo "%s"!
+
+Search result       = Resultado Pesquisa
+Replace result      = Resultado Substituição
+Error               = Erro!
+Warning             = Aviso!
+
+--------------------- Open/Save Filter ------------------------
+
+Filter              = Todos os formatos suportados|*.pas;*.cpp;*.c;*.bas;*.cp;*.lng;*.bat;*.ini;*.inf;*.log;*.dos;*.me;*.diz;*.htm;*.html;*.txt|Documentos Texto (*.txt)|*.txt|Documentos HTML (*.htm, *.html)|*.html;*.htm|Arquivos de Linguagem (*.lng)|*.lng|Arquivos Código de página (*.cp)|*.cp|Todos os arquivos (*.*)|*.*

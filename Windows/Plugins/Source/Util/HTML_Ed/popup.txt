@@ -1,0 +1,192 @@
+A HREF=""></A>|~link
+BODY BACKGROUND=""  TOPMARGIN="" LEFTMARGIN="">|~document
+DIV ALIGN="">|~document
+FONT COLOR="" SIZE="" FACE="">|~document
+FORM NAME="local" METHOD="post" ACTION="">|~form
+HEAD>|~document
+HTML>|~document
+IMG SRC="" ALT="" WIDTH="" HEIGHT="">|~image
+INPUT TYPE="" NAME="" VALUE="">|~form
+META NAME="" CONTENT="">|~document
+META HTTP-EQUIV="" CONTENT="">|~document
+SCRIPT LANGUAGE="">|~language
+TABLE BORDER="0" HEIGHT="" WIDTH="" CELLPADDING="" CELLSPACING="" ALIGN="">|~document
+TD WIDTH="" HEIGHT="" BGCOLOR="" VALIGN="" ALIGN="">|~document
+TEXTAREA NAME="" COLS="" ROWS="">|~form
+TITLE>|~document
+/APPLET>|~document
+/BODY>
+/BLOCKQUOTE>|~document
+/DIV>|~document
+/FORM>|~form
+/HEAD>|~document
+/HTML>|~document
+/MARQUE>|~document
+/SCRIPT>|~language
+/TABLE>|~document
+/TD>|~document
+/TEXTAREA>|~form
+/TITLE>|~document
+@! COMMENT="">|~Tango
+@ABSROW>|~Tango
+@ACTIONRESULT NAME="" NUM>|~Tango
+@APPFILE>|~Tango
+@APPFILEPATH>|~Tango
+@ARG NAME="" TYPE="text">|~Tango
+@ARGNAMES>|~Tango
+@ARRAY ROWS="" COLS="" VALUE="" CDELIM="," RDELIM=";">|~Tango
+@ASCII CHAR="">|~Tango
+@ASSIGN SCOPE="local" NAME="" VALUE="">|~Tango
+@CALC EXPR="" PRECISION="2" FORMAT="num:simple-float">|~Tango
+@CGI>|~Tango
+@CGIPARAM NAME="USER_AGENT" COOKIE="">|~Tango
+@CGIPATH>|~Tango
+@CHAR CODE="">|~Tango
+@CIPHER TYPE="OneTimePad" ACTION="encrypt"  KEY="Tango" STR="">|~Tango
+@CIPHER TYPE="HASH" STR="">|~Tango
+@CLEARERRORS>|~Tango
+@COL NUM="">|~Tango
+@COLS>|~Tango
+@COLUMN NAME="">|~Tango
+@COMMENT>|~Tango
+@CRLF>|~Tango
+@CURCOL>|~Tango
+@CURRENTACTION>|~Tango
+@DATEDIFF DATE1="" DATE2="">|~Tango
+@DATETOSECS DATE="">|~Tango
+@DAYS DATE="" DAYS="">|~Tango
+@DBMS>|~Tango
+@DEBUG>|~Tango
+@DELROWS ARRAY="" POSITION="" NUM="">|~Tango
+@DISTINCT ARRAY="" COLS="">|~Tango
+@DOCS FILE="">|~Tango
+@DOM VALUE="">|~Tango
+@DOMAIN>|~Tango
+@DOMDELETE OBJECT="" ELEMENT="">|~Tango
+@DOMINSERT OBJECT="" ELEMENT="" POSITION="">|~Tango
+@DOMREPLACE OBJECT="" ELEMENT="">|~Tango
+@DQ>|~Tango
+@DSDATE DATE="">|~Tango
+@DSNUM NUM="">|~Tango
+@DSTIIME TIME="">|~Tango
+@DSTIMESTAMP TS="">|~Tango
+@DSNUM NUM="">|~Tango
+@DSTYPE>|~Tango
+@ELEMENTATTRIBUTE OBJECT="" ATTRIBUTE="" ELEMENT="">|~Tango
+@ELEMENTATTRIBUTES OBJECT="" ELEMENT="">|~Tango
+@ELEMENTNAME OBJECT=variable ELEMENT="">|~Tango
+@ELEMENTVALUE OBJECT="" ELEMENT="">|~Tango
+@ELSEIF EXPR="">|~Tango
+@ELSEIFEMPTY VALUE="">|~Tango
+@ELSEIFEQUAL VALUE1="" VALUE2="">|~Tango
+@ELSE>|~Tango
+@ERROR PART="">|~Tango
+@ERRORS>|~Tango
+@EXCLUDE>|~Tango
+@EXIT>|~Tango
+@FILTER ARRAY="" EXPR="">|~Tango
+@FOR START="" STOP="" STEP="" PUSH="">|~Tango
+@FORMAT STR="" INFORMAT="" FORMAT="">|~Tango
+@GETPARAM NAME="">|~Tango
+@IF EXPR="">|~Tango
+@IF EXPR="" TRUE="" FALSE="">|~Tango
+@IFEMPTY VALUE="">|~Tango
+@IFEQUAL VALUE1="" VALUE2="">|~Tango
+@INCLUDE FILE="">|~Tango
+@INTERSECT ARRAY1="" ARRAY2="" COLS="">|~Tango
+@ISALPHA STR="">|~Tango
+@ISDATE VALUE="">|~Tango
+@ISNULLOBJECT OBJECT="">|~Tango
+@ISNUM VALUE="">|~Tango
+@ISTIME VALUE="">|~Tango
+@ISTIMESTAMP="">|~Tango
+@KEEP STR="" CHARS="">|~Tango
+@LEFT STR="" NUMCHARS="">|~Tango
+@LENGTH STR="">|~Tango
+@LITERAL VALUE="">|~Tango
+@LOCATE STR="" FINDSTR="">|~Tango
+@LOGMESSAGE MESSAGE="" LOGATLEVEL="LOGLEVEL1">|~Tango
+@LOWER STR="">|~Tango
+@LTRIM STR="">|~Tango
+@MAXROWS>|~Tango
+@METAOBJECTHANDLERS>|~Tango
+@NEXTVAL NAME="" STEP="">|~Tango
+@NULLOBJECT>|~Tango
+@NUMAFFECTED>|~Tango
+@NUMCOLS ARRAY="">|~Tango
+@NUMOBJECTS OBJECT="">
+@NUMROWS ARRAY="">|~Tango
+@OBJECTAT OBJECT="" NUM="">|~Tango
+@BOJECTS OBJECT="" ITEMVAR="" START="" STOP="">|~Tango
+@OMIT STR="" CHARS="">|~Tango
+@PAD STR=string NUMCHARS=padToLength CHAR=padcharacter POSITION="BEFORE-AFTER">|~Tango
+@PLATFORM>|~Tango
+@POSTARG NAME="">|~Tango
+@POSTARGNAMES>|~Tango
+@PRODUCT>|~Tango
+@PURGE NAME="" SCOPE="">|~Tango
+@PURGECACHE>|~Tango
+@PURGERESULTS>|~Tango
+@RANDOM HIGH="" LOW="">|~Tango
+@REGEX EXPR="" STR="" TYPE="E">|~Tango
+@RELOADCONFIG>|~Tango
+@RELOADCUSTOMTAGS>|~Tango
+@REPLACE STR="" FINDSTR="" REPLACESTR="" POSITION="0">|~Tango
+@RESULTS>|~Tango
+@RIGHT STR="" NUMCHARS="">|~Tango
+@ROWS ARRAY="" START="" STOP="" PUSH="">|~Tango
+@RTRIM STR="">|~Tango
+@SCRIPT SCOPE="local" EXPR="">|~Tango
+@SEARCHARG NAME="" TYPE="text">|~Tango
+@SEARCHARGNAMES>|~Tango
+@SECSTODATE>|~Tango
+@SECSTOTIME SECS="">|~Tango
+@SECSTOTS SECS="">|~Tango
+@SERVERNAME>|~Tango
+@SERVERSTATUS>|~Tango
+@SETCOOKIES>|~Tango
+@SETPARAM NAME="" VALUE="">|~Tango
+@SORT ARRAY="" COLS="">|~Tango
+@SQ>|~Tango
+@SQL>|~Tango
+@STARTROW>|~Tango
+@SUBSTRING STR="" START="" NUMCHARS="">|~Tango
+@THROWERROR NUMBER="" DESCRIPTION="">|~Tango
+@TIMER>|~Tango
+@TIMER NAME="">|~Tango
+@TIMETOSECS TIME="">|~Tango
+@TMPFILENAME>|~Tango
+@TOGMT TS="">|~Tango
+@TOKENIZE VALUE="" CHARS="">|~Tango
+@TOTALROWS>|~Tango
+@TRANSPOSE ARRAY="">|~Tango
+@TRIM STR="">|~Tango
+@TSTOSECS TS="">|~Tango
+@UNION ARRAY1="" ARRAY2="" COLS="">|~Tango
+@UPPER STR="">|~Tango
+@URL LOCATION="">|~Tango
+@URL LOCATION="" USERAGENT="" FROM="" USERNAME="" PASSWORD="" POPSTARGS="" DETAILEDRESPONSE="true"|>~Tango
+@URL LOCATION="" WAITFORRESULT="false">|~Tango
+@URLDECODE STR="">|~Tango
+@URLENCODE STR="">|~Tango
+@USERREFERENCE>|~Tango
+@USERREFERENCEARGUMENT>|~Tango
+@USERREFERENCECOOKIE>|~Tango
+@VAR NAME="" SCOPE="local">|~Tango
+@VARINFO NAME="" ATTRIBUTE="TYPE-ROWS-COLS">|~Tango
+@VARNAMES SCOPE="local">|~Tango
+@VARPARAM NAME="">|~Tango
+@VERSION>|~Tango
+@WEBROOT>|~Tango
+/@COLS>|~Tango
+/@COMMENT>|~Tango
+/@DEBUG>|~Tango
+/@DOMINSERT>|~Tango
+/@DOMREPLACE>|~Tango
+/@EXCLUDE>|~Tango
+/@ERRORS>|~Tango
+/@FOR>|~Tango
+/@IF>|~Tango
+/@OBJECTS>|~Tango
+/@ROWS>|~Tango
+/@SCRIPT>|~Tango

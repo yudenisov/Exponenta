@@ -1,0 +1,153 @@
+Chinese Traditional for BDV Notepad 4.0
+by Chido@ms11.url.com.tw
+
+; Lines started with ";" are comments.
+; Precisely as, lines which are not containing even one "=".
+; The division on section is not necessary, it is made only for convenience.
+; Principle of construction:
+;
+; <Identifier> = <Caption> = <Hint>
+;
+; <Identifier> specifies, for what element will be applied caption and hint.
+; <Caption> - caption of a button, menu item or text in a window.
+; <Hint> specifies hint of element. Not necessary and can not be applied for
+; some elements (In such case is ignored).
+;
+; You can make and send me additional language file to include it in a package
+; in updating process. Your compatriots will be grateful to you for the help!
+
+----------------------- Menu "File" -------------------------
+File = 檔案(&F)
+
+New = 開新文件(&N) = Create new document
+Open = 開啟...(&O) = Open document
+Save = 儲存(&S) = Save document
+Save As = 另存為...(&A)
+Print = 列印...(&P) = Print document
+Print Setup	 = 列印設定...(&u)
+Send = 傳送到電子郵件...(&e) = Send document by e-mail
+Last Used = 最近開啟的文件(&L)
+Exit = 離開(&x)
+
+----------------------- Menu "Edit" -------------------------
+Edit = 編輯(&E)
+
+Undo = 復原(&U) = Undo last action
+Redo = 重做(&R) = Redo
+Cut = 剪下(&t) = Cut text to Clipboard
+Copy = 複製(&C) = Copy text to Clipboard
+Paste = 貼上(&P) = Paste text from Clipboard
+Change Case = 大小寫轉換(&h)
+UpperCase = 轉成大寫(&U)
+LowerCase = 轉成小寫(&l)
+TitleCase = 第一個字母大寫(&T)
+ToggleCase = 大小寫互換(&G)
+Insert = 插入
+Insert Date = 日期(&D) = Insert current date
+Insert Time = 時間(&T) = Insert current time
+Insert File = 檔案名稱(&F) = Insert file name
+Insert Color = 色碼(&C) = Insert Hex color representation
+Convert = 特殊轉換(&n)
+Select All		 = 全選(&A)			 = Select all text
+
+----------------------- Menu "View" -------------------------
+View = 檢視(&V)
+
+Toolbars = 工具列(&T)
+Statusbar = 狀態列(&S)
+Toolbar File = 檔案工具列(&F)
+Toolbar Edit = 編輯工具列(&E)
+Toolbar Font = 字型工具列(&P)
+Toolbar Case = 大小寫轉換工具列(&C)
+Toolbar Find = 尋找替換工具列(&e)
+Toolbar Symbol = 符號字元表(&y)
+Toolbar Filter = 數據濾器工具列
+Toolbar Settings = 設定(&t)
+Toolbar About = 關於(&A)
+Font Presets = 編輯台的字型(&F)
+Word Wrap = 文字自動斷行(&W)
+Show URLs = 顯示 &URLs
+Start URLs = 使用(&S) URLs
+Language = 語言(&L)
+Load LNG = 選擇語言檔案...(&S)
+
+----------------------- Menu "Search" -------------------------
+Search = 搜尋(&S)
+
+Find F = 找下一個 = Find next fragment
+Find B = 找上一個 = Find previous fragment
+Replace F = 取代下一個 = Find & replace to end of document
+Replace B = 取代上一個 = Find & replace to start of document
+
+----------------------- Menu "Help" -------------------------
+Help = 幫助(&H)
+
+ReadMe = 讀我檔案
+Site = 本程式的首頁
+E-mail = 寄信給程式設計者
+
+------------- Captions and Items of Toolbars ----------------
+File Caption = 檔案
+Edit Caption = 編輯
+Font Caption = 編輯台字型工具
+Other Colors = 其它顏色...
+Preset Name = 編輯台的名稱
+Change Font = 設定字型
+Change Background = 設定背景顏色
+Case Caption = 大小寫轉換
+Find Caption = 搜尋替換
+Case Sens = 設定區分大小寫(&C)
+Find Text = 尋找目標
+Replace All = 設定全部替換(&A)
+Replace Text = 取代成為
+Symbol Caption = 符號字元表
+Settings Caption = 設定
+General Tab = 一般
+AutoSave = 自動存檔...
+Save Every = 每隔.
+Minutes = 分鐘.
+Exit Esc = 使用<Escape>鍵時離開程式
+Clear Last Used = 清除「最近開啟的文件」清單
+Edit Tab = 編輯
+Undo Limit = 最多可復原的步數
+Replace Tab = 將 Tab 空白變成 Space 空白
+Replace Open = 開啟文件同時轉換 Tab 空白
+Tab Size = Tab 空白字符長度
+Print Tab = 列印
+Printer Setup = 印表機設定...
+Top = 上邊距 (mm)
+Bottom = 下邊距 (mm)
+Left = 左邊距 (mm)
+Right = 右邊距 (mm)
+Text Mode = 文字模式(&T)
+Associations Tab = 檔案關聯
+Assoc. Open = 開啟 (預設)
+Assoc. Edit = 編輯
+Assoc. Print = 列印
+Filter Caption = 數據濾器
+Start Char = 起始數據...
+End Char = 終點數據...
+Do Operation = 執行運算...
+Replace Char = 替換的數據...
+Increment Value = 遞增數值
+Prefix = 前置字元
+Postfix = 後置字元
+Apply = 套用
+
+------------------------- Dialogs ---------------------------
+Can't save = 無法存入 "%s"!
+Can't open = 無法開啟  "%s"!
+Can't find = 找不到了。
+Can't print = 列印發生錯誤!
+Replaces = 完成了 %d 個替換工作.
+Changed = "%s" 已經更改，您要儲存嗎?
+CP Error = codepage 文件發生錯誤 "%s"!
+
+Search result = 搜尋結果
+Replace result = 替換結果
+Error = 發生錯誤!
+Warning = 注意!
+
+--------------------- Open/Save Filter ------------------------
+
+Filter = 全部支援的檔案|*.pas;*.cpp;*.c;*.bas;*.cp;*.lng;*.bat;*.ini;*.inf;*.log;*.dos;*.me;*.diz;*.htm;*.html;*.txt|文字文件(*.txt)|*.txt|HTML 文件(*.htm, *.html)|*.html;*.htm|Language 文件(*.lng)|*.lng|Codepage 文件 (*.cp)|*.cp|所有檔案 (*.*)|*.*

@@ -1,0 +1,1 @@
+%SystemRoot%\System32\WScript.exe %* //I //Logo //S

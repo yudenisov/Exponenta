@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://vsl.sourceforge.net/modules"
+xmlns="http://vsl.sourceforge.net/modules"
+elementFormDefault="qualified">
+
+<xs:element name="modules">
+ <xs:complexType>
+  <xs:sequence>
+   <xs:element name="category" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="module" minOccurs="0" maxOccurs="unbounded">
+       <xs:complexType>
+        <xs:all>
+         <xs:element name="name" type="xs:string"/>
+         <xs:element name="class" type="xs:string"/>
+         <xs:element name="parameters" minOccurs="0">
+          <xs:complexType>
+           <xs:sequence>
+            <xs:element name="parameter" maxOccurs="unbounded">
+             <xs:complexType>
+              <xs:all>
+               <xs:element name="name" type="xs:string"/>
+               <xs:element name="default" type="xs:string"/>
+               <xs:element name="description" type="xs:string" minOccurs="0"/>
+              </xs:all>
+             </xs:complexType>
+            </xs:element>
+           </xs:sequence>
+          </xs:complexType>
+         </xs:element>
+         <xs:element name="description" type="xs:string" minOccurs="0"/>
+        </xs:all>
+       </xs:complexType>
+      </xs:element>
+     </xs:sequence>
+     <xs:attribute name="name">
+      <xs:simpleType>
+       <xs:restriction base="xs:string">
+        <xs:enumeration value="Encoders"/>
+        <xs:enumeration value="Decoders"/>
+        <xs:enumeration value="Analysers"/>
+        <xs:enumeration value="Distortions"/>
+       </xs:restriction>
+      </xs:simpleType>
+     </xs:attribute>
+    </xs:complexType>
+   </xs:element>
+  </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+</xs:schema>

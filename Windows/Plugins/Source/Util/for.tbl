@@ -1,0 +1,12 @@
+`p=	print *,
+`w=	write(,)
+`r=	read(,)
+`fo=	format()
+`o=	open(,file='')
+`c=	close(unit=)
+`if=	if () then|	else|	end if
+`d=	do k=,|	continue
+`e=	end
+`s=	subroutine
+`f=	function
+`i=	implicit real*8(a-h,o-z)

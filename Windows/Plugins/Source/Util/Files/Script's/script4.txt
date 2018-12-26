@@ -1,0 +1,18 @@
+Open Info Window
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Comment to hide from old Browsers. Does Not Work With Netscape!!
+
+function open_window1()
+{var w = window.open("", "Window_Name", "resizable,width=260,height=410");
+var q = w.document;
+q.write(add your code in here inside aposthes);
+q.write(add as many of these lines as you need);
+q.write();
+q.write();
+q.write(<INPUT TYPE="button" VALUE="Close" onClick="self.close()">);
+q.close;} // the line above includes a button to close the window
+
+// hyperlink should look like this <A HREF="about:" onClick="open_window1();">Hyperlink text here</A>
+// insert the call    OnClick="open_window1;"
+// -->
+</SCRIPT>

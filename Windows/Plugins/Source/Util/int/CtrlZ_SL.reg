@@ -1,0 +1,15 @@
+REGEDIT4
+
+; Назначает вызов PDE на комбинацию CtrlZ. При попытке правки
+; описания к каталогу ".." переходит на уровень вверх и
+; запускает PDE уже оттуда. Причем, верхний объект корневого
+; каталога обрабатывается правильно. При невидимой активной
+; панели - PDE не запускается.
+; Должен быть установлен плагин SmartLaunch.
+
+[HKEY_CURRENT_USER\Software\Far\KeyMacros\Shell\CtrlZ]
+"Sequence"="$IF (Bof & !APanel.Root) CtrlPgUp $End $IF (APanel.Visible) \"sl:pde.exe -O:sh -C:pde_far.ini -f:\" CtrlF Enter $End"
+"DisableOutput"=dword:00000001
+"EmptyCommandLine"=dword:00000001
+"Description"="Power Description Editor"
+"NoPluginPanels"=dword:00000001

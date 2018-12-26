@@ -1,0 +1,732 @@
+<UniHighlighter version="1.8">
+  <Info>
+    <General Name="JS" Extensions="JS Files"/>
+    <Author Name="Akulov Nikolay" Email="delphiworld@mail.ru" Web="www.delphiworld.narod.ru" Copyright="Copyright (c) Akulov Nikolay, 2005" Company="" Remark=""/>
+    <Version Version="1" Revision="0" Date="0"/>
+    <History>
+    </History>
+    <Sample>
+      <S>// Syntax highlighting</S>
+      <S>function printNumber()</S>
+      <S>{</S>
+      <S>  var x[0] = this.align;</S>
+      <S>  document.write("The number is " + number);</S>
+      <S>  for (var i = 0; i &lt;= number; i++){</S>
+      <S>    x += abs(1.0);</S>
+      <S>  }</S>
+      <S>  i += @; // illegal character</S>
+      <S>}</S>
+      <S>body.onLoad = printNumber;</S>
+    </Sample>
+  </Info>
+  <Scheme File="" Name=""/>
+ <CodeFolding>
+  <FoldRegion AddCloseKeyword="1" AllowNoSubFolds="0" Skip="0" Type="0" WholeWords="0">
+   <Open Keyword="{" RegExp="" UseRegExp="0"/>
+   <Close Keyword="}" RegExp="" UseRegExp="0"/>
+   <SubFoldRegions>
+   </SubFoldRegions>
+  </FoldRegion>
+  <FoldRegion AddCloseKeyword="1" AllowNoSubFolds="1" Skip="0" Type="1" WholeWords="1">
+   <Open Keyword="/*" RegExp="" UseRegExp="0"/>
+   <Close Keyword="*/" RegExp="" UseRegExp="0"/>
+   <SubFoldRegions>
+   </SubFoldRegions>
+  </FoldRegion>
+		<SkipRegions>
+			<String Open="&quot;" Close="&quot;" Escape="\" />
+			<String Open="&apos;" Close="&apos;" Escape="\" />
+			<MultiLineComment Open="/*" Close="*/" />
+			<SingleLineComment Open="//" />
+			<SingleLineComment Open="#" />
+		</SkipRegions>
+ </CodeFolding>
+  <Range Name="Root" Attributes="0,16777215;False:False." Style=""
+         Delimiters="!&quot;#$%'()*+,-.:;&lt;=&gt;?@[\]^`{|}~">
+    <Rule OpenSymbolPartOfTerm="Right" CloseSymbolPartOfTerm="False"/>
+    <Keywords Name="Methods" Attributes="16732584,16777215;False:True.B" Style="">
+      <word value="abs"/>
+      <word value="acos"/>
+      <word value="add"/>
+      <word value="alert"/>
+      <word value="anchor"/>
+      <word value="apply"/>
+      <word value="asin"/>
+      <word value="atan"/>
+      <word value="atan2"/>
+      <word value="atend"/>
+      <word value="atob"/>
+      <word value="back"/>
+      <word value="big"/>
+      <word value="blink"/>
+      <word value="blur"/>
+      <word value="bold"/>
+      <word value="borderwidths"/>
+      <word value="btoa"/>
+      <word value="buildpath"/>
+      <word value="call"/>
+      <word value="captureevents"/>
+      <word value="ceil"/>
+      <word value="charat"/>
+      <word value="charcodeat"/>
+      <word value="clearinterval"/>
+      <word value="cleartimeout"/>
+      <word value="click"/>
+      <word value="close"/>
+      <word value="compile"/>
+      <word value="concat"/>
+      <word value="confirm"/>
+      <word value="contextual"/>
+      <word value="copy"/>
+      <word value="copyfile"/>
+      <word value="copyfolder"/>
+      <word value="cos"/>
+      <word value="createfolder"/>
+      <word value="createtextfile"/>
+      <word value="crypto.random"/>
+      <word value="crypto.signtext"/>
+      <word value="datatainting"/>
+      <word value="delete"/>
+      <word value="deletefile"/>
+      <word value="deletefolder"/>
+      <word value="dimensions"/>
+      <word value="disableexternalcapture"/>
+      <word value="driveexists"/>
+      <word value="enableexternalcapture"/>
+      <word value="escape"/>
+      <word value="eval"/>
+      <word value="exec"/>
+      <word value="exists"/>
+      <word value="exp"/>
+      <word value="fileexists"/>
+      <word value="find"/>
+      <word value="fixed"/>
+      <word value="floor"/>
+      <word value="focus"/>
+      <word value="folderexists"/>
+      <word value="fontcolor"/>
+      <word value="fontsize"/>
+      <word value="forward"/>
+      <word value="fromcharcode"/>
+      <word value="getabsolutepathname"/>
+      <word value="getbasename"/>
+      <word value="getdate"/>
+      <word value="getday"/>
+      <word value="getdrive"/>
+      <word value="getdrivename"/>
+      <word value="getextensionname"/>
+      <word value="getfile"/>
+      <word value="getfilename"/>
+      <word value="getfileversion"/>
+      <word value="getfolder"/>
+      <word value="getfullyear"/>
+      <word value="gethours"/>
+      <word value="getitem"/>
+      <word value="getmilliseconds"/>
+      <word value="getminutes"/>
+      <word value="getmonth"/>
+      <word value="getparentfoldername"/>
+      <word value="getseconds"/>
+      <word value="getselection"/>
+      <word value="getspecialfolder"/>
+      <word value="gettempname"/>
+      <word value="gettime"/>
+      <word value="gettimezoneoffset"/>
+      <word value="getutcdate"/>
+      <word value="getutcday"/>
+      <word value="getutcfullyear"/>
+      <word value="getutchours"/>
+      <word value="getutcmilliseconds"/>
+      <word value="getutcminutes"/>
+      <word value="getutcmonth"/>
+      <word value="getutcseconds"/>
+      <word value="getvardate"/>
+      <word value="getyear"/>
+      <word value="go"/>
+      <word value="handleevent"/>
+      <word value="home"/>
+      <word value="indexof"/>
+      <word value="isfinite"/>
+      <word value="isnan"/>
+      <word value="italics"/>
+      <word value="item"/>
+      <word value="items"/>
+      <word value="javaenabled"/>
+      <word value="join"/>
+      <word value="keys"/>
+      <word value="lastindexof"/>
+      <word value="lbound"/>
+      <word value="link"/>
+      <word value="load"/>
+      <word value="log"/>
+      <word value="margins"/>
+      <word value="match"/>
+      <word value="max"/>
+      <word value="min"/>
+      <word value="move"/>
+      <word value="moveabove"/>
+      <word value="movebelow"/>
+      <word value="moveby"/>
+      <word value="movefile"/>
+      <word value="movefirst"/>
+      <word value="movefolder"/>
+      <word value="movenext"/>
+      <word value="moveto"/>
+      <word value="movetoabsolute"/>
+      <word value="number"/>
+      <word value="open"/>
+      <word value="openastextstream"/>
+      <word value="opentextfile"/>
+      <word value="paddings"/>
+      <word value="parse"/>
+      <word value="parsefloat"/>
+      <word value="parseint"/>
+      <word value="plugins.refresh"/>
+      <word value="pop"/>
+      <word value="pow"/>
+      <word value="preference"/>
+      <word value="print"/>
+      <word value="prompt"/>
+      <word value="push"/>
+      <word value="random"/>
+      <word value="read"/>
+      <word value="readall"/>
+      <word value="readline"/>
+      <word value="releaseevents"/>
+      <word value="reload"/>
+      <word value="remove"/>
+      <word value="removeall"/>
+      <word value="replace"/>
+      <word value="reset"/>
+      <word value="resizeby"/>
+      <word value="resizeto"/>
+      <word value="reverse"/>
+      <word value="round"/>
+      <word value="routeevent"/>
+      <word value="savepreferences"/>
+      <word value="scroll"/>
+      <word value="scrollby"/>
+      <word value="scrollto"/>
+      <word value="search"/>
+      <word value="select"/>
+      <word value="setdate"/>
+      <word value="setfullyear"/>
+      <word value="sethotkeys"/>
+      <word value="sethours"/>
+      <word value="setinterval"/>
+      <word value="setmilliseconds"/>
+      <word value="setminutes"/>
+      <word value="setmonth"/>
+      <word value="setresizable"/>
+      <word value="setseconds"/>
+      <word value="settime"/>
+      <word value="settimeout"/>
+      <word value="setutcdate"/>
+      <word value="setutcfullyear"/>
+      <word value="setutchours"/>
+      <word value="setutcmilliseconds"/>
+      <word value="setutcminutes"/>
+      <word value="setutcmonth"/>
+      <word value="setutcseconds"/>
+      <word value="setyear"/>
+      <word value="setzoptions"/>
+      <word value="shift"/>
+      <word value="sin"/>
+      <word value="skip"/>
+      <word value="skipline"/>
+      <word value="slice"/>
+      <word value="small"/>
+      <word value="sort"/>
+      <word value="splice"/>
+      <word value="split"/>
+      <word value="sqrt"/>
+      <word value="stop"/>
+      <word value="strike"/>
+      <word value="string"/>
+      <word value="sub"/>
+      <word value="submit"/>
+      <word value="substr"/>
+      <word value="substring"/>
+      <word value="sup"/>
+      <word value="taint"/>
+      <word value="taintenabled"/>
+      <word value="tan"/>
+      <word value="test"/>
+      <word value="toarray"/>
+      <word value="togmtstring"/>
+      <word value="tolocalestring"/>
+      <word value="tolowercase"/>
+      <word value="tosource"/>
+      <word value="tostring"/>
+      <word value="touppercase"/>
+      <word value="toutcstring"/>
+      <word value="ubound"/>
+      <word value="unescape"/>
+      <word value="unshift"/>
+      <word value="untaint"/>
+      <word value="unwatch"/>
+      <word value="utc"/>
+      <word value="valueof"/>
+      <word value="watch"/>
+      <word value="write"/>
+      <word value="writeblanklines"/>
+      <word value="writeline"/>
+      <word value="writeln"/>
+    </Keywords>
+    <Keywords Name="Properties" Attributes="11031379,16777215;False:True." Style="">
+      <word value="above"/>
+      <word value="action"/>
+      <word value="align"/>
+      <word value="alinkcolor"/>
+      <word value="anchors"/>
+      <word value="appcodename"/>
+      <word value="applets"/>
+      <word value="appname"/>
+      <word value="appversion"/>
+      <word value="arguments"/>
+      <word value="arguments.callee"/>
+      <word value="arguments.caller"/>
+      <word value="arguments.length"/>
+      <word value="arity"/>
+      <word value="atendofline"/>
+      <word value="atendofstream"/>
+      <word value="attributes"/>
+      <word value="availablespace"/>
+      <word value="availheight"/>
+      <word value="availleft"/>
+      <word value="availtop"/>
+      <word value="availwidth"/>
+      <word value="background"/>
+      <word value="backgroundcolor"/>
+      <word value="backgroundimage"/>
+      <word value="below"/>
+      <word value="bgcolor"/>
+      <word value="border"/>
+      <word value="borderbottomwidth"/>
+      <word value="bordercolor"/>
+      <word value="borderleftwidth"/>
+      <word value="borderrightwidth"/>
+      <word value="borderstyle"/>
+      <word value="bordertopwidth"/>
+      <word value="caller"/>
+      <word value="checked"/>
+      <word value="classes"/>
+      <word value="classname"/>
+      <word value="clear"/>
+      <word value="clip.bottom"/>
+      <word value="clip.height"/>
+      <word value="clip.left"/>
+      <word value="clip.right"/>
+      <word value="clip.top"/>
+      <word value="clip.width"/>
+      <word value="closed"/>
+      <word value="color"/>
+      <word value="colordepth"/>
+      <word value="column"/>
+      <word value="comparemode"/>
+      <word value="complete"/>
+      <word value="constructor"/>
+      <word value="cookie"/>
+      <word value="count"/>
+      <word value="crypto"/>
+      <word value="current"/>
+      <word value="data"/>
+      <word value="datecreated"/>
+      <word value="datelastaccessed"/>
+      <word value="datelastmodified"/>
+      <word value="defaultchecked"/>
+      <word value="defaultselected"/>
+      <word value="defaultstatus"/>
+      <word value="defaultvalue"/>
+      <word value="description"/>
+      <word value="display"/>
+      <word value="document"/>
+      <word value="domain"/>
+      <word value="drive"/>
+      <word value="driveletter"/>
+      <word value="drives"/>
+      <word value="drivetype"/>
+      <word value="e"/>
+      <word value="elements"/>
+      <word value="embeds"/>
+      <word value="enabledplugin"/>
+      <word value="encoding"/>
+      <word value="fgcolor"/>
+      <word value="filename"/>
+      <word value="files"/>
+      <word value="filesystem"/>
+      <word value="fontfamily"/>
+      <word value="fontsize"/>
+      <word value="fontstyle"/>
+      <word value="fontweight"/>
+      <word value="form"/>
+      <word value="formname"/>
+      <word value="forms"/>
+      <word value="frames"/>
+      <word value="freespace"/>
+      <word value="global"/>
+      <word value="hash"/>
+      <word value="height"/>
+      <word value="history"/>
+      <word value="host"/>
+      <word value="hostname"/>
+      <word value="href"/>
+      <word value="hspace"/>
+      <word value="ids"/>
+      <word value="ignorecase"/>
+      <word value="images"/>
+      <word value="index"/>
+      <word value="infinity"/>
+      <word value="innerheight"/>
+      <word value="innerwidth"/>
+      <word value="input"/>
+      <word value="isready"/>
+      <word value="isrootfolder"/>
+      <word value="item"/>
+      <word value="java"/>
+      <word value="key"/>
+      <word value="language"/>
+      <word value="lastindex"/>
+      <word value="lastmatch"/>
+      <word value="lastmodified"/>
+      <word value="lastparen"/>
+      <word value="layers"/>
+      <word value="layerx"/>
+      <word value="layery"/>
+      <word value="left"/>
+      <word value="leftcontext"/>
+      <word value="length"/>
+      <word value="line"/>
+      <word value="lineheight"/>
+      <word value="linkcolor"/>
+      <word value="links"/>
+      <word value="liststyletype"/>
+      <word value="ln10"/>
+      <word value="ln2"/>
+      <word value="location"/>
+      <word value="locationbar"/>
+      <word value="log10e"/>
+      <word value="log2e"/>
+      <word value="lowsrc"/>
+      <word value="marginbottom"/>
+      <word value="marginleft"/>
+      <word value="marginright"/>
+      <word value="margintop"/>
+      <word value="max_value"/>
+      <word value="menubar"/>
+      <word value="method"/>
+      <word value="mimetypes"/>
+      <word value="min_value"/>
+      <word value="modifiers"/>
+      <word value="multiline"/>
+      <word value="name"/>
+      <word value="nan"/>
+      <word value="negative_infinity"/>
+      <word value="netscape"/>
+      <word value="next"/>
+      <word value="number"/>
+      <word value="offscreenbuffering"/>
+      <word value="opener"/>
+      <word value="options"/>
+      <word value="outerheight"/>
+      <word value="outerwidth"/>
+      <word value="paddingbottom"/>
+      <word value="paddingleft"/>
+      <word value="paddingright"/>
+      <word value="paddingtop"/>
+      <word value="pagex"/>
+      <word value="pagexoffset"/>
+      <word value="pagey"/>
+      <word value="pageyoffset"/>
+      <word value="parent"/>
+      <word value="parentfolder"/>
+      <word value="parentlayer"/>
+      <word value="path"/>
+      <word value="pathname"/>
+      <word value="personalbar"/>
+      <word value="pi"/>
+      <word value="pixeldepth"/>
+      <word value="platform"/>
+      <word value="plugins"/>
+      <word value="port"/>
+      <word value="positive_infinity"/>
+      <word value="previous"/>
+      <word value="protocol"/>
+      <word value="prototype"/>
+      <word value="referrer"/>
+      <word value="rightcontext"/>
+      <word value="rootfolder"/>
+      <word value="screenx"/>
+      <word value="screeny"/>
+      <word value="scrollbars"/>
+      <word value="search"/>
+      <word value="selected"/>
+      <word value="selectedindex"/>
+      <word value="self"/>
+      <word value="serialnumber"/>
+      <word value="sharename"/>
+      <word value="shortname"/>
+      <word value="shortpath"/>
+      <word value="siblingabove"/>
+      <word value="siblingbelow"/>
+      <word value="size"/>
+      <word value="source"/>
+      <word value="sqrt1_2"/>
+      <word value="sqrt2"/>
+      <word value="src"/>
+      <word value="status"/>
+      <word value="statusbar"/>
+      <word value="subfolders"/>
+      <word value="suffixes"/>
+      <word value="sun"/>
+      <word value="tags"/>
+      <word value="target"/>
+      <word value="text"/>
+      <word value="textalign"/>
+      <word value="textdecoration"/>
+      <word value="textindent"/>
+      <word value="texttransform"/>
+      <word value="title"/>
+      <word value="toolbar"/>
+      <word value="top"/>
+      <word value="totalsize"/>
+      <word value="type"/>
+      <word value="undefined"/>
+      <word value="url"/>
+      <word value="useragent"/>
+      <word value="value"/>
+      <word value="visibility"/>
+      <word value="vlinkcolor"/>
+      <word value="volumename"/>
+      <word value="vspace"/>
+      <word value="which"/>
+      <word value="whitespace"/>
+      <word value="width"/>
+      <word value="window"/>
+      <word value="x"/>
+      <word value="y"/>
+      <word value="zindex"/>
+    </Keywords>
+    <Keywords Name="Events" Attributes="50688,16777215;False:True.B" Style="">
+      <word value="onabort"/>
+      <word value="onafterprint"/>
+      <word value="onafterupdate"/>
+      <word value="onbeforecopy"/>
+      <word value="onbeforecut"/>
+      <word value="onbeforeeditfocus"/>
+      <word value="onbeforepaste"/>
+      <word value="onbeforeprint"/>
+      <word value="onbeforeunload"/>
+      <word value="onbeforeupdate"/>
+      <word value="onblur"/>
+      <word value="onbounce"/>
+      <word value="oncellchange"/>
+      <word value="onchange"/>
+      <word value="onclick"/>
+      <word value="oncontextmenu"/>
+      <word value="oncopy"/>
+      <word value="oncut"/>
+      <word value="ondataavailable"/>
+      <word value="ondatasetchanged"/>
+      <word value="ondatasetcomplete"/>
+      <word value="ondblclick"/>
+      <word value="ondrag"/>
+      <word value="ondragdrop"/>
+      <word value="ondragend"/>
+      <word value="ondragenter"/>
+      <word value="ondragleave"/>
+      <word value="ondragover"/>
+      <word value="ondragstart"/>
+      <word value="ondrop"/>
+      <word value="onerror"/>
+      <word value="onerrorupdate"/>
+      <word value="onfilterchange"/>
+      <word value="onfinish"/>
+      <word value="onfocus"/>
+      <word value="onhelp"/>
+      <word value="onkeydown"/>
+      <word value="onkeypress"/>
+      <word value="onkeyup"/>
+      <word value="onload"/>
+      <word value="onlosecapture"/>
+      <word value="onmousedown"/>
+      <word value="onmousemove"/>
+      <word value="onmouseout"/>
+      <word value="onmouseover"/>
+      <word value="onmouseup"/>
+      <word value="onmove"/>
+      <word value="onpaste"/>
+      <word value="onpropertychange"/>
+      <word value="onreadystatechange"/>
+      <word value="onreset"/>
+      <word value="onresize"/>
+      <word value="onrowenter"/>
+      <word value="onrowexit"/>
+      <word value="onrowsdelete"/>
+      <word value="onrowsinserted"/>
+      <word value="onscroll"/>
+      <word value="onselect"/>
+      <word value="onselectstart"/>
+      <word value="onstart"/>
+      <word value="onstop"/>
+      <word value="onsubmit"/>
+      <word value="onunload"/>
+    </Keywords>
+    <Keywords Name="Objects" Attributes="12287488,16777215;False:True." Style="">
+      <word value="activexobject"/>
+      <word value="anchor"/>
+      <word value="applet"/>
+      <word value="area"/>
+      <word value="array"/>
+      <word value="boolean"/>
+      <word value="button"/>
+      <word value="checkbox"/>
+      <word value="date"/>
+      <word value="dictionary"/>
+      <word value="document"/>
+      <word value="drive"/>
+      <word value="drives"/>
+      <word value="enumerator"/>
+      <word value="error"/>
+      <word value="event"/>
+      <word value="file"/>
+      <word value="files"/>
+      <word value="filesystemobject"/>
+      <word value="fileupload"/>
+      <word value="folder"/>
+      <word value="folders"/>
+      <word value="form"/>
+      <word value="frame"/>
+      <word value="function"/>
+      <word value="global"/>
+      <word value="hidden"/>
+      <word value="history"/>
+      <word value="image"/>
+      <word value="java"/>
+      <word value="javaarray"/>
+      <word value="javaclass"/>
+      <word value="javaobject"/>
+      <word value="javapackage"/>
+      <word value="layer"/>
+      <word value="link"/>
+      <word value="location"/>
+      <word value="math"/>
+      <word value="mimetype"/>
+      <word value="navigator"/>
+      <word value="netscape"/>
+      <word value="number"/>
+      <word value="object"/>
+      <word value="option"/>
+      <word value="packages"/>
+      <word value="parent"/>
+      <word value="password"/>
+      <word value="plugin"/>
+      <word value="radio"/>
+      <word value="regexp"/>
+      <word value="regularexpression"/>
+      <word value="reset"/>
+      <word value="screen"/>
+      <word value="select"/>
+      <word value="string"/>
+      <word value="style"/>
+      <word value="submit"/>
+      <word value="sun"/>
+      <word value="text"/>
+      <word value="textarea"/>
+      <word value="textstream"/>
+      <word value="this"/>
+      <word value="vbarray"/>
+      <word value="window"/>
+    </Keywords>
+    <Keywords Name="KeyWords" Attributes="0,16777215;True:True.B" Style="">
+      <word value="boolean"/>
+      <word value="break"/>
+      <word value="byte"/>
+      <word value="case"/>
+      <word value="catch"/>
+      <word value="char"/>
+      <word value="class"/>
+      <word value="const"/>
+      <word value="continue"/>
+      <word value="debugger"/>
+      <word value="default"/>
+      <word value="delete"/>
+      <word value="do"/>
+      <word value="double"/>
+      <word value="else"/>
+      <word value="enum"/>
+      <word value="export"/>
+      <word value="extends"/>
+      <word value="false"/>
+      <word value="final"/>
+      <word value="finally"/>
+      <word value="float"/>
+      <word value="for"/>
+      <word value="function"/>
+      <word value="goto"/>
+      <word value="if"/>
+      <word value="implements"/>
+      <word value="import"/>
+      <word value="in"/>
+      <word value="instanceof"/>
+      <word value="int"/>
+      <word value="interface"/>
+      <word value="long"/>
+      <word value="native"/>
+      <word value="new"/>
+      <word value="null"/>
+      <word value="package"/>
+      <word value="private"/>
+      <word value="protected"/>
+      <word value="public"/>
+      <word value="return"/>
+      <word value="short"/>
+      <word value="static"/>
+      <word value="string"/>
+      <word value="super"/>
+      <word value="switch"/>
+      <word value="synchronized"/>
+      <word value="this"/>
+      <word value="throw"/>
+      <word value="throws"/>
+      <word value="transient"/>
+      <word value="true"/>
+      <word value="try"/>
+      <word value="typeof"/>
+      <word value="var"/>
+      <word value="void"/>
+      <word value="volatile"/>
+      <word value="while"/>
+      <word value="with"/>
+    </Keywords>
+    <Keywords Name="Fake" Attributes="0,16777215;True:True." Style="">
+      <word value="t&quot;&gt;"/>
+    </Keywords>
+    <Keywords Name="Operators" Attributes="198,16777215;False:True." Style="">
+      <word value="["/>
+      <word value="]"/>
+    </Keywords>
+    <Keywords Name="Comment1" Attributes="255,16777215;False:True.I" Style="">
+      <word value="&lt;!--"/>
+      <word value="--&gt;"/>
+    </Keywords>
+    <Range Name="Strings &quot;..&quot;" Attributes="8421504,16777215;False:True." Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="&quot;" CloseSymbol="&quot;"/>
+    </Range>
+    <Range Name="Strings '..'" Attributes="8421504,16777215;False:True." Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="'" CloseSymbol="'"/>
+    </Range>
+    <Range Name="Remarks //" Attributes="255,16777215;False:True.I" Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="//" CloseSymbol="--&gt;" CloseOnEol="True"/>
+    </Range>
+    <Range Name="Remarks /*..*/" Attributes="255,16777215;False:True.I" Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="/*" CloseSymbol="*/"/>
+    </Range>
+  </Range>
+  <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), Vitalik(vetal-x@mail.ru), 2002-2004)</CopyRight>
+</UniHighlighter>
+

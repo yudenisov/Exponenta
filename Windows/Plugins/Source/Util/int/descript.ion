@@ -1,0 +1,8 @@
+CtrlShiftZ.reg FAR: Переназначает стандартный радактор описаний на CtrlShiftZ
+CtrlZ.reg этот макрос использую я
+CtrlZ_1634.reg FAR: для старых верссий FAR'a
+CtrlZ_1634_SL.reg FAR: для старых верссий FAR'a. Должен быть установлен плагин SmartLaunch.
+CtrlZ_SL.reg FAR: Назначает PDE на CtrlZ. Работает только в 1.70 alpha 6 (должен быть установлен плагин SmartLaunch).
+CtrlZ_SL_2cfg.reg FAR: Назначает PDE на CtrlZ (для левой и правой панели разные конфиги) - работает только в 1.70 alpha 6 и с установленным плагином SmartLaunch.
+Explorer.reg Explorer: Добавляет пункт PDE в контекстном меню Проводника для  всех файлов и папок.
+Explorer_Uninstall.reg Explorer: Удаляет пункт PDE из контекстного меню Проводника

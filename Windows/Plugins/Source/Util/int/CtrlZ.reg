@@ -1,0 +1,9 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Far\KeyMacros\Shell\CtrlZ]
+"Sequence"="$IF (Bof & !APanel.Root) CtrlPgUp $End $IF (APanel.Visible) \"sl:pde.exe \" CtrlF \"-O:ha -C:pde_far.ini\" Enter $End"
+"DisableOutput"=dword:00000001
+"Description"="Power Description Editor"
+"EmptyCommandLine"=dword:00000001
+"NoPluginPanels"=dword:00000001
+

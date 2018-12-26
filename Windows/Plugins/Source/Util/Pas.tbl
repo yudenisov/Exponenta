@@ -1,0 +1,8 @@
+`b=begin
+`e=end;
+`s=Program a;|begin|end.
+`p=procedure a(var :;:);|var :;|begin|end;|
+`ife=if then begin| end else begin| end;|
+`if=if then begin| end;|
+`ow=assign(fw);rewrite(fw);|close(fw);|
+`or=assign(fr);|{$I-}reset(fw){$I+};|if ioresult=0 then|begin|i:=0; while not eof(fr) do begin inc(i);readln(fr,a[i]) end;|end|close(fw);|

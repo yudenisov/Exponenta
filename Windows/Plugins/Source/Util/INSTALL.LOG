@@ -1,0 +1,30 @@
+***  Installation Started 03/28/08 18:56  ***
+Title: Tar98 Installation
+Source: D:\Distrib\ARCHIVE\TAR.98\TAR98.EXE
+File Copy: C:\UTIL\UNWISE.EXE
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Tar98
+RegDB Val: Tar98
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Tar98
+RegDB Val: C:\UTIL\UNWISE.EXE C:\UTIL\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+File Copy: C:\UTIL\Tar98.hlp
+File Copy: C:\UTIL\Tar98.exe
+RegDB Key: Software\ObjectFusion\Tar98
+RegDB Val: Home
+RegDB Name: OwnerCompany
+RegDB Root: 1
+RegDB Key: Software\ObjectFusion\Tar98
+RegDB Val: Yuri A. Denisov
+RegDB Name: OwnerName
+RegDB Root: 1
+RegDB Key: Software\ObjectFusion\Tar98
+RegDB Val: 
+RegDB Name: RegistrationKey
+RegDB Root: 1
+Made Dir: I:\Documents and Settings\All Users\Главное меню\Программы\ObjectFusion
+Shell Link: I:\Documents and Settings\All Users\Главное меню\Программы\ObjectFusion\Tar98.lnk
+Shell Link: I:\Documents and Settings\All Users\Главное меню\Программы\ObjectFusion\Tar98 Help.lnk
+User Rights: Admin

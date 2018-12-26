@@ -1,0 +1,249 @@
+2016-08-18 20:42:10,626 DEBUG pl.edu.zut.wi.vsl.app.utils.FileUtil:246 - mounting user.dir to: D:\PortablesProgs\Util\vsl-1.1
+2016-08-18 20:42:11,183 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.runtime.name=Java(TM) SE Runtime Environment
+2016-08-18 20:42:11,183 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.version=25.101-b13
+2016-08-18 20:42:11,183 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.vendor=Oracle Corporation
+2016-08-18 20:42:11,184 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vendor.url=http://java.oracle.com/
+2016-08-18 20:42:11,184 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2016-08-18 20:42:11,185 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.specification.name=Java Virtual Machine Specification
+2016-08-18 20:42:11,185 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.runtime.version=1.8.0_101-b13
+2016-08-18 20:42:11,185 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+2016-08-18 20:42:11,185 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_101\lib\endorsed
+2016-08-18 20:42:11,186 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.io.tmpdir=C:\Users\yuden\AppData\Local\Temp\
+2016-08-18 20:42:11,186 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.specification.vendor=Oracle Corporation
+2016-08-18 20:42:11,186 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.library.path=C:\Program Files\Java\jre1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Perl64\bin;C:\Perl64\site\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;D:\Program Files\Git\cmd;D:\GnuWin32\bin;D:\yuden\Documents\prog\Scripts\Bin;D:\PHP7;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\OpenSSL-Win64\bin;D:\PortablesProgs\Util;D:\Apache24\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;D:\Program Files (x86)\WinMerge;C:\Program Files (x86)\QuickTime\QTSystem\;"C:\Program Files (x86)\OpenSSH for Windows\bin";C:\Users\yuden\AppData\Local\Microsoft\WindowsApps;;.
+2016-08-18 20:42:11,186 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.specification.name=Java Platform API Specification
+2016-08-18 20:42:11,187 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.class.version=52.0
+2016-08-18 20:42:11,187 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.awt.printerjob=sun.awt.windows.WPrinterJob
+2016-08-18 20:42:11,187 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.specification.version=1.8
+2016-08-18 20:42:11,187 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.class.path=D:\PortablesProgs\Util\vsl-1.1\vsl-app-1.1.jar
+2016-08-18 20:42:11,187 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.specification.version=1.8
+2016-08-18 20:42:11,187 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.home=C:\Program Files\Java\jre1.8.0_101
+2016-08-18 20:42:11,188 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.specification.vendor=Oracle Corporation
+2016-08-18 20:42:11,188 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.info=mixed mode
+2016-08-18 20:42:11,188 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.version=1.8.0_101
+2016-08-18 20:42:11,188 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.ext.dirs=C:\Program Files\Java\jre1.8.0_101\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+2016-08-18 20:42:11,188 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vendor=Oracle Corporation
+2016-08-18 20:42:11,189 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+2016-08-18 20:42:11,189 INFO  pl.edu.zut.wi.vsl.app.Main:122 - Handled Java Reader file suffixes: jpg; bmp; gif; png; jpeg; wbmp; 
+2016-08-18 20:42:11,189 INFO  pl.edu.zut.wi.vsl.app.Main:123 - Handled Java Writer file suffixes: jpg; bmp; gif; png; jpeg; wbmp; 
+2016-08-18 20:42:11,805 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:80 - Initializing components
+2016-08-18 20:42:13,161 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:97 - Creating modules list
+2016-08-18 20:42:14,374 INFO  pl.edu.zut.wi.vsl.app.MainWindow:82 - Components initialized, creating tree drag source
+2016-08-18 20:43:27,084 ERROR pl.edu.zut.wi.vsl.app.MainWindow:244 - Could not load workspace from file.
+java.io.FileNotFoundException: D:\yuden\Documents\a.txtvws (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspace(MainWindow.java:235)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspaceButtonActionPerformed(MainWindow.java:645)
+	at pl.edu.zut.wi.vsl.app.MainWindow.access$1000(MainWindow.java:75)
+	at pl.edu.zut.wi.vsl.app.MainWindow$10.actionPerformed(MainWindow.java:540)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+2016-08-18 20:45:17,907 ERROR pl.edu.zut.wi.vsl.app.MainWindow:244 - Could not load workspace from file.
+java.io.FileNotFoundException: K:\Media\MyPictures\Мои рисунки-H\ClydeDam_(Large).JPGvws (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspace(MainWindow.java:235)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspaceButtonActionPerformed(MainWindow.java:645)
+	at pl.edu.zut.wi.vsl.app.MainWindow.access$1000(MainWindow.java:75)
+	at pl.edu.zut.wi.vsl.app.MainWindow$10.actionPerformed(MainWindow.java:540)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+2016-08-18 20:46:20,888 ERROR pl.edu.zut.wi.vsl.app.MainWindow:244 - Could not load workspace from file.
+java.io.FileNotFoundException: D:\yuden\Documents\AAA Logo\mylogo04_01g.pngvws (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspace(MainWindow.java:235)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspaceButtonActionPerformed(MainWindow.java:645)
+	at pl.edu.zut.wi.vsl.app.MainWindow.access$1000(MainWindow.java:75)
+	at pl.edu.zut.wi.vsl.app.MainWindow$10.actionPerformed(MainWindow.java:540)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+2016-08-18 20:46:43,548 ERROR pl.edu.zut.wi.vsl.app.MainWindow:244 - Could not load workspace from file.
+java.io.FileNotFoundException: D:\yuden\Documents\AAA Logo\mylogo04_01g.pngvws (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspace(MainWindow.java:235)
+	at pl.edu.zut.wi.vsl.app.MainWindow.openWorkspaceButtonActionPerformed(MainWindow.java:645)
+	at pl.edu.zut.wi.vsl.app.MainWindow.access$1000(MainWindow.java:75)
+	at pl.edu.zut.wi.vsl.app.MainWindow$10.actionPerformed(MainWindow.java:540)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+2016-08-18 20:47:03,148 WARN  pl.edu.zut.wi.vsl.app.gui.Desktop:239 - Cannot find any Input module
+2016-08-18 20:47:38,477 WARN  pl.edu.zut.wi.vsl.app.gui.Desktop:239 - Cannot find any Input module
+2016-08-18 20:48:27,493 WARN  pl.edu.zut.wi.vsl.app.gui.Desktop:239 - Cannot find any Input module
+2016-08-18 20:54:25,950 DEBUG pl.edu.zut.wi.vsl.app.utils.FileUtil:246 - mounting user.dir to: D:\PortablesProgs\Util\vsl-1.1
+2016-08-18 20:54:26,036 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.runtime.name=Java(TM) SE Runtime Environment
+2016-08-18 20:54:26,036 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.version=25.101-b13
+2016-08-18 20:54:26,036 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.vendor=Oracle Corporation
+2016-08-18 20:54:26,037 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vendor.url=http://java.oracle.com/
+2016-08-18 20:54:26,037 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2016-08-18 20:54:26,037 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.specification.name=Java Virtual Machine Specification
+2016-08-18 20:54:26,037 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.runtime.version=1.8.0_101-b13
+2016-08-18 20:54:26,037 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+2016-08-18 20:54:26,038 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_101\lib\endorsed
+2016-08-18 20:54:26,038 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.io.tmpdir=C:\Users\yuden\AppData\Local\Temp\
+2016-08-18 20:54:26,039 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.specification.vendor=Oracle Corporation
+2016-08-18 20:54:26,039 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.library.path=C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Perl64\bin;C:\Perl64\site\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;D:\Program Files\Git\cmd;D:\GnuWin32\bin;D:\yuden\Documents\prog\Scripts\Bin;D:\PHP7;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\OpenSSL-Win64\bin;D:\PortablesProgs\Util;D:\Apache24\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;D:\Program Files (x86)\WinMerge;C:\Program Files (x86)\QuickTime\QTSystem\;"C:\Program Files (x86)\OpenSSH for Windows\bin";C:\Users\yuden\AppData\Local\Microsoft\WindowsApps;;.
+2016-08-18 20:54:26,039 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.specification.name=Java Platform API Specification
+2016-08-18 20:54:26,040 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.class.version=52.0
+2016-08-18 20:54:26,040 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.awt.printerjob=sun.awt.windows.WPrinterJob
+2016-08-18 20:54:26,040 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.specification.version=1.8
+2016-08-18 20:54:26,041 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.class.path=vsl-app-1.1.jar
+2016-08-18 20:54:26,041 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.specification.version=1.8
+2016-08-18 20:54:26,041 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.home=C:\Program Files\Java\jre1.8.0_101
+2016-08-18 20:54:26,041 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.specification.vendor=Oracle Corporation
+2016-08-18 20:54:26,042 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vm.info=mixed mode
+2016-08-18 20:54:26,042 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.version=1.8.0_101
+2016-08-18 20:54:26,042 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.ext.dirs=C:\Program Files\Java\jre1.8.0_101\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+2016-08-18 20:54:26,042 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vendor=Oracle Corporation
+2016-08-18 20:54:26,043 INFO  pl.edu.zut.wi.vsl.app.Main:119 - java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+2016-08-18 20:54:26,043 INFO  pl.edu.zut.wi.vsl.app.Main:122 - Handled Java Reader file suffixes: jpg; bmp; gif; png; jpeg; wbmp; 
+2016-08-18 20:54:26,043 INFO  pl.edu.zut.wi.vsl.app.Main:123 - Handled Java Writer file suffixes: jpg; bmp; gif; png; jpeg; wbmp; 
+2016-08-18 20:54:26,142 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:80 - Initializing components
+2016-08-18 20:54:26,227 DEBUG pl.edu.zut.wi.vsl.app.MainWindow:97 - Creating modules list
+2016-08-18 20:54:26,460 INFO  pl.edu.zut.wi.vsl.app.MainWindow:82 - Components initialized, creating tree drag source

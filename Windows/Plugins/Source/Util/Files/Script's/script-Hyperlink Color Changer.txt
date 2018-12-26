@@ -1,0 +1,14 @@
+Hyperlink Color Changer (JavaScript)
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Comment to hide from old Browsers. Does Not Work With Netscape!!
+
+function changecolor(TObject)
+{TObject.style.color = "Yellow";}
+// insert the call    OnMouseOver="changecolor(NAME);"    where NAME is the name of the hyperlink
+
+function changecolorback(TObject)
+{TObject.style.color = "Blue";}
+// insert the call    OnMouseOut="changecolorback(NAME);"    where NAME is the name of the hyperlink
+
+// -->
+</SCRIPT>

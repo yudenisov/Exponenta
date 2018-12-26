@@ -1,0 +1,113 @@
+[tree]
+1
+0
+1
+0
+[source]
+
+[target]
+
+index.html
+0
+1
+0
+0
+
+[counter]
+0
+1
+0
+1
+[slash]
+0
+1
+0
+[dirpattern]
+[filepattern]
+aImages[#] = new Object; aImages[#].img = "!.!";
+[replace0]
+[replace1]
+[include]
+*.jpg
+*.gif
+[exclude]
+[title]
+<html>
+
+<head>
+<title>AfonSoft String All slideshow sample</title>
+</head>
+
+<script language="JavaScript">
+
+var nImage = 0;
+var bPaused = false;
+
+var aImages = new Array;
+[footer]
+function doNavigation(nDir)
+{
+	nDir = parseInt(nDir);
+
+	if (nDir == 1)
+		nImage = 0;
+	else if (nDir == 2)
+		nImage--;
+	else if (nDir == 3)
+		nImage++;
+	else if (nDir == 4)
+		nImage = aImages.length - 1;
+	else if (nDir == 5)
+	{bPaused = !bPaused;
+	pauseID.innerHTML = bPaused ? "Resume" : "Pause";
+	}
+
+	if (nDir != 5)
+	{
+	if (nImage < 0)
+	nImage = 0;
+	if (nImage >= aImages.length)
+	nImage = aImages.length - 1;
+	doDisplay();
+	}
+}
+
+
+function doDisplay()
+{
+	if (nImage < 0 || nImage >= aImages.length)
+		return;
+
+	// update navigation bar
+homeID.innerHTML = (nImage != 0 ? "<a href='javascript:doNavigation(1)'>" : "<a>") + "Home" + 
+"</a>";
+prevID.innerHTML = (nImage != 0 ? "<a href='javascript:doNavigation(2)'>" : "<a>") + "Prev" + 
+"</a>";
+nextID.innerHTML = (nImage != aImages.length - 1 ? "<a href='javascript:doNavigation(3)'>" : 
+"<a>") + "Next" + "</a>";
+endID.innerHTML = (nImage != aImages.length - 1 ? "<a href='javascript:doNavigation(4)'>" : 
+"<a>") + "End" + "</a>";
+
+	pageNoID.innerText = nImage + 1;
+
+	imageID.src = aImages[nImage].img;
+
+}
+
+</script>
+
+<body onload="window.setTimeout('doNavigation(0)', 0)">
+
+<div align="center"><span id="homeID"><a>Home</a></span>|<span 
+id="prevID"><a>Prev</a></span>|<span id="nextID"><a>Next</a></span>|<span 
+id="endID"><a>End</a></span><br>
+Page <span id="pageNoID">1</span> of <#></div>
+
+<table align="center" border="0">
+    <tr>
+        <td align="center"><img border="0" id="imageID"><br><a id="imageLabelID"></a></td>
+    </tr>
+</table>
+
+</body>
+</html>

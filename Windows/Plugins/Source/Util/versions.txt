@@ -1,0 +1,51 @@
+bmpPackers Version Info
+
+V0.1	2002-10-14	
+*	First Version
+
+V0.2	2002-10-18	
+*	BMP filechooser filter now working
+*	A "Encryption" & "Decryption" hint is shown in the listbox
+*	Source file name can be given by the command line
+*	The target file is written to the same folder as the source file
+*	The complete target file name is shown in the bottom panel 
+
+V0.3	2002-10-28	
+*	If source file name is given by command line (maybe the FAT16 short name), the full long file name is read from the file system
+*	A CRC16 function builds a checksum for the passwort in order to check the correct password 
+
+V0.4	2002-10-30	
+*	The listbox now shows the CRC16 password checksum value as an unsigned short (no negative values are shown anymore)
+
+V0.5	2002-11-07	
+*	A new standard encrypting method named BLOWFISH has been integrated.
+
+V1.0	2002-11-12	
+*	Two high secure encrypting methods have been implemented: TwoFish & Rijndael
+
+V1.1	2002-11-27	
+*	Automatic file compression implemented
+*	An Option formular has been implemented
+*	Commandline Options have been implemented
+*	A new password input field has been implemented
+
+V1.1a	2003-06-13	
+*	Some corrections after the document was reviewed by A. Miller
+
+V1.2	2003-11-30	
+*	Listbox shows now current information (you don't need to scroll anymore)
+*	Keys can be given as hex strings
+*	Option -n/-N works now.
+*	If a bmpPacker configfile is not found in the current directory, the searchpath is used to find a configfile.
+*	The option -K enables the possibility to give a password by command line hex string.
+*	New target filename options have been implemented
+
+V1.2a	(Build1)	2004-01-04 
+*	A Bug in the "If extension differs from" compression selection has been removed
+*	bmpPacker has no minimum size of a original file any more (former it was 1824 bytes)
+
+V1.2a	(Build2)	2004-01-10
+*	Buttons are now labeled completely in english
+
+V1.2.1 2012-02-26
+*	Fixed Error in save-config-file function which causes empty config files

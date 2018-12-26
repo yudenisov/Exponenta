@@ -1,0 +1,52 @@
+; Spanish (Latin Amerikan) translation for NTFS Links 1.21
+; Author: Luis Mejia
+
+; Diálogo principal
+1=Aceptar
+2=Cancelar
+3=Op&ciones
+4=Ayuda
+5=C&rear enlace para "%s" como:
+6=C&rear enlaces para %d archivo(s) seleccionado(s) en:
+7=Pro&fundidad de recursión para crear enlaces:
+
+; Diálogo de opciones
+50=Opciones
+51=Aceptar
+52=Cancelar
+53=Ayuda
+54=Guardar posición de &ventana
+55=Guardar profundidad de &recursión
+56=Pro&fundidad de recursión predefinida:
+57=Archivo de i&dioma:
+58=Archivos de idioma (*.lng)|*.lng|Todos los archivos (*.*)|*.*||
+59=Archivo de &ayuda:
+60=Archivos de ayuda (*.chm)|*.chm|Todos los archivos (*.*)|*.*||
+
+; Diálogo de error
+100=Error
+101=&Saltar
+102=&Reintentar
+103=Saltar &todos
+104=&Cancelar
+105=Error al crear enlace para el archivo:\n%s
+106=Error al crear enlace para la carpeta:\n%s
+107=Error al crear la carpeta:\n%s
+108=¡Error desconocido!
+
+; Cuadro Acerca de
+150=Acerca de
+151=&Acerca de...
+152=Programa:
+153=Versión:
+154=Autor:
+155=Todos los derechos reservados.
+156=Página web:
+
+; Mensajes de error misceláneos
+1001=¡Número incorrecto de parámetros de línea de comandos!
+1002=¡No se puede abrir la lista de archivos!
+1003=¡No se puede crear un enlace para varios objetos!
+1004=No se puede ejecutar el comando.\nCódigo de error: %d.
+1005=¡No se puede abrir el archivo de ayuda!
+1006=¡Error al guardar configuraciones!

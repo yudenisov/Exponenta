@@ -1,0 +1,6 @@
+REGEDIT4
+
+; деинстал€ци€ PDE.
+
+[-HKEY_CLASSES_ROOT\Folder\shell\description]
+[-HKEY_CLASSES_ROOT\*\shell\description]

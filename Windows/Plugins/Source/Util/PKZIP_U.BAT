@@ -1,0 +1,1 @@
+@%UTIL%\pkzip -u -ex -r -p -x*.bak -x*.me -xsetup.lex %1 %2 %3 %4

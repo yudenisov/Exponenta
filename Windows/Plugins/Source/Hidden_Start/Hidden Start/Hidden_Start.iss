@@ -16,7 +16,7 @@ SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
 Output=no
-OutputDir=d:\yudenisov\Distrib
+OutputDir=d:\Download
 OutputBaseFilename=HiddenStart450SetupRePack
 
 [Dirs]

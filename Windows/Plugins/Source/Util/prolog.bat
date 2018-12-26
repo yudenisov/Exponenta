@@ -1,0 +1,1 @@
+@start %TPROLOG%\PROLOG.EXE

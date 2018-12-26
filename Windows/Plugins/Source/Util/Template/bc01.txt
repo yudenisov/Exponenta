@@ -1,0 +1,11 @@
+﻿Заготовка для работы с BootCleaner
+begin
+ BC_QrSvc('');
+ BC_DeleteSvc('');
+ BC_QrFile('');
+ BC_DeleteFile('');
+ // Активация BC
+ BC_Activate;
+ // Перезагрузка
+ RebootWindows(true);
+end.

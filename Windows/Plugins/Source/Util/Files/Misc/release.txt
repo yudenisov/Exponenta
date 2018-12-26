@@ -1,0 +1,511 @@
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.60  12th February 2002
+------------------------------------------------------------------------------------
+
+   1. Still trying to solve the bug for tab indents, we'll see, hopefully this is it
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.59  4th November 2002
+------------------------------------------------------------------------------------
+
+   1. Fixed a bug with the delimiters not sticking and implementing immediately
+
+   2. Fixed a bug with the split view only being able to implement the once
+
+   3. Fixed a bug where inserting hitting return with a previous indent inserted
+      letters at the begining of the line
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.58  30th October 2002
+------------------------------------------------------------------------------------
+
+   1. Fixed a bug with the ability to select text and hit the tab key to indent it,
+      this normally insert a tab first then proceeds to insert spaces or all others
+
+   2. Indent and Outdent will add Tabs rather than spaces if tab friendly is enabled
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.57  14th August 2002 (eek sorry chaps)
+------------------------------------------------------------------------------------
+
+   1. Fixed a bug where the files panel would not update with a command line file
+
+   2. Stopped the shortcuts from operating in Explorer Preview
+
+   3. Added the Use Edit Mode to the Preview in browser menu, which allows you to
+      edit the document in a minor fashion directly within the explorer preview
+
+   4. Forced the editor to use certain properties that are unavailable in the
+      editor preferences dialog, CenterOnBookmark, ScrollHint, DrawLineBookmarks
+
+   5. Table Creator now inserts tabs if the Tab Friendly Settings in enabled
+
+   6. Fixed a problem with the Tab Friendly Settings not sticking right
+
+   7. Fixed a bug where an saved document could be emptied and show as not modified
+
+   8. Fixed no less than two bugs in the wordcase procedure
+
+   9. Fixed a problem when inserting tags from the items palette caused selected
+      text to disappear
+
+  10. Stopped the save file question popping up when revert to the last saved copy
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.56  31th July 2002
+------------------------------------------------------------------------------------
+
+   1. unhotmail text button is made tab compatible
+
+   2. Fixed a bug in the explorer preview where the base href wasnt being set right
+
+   3. Fixed a bug when a file is dragged opened and the file paths were not updated
+
+   4. Comment line or multi-line is now tab compatible
+
+   5. UnComment line or multi-line is now tab compatible
+
+   6. Indent and Outdent now tab compatible and fixed bug where the number of spaces
+      inserted was not what was set in the editor options.
+
+   7. Fixed a bug when inserting tags or text files could cause an error, also made
+      the inserting of tags and text files tab compatible
+
+   8. Lower, Upper, Word and Toggle Case functions are now tab compatible
+
+   9. Files Panel now updates when you save a file
+
+  10. Insert and Edit custom text file added to main menu under Insert
+
+  11. Fixed a bug when opening a second instance caused the Files Panel to disappear
+
+  12. Items Palette now rotates thru, floating, docked, then switched off
+
+  13. Editor will warn you if you attempt to open a file containing tabs when you
+      dont have the tab friendly settings enabled
+
+  14. Fixed a bug when answering no to deleting a file in the items palette caused
+      the listing for the file to vanish until the list was refreshed
+
+  15. Added Recent Folders drop down list to the files panel, this will list folders
+      of recently opened files and will also accept freely typed locations
+
+  16. Fixed a bug where selecting text and moving the cursor out of the editor
+      window before releasing the mouse button would not enable cut and copy buttons
+
+  17. Indent, Outdent, Comment, UnComment and UnHotmail Text function are now
+      included in the parsing menu
+
+  18. Horizontal Scroll Bar now appears if you scroll to the right enough so
+      characters start to disappear from the left hand edge
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.55  19th July 2002
+------------------------------------------------------------------------------------
+
+   1. Fixed a bug with file type\extension when going to save the file
+
+   2. Fixed a bug where the File Panel didnt update when a file was dragged opened
+
+   3. Fixed a bug where the converting of tag case converted the tabs to spaces
+
+   4. The editor will only ask you once now if you would like to re-load the file
+      when the opened file is amended outside of the editor
+
+   5. Added 'Tab Friendly Settings' to the Prefences menu, this makes the editor
+      support tabs like never before
+
+   6. Fixed a bug where a tag was declared a param when it was a single tag as well
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.54  16th June 2002
+------------------------------------------------------------------------------------
+
+   1. Fixed a bug with the Make Backups not switch off-able
+
+   2. Changed the association of *.js files to the jscript.sch syntax file
+
+   3. Fixed the Edit File Types bug, where it would not update the extension or
+      syntax scheme file
+
+   4. I have now opted to forcing the files panel to update every time, this fixes a
+      bug when you drag'n'drop a file onto the program exe
+
+   5. Fixed a bug with the set sized preview in explorer when one of the browsers
+      listed could not be found
+
+   6. Added an Uncomment button to the text controls button bar, you may need to
+      re-size your bar, do so dragging the bar off, then place it back. This also
+      make sure the single line comments/uncomments leave the cursor on the same
+      line
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.53  10th May 2002
+------------------------------------------------------------------------------------
+
+   1. Added the ability to change the color of the line hightlight
+
+   2. Tango scheme (TML.sch) renamed to Witango (Witango.sch)
+
+   3. Added tml, thtml and inc file types associated with the witango scheme
+
+   4. Fixed a bug were the files panel would not display the folder of the last
+      opened file
+
+   5. Fixed the bug where changing the save filter added the wrong extension
+
+   6. Added Internet Explorer Size menu items to the preview in browser button menu
+      So you can now test you web pages for running at different resolutions
+
+   7. Fixed a bug where a new file type when entered was always lowercase
+
+   8. Added a close button to the files panel
+
+   9. Added a export button for the file and picture types
+
+  10. Added a reset button for the file and picture types
+
+  11. Added an import button for the file type and picture types
+
+  12. Fixed a bug where the java loader or run in web was not sticking right
+
+  13. Added the functionality for the java loader to work - UNTESTED
+      Also fixed some other minor bugs in the run java applet function
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.52  26th April 2002
+------------------------------------------------------------------------------------
+
+   1. Removed a tab from the preferences, cos of the editor options being introduced
+
+   2. Finished the 8.3 filename function for the preview in browser, this also now
+      includes a force browser exe into the command line, which will get the shell
+      open command line from the registry for the file type htmlfiles, this allows
+      files not associated with internet explorer, etc to be previewed from within
+      those browsers, note this only affects the default system browser
+
+   3. Acsii files dragged from the Files Panel or the Items Palette are inserted at
+      the cursor position, pictures files dropped will insert image tags :)
+
+   4. Items dragged and dropped from the Items Palette are treated just as if they
+      were double clicked :)
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.51  19th April 2002
+------------------------------------------------------------------------------------
+
+   1. Made the Move to Delphi 6 Professional, should fix some bugs
+
+   2. Files Panel has been updated, glyphs are all the same as in win3.1 explorer
+
+   3. When clicking the Tags tab in Preferences, the Items Palette no longer needs
+      to be open, instead the items.txt file is read in
+
+   4. Added Insert Special Character button to the custom text form (requested)
+
+   5. Moved the editor/preview tabs to the status bar, can be toggled using key F4
+
+   6. Added Preview in Editor to the preview in browser button drop down menu.
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.50  4th April 2002
+------------------------------------------------------------------------------------
+
+   1. Corrected the Registry settings read in by the Java Compile functions
+      Fixes bug with it forgetting the Java Compiler Location
+
+   2. Java Compile function will now except any saved file
+
+   3. When clicking the Tags tab in Preferences, the Items Palette no longer needs
+      to be open, instead the items.txt file is read in
+
+   4. More code optmisations
+
+   5. Fixed a bug that stopped the folders and files from showing in the Items
+      Palette
+
+   6. Fixed a bug where drag'n'drop files did not update the SpecifiedFolder value
+      this caused the Files Panel to continue to display the wrong folder ect..
+      This setting is also written to the registry when updated
+
+   7. Added the Find button to the Files Panel, which launches the Find Files dialog
+
+   8. Added the Text File Type sub menu the Parsing Menu, this setting should change
+      the way the file is saved and possibly even read in, note: this is still in
+      testing.
+
+   9. Have began to implement the Editor Options, under File > Settings
+      People will need to reset their options for the editing window
+      Please also note this is not finished!!
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.49  23rd February 2002
+------------------------------------------------------------------------------------
+
+   1. Removed the Same Folder menu from the File menu
+
+   2. When trying to open a RTF file, it is only read in once now
+
+   3. Completely changed the way the file types and syntax schemes work
+      A. You can specify your own File Types
+      B. You can specify a syntax parser for each file type
+      C. If the file type is unknown the default (HTML, built in) parser is used
+      D. You can specify Picture File Types as well
+      This has completely changed the way the editor handles syntax parsers, rather
+      alot of code optmisations have been introduced as a by product
+
+   3. Stopped the Colors menu from trying to update everytime you open it
+
+   4. Items Palette correctly displas after turning off the docking
+
+   5. Cut and Copy correctly updates to reflect editor state.
+
+   6. Removed a rather annoying internal loop, performance should be faster
+
+   7. Added a simple clipboard history to the Items Palette
+
+   8. Fixed the Ctrl + N bug to make a new document, also stopped it from opening a
+      new instance if the control is held down, cause a loop on ctrl + n
+
+   9. Fixed the problem of text being inserted not replacing the selected text
+
+  10. Fixed a problem with empty colours causing a problem when displaying the
+      colour in the Items Palette
+
+  11. If the Items Palette is floating the focus correctly returns to the editor
+
+  12. Fixed a problem with the "Specified Folder" being written too as an empty
+      string, this caused prolems with the insert picture menu's amoungst other
+      things, this also corrected the registry setting.
+
+  Lots of redundant code removed, MDI test app is in the works, also a re-working in
+  delphi 6 professional, however this will mean the loss of the file extension
+  glyphs disappearing from the files panel, mainly because they want $79 for the
+  components, why these software houses dont include a freeware license subscription
+  I will never know, the same goes for borland.
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.48  18th February 2002
+------------------------------------------------------------------------------------
+
+   1. Fixed bug when opening a file, to do with the assignment of the parser
+
+   2. Fixed a bug to display the folders etc in the Items Palette when the
+      items.txt is missing
+
+   3. Drag'n'Drop from the Files Panel and Items Palette implemented, will insert
+      the text at the cursor position (cursor will follow the mouse until released)
+
+   4. Stopped the floating Items Palette from loading the items.txt file twice
+      before show up
+
+   5. More code optimisations
+
+   6. When clicking and double clicking the Items, focus returns to the code editor
+
+   7. Files Panel correctly shows after returning from Explorer Preview
+
+   8. Attempting to close the program while in Explorer Preview returns to the
+      Code Editor without quitting
+
+   9. Rich Text Files are correctly saved in in rich text format
+
+  10. Docked Items Palette now forces a minimum width, stops it disappearing
+
+  11. Editor will use the Files folder in the EXE folder over the one in the
+      specified in the preferences
+
+  Note: I am also writing a Scheme Builder application to make the contruction of
+        the syntax schemes alot easier since you'll be able to see the changes
+        you've made by simply hitting the Apply button
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.47  4th February 2002
+------------------------------------------------------------------------------------
+
+   1. Fixed bug with menus and buttons not being updated correctly when first opened
+
+   2. Fixed bug, files with no extension are not displayed in items palette
+
+   3. Rename a file forces a file extension to be specified
+
+   4. Items palette default items removed from exe. Saving of 8kb, each release will
+      now include a copy of the items.txt
+
+   5. The file extension now gets appended to the file listed in the items palette
+      so long as the files doesnt follow the script*.* format
+
+   6. New version of the memo component is compiled into the exe
+
+   7. Tweaked the Save As option to correctly recognise the file extension
+
+   8. Added some icons to the items palette for files, folders and refresh items
+
+   9. Fixed Table Creator Button not bringing up the wizard
+
+  10. Added .sql and .wrl file extensions (City Uni Student request)
+
+  11. Fixed bug with Highlight Active Line not showing current status in the menu
+
+  12. Save options correctly update when a new document is modified
+
+  13. Items Palette correctly hides when using the explorer preview
+
+  14. Fixed bug with Items palette always docking
+
+  15. Changed the Icons to show only the coloured ones, this uses alot less system
+      resources, so you can open more instances of the Editor
+
+  16. Save a Copy makes up a filename
+
+  17. Removed the Same Folder from the File menu, not needed since the introduction
+      of the Files panel
+
+  18. Improved the opening of the Files panel
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.46  26th January 2002
+------------------------------------------------------------------------------------
+
+   1. Added php and php4 file types to the open dialog
+
+   2. Added Convert All Tags to Uppercase
+
+   3. Added Convert All Tags to Wordcase
+
+   4. Added Convert All Tags to Lowercase
+
+   5. Tweaked Application Idle event to correctly only run once
+
+   6. Revised the Automatic entering of tags from items to include undo's properly
+
+   7. Lots of code optimisations, some to do with menu creation
+
+   8. Changed the gutter colour, some color schemes make the numbers hard to see
+
+   9. Finished polishing the edges of the docking of the items palette
+
+  10. Ability to edit script files in items palette within the custom text dialog
+
+  11. Ability to delete, rename and duplicate script files in items palette
+
+  12. Changed the "Items Palette" tab in preferences to "Tags" added tab "Misc"
+
+  13. Changed the way the items.txt file is saved. NOTE: this will improve loading
+      times, everyone should go into the Preferences and hit the "Tags" tab
+      and press the "Commit Changes" button, this strips out unnecessary information
+      from the items.txt, you only need to do this if you use customised tags.
+
+  14. Tweaked the reading of the registry so many rarely used variables are read on
+      demand instead of when the program loads.
+
+  15. Make Backup when saving a file implemented can be switched off now
+
+  16. Indent and Outdent can now be specified as to the number of spaces
+
+  17. Comment Block and Single line now works correctly using setup preferences
+
+  18. Added the ability to specify the location of the Templates/scripts folder
+
+  19. Modified the Open file procedure to remove the time lag when a file is opened
+
+  20. Added the ability to change the char used to position selected text when
+      inserting files and tags from the items palette
+
+  21. Added F4 key to toggle between Explorer Preview and the Editing window
+
+  22. Adjusted Items Palette so it wont display editor backup files.
+
+  23. Text that appears is now two pixels indented, makes for easier reading
+
+  24. Highlight Active Line settings is now remembered, colour changed to yellow
+
+  25. You can now remove the custom text references by deleting the custom.txt file
+
+  26. Web Link buttons setup (waiting for info on website to be input)
+
+  27. Edit Colors double clicked on the Items palette now works correctly
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.45 (24th Jan 2002)
+------------------------------------------------------------------------------------
+
+   1. Tweaked the docking of the Items Palette to correctly receive update commands
+
+   2. Script Files that are listed in the items palette, are now inserted correctly
+      (not just one line)
+
+   3. Tweaked Registry Reading to include extra toolbutton bar
+
+   4. Made the registry reading more robust. Could cause an error when reading
+      toolbar data that did not exist
+
+   5. Made improvements to the menu bar and tool bars initial size and minimum sizes
+
+   6. Better support for tabs, changed the way the preferences of tabs works
+
+
+------------------------------------------------------------------------------------
+Release Notes for HTML Editor Beta 1.6.0.44 and prior
+------------------------------------------------------------------------------------
+
+   No release notes are available for earlier versions
+
+
+------------------------------------------------------------------------------------
+Things yet to do   (comments/suggestions are compulsory (I wish))
+------------------------------------------------------------------------------------
+
+  --+- planned -+--
+   History list of folders (remember a list of them)
+   Multiple Document Interface (MDI, its coming, just got to get it right!)
+   Add Image Map Items and Table Items to the Items Palette for any created
+   Finish running of java applets via Java Loader or Web Page and to include 8.3
+    filename support
+   Finish the Preview via web server
+   Context sensitive Help File (only possible once production stops)
+   Ability to detemine if there is enough resources to open the editor
+
+  --+- maybe's -+--
+   Compress html document
+   Support for US or UK english in so far as the spelling of the word color (colour)
+
+  --+- requested but not considered -+--
+   Spell Checker
+
+
+------------------------------------------------------------------------------------
+Known Problems/Bugs
+------------------------------------------------------------------------------------
+
+   None at present.
+
+
+----------------------------------------------------------------------- foot note --
+------------------------------------------------------------------------------------
+HTML Editor written by Andrew Glinwood (© 2002)
+
+Freeware written in Delphi 6 pro
+
+A new forum is up and running at the offical web site.
+Offical web site: http://www.blackeclipse.com/
+
+To stop this file from loading, simply remove or rename this file that resides in
+the Editor folder.
+------------------------------------------------------------------------------------
+--------------------------------------------------------------------- end of file --

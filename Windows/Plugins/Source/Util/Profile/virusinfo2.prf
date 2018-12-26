@@ -1,0 +1,9 @@
+﻿Стандартный текст для карантина файлов Virusinfo
+1.[url=http://virusinfo.info/showthread.php?t=7239]AVZ, меню "Файл - Выполнить скрипт" - Скопировать ниже написанный скрипт- Нажать кнопку "Запустить".[/url]
+[CODE]$SCRIPT$[/CODE]
+После выполнения скрипта компьютер перезагрузится. 
+Прислать карантин согласно [b]приложения 3 [url=http://virusinfo.info/showthread.php?t=1235]правил [/url][/b].
+Загружать по ссылке: [url]http://virusinfo.info/upload_virus.php?tid=[/url]
+
+2.Пофиксить в HijackThis следующие строчки ( [url]http://virusinfo.info/showthread.php?t=4491[/url] )
+[CODE] [/CODE]

@@ -1,0 +1,2207 @@
+date/time         : 2010-10-20, 11:47:30, 703ms
+computer name     : YUDENISOV-HOME
+user name         : yudenisov
+registered owner  : DNA7 X86 / DNA Project
+operating system  : Windows NT New build 7600
+system language   : Russian
+system up time    : 7 minutes 18 seconds
+program up time   : 9 seconds
+processor         : Intel(R) Celeron(R) D CPU 220 @ 1.20GHz
+physical memory   : 989/1919 MB (free/total)
+free disk space   : (C:) 14,84 GB
+display mode      : 1280x800, 32 bit
+process id        : $bbc
+allocated memory  : 31,04 MB
+executable        : ExtMan.exe
+exec. date/time   : 2009-03-02 07:58
+version           : 0.1.5.145
+compiled with     : Delphi 5
+madExcept version : 3.0h
+callstack crc     : $db6308ac, $95a49f62, $95a49f62
+count             : 3
+exception number  : 1
+exception class   : EAccessViolation
+exception message : Zugriffsverletzung bei Adresse 0049F580 in Modul 'ExtMan.exe'. Lesen von Adresse 00000004.
+
+main thread ($b90):
+0049f580 +000 ExtMan.exe   ComCtrls         TListItem.GetIndex
+004b0eff +14f ExtMan.exe   ext_haupt 209 +6 Text_form.us_langClick
+0047831e +062 ExtMan.exe   Controls         TControl.Click
+004786fe +05e ExtMan.exe   Controls         TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls         TControl.WndProc
+00477fd4 +024 ExtMan.exe   Controls         TControl.Perform
+0047aa68 +080 ExtMan.exe   Controls         TWinControl.IsControlMouseMsg
+0047ab64 +0e8 ExtMan.exe   Controls         TWinControl.WndProc
+0048f1f2 +3aa ExtMan.exe   Forms            TCustomForm.WndProc
+0047a850 +02c ExtMan.exe   Controls         TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms            StdWndProc
+774d3573 +00a USER32.dll                    DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms            TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms            TApplication.HandleMessage
+00495019 +081 ExtMan.exe   Forms            TApplication.Run
+004b3933 +08b ExtMan.exe   ExtMan     28 +8 initialization
+75c31172 +010 kernel32.dll                  BaseThreadInitThunk
+
+thread $e54:
+777c5e4a +0a ntdll.dll     NtWaitForMultipleObjects
+75c31172 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 ExtMan.exe     0.1.5.145        C:\Util
+3aa00000 LvHook.dll     14.0.0.596       C:\Program Files\ABBYY Lingvo x3
+732e0000 pshook.dll     3.1.1.72         C:\Program Files\Yandex\Punto Switcher
+74070000 dwmapi.dll     6.1.7600.16385   C:\Windows\system32
+743e0000 uxtheme.dll    6.1.7600.16385   C:\Windows\system32
+74690000 comctl32.dll   6.10.7600.16385  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc
+74c00000 version.dll    6.1.7600.16385   C:\Windows\system32
+75560000 SspiCli.dll    6.1.7600.16385   C:\Windows\system32
+755e0000 CRYPTBASE.dll  6.1.7600.16385   C:\Windows\system32
+756d0000 wsock32.dll    6.1.7600.16385   C:\Windows\system32
+75940000 MSASN1.dll     6.1.7600.16385   C:\Windows\system32
+75950000 CRYPT32.dll    6.1.7600.16385   C:\Windows\system32
+75a70000 KERNELBASE.dll 6.1.7600.16385   C:\Windows\system32
+75be0000 kernel32.dll   6.1.7600.16385   C:\Windows\system32
+75d50000 ole32.dll      6.1.7600.16385   C:\Windows\system32
+75eb0000 SHELL32.dll    6.1.7600.16385   C:\Windows\system32
+76b00000 oleaut32.dll   6.1.7600.16385   C:\Windows\system32
+76b90000 msvcrt.dll     7.0.7600.16385   C:\Windows\system32
+76c40000 comdlg32.dll   6.1.7600.16385   C:\Windows\system32
+76cc0000 MSCTF.dll      6.1.7600.16385   C:\Windows\system32
+76d90000 WS2_32.dll     6.1.7600.16385   C:\Windows\system32
+76dd0000 USP10.dll      1.626.7600.16385 C:\Windows\system32
+77070000 GDI32.dll      6.1.7600.16385   C:\Windows\system32
+770c0000 iertutil.dll   8.0.7600.16385   C:\Windows\system32
+772c0000 sechost.dll    6.1.7600.16385   C:\Windows\SYSTEM32
+772e0000 imagehlp.dll   6.1.7600.16385   C:\Windows\system32
+77310000 RPCRT4.dll     6.1.7600.16385   C:\Windows\system32
+773c0000 wininet.dll    8.0.7600.16385   C:\Windows\system32
+774c0000 USER32.dll     6.1.7600.16385   C:\Windows\system32
+775e0000 SHLWAPI.dll    6.1.7600.16385   C:\Windows\system32
+77640000 urlmon.dll     8.0.7600.16385   C:\Windows\system32
+77780000 ntdll.dll      6.1.7600.16385   C:\Windows\SYSTEM32
+778c0000 LPK.dll        6.1.7600.16385   C:\Windows\system32
+778d0000 NSI.dll        6.1.7600.16385   C:\Windows\system32
+778e0000 IMM32.DLL      6.1.7600.16385   C:\Windows\system32
+77900000 Normaliz.dll   6.1.7600.16385   C:\Windows\system32
+77910000 advapi32.dll   6.1.7600.16385   C:\Windows\system32
+
+processes:
+000 Idle                     0
+004 System                   0
+0dc smss.exe                 0
+1a8 csrss.exe                0
+1e0 csrss.exe                1
+1e8 psxss.exe                0
+214 wininit.exe              0
+21c winlogon.exe             1
+258 services.exe             0
+260 lsass.exe                0
+268 lsm.exe                  0
+2c4 svchost.exe              0
+30c svchost.exe              0
+364 svchost.exe              0
+38c svchost.exe              0
+3a4 svchost.exe              0
+3fc audiodg.exe              0
+490 svchost.exe              0
+51c svchost.exe              0
+5d8 spoolsv.exe              0
+5f4 svchost.exe              0
+6ec NetworkLicenseServer.exe 0
+710 NetworkLicenseServer.exe 0
+738 svchost.exe              0
+74c CISVC.EXE                0
+778 DeviceManager.exe        0
+7b8 LVPrcSrv.exe             0
+7ec SMSvcHost.exe            0
+1bc SbieSvc.exe              0
+104 TCPSVCS.EXE              0
+294 svchost.exe              0
+4e8 vmount2.exe              0
+570 vmnat.exe                0
+584 svchost.exe              0
+69c WTSrv.exe                0
+678 vmnetdhcp.exe            0
+1b8 vmware-authd.exe         0
+96c svchost.exe              0
+9cc dllhost.exe              0
+a68 WmiPrvSE.exe             0
+bac Dwm.exe                  1 high         C:\Windows\system32
+bd4 taskhost.exe             1 normal       C:\Windows\system32
+c00 Explorer.EXE             1 normal       C:\Windows
+cc8 SynTPEnh.exe             1 above normal C:\Program Files\Synaptics\SynTP
+cd4 SISTRAY.EXE              1 normal       C:\Program Files\SiS VGA Utilities
+ce4 RtHDVCpl.exe             1 normal       C:\Windows
+d18 SynTPHelper.exe          1 above normal C:\Program Files\Synaptics\SynTP
+d38 LvAgent.exe              1 normal       C:\Program Files\ABBYY Lingvo x3
+d54 Archivarius3000.exe      1 normal       C:\Program Files\Archivarius 3000
+d64 vmware-tray.exe          1 normal       C:\Program Files\VMware\VMware Workstation
+d80 hqtray.exe               1 normal       C:\Program Files\VMware\VMware Workstation
+dac WTClient.exe             1 high         C:\Windows\System32
+de0 ModemListener.exe        1 normal       C:\Program Files\Svyaznoy Modem
+e38 networx.exe              1 normal       C:\Program Files\NetWorx
+e84 NokiaMServer.exe         1 normal       C:\Program Files\Common Files\Nokia\MPlatform
+ea4 SnagIt32.exe             1 normal       C:\Program Files\TechSmith\SnagIt 7
+ee8 Totalcmd.exe             1 normal       C:\Program Files\Total Commander
+f64 punto.exe                1 normal       C:\Program Files\Yandex\Punto Switcher
+f74 Ab.exe                   1 normal       C:\Program Files\ABook
+f84 soffice.exe              1 normal       C:\Program Files\OpenOffice.org 3\program
+f90 soffice.bin              1 normal       C:\Program Files\OpenOffice.org 3\program
+fac TSCHelp.exe              1 normal       C:\Program Files\TechSmith\SnagIt 7
+2e0 SearchIndexer.exe        0
+d40 SearchProtocolHost.exe   0
+e1c svchost.exe              0
+da8 sppsvc.exe               0
+994 svchost.exe              0
+f2c wmpnetwk.exe             0
+ba4 SearchFilterHost.exe     0
+bbc ExtMan.exe               1 normal       C:\Util
+
+hardware:
++ Batteries
+  - Адаптер блока питания (Microsoft)
+  - Батарея с ACPI-совместимым управлением (Microsoft)
+  - Составная батарея (Майкрософт)
++ Bluetooth Device
+  - Bluetooth HID Enum Device (driver 6.0.12.56)
+  - Bluetooth HID Manager (driver 6.0.12.56)
+  - Bluetooth VComm Manager (driver 6.0.12.56)
++ Computer
+  - ACPI компьютер на базе x86
++ Disk drives
+  - WDC WD5000BEVT-22ZAT0 ATA Device
++ Display adapters
+  - SiS Mirage 3 Graphics (driver 7.14.10.5120)
++ DVD/CD-ROM drives
+  - HL-DT-ST DVDRAM GSA-T50N ATA Device
+  - JH1321V PHY855R SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - USB-устройство ввода
+  - VideoMate Root Enumerated Hid Device (driver 2.0.0.4)
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - Ricoh Memory Stick Controller (driver 6.0.1.11)
+  - Ricoh SD/MMC Host Controller (driver 6.0.3.6)
+  - Стандартный двухканальный контроллер PCI IDE
++ Keyboards
+  - Клавиатура HID
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
+  - Synaptics PS/2 Port TouchPad (driver 10.1.8.0)
++ Modems
+  - Agere Systems HDA Modem
+  - Bluetooth DUN Modem (driver 6.0.12.56)
+  - Bluetooth Fax Modem (driver 6.0.12.56)
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Atheros AR5007EG Wireless Network Adapter (driver 7.4.2.57)
+  - Bluetooth PAN Network Adapter (driver 6.0.12.56)
+  - SiS191 Ethernet Controller (driver 2.0.1039.1660)
+  - TAP-Win32 Adapter V8 (coLinux) (driver 8.0.0.4)
+  - VirtualBox Host-Only Ethernet Adapter (driver 3.2.8.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.1.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.1.0)
++ PCMCIA adapters
+  - Ricoh R/RL/5C476(II) или совместимый CardBus контроллер
++ Ports (COM & LPT)
+  - Bluetooth Serial Port (COM10) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM11) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM12) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM13) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM14) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM15) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM16) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM17) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM9) (driver 6.0.12.56)
+  - Последовательный порт (COM1)
++ Processors
+  - Intel(R) Celeron(R) D CPU        220  @ 1.20GHz
++ SD host adapters
+  - Стандартный SDA-совместимый SD хост-контроллер
++ Sound, video and game controllers
+  - Bluetooth AV Audio (driver 6.0.13.61)
+  - Bluetooth SCO Audio (driver 6.0.12.56)
+  - Realtek High Definition Audio (driver 6.0.1.5657)
++ Storage controllers
+  - SCSI/RAID Host Controller
++ System devices
+  - ATK0100 ACPI UTILITY (driver 1043.2.31.100)
+  - CMOS и часы
+  - High Precision Event Timer (driver 7.0.1.1011)
+  - Microsoft ACPI-совместимая система
+  - Microsoft ACPI-совместимый встроенный контроллер
+  - Microsoft System Management BIOS драйвер
+  - PenTablet Bus Enumerator (driver 5.0.1.0)
+  - Remote Desktop Device Redirector Bus
+  - SiS Accelerated Graphics Port (driver 7.2.0.1230)
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - Арифметический сопроцессор
+  - Встроенный динамик
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Кнопка питания ACPI
+  - Кнопка спящего режима ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Крышка ACPI
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Порт SiS PCI Express x1 Root
+  - Порт SiS PCI Express x1 Root
+  - Программируемый контроллер прерываний
+  - Расширенная шина ввода/вывода
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI - ISA
+  - Термальная зона ACPI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - SiS 7001 PCI - USB открытый хост-контроллер
+  - SiS 7001 PCI - USB открытый хост-контроллер
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+  - Стандартный расширенный PCI - USB хост-контроллер
+
+cpu registers:
+eax = 00000000
+ebx = 012c1f50
+ecx = 04477098
+edx = 777c64f4
+esi = 012c7f34
+edi = 0012fc30
+eip = 0049f580
+esp = 0012fb98
+ebp = 0012fbe4
+
+stack dump:
+0012fb98  04 0f 4b 00 bc fb 12 00 - c8 fd 12 00 58 35 40 00  ..K.........X5@.
+0012fba8  e4 fb 12 00 e4 42 2c 01 - e4 42 2c 01 00 00 00 00  .....B,..B,.....
+0012fbb8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012fbc8  00 00 00 00 0b 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012fbd8  00 00 00 00 00 00 00 00 - 00 00 00 00 40 fc 12 00  ............@...
+0012fbe8  24 83 47 00 bc 82 47 00 - 03 87 47 00 08 00 00 00  $.G...G...G.....
+0012fbf8  08 00 00 00 00 00 00 00 - 00 00 00 00 10 00 00 00  ................
+0012fc08  0b 00 00 00 50 1f 2c 01 - 30 fc 12 00 e4 42 2c 01  ....P.,.0....B,.
+0012fc18  90 81 47 00 50 1f 2c 01 - f8 fd 12 00 e4 42 2c 01  ..G.P.,......B,.
+0012fc28  d7 7f 47 00 e4 42 2c 01 - 02 02 00 00 00 00 00 00  ..G..B,.........
+0012fc38  08 00 08 00 00 00 00 00 - 98 fd 12 00 6d aa 47 00  ............m.G.
+0012fc48  08 00 08 00 08 00 00 00 - 08 00 00 00 6c fc 12 00  ............l...
+0012fc58  32 c7 48 00 84 fe 12 00 - f8 fd 12 00 50 1f 2c 01  2.H.........P.,.
+0012fc68  69 ab 47 00 84 fe 12 00 - f8 fd 12 00 50 1f 2c 01  i.G.........P.,.
+0012fc78  84 00 00 00 00 00 00 00 - 2e 03 f9 00 84 00 00 00  ................
+0012fc88  cd ab ba dc 00 00 00 00 - e8 fc 12 00 84 00 00 00  ................
+0012fc98  ff ff ff ff 98 e9 72 00 - bc fc 12 00 46 67 4d 77  ......r.....FgMw
+0012fca8  98 e9 72 00 ec ff ff ff - 00 00 00 00 ff ff ff ff  ..r.............
+0012fcb8  00 00 00 00 f8 fc 12 00 - d4 83 4d 77 98 e9 72 00  ..........Mw..r.
+0012fcc8  ec ff ff ff e0 83 4d 77 - 4f 37 18 22 ff ff ff ff  ......MwO7."....
+
+disassembling:
+[...]
+004b0e46       push    eax
+004b0e47       mov     eax, [ebx+$2d8]
+004b0e4d       mov     eax, [eax+$21c]
+004b0e53       mov     edx, 1
+004b0e58       call    -$12411 ($49ea4c)      ; ComCtrls.TListColumns.GetItem
+004b0e5d       pop     edx
+004b0e5e       call    -$12607 ($49e85c)      ; ComCtrls.TListColumn.SetCaption
+004b0e63 207   lea     eax, [ebp-$10]
+004b0e66       push    eax
+004b0e67       lea     eax, [ebp-$14]
+004b0e6a       push    eax
+004b0e6b       mov     ecx, $4b1024
+004b0e70       mov     edx, $4b1034           ; 'Insgesamt %d Dateitypen'
+004b0e75       mov     eax, [ebx+$320]
+004b0e7b       call    -$ce20 ($4a4060)       ; lang_system.Tlang_system.misc
+004b0e80       mov     eax, [ebp-$14]
+004b0e83       mov     edx, [$4baae8]
+004b0e89       mov     [ebp-$1c], edx
+004b0e8c       mov     byte ptr [ebp-$18], 0
+004b0e90       lea     edx, [ebp-$1c]
+004b0e93       xor     ecx, ecx
+004b0e95       call    -$5c28a ($454c10)      ; SysUtils.Format
+004b0e9a       mov     edx, [ebp-$10]
+004b0e9d       mov     eax, [ebx+$2e8]
+004b0ea3       call    -$39e6c ($47703c)      ; Controls.TControl.SetText
+004b0ea8 208   lea     eax, [ebp-$20]
+004b0eab       push    eax
+004b0eac       lea     eax, [ebp-$24]
+004b0eaf       push    eax
+004b0eb0       mov     ecx, $4b1054
+004b0eb5       mov     edx, $4b1064           ; '%s Backup erstellen'
+004b0eba       mov     eax, [ebx+$320]
+004b0ec0       call    -$ce65 ($4a4060)       ; lang_system.Tlang_system.misc
+004b0ec5       mov     eax, [ebp-$24]
+004b0ec8       push    eax
+004b0ec9       mov     eax, [$4baaf4]
+004b0ece       mov     [ebp-$1c], eax
+004b0ed1       mov     byte ptr [ebp-$18], $b
+004b0ed5       lea     edx, [ebp-$1c]
+004b0ed8       xor     ecx, ecx
+004b0eda       pop     eax
+004b0edb       call    -$5c2d0 ($454c10)      ; SysUtils.Format
+004b0ee0       mov     edx, [ebp-$20]
+004b0ee3       mov     eax, [ebx+$304]
+004b0ee9       call    -$39eb2 ($47703c)      ; Controls.TControl.SetText
+004b0eee 209   lea     eax, [ebp-$28]
+004b0ef1       push    eax
+004b0ef2       mov     esi, [ebx+$2d8]
+004b0ef8       mov     eax, esi
+004b0efa       call    -$e30b ($4a2bf4)       ; ComCtrls.TCustomListView.GetSelection
+004b0eff     > call    -$11984 ($49f580)      ; ComCtrls.TListItem.GetIndex
+004b0f04       mov     edx, eax
+004b0f06       mov     eax, [esi+$20c]
+004b0f0c       call    -$117e9 ($49f728)      ; ComCtrls.TListItems.GetItem
+004b0f11       mov     eax, [eax+8]
+004b0f14       lea     ecx, [ebp-$2c]
+004b0f17       xor     edx, edx
+004b0f19       mov     esi, [eax]
+004b0f1b       call    dword ptr [esi+$c]
+004b0f1e       mov     eax, [ebp-$2c]
+004b0f21       mov     [ebp-$1c], eax
+004b0f24       mov     byte ptr [ebp-$18], $b
+004b0f28       lea     eax, [ebp-$1c]
+004b0f2b       push    eax
+004b0f2c       lea     eax, [ebp-$30]
+004b0f2f       push    eax
+004b0f30       mov     ecx, $4b1080
+004b0f35       mov     edx, $4b1090           ; 'Alle Dateiendungen des Types %s anzeigen.'
+004b0f3a       mov     eax, [ebx+$320]
+004b0f40       call    -$cee5 ($4a4060)       ; lang_system.Tlang_system.misc
+004b0f45       mov     eax, [ebp-$30]
+004b0f48       xor     ecx, ecx
+004b0f4a       pop     edx
+004b0f4b       call    -$5c340 ($454c10)      ; SysUtils.Format
+004b0f50       mov     edx, [ebp-$28]
+004b0f53       mov     eax, [ebx+$308]
+004b0f59       call    -$39f22 ($47703c)      ; Controls.TControl.SetText
+004b0f5e 210   xor     edx, edx
+004b0f60       mov     eax, [ebx+$31c]
+004b0f66       call    -$3a047 ($476f24)      ; Controls.TControl.SetVisible
+004b0f6b 211   xor     edx, edx
+004b0f6d       mov     eax, [ebx+$318]
+004b0f73       call    -$3a054 ($476f24)      ; Controls.TControl.SetVisible
+004b0f78 212   mov     eax, $4bab08
+004b0f7d       mov     edx, $4b10c4
+004b0f82       call    -$ad367 ($403c20)      ; System.@LStrAsg
+004b0f87       xor     eax, eax
+004b0f89       pop     edx
+004b0f8a       pop     ecx
+004b0f8b       pop     ecx
+004b0f8c       mov     fs:[eax], edx
+004b0f8f       push    $4b0fb6
+004b0f94       lea     eax, [ebp-$30]
+004b0f97       mov     edx, 5
+004b0f9c       call    -$ad3b1 ($403bf0)      ; System.@LStrArrayClr
+004b0fa1       lea     eax, [ebp-$14]
+004b0fa4       mov     edx, 5
+004b0fa9       call    -$ad3be ($403bf0)      ; System.@LStrArrayClr
+004b0fae       ret
+004b0faf       jmp     -$ada8c ($403528)      ; System.@HandleFinally
+004b0fb4       jmp     loc_4b0f94
+[...]
+
+date/time         : 2011-09-11, 15:20:14, 212ms
+computer name     : YUDENISOV-HOME
+user name         : yudenisov
+registered owner  : DNA7 X86 / DNA Project
+operating system  : Windows NT New build 7600
+system language   : Russian
+system up time    : 2 hours 11 minutes
+program up time   : 1 minute 25 seconds
+processor         : Intel(R) Celeron(R) D CPU 220 @ 1.20GHz
+physical memory   : 551/1919 MB (free/total)
+free disk space   : (C:) 10,79 GB
+display mode      : 1280x800, 32 bit
+process id        : $11e0
+allocated memory  : 33,87 MB
+executable        : ExtMan.exe
+exec. date/time   : 2009-03-02 09:58
+version           : 0.1.5.145
+compiled with     : Delphi 5
+madExcept version : 3.0h
+callstack crc     : $e0d0881f, $8bb1b65f, $8bb1b65f
+count             : 2
+exception number  : 1
+exception class   : ERegistryException
+exception message : Erzeugung von Schlussel \.xar misslungen.
+
+main thread ($1540):
+0049b6a9 +0b1 ExtMan.exe   Registry                TRegistry.CreateKey
+004b298b +14b ExtMan.exe   ext_haupt       718 +25 Text_form.new_Click
+0047831e +062 ExtMan.exe   Controls                TControl.Click
+004aae72 +01e ExtMan.exe   TFlatButtonUnit 534  +3 TFlatButton.Click
+004aae35 +0d5 ExtMan.exe   TFlatButtonUnit 525 +25 TFlatButton.MouseUp
+00478694 +030 ExtMan.exe   Controls                TControl.DoMouseUp
+00478709 +069 ExtMan.exe   Controls                TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls                TControl.WndProc
+0047ac4e +1d2 ExtMan.exe   Controls                TWinControl.WndProc
+0047a850 +02c ExtMan.exe   Controls                TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms                   StdWndProc
+76dc3573 +00a USER32.dll                           DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms                   TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms                   TApplication.HandleMessage
+00495019 +081 ExtMan.exe   Forms                   TApplication.Run
+004b3933 +08b ExtMan.exe   ExtMan           28  +8 initialization
+776a1172 +010 kernel32.dll                         BaseThreadInitThunk
+
+thread $c78:
+779b5e4a +0a ntdll.dll     NtWaitForMultipleObjects
+776a1172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $490:
+779b5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+776a1172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $b40:
+779b5e6a +0a ntdll.dll       NtWaitForSingleObject
+75c91796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+7769effe +3e kernel32.dll    WaitForSingleObjectEx
+7769efad +0d kernel32.dll    WaitForSingleObject
+710229b8 +38 MSVCR80.dll     _endthreadex
+776a1172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $12b4:
+779b5e6a +0a ntdll.dll       NtWaitForSingleObject
+75c91796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+7769effe +3e kernel32.dll    WaitForSingleObjectEx
+7769efad +0d kernel32.dll    WaitForSingleObject
+710229b8 +38 MSVCR80.dll     _endthreadex
+776a1172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $fe8:
+779b5e6a +0a ntdll.dll       NtWaitForSingleObject
+75c91796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+7769effe +3e kernel32.dll    WaitForSingleObjectEx
+7769efad +0d kernel32.dll    WaitForSingleObject
+710229b8 +38 MSVCR80.dll     _endthreadex
+776a1172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $de4:
+779b5e6a +0a ntdll.dll       NtWaitForSingleObject
+75c91796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+7769effe +3e kernel32.dll    WaitForSingleObjectEx
+7769efad +0d kernel32.dll    WaitForSingleObject
+710229b8 +38 MSVCR80.dll     _endthreadex
+776a1172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $14e0:
+779b5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+776a1172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $172c:
+779b5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+776a1172 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 ExtMan.exe                0.1.5.145          C:\Util
+043f0000 SugarSyncShellExt.dll     1.0.0.1            C:\Program Files\SugarSync
+10000000 DropboxExt.14.dll         1.0.0.14           C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+64d00000 snxhk.dll                 6.0.1203.0         C:\Program Files\Alwil Software\Avast5
+64e40000 ashShell.dll              6.0.1203.0         C:\Program Files\Alwil Software\Avast5
+6f520000 GrooveUtil.DLL            12.0.6423.1000     C:\Program Files\Microsoft Office\Office12
+6f720000 GrooveShellExtensions.dll 12.0.6421.1000     C:\Program Files\Microsoft Office\Office12
+6f9c0000 EhStorShell.dll           6.1.7600.16385     C:\Windows\system32
+6fee0000 ATL80.DLL                 8.0.50727.4053     C:\Windows\WinSxS\x86_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d1c738ec43578ea1
+6ffb0000 GrooveNew.DLL             12.0.6413.1000     C:\Program Files\Microsoft Office\Office12
+6ffe0000 msi.dll                   5.0.7600.16385     C:\Windows\system32
+71020000 MSVCR80.dll               8.0.50727.4927     C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4927_none_d08a205e442db5b5
+718e0000 CSCAPI.dll                6.1.7600.16385     C:\Windows\system32
+718f0000 dbghelp.dll               6.1.7600.16385     C:\Windows\system32
+719e0000 wsock32.dll               6.1.7600.16385     C:\Windows\system32
+727c0000 pshook.dll                3.2.2.45           C:\Program Files\Yandex\Punto Switcher
+73500000 cscui.dll                 6.1.7600.16385     C:\Windows\System32
+73750000 MSImg32.dll               6.1.7600.16385     C:\Windows\system32
+73ca0000 ntshrui.dll               6.1.7600.16385     C:\Windows\system32
+73ea0000 CSCDLL.dll                6.1.7600.16385     C:\Windows\System32
+73f80000 slc.dll                   6.1.7600.16385     C:\Windows\system32
+74310000 WindowsCodecs.dll         6.1.7600.16385     C:\Windows\system32
+746c0000 uxtheme.dll               6.1.7600.16385     C:\Windows\system32
+74790000 dwmapi.dll                6.1.7600.16385     C:\Windows\system32
+747b0000 PROPSYS.dll               7.0.7600.16385     C:\Windows\system32
+74a10000 comctl32.dll              6.10.7600.16385    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc
+74f80000 version.dll               6.1.7600.16385     C:\Windows\system32
+752e0000 rsaenh.dll                6.1.7600.16385     C:\Windows\system32
+75540000 CRYPTSP.dll               6.1.7600.16385     C:\Windows\system32
+756e0000 srvcli.dll                6.1.7600.16385     C:\Windows\system32
+75990000 SspiCli.dll               6.1.7600.16385     C:\Windows\system32
+759c0000 apphelp.dll               6.1.7600.16385     C:\Windows\system32
+75a10000 CRYPTBASE.dll             6.1.7600.16385     C:\Windows\system32
+75b30000 MSASN1.dll                6.1.7600.16385     C:\Windows\system32
+75b40000 CFGMGR32.dll              6.1.7600.16385     C:\Windows\system32
+75b70000 CRYPT32.dll               6.1.7600.16385     C:\Windows\system32
+75c90000 KERNELBASE.dll            6.1.7600.16385     C:\Windows\system32
+75ce0000 DEVOBJ.dll                6.1.7600.16385     C:\Windows\system32
+75dc0000 CLBCatQ.DLL               2001.12.8530.16385 C:\Windows\system32
+75e50000 wininet.dll               8.0.7600.16385     C:\Windows\system32
+75f50000 IMM32.DLL                 6.1.7600.16385     C:\Windows\system32
+75f70000 SHLWAPI.dll               6.1.7600.16385     C:\Windows\system32
+75fd0000 SHELL32.dll               6.1.7600.16385     C:\Windows\system32
+76c20000 urlmon.dll                8.0.7600.16385     C:\Windows\system32
+76d60000 GDI32.dll                 6.1.7600.16385     C:\Windows\system32
+76db0000 USER32.dll                6.1.7600.16385     C:\Windows\system32
+76e80000 WS2_32.dll                6.1.7600.16385     C:\Windows\system32
+76ec0000 SETUPAPI.dll              6.1.7600.16385     C:\Windows\system32
+77060000 oleaut32.dll              6.1.7600.16385     C:\Windows\system32
+770f0000 NSI.dll                   6.1.7600.16385     C:\Windows\system32
+77100000 USP10.dll                 1.626.7600.16385   C:\Windows\system32
+771a0000 MSCTF.dll                 6.1.7600.16385     C:\Windows\system32
+77280000 comdlg32.dll              6.1.7600.16385     C:\Windows\system32
+77300000 iertutil.dll              8.0.7600.16385     C:\Windows\system32
+77500000 RPCRT4.dll                6.1.7600.16385     C:\Windows\system32
+775b0000 advapi32.dll              6.1.7600.16385     C:\Windows\system32
+77650000 kernel32.dll              6.1.7600.16385     C:\Windows\system32
+777e0000 imagehlp.dll              6.1.7600.16385     C:\Windows\system32
+77810000 ole32.dll                 6.1.7600.16385     C:\Windows\system32
+77970000 ntdll.dll                 6.1.7600.16385     C:\Windows\SYSTEM32
+77ab0000 LPK.dll                   6.1.7600.16385     C:\Windows\system32
+77ac0000 msvcrt.dll                7.0.7600.16385     C:\Windows\system32
+77b70000 Normaliz.dll              6.1.7600.16385     C:\Windows\system32
+77b80000 sechost.dll               6.1.7600.16385     C:\Windows\SYSTEM32
+7c340000 MSVCR71.dll               7.10.3052.4        C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+7c3a0000 MSVCP71.dll               7.10.3077.0        C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+
+processes:
+0000 Idle                     0
+0004 System                   0
+0128 smss.exe                 0
+01ec csrss.exe                0
+0230 csrss.exe                1
+0238 wininit.exe              0
+025c winlogon.exe             1
+0298 services.exe             0
+02a0 lsass.exe                0
+02a8 lsm.exe                  0
+0304 svchost.exe              0
+035c svchost.exe              0
+03b4 svchost.exe              0
+03d8 svchost.exe              0
+03f0 svchost.exe              0
+0410 UMVPFSrv.exe             0
+04b8 svchost.exe              0
+04f8 SbieSvc.exe              0
+0580 svchost.exe              0
+0638 AvastSvc.exe             0
+07b4 spoolsv.exe              0
+07d4 svchost.exe              0
+01e8 NetworkLicenseServer.exe 0
+01b8 NetworkLicenseServer.exe 0
+04d4 taskhost.exe             1 normal       C:\Windows\system32
+0598 svchost.exe              0
+05f0 mDNSResponder.exe        0
+06a4 Dwm.exe                  1 high         C:\Windows\system32
+06dc Explorer.EXE             1 normal       C:\Windows
+0648 Connectifyd.exe          0
+087c SynTPEnh.exe             1 above normal C:\Program Files\Synaptics\SynTP
+088c SISTRAY.EXE              1 normal       C:\Program Files\SiS VGA Utilities
+08ac SynTPHelper.exe          1 above normal C:\Program Files\Synaptics\SynTP
+08bc AvastUI.exe              1 normal       C:\Program Files\Alwil Software\Avast5
+08e0 vmware-tray.exe          1 normal       C:\Program Files\VMware\VMware Workstation
+08e8 hqtray.exe               1 normal       C:\Program Files\VMware\VMware Workstation
+0968 ModemListener.exe        1 normal       C:\Program Files\Svyaznoy Modem
+099c GuardMailRu.exe          1 normal       C:\Program Files\Mail.Ru\Guard
+09dc RtHDVCpl.exe             1 normal       C:\Windows
+0a24 svchost.exe              0
+0a38 GuardMailRu.exe          0
+0a78 GuardGuard.exe           0
+0ab8 hamachi-2.exe            0
+0ad8 mdm.exe                  0
+0b14 sqlservr.exe             0
+0b70 sidebar.exe              1 normal       C:\Program Files\Windows Sidebar
+0ba4 SbieCtrl.exe             1 normal       C:\Program Files\Sandboxie
+0c8c SugarSyncManager.exe     1 normal       C:\Program Files\SugarSync
+0cb8 ctlamon.exe              1 normal       C:\Program Files\INFRASONIC\AMON
+0cd8 ndsvc.exe                0
+0d70 SeaPort.EXE              0
+0dc0 klauncher.exe            1 normal       C:\KDE4\bin
+0dc8 ComproRemote.exe         1 normal       C:\Program Files\Common Files\VideoMate
+0dd0 conhost.exe              1 normal       C:\Windows\system32
+0ddc dbus-daemon.exe          1 normal       C:\KDE4\bin
+0df0 conhost.exe              1 normal       C:\Windows\system32
+0e18 ComproSchedulerDTV.exe   1 normal       C:\Program Files\Common Files\VideoMate
+0e70 svchost.exe              0
+0e84 orbitdm.exe              1 normal       C:\Program Files\Orbitdownloader
+0e98 SnagIt32.exe             1 normal       C:\Program Files\TechSmith\SnagIt 7
+0ec4 TeamViewer_Service.exe   0
+0ee0 Totalcmd.exe             1 normal       C:\Program Files\Total Commander
+0f38 Ab.exe                   1 normal       C:\Program Files\ABook
+0f58 Dropbox.exe              1 normal       C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+0f60 GoogleCalendarSync.exe   1 normal       C:\Program Files\Google\Google Calendar Sync
+0f70 TSCHelp.exe              1 normal       C:\Program Files\TechSmith\SnagIt 7
+0fa8 punto.exe                1 normal       C:\Program Files\Yandex\Punto Switcher
+0fc0 orbitnet.exe             1 normal       C:\Program Files\Orbitdownloader
+09b4 conhost.exe              0
+0bb8 vmnat.exe                0
+0c38 svchost.exe              0
+0d44 WTSrv.exe                0
+0bc0 WLIDSVC.EXE              0
+0ffc vmware-authd.exe         0
+0828 WLIDSVCM.EXE             0
+0a94 vmnetdhcp.exe            0
+0908 TeamViewer.exe           1 normal       C:\Program Files\TeamViewer\Version6
+1030 SearchIndexer.exe        0
+11b4 svchost.exe              0
+16c8 svchost.exe              0
+1120 svchost.exe              0
+11b0 vmount2.exe              0
+16cc ServiceLayer.exe         0
+05cc NclUSBSrv.exe            0
+158c NclIVTBTSrv.exe          1 high         C:\Program Files\PC Connectivity Solution\Transports
+0754 BlueSoleil.exe           1 normal       C:\Program Files\IVT Corporation\BlueSoleil
+1468 audiodg.exe              0
+17b8 WUDFHost.exe             0
+1770 WmiPrvSE.exe             0
+11e0 ExtMan.exe               1 normal       C:\Util
+
+hardware:
++ Batteries
+  - Адаптер блока питания (Microsoft)
+  - Батарея с ACPI-совместимым управлением (Microsoft)
+  - Составная батарея (Майкрософт)
++ Bluetooth Device
+  - Bluetooth HID Enum Device (driver 6.0.12.56)
+  - Bluetooth HID Manager (driver 6.0.12.56)
+  - Bluetooth VComm Manager (driver 6.0.12.56)
++ Computer
+  - ACPI компьютер на базе x86
++ Disk drives
+  - Kingston DataTravelerMini USB Device
+  - WDC WD5000BEVT-22ZAT0 ATA Device
++ Display adapters
+  - SiS Mirage 3 Graphics (driver 7.14.10.5120)
++ DVD/CD-ROM drives
+  - HL-DT-ST DVDRAM GSA-T50N ATA Device
+  - LGZC LQ7OHMN SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - USB-устройство ввода
+  - VideoMate Root Enumerated Hid Device (driver 2.0.0.4)
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - Ricoh Memory Stick Controller (driver 6.0.1.11)
+  - Ricoh SD/MMC Host Controller (driver 6.0.3.6)
+  - Стандартный двухканальный контроллер PCI IDE
++ Imaging devices
+  - Logitech Webcam 200 (driver 13.25.1014.0)
++ Keyboards
+  - Клавиатура HID
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
+  - Synaptics PS/2 Port TouchPad (driver 10.1.8.0)
++ Modems
+  - Agere Systems HDA Modem (driver 2.1.88.0)
+  - Bluetooth DUN Modem (driver 6.0.12.56)
+  - Bluetooth Fax Modem (driver 6.0.12.56)
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Bluetooth PAN Network Adapter (driver 6.0.12.56)
+  - Hamachi Network Interface (driver 6.0.2.2)
+  - SiS191 Ethernet Controller (driver 2.0.1039.1660)
+  - TeamViewer VPN Adapter (driver 2.10.0.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.1.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.1.0)
+  - Адаптер беспроводных сетей Atheros AR5007EG Wireless
+  - Адаптер мини-порта виртуального WiFi Microsoft
++ PCMCIA adapters
+  - Ricoh R/RL/5C476(II) или совместимый CardBus контроллер
++ Portable Devices
+  - KINGSTON-2G
++ Ports (COM & LPT)
+  - Bluetooth Serial Port (COM11) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM12) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM13) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM14) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM15) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM16) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM17) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM18) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM19) (driver 6.0.12.56)
+  - Последовательный порт (COM1)
++ Processors
+  - Intel(R) Celeron(R) D CPU        220  @ 1.20GHz
++ SD host adapters
+  - Стандартный SDA-совместимый SD хост-контроллер
++ Sound, video and game controllers
+  - Bluetooth AV Audio (driver 6.0.13.61)
+  - Bluetooth SCO Audio (driver 6.0.12.56)
+  - Realtek High Definition Audio (driver 6.0.1.5657)
+  - Unimodem аудиоустройство с полным дуплексом
+  - Webcam 200 (driver 13.25.1014.0)
++ Storage controllers
+  - AORH1R4H IDE Controller
++ Storage volume shadow copies
+  - Универсальная теневая копия тома
++ System devices
+  - ATK0100 ACPI UTILITY (driver 1043.2.31.100)
+  - CMOS и часы
+  - High Precision Event Timer (driver 7.0.1.1011)
+  - Microsoft ACPI-совместимая система
+  - Microsoft ACPI-совместимый встроенный контроллер
+  - Microsoft System Management BIOS драйвер
+  - PenTablet Bus Enumerator (driver 5.0.1.0)
+  - Remote Desktop Device Redirector Bus
+  - SiS Accelerated Graphics Port (driver 7.2.0.1230)
+  - UMBus перечислитель
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - Арифметический сопроцессор
+  - Встроенный динамик
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Кнопка питания ACPI
+  - Кнопка спящего режима ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Крышка ACPI
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Порт SiS PCI Express x1 Root
+  - Порт SiS PCI Express x1 Root
+  - Программируемый контроллер прерываний
+  - Расширенная шина ввода/вывода
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI - ISA
+  - Термальная зона ACPI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Logitech USB Camera (Webcam 200) (driver 13.25.1014.0)
+  - SiS 7001 PCI - USB открытый хост-контроллер
+  - SiS 7001 PCI - USB открытый хост-контроллер
+  - Запоминающее устройство для USB
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+  - Стандартный расширенный PCI - USB хост-контроллер
+
+cpu registers:
+eax = 01396c80
+ebx = 00000000
+ecx = 00000000
+edx = 0049b6ae
+esi = 013a2d4c
+edi = 01396c74
+eip = 0049b6ae
+esp = 0012fb58
+ebp = 0012fbb4
+
+stack dump:
+0012fb58  ae b6 49 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..I.............
+0012fb68  6c fb 12 00 ae b6 49 00 - 80 6c 39 01 00 00 00 00  l.....I..l9.....
+0012fb78  4c 2d 3a 01 74 6c 39 01 - b4 fb 12 00 88 fb 12 00  L-:.tl9.........
+0012fb88  bc fb 12 00 58 35 40 00 - b4 fb 12 00 09 00 00 00  ....X5@.........
+0012fb98  4c 2d 3a 01 ac 1e 37 01 - 74 6c 39 01 0b 6c 39 01  L-:...7.tl9..l9.
+0012fba8  88 3e 40 00 00 00 00 00 - 00 00 00 00 10 fc 12 00  .>@.............
+0012fbb8  90 29 4b 00 c8 fd 12 00 - 58 35 40 00 10 fc 12 00  .)K.....X5@.....
+0012fbc8  09 00 00 00 f0 91 37 01 - f0 91 37 01 00 00 00 00  ......7...7.....
+0012fbd8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012fbe8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012fbf8  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012fc08  00 00 00 00 00 00 00 00 - 38 fc 12 00 24 83 47 00  ........8...$.G.
+0012fc18  f0 91 37 01 77 ae 4a 00 - 54 ae 4a 00 3a ae 4a 00  ..7.w.J.T.J.:.J.
+0012fc28  f8 fd 12 00 f0 91 37 01 - 60 ad 4a 00 00 91 00 00  ......7.`.J.....
+0012fc38  c0 fd 12 00 99 86 47 00 - 09 00 00 00 38 00 00 00  ......G.....8...
+0012fc48  00 00 00 00 f8 fd 12 00 - f0 91 37 01 f0 91 37 01  ..........7...7.
+0012fc58  0e 87 47 00 84 fc 12 00 - d8 98 e1 76 13 5a dc 76  ..G........v.Z.v
+0012fc68  46 69 de 76 44 00 00 00 - 84 fe 12 00 84 fe 12 00  Fi.vD...........
+0012fc78  f8 fd 12 00 f0 91 37 01 - 90 81 47 00 84 fe 12 00  ......7...G.....
+0012fc88  f8 fd 12 00 f0 91 37 01 - 53 ac 47 00 84 fe 12 00  ......7.S.G.....
+
+disassembling:
+[...]
+004b28d3 702   mov     edx, $80000000
+004b28d8       mov     eax, esi
+004b28da       call    -$1734f ($49b590)      ; Registry.TRegistry.SetRootKey
+004b28df 704   lea     edx, [ebp-$10]
+004b28e2       mov     eax, [ebp-4]
+004b28e5       call    -$5e8fe ($453fec)      ; SysUtils.Trim
+004b28ea       mov     edx, [ebp-$10]
+004b28ed       lea     eax, [ebp-4]
+004b28f0       call    -$aec91 ($403c64)      ; System.@LStrLAsg
+004b28f5 706   lea     eax, [ebp-$14]
+004b28f8       push    eax
+004b28f9       mov     ecx, 1
+004b28fe       xor     edx, edx
+004b2900       mov     eax, [ebp-4]
+004b2903       call    -$ae8b4 ($404054)      ; System.@LStrCopy
+004b2908       mov     eax, [ebp-$14]
+004b290b       mov     edx, $4b2c14
+004b2910       call    -$ae9b9 ($403f5c)      ; System.@LStrCmp
+004b2915       jnz     loc_4b2929
+004b2917 707   lea     eax, [ebp-4]
+004b291a       mov     ecx, 1
+004b291f       mov     edx, 1
+004b2924       call    -$ae895 ($404094)      ; System.@LStrDelete
+004b2929 710   lea     eax, [ebp-$18]
+004b292c       mov     ecx, [ebp-4]
+004b292f       mov     edx, $4b2c20
+004b2934       call    -$aeaa1 ($403e98)      ; System.@LStrCat3
+004b2939       mov     edx, [ebp-$18]
+004b293c       mov     eax, esi
+004b293e       call    -$16a4f ($49bef4)      ; Registry.TRegistry.KeyExists
+004b2943       test    al, al
+004b2945       jz      loc_4b2976
+004b2947 712   lea     eax, [ebp-$1c]
+004b294a       push    eax
+004b294b       mov     ecx, $4b2c2c
+004b2950       mov     edx, $4b2c3c           ; 'Dieser Dateityp ist schon vorhanden oder ist unzulдssig!'
+004b2955       mov     eax, [ebx+$320]
+004b295b       call    -$e900 ($4a4060)       ; lang_system.Tlang_system.misc
+004b2960       mov     eax, [ebp-$1c]
+004b2963       call    -$18f18 ($499a50)      ; Dialogs.ShowMessage
+004b2968 713   mov     edx, ebx
+004b296a       mov     eax, ebx
+004b296c       call    public ext_haupt.Text_form.new_Click
+004b2971       jmp     loc_4b2b71
+004b2976 718   lea     eax, [ebp-$20]
+004b2979       mov     ecx, [ebp-4]
+004b297c       mov     edx, $4b2c20
+004b2981       call    -$aeaee ($403e98)      ; System.@LStrCat3
+004b2986       mov     edx, [ebp-$20]
+004b2989       mov     eax, esi
+004b298b     > call    -$17398 ($49b5f8)      ; Registry.TRegistry.CreateKey
+004b2990 719   lea     eax, [ebp-$24]
+004b2993       mov     ecx, [ebp-4]
+004b2996       mov     edx, $4b2c20
+004b299b       call    -$aeb08 ($403e98)      ; System.@LStrCat3
+004b29a0       mov     edx, [ebp-$24]
+004b29a3       mov     cl, 1
+004b29a5       mov     eax, esi
+004b29a7       call    -$172d8 ($49b6d4)      ; Registry.TRegistry.OpenKey
+004b29ac 720   lea     eax, [ebp-$28]
+004b29af       mov     ecx, $4b2c80
+004b29b4       mov     edx, [ebp-4]
+004b29b7       call    -$aeb24 ($403e98)      ; System.@LStrCat3
+004b29bc       mov     ecx, [ebp-$28]
+004b29bf       xor     edx, edx
+004b29c1       mov     eax, esi
+004b29c3       call    -$16da4 ($49bc24)      ; Registry.TRegistry.WriteString
+004b29c8 721   mov     eax, esi
+004b29ca       call    -$1746f ($49b560)      ; Registry.TRegistry.CloseKey
+004b29cf 722   push    $4b2c90
+004b29d4       push    dword ptr [ebp-4]
+004b29d7       push    $4b2c80
+004b29dc       lea     eax, [ebp-$2c]
+004b29df       mov     edx, 3
+004b29e4       call    -$aeadd ($403f0c)      ; System.@LStrCatN
+004b29e9       mov     edx, [ebp-$2c]
+004b29ec       mov     eax, esi
+004b29ee       call    -$173fb ($49b5f8)      ; Registry.TRegistry.CreateKey
+004b29f3 724   mov     eax, esi
+004b29f5       call    -$afc32 ($402dc8)      ; System.TObject.Free
+004b29fa 728   mov     eax, [ebx+$2d8]
+004b2a00       mov     eax, [eax+$20c]
+004b2a06       call    -$131ff ($49f80c)      ; ComCtrls.TListItems.BeginUpdate
+004b2a0b 729   mov     eax, [ebx+$2d8]
+004b2a11       mov     eax, [eax+$20c]
+004b2a17       call    -$13364 ($49f6b8)      ; ComCtrls.TListItems.Add
+004b2a1c       mov     esi, eax
+004b2a1e 730   mov     edx, [ebp-4]
+004b2a21       mov     eax, esi
+004b2a23       call    -$138bc ($49f16c)      ; ComCtrls.TListItem.SetCaption
+004b2a28 731   lea     eax, [ebp-$30]
+004b2a2b       mov     ecx, $4b2c80
+004b2a30       mov     edx, [ebp-4]
+004b2a33       call    -$aeba0 ($403e98)      ; System.@LStrCat3
+004b2a38       mov     edx, [ebp-$30]
+004b2a3b       mov     eax, [esi+8]
+004b2a3e       mov     ecx, [eax]
+004b2a40       call    dword ptr [ecx+$34]
+004b2a43 732   lea     eax, [ebp-$34]
+004b2a46       mov     ecx, $4b2c80
+004b2a4b       mov     edx, [ebp-4]
+[...]
+
+date/time         : 2011-09-14, 17:26:16, 119ms
+computer name     : YUDENISOV-HOME
+user name         : yudenisov
+registered owner  : DNA7 X86 / DNA Project
+operating system  : Windows NT New build 7600
+system language   : Russian
+system up time    : 1 hour 2 minutes
+program up time   : 3 minutes 54 seconds
+processor         : Intel(R) Celeron(R) D CPU 220 @ 1.20GHz
+physical memory   : 772/1919 MB (free/total)
+free disk space   : (C:) 10,52 GB
+display mode      : 1280x800, 32 bit
+process id        : $17e0
+allocated memory  : 50,53 MB
+executable        : ExtMan.exe
+exec. date/time   : 2009-03-02 09:58
+version           : 0.1.5.145
+compiled with     : Delphi 5
+madExcept version : 3.0h
+callstack crc     : $4ab225b9, $6b6d0e00, $6b6d0e00
+count             : 2
+exception number  : 2
+exception class   : ERegistryException
+exception message : Konnte Daten fur '' nicht setzen.
+
+main thread ($1278):
+0049bdc9 +059 ExtMan.exe   Registry                TRegistry.PutData
+0049bc45 +021 ExtMan.exe   Registry                TRegistry.WriteString
+004ae31e +2e6 ExtMan.exe   edit_action_pas  93 +34 Tedit_action_form.save_Click
+0047831e +062 ExtMan.exe   Controls                TControl.Click
+004aae72 +01e ExtMan.exe   TFlatButtonUnit 534  +3 TFlatButton.Click
+004aae35 +0d5 ExtMan.exe   TFlatButtonUnit 525 +25 TFlatButton.MouseUp
+00478694 +030 ExtMan.exe   Controls                TControl.DoMouseUp
+00478709 +069 ExtMan.exe   Controls                TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls                TControl.WndProc
+0047ac4e +1d2 ExtMan.exe   Controls                TWinControl.WndProc
+0047a850 +02c ExtMan.exe   Controls                TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms                   StdWndProc
+75833573 +00a USER32.dll                           DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms                   TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms                   TApplication.HandleMessage
+004920eb +147 ExtMan.exe   Forms                   TCustomForm.ShowModal
+004afdcd +3c9 ExtMan.exe   edit_ext_pas    347 +50 Tedit_ext_form.edit_Click
+0047831e +062 ExtMan.exe   Controls                TControl.Click
+004aae72 +01e ExtMan.exe   TFlatButtonUnit 534  +3 TFlatButton.Click
+004aae35 +0d5 ExtMan.exe   TFlatButtonUnit 525 +25 TFlatButton.MouseUp
+00478694 +030 ExtMan.exe   Controls                TControl.DoMouseUp
+00478709 +069 ExtMan.exe   Controls                TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls                TControl.WndProc
+0047ac4e +1d2 ExtMan.exe   Controls                TWinControl.WndProc
+0045bfdd +059 ExtMan.exe   Classes                 TList.Delete
+0045c241 +015 ExtMan.exe   Classes                 TList.Remove
+0047a850 +02c ExtMan.exe   Controls                TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms                   StdWndProc
+75833573 +00a USER32.dll                           DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms                   TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms                   TApplication.HandleMessage
+004920eb +147 ExtMan.exe   Forms                   TCustomForm.ShowModal
+004b279e +02a ExtMan.exe   ext_haupt       680  +5 Text_form.edit_Click
+0047831e +062 ExtMan.exe   Controls                TControl.Click
+004aae72 +01e ExtMan.exe   TFlatButtonUnit 534  +3 TFlatButton.Click
+004aae35 +0d5 ExtMan.exe   TFlatButtonUnit 525 +25 TFlatButton.MouseUp
+00478694 +030 ExtMan.exe   Controls                TControl.DoMouseUp
+00478709 +069 ExtMan.exe   Controls                TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls                TControl.WndProc
+0047ac4e +1d2 ExtMan.exe   Controls                TWinControl.WndProc
+0047a850 +02c ExtMan.exe   Controls                TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms                   StdWndProc
+75833573 +00a USER32.dll                           DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms                   TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms                   TApplication.HandleMessage
+00495019 +081 ExtMan.exe   Forms                   TApplication.Run
+004b3933 +08b ExtMan.exe   ExtMan           28  +8 initialization
+76f61172 +010 kernel32.dll                         BaseThreadInitThunk
+
+thread $1388:
+76e05e4a +0a ntdll.dll     NtWaitForMultipleObjects
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1268:
+76e05e6a +0a ntdll.dll       NtWaitForSingleObject
+74fb1796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+76f5effe +3e kernel32.dll    WaitForSingleObjectEx
+76f5efad +0d kernel32.dll    WaitForSingleObject
+6fe829b8 +38 MSVCR80.dll     _endthreadex
+76f61172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $1190:
+76e05e6a +0a ntdll.dll       NtWaitForSingleObject
+74fb1796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+76f5effe +3e kernel32.dll    WaitForSingleObjectEx
+76f5efad +0d kernel32.dll    WaitForSingleObject
+6fe829b8 +38 MSVCR80.dll     _endthreadex
+76f61172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $14e8:
+76e05e6a +0a ntdll.dll       NtWaitForSingleObject
+74fb1796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+76f5effe +3e kernel32.dll    WaitForSingleObjectEx
+76f5efad +0d kernel32.dll    WaitForSingleObject
+6fe829b8 +38 MSVCR80.dll     _endthreadex
+76f61172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $1088:
+76e05e6a +0a ntdll.dll       NtWaitForSingleObject
+74fb1796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+76f5effe +3e kernel32.dll    WaitForSingleObjectEx
+76f5efad +0d kernel32.dll    WaitForSingleObject
+6fe829b8 +38 MSVCR80.dll     _endthreadex
+76f61172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $16c4:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $14c0:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $8ec:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $15cc:
+76e04c1a +0a ntdll.dll                NtDelayExecution
+74fb1870 +4f KERNELBASE.dll           SleepEx
+74fb1813 +0a KERNELBASE.dll           Sleep
+0044e861 +0d ExtMan.exe     madExcept CallThreadProcSafe
+0044e8cb +37 ExtMan.exe     madExcept ThreadExceptFrame
+76f61172 +10 kernel32.dll             BaseThreadInitThunk
+>> created by main thread ($1278) at:
+754d642e +00 ole32.dll
+
+thread $1170:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $be4:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $43c:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1544:
+76e05e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f61172 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 ExtMan.exe                0.1.5.145          C:\Util
+04370000 SugarSyncShellExt.dll     1.0.0.1            C:\Program Files\SugarSync
+10000000 DropboxExt.14.dll         1.0.0.14           C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+60690000 WMVCore.DLL               12.0.7600.16385    C:\Windows\system32
+60900000 wpdshext.dll              6.1.7600.16385     C:\Windows\system32
+648e0000 ieproxy.dll               8.0.7600.16385     C:\Program Files\Internet Explorer
+65080000 EhStorAPI.dll             6.1.7600.16385     C:\Windows\system32
+651f0000 WMASF.DLL                 12.0.7600.16385    C:\Windows\system32
+65e90000 davclnt.dll               6.1.7600.16385     C:\Windows\System32
+66ea0000 ntlanman.dll              6.1.7600.16385     C:\Windows\System32
+67070000 DAVHLPR.dll               6.1.7600.16385     C:\Windows\System32
+68280000 CSCDLL.dll                6.1.7600.16385     C:\Windows\System32
+682a0000 cscui.dll                 6.1.7600.16385     C:\Windows\System32
+68320000 thumbcache.dll            6.1.7600.16385     C:\Windows\system32
+68400000 audiodev.dll              6.1.7600.16385     C:\Windows\system32
+68540000 PortableDeviceApi.dll     6.1.7600.16385     C:\Windows\system32
+6a450000 ieframe.DLL               8.0.7600.16385     C:\Windows\system32
+6bf70000 msxml3.dll                8.110.7600.16385   C:\Windows\System32
+6c280000 tiptsf.dll                6.1.7600.16385     C:\Program Files\Common Files\microsoft shared\ink
+6c690000 LINKINFO.dll              6.1.7600.16385     C:\Windows\system32
+6c6a0000 SHDOCVW.dll               6.1.7600.16385     C:\Windows\system32
+6cc10000 actxprxy.dll              6.1.7600.16385     C:\Windows\system32
+6cf50000 ATL80.DLL                 8.0.50727.4053     C:\Windows\WinSxS\x86_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d1c738ec43578ea1
+6cfe0000 GrooveNew.DLL             12.0.6413.1000     C:\Program Files\Microsoft Office\Office12
+6d000000 GrooveUtil.DLL            12.0.6423.1000     C:\Program Files\Microsoft Office\Office12
+6d280000 GrooveShellExtensions.dll 12.0.6421.1000     C:\Program Files\Microsoft Office\Office12
+6d510000 EhStorShell.dll           6.1.7600.16385     C:\Windows\system32
+6e2d0000 ashShell.dll              6.0.1289.0         C:\Program Files\Alwil Software\Avast5
+6e310000 msi.dll                   5.0.7600.16385     C:\Windows\system32
+6f600000 MPR.dll                   6.1.7600.16385     C:\Windows\system32
+6fe80000 MSVCR80.dll               8.0.50727.4927     C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.4927_none_d08a205e442db5b5
+70c90000 CSCAPI.dll                6.1.7600.16385     C:\Windows\system32
+70cc0000 dbghelp.dll               6.1.7600.16385     C:\Windows\system32
+70dc0000 wsock32.dll               6.1.7600.16385     C:\Windows\system32
+71720000 GrooveSystemServices.dll  12.0.6421.1000     C:\Program Files\Microsoft Office\Office12
+71dc0000 StructuredQuery.dll       7.0.7600.16385     C:\Windows\System32
+71ee0000 SearchFolder.dll          6.1.7600.16385     C:\Windows\system32
+72af0000 MSImg32.dll               6.1.7600.16385     C:\Windows\system32
+72c60000 drprov.dll                6.1.7600.16385     C:\Windows\System32
+72f30000 OLEACC.dll                7.0.0.0            C:\Windows\system32
+73010000 ntshrui.dll               6.1.7600.16385     C:\Windows\system32
+73250000 wkscli.dll                6.1.7600.16385     C:\Windows\system32
+73260000 netutils.dll              6.1.7600.16385     C:\Windows\system32
+732a0000 pshook.dll                3.2.2.45           C:\Program Files\Yandex\Punto Switcher
+73370000 slc.dll                   6.1.7600.16385     C:\Windows\system32
+734f0000 WINMM.dll                 6.1.7600.16385     C:\Windows\system32
+73530000 WindowsCodecs.dll         6.1.7600.16385     C:\Windows\system32
+73830000 ntmarta.dll               6.1.7600.16385     C:\Windows\system32
+73920000 gdiplus.dll               6.1.7600.16385     C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca
+73ab0000 uxtheme.dll               6.1.7600.16385     C:\Windows\system32
+73b10000 dwmapi.dll                6.1.7600.16385     C:\Windows\system32
+73ba0000 PROPSYS.dll               7.0.7600.16385     C:\Windows\system32
+73e20000 comctl32.dll              6.10.7600.16385    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc
+74390000 version.dll               6.1.7600.16385     C:\Windows\system32
+746f0000 rsaenh.dll                6.1.7600.16385     C:\Windows\system32
+74950000 CRYPTSP.dll               6.1.7600.16385     C:\Windows\system32
+74af0000 srvcli.dll                6.1.7600.16385     C:\Windows\system32
+74bb0000 Secur32.dll               6.1.7600.16385     C:\Windows\System32
+74da0000 SSPICLI.DLL               6.1.7600.16385     C:\Windows\System32
+74dd0000 apphelp.dll               6.1.7600.16385     C:\Windows\system32
+74e20000 CRYPTBASE.dll             6.1.7600.16385     C:\Windows\system32
+74e30000 RpcRtRemote.dll           6.1.7600.16385     C:\Windows\system32
+74e40000 profapi.dll               6.1.7600.16385     C:\Windows\system32
+74e50000 WINSTA.dll                6.1.7600.16385     C:\Windows\System32
+74ee0000 snxhk.dll                 6.0.1289.0         C:\Program Files\Alwil Software\Avast5
+74f80000 MSASN1.dll                6.1.7600.16385     C:\Windows\system32
+74f90000 DEVOBJ.dll                6.1.7600.16385     C:\Windows\system32
+74fb0000 KERNELBASE.dll            6.1.7600.16385     C:\Windows\system32
+75000000 WINTRUST.dll              6.1.7600.16385     C:\Windows\system32
+750c0000 CRYPT32.dll               6.1.7600.16385     C:\Windows\system32
+751e0000 CFGMGR32.dll              6.1.7600.16385     C:\Windows\system32
+75210000 sechost.dll               6.1.7600.16385     C:\Windows\SYSTEM32
+75230000 oleaut32.dll              6.1.7600.16385     C:\Windows\system32
+752c0000 imagehlp.dll              6.1.7600.16385     C:\Windows\system32
+752f0000 wininet.dll               8.0.7600.16385     C:\Windows\system32
+753f0000 CLBCatQ.DLL               2001.12.8530.16385 C:\Windows\system32
+75480000 IMM32.DLL                 6.1.7600.16385     C:\Windows\system32
+754a0000 ole32.dll                 6.1.7600.16385     C:\Windows\system32
+75600000 PSAPI.DLL                 6.1.7600.16385     C:\Windows\system32
+75610000 urlmon.dll                8.0.7600.16385     C:\Windows\system32
+75750000 GDI32.dll                 6.1.7600.16385     C:\Windows\system32
+757a0000 comdlg32.dll              6.1.7600.16385     C:\Windows\system32
+75820000 USER32.dll                6.1.7600.16385     C:\Windows\system32
+758f0000 SHLWAPI.dll               6.1.7600.16385     C:\Windows\system32
+75950000 Normaliz.dll              6.1.7600.16385     C:\Windows\system32
+75960000 msvcrt.dll                7.0.7600.16385     C:\Windows\system32
+75a10000 WLDAP32.dll               6.1.7600.16385     C:\Windows\system32
+75a60000 USP10.dll                 1.626.7600.16385   C:\Windows\system32
+75b00000 MSCTF.dll                 6.1.7600.16385     C:\Windows\system32
+75bd0000 WS2_32.dll                6.1.7600.16385     C:\Windows\system32
+75c10000 LPK.dll                   6.1.7600.16385     C:\Windows\system32
+75c20000 SETUPAPI.dll              6.1.7600.16385     C:\Windows\system32
+75dc0000 advapi32.dll              6.1.7600.16385     C:\Windows\system32
+75e60000 RPCRT4.dll                6.1.7600.16385     C:\Windows\system32
+75f10000 iertutil.dll              8.0.7600.16385     C:\Windows\system32
+76170000 SHELL32.dll               6.1.7600.16385     C:\Windows\system32
+76dc0000 ntdll.dll                 6.1.7600.16385     C:\Windows\SYSTEM32
+76f00000 NSI.dll                   6.1.7600.16385     C:\Windows\system32
+76f10000 kernel32.dll              6.1.7600.16385     C:\Windows\system32
+7c340000 MSVCR71.dll               7.10.3052.4        C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+7c3a0000 MSVCP71.dll               7.10.3077.0        C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+
+processes:
+0000 Idle                     0
+0004 System                   0
+012c smss.exe                 0
+01f0 csrss.exe                0
+0234 csrss.exe                1
+023c wininit.exe              0
+0260 winlogon.exe             1
+029c services.exe             0
+02a4 lsass.exe                0
+02ac lsm.exe                  0
+031c svchost.exe              0
+0374 svchost.exe              0
+03c4 svchost.exe              0
+03ec svchost.exe              0
+0408 svchost.exe              0
+0430 UMVPFSrv.exe             0
+04c4 svchost.exe              0
+050c SbieSvc.exe              0
+0594 svchost.exe              0
+064c AvastSvc.exe             0
+07e8 spoolsv.exe              0
+00ec svchost.exe              0
+022c NetworkLicenseServer.exe 0
+02a8 NetworkLicenseServer.exe 0
+051c svchost.exe              0
+0584 mDNSResponder.exe        0
+0638 Connectifyd.exe          0
+0380 taskhost.exe             1 normal       C:\Windows\system32
+01b8 Dwm.exe                  1 high         C:\Windows\system32
+03d8 Explorer.EXE             1 normal       C:\Windows
+0834 SynTPEnh.exe             1 above normal C:\Program Files\Synaptics\SynTP
+0844 SISTRAY.EXE              1 normal       C:\Program Files\SiS VGA Utilities
+0864 SynTPHelper.exe          1 above normal C:\Program Files\Synaptics\SynTP
+0890 AvastUI.exe              1 normal       C:\Program Files\Alwil Software\Avast5
+08a4 vmware-tray.exe          1 normal       C:\Program Files\VMware\VMware Workstation
+08b0 hqtray.exe               1 normal       C:\Program Files\VMware\VMware Workstation
+0920 svchost.exe              0
+0938 ModemListener.exe        1 normal       C:\Program Files\Svyaznoy Modem
+0978 GuardMailRu.exe          0
+09c0 GuardMailRu.exe          1 normal       C:\Program Files\Mail.Ru\Guard
+09c8 hamachi-2.exe            0
+09d0 GuardGuard.exe           0
+0a14 mdm.exe                  0
+0a24 RtHDVCpl.exe             1 normal       C:\Windows
+0a74 sqlservr.exe             0
+0b3c sidebar.exe              1 normal       C:\Program Files\Windows Sidebar
+0b8c SbieCtrl.exe             1 normal       C:\Program Files\Sandboxie
+0c68 SugarSyncManager.exe     1 normal       C:\Program Files\SugarSync
+0c74 ndsvc.exe                0
+0cac ctlamon.exe              1 normal       C:\Program Files\INFRASONIC\AMON
+0d58 SeaPort.EXE              0
+0db8 ComproRemote.exe         1 normal       C:\Program Files\Common Files\VideoMate
+0dcc ComproSchedulerDTV.exe   1 normal       C:\Program Files\Common Files\VideoMate
+0de8 svchost.exe              0
+0df0 klauncher.exe            1 normal       C:\KDE4\bin
+0e00 conhost.exe              1 normal       C:\Windows\system32
+0e08 dbus-daemon.exe          1 normal       C:\KDE4\bin
+0e1c conhost.exe              1 normal       C:\Windows\system32
+0e28 orbitdm.exe              1 normal       C:\Program Files\Orbitdownloader
+0e74 SnagIt32.exe             1 normal       C:\Program Files\TechSmith\SnagIt 7
+0e9c TeamViewer_Service.exe   0
+0f08 Ab.exe                   1 normal       C:\Program Files\ABook
+0f24 Dropbox.exe              1 normal       C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+0f2c emedtray.exe             1 normal       C:\Program Files\EmEditor
+0f38 GoogleCalendarSync.exe   1 normal       C:\Program Files\Google\Google Calendar Sync
+0f50 TSCHelp.exe              1 normal       C:\Program Files\TechSmith\SnagIt 7
+0f58 orbitnet.exe             1 normal       C:\Program Files\Orbitdownloader
+0f6c punto.exe                1 normal       C:\Program Files\Yandex\Punto Switcher
+08c8 conhost.exe              0
+04d4 vmnat.exe                0
+0bf4 svchost.exe              0
+0c24 WTSrv.exe                0
+0d80 WLIDSVC.EXE              0
+0f18 vmware-authd.exe         0
+0f7c vmnetdhcp.exe            0
+0fe8 WLIDSVCM.EXE             0
+0ddc TeamViewer.exe           1 normal       C:\Program Files\TeamViewer\Version6
+101c SearchIndexer.exe        0
+11b8 svchost.exe              0
+11d4 svchost.exe              0
+08a0 svchost.exe              0
+1644 taskeng.exe              1 normal       C:\Windows\system32
+12d4 FlockUpdate.exe          1 normal       C:\Users\yudenisov\AppData\Local\Flock\Update
+0ac8 audiodg.exe              0
+1350 Totalcmd.exe             1 normal       C:\Program Files\Total Commander
+17e0 ExtMan.exe               1 normal       C:\Util
+
+hardware:
++ Batteries
+  - Адаптер блока питания (Microsoft)
+  - Батарея с ACPI-совместимым управлением (Microsoft)
+  - Составная батарея (Майкрософт)
++ Bluetooth Device
+  - Bluetooth HID Enum Device (driver 6.0.12.56)
+  - Bluetooth HID Manager (driver 6.0.12.56)
+  - Bluetooth VComm Manager (driver 6.0.12.56)
++ Computer
+  - ACPI компьютер на базе x86
++ Disk drives
+  - WDC WD5000BEVT-22ZAT0 ATA Device
++ Display adapters
+  - SiS Mirage 3 Graphics (driver 7.14.10.5120)
++ DVD/CD-ROM drives
+  - HL-DT-ST DVDRAM GSA-T50N ATA Device
+  - LGZC LQ7OHMN SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - USB-устройство ввода
+  - VideoMate Root Enumerated Hid Device (driver 2.0.0.4)
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - Ricoh Memory Stick Controller (driver 6.0.1.11)
+  - Ricoh SD/MMC Host Controller (driver 6.0.3.6)
+  - Стандартный двухканальный контроллер PCI IDE
++ Imaging devices
+  - Logitech Webcam 200 (driver 13.25.1014.0)
++ Keyboards
+  - Клавиатура HID
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
+  - Synaptics PS/2 Port TouchPad (driver 10.1.8.0)
++ Modems
+  - Agere Systems HDA Modem (driver 2.1.88.0)
+  - Bluetooth DUN Modem (driver 6.0.12.56)
+  - Bluetooth Fax Modem (driver 6.0.12.56)
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Bluetooth PAN Network Adapter (driver 6.0.12.56)
+  - Hamachi Network Interface (driver 6.0.2.2)
+  - SiS191 Ethernet Controller (driver 2.0.1039.1660)
+  - TeamViewer VPN Adapter (driver 2.10.0.0)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.0.1.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.0.1.0)
+  - Адаптер беспроводных сетей Atheros AR5007EG Wireless
+  - Адаптер мини-порта виртуального WiFi Microsoft
++ PCMCIA adapters
+  - Ricoh R/RL/5C476(II) или совместимый CardBus контроллер
++ Ports (COM & LPT)
+  - Bluetooth Serial Port (COM11) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM12) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM13) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM14) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM15) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM16) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM17) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM18) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM19) (driver 6.0.12.56)
+  - Последовательный порт (COM1)
++ Processors
+  - Intel(R) Celeron(R) D CPU        220  @ 1.20GHz
++ SD host adapters
+  - Стандартный SDA-совместимый SD хост-контроллер
++ Sound, video and game controllers
+  - Bluetooth AV Audio (driver 6.0.13.61)
+  - Bluetooth SCO Audio (driver 6.0.12.56)
+  - Realtek High Definition Audio (driver 6.0.1.5657)
+  - Unimodem аудиоустройство с полным дуплексом
+  - Webcam 200 (driver 13.25.1014.0)
++ Storage controllers
+  - AJZ84P04 IDE Controller
++ Storage volume shadow copies
+  - Универсальная теневая копия тома
++ System devices
+  - ATK0100 ACPI UTILITY (driver 1043.2.31.100)
+  - CMOS и часы
+  - High Precision Event Timer (driver 7.0.1.1011)
+  - Microsoft ACPI-совместимая система
+  - Microsoft ACPI-совместимый встроенный контроллер
+  - Microsoft System Management BIOS драйвер
+  - PenTablet Bus Enumerator (driver 5.0.1.0)
+  - Remote Desktop Device Redirector Bus
+  - SiS Accelerated Graphics Port (driver 7.2.0.1230)
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - Арифметический сопроцессор
+  - Встроенный динамик
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Кнопка питания ACPI
+  - Кнопка спящего режима ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Крышка ACPI
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Порт SiS PCI Express x1 Root
+  - Порт SiS PCI Express x1 Root
+  - Программируемый контроллер прерываний
+  - Расширенная шина ввода/вывода
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Стандартный мост PCI  - CPU
+  - Стандартный мост PCI - ISA
+  - Термальная зона ACPI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Logitech USB Camera (Webcam 200) (driver 13.25.1014.0)
+  - SiS 7001 PCI - USB открытый хост-контроллер
+  - SiS 7001 PCI - USB открытый хост-контроллер
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+  - Стандартный расширенный PCI - USB хост-контроллер
+
+cpu registers:
+eax = 0136734c
+ebx = 013ccffc
+ecx = 00000000
+edx = 0049bdce
+esi = 00000001
+edi = 00000000
+eip = 0049bdce
+esp = 0012f370
+ebp = 0012f3b8
+
+stack dump:
+0012f370  ce bd 49 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..I.............
+0012f380  84 f3 12 00 ce bd 49 00 - 4c 73 36 01 fc cf 3c 01  ......I.Ls6...<.
+0012f390  01 00 00 00 00 00 00 00 - b8 f3 12 00 a0 f3 12 00  ................
+0012f3a0  00 00 00 00 00 00 00 00 - fc cf 3c 01 00 00 00 00  ..........<.....
+0012f3b0  0b 00 00 00 15 40 40 00 - 60 f4 12 00 4a bc 49 00  .....@@.`...J.I.
+0012f3c0  01 00 00 00 01 00 00 00 - b0 aa 45 00 a8 6a 2e 01  ..........E..j..
+0012f3d0  fc cf 3c 01 23 e3 4a 00 - 18 f6 12 00 58 35 40 00  ..<.#.J.....X5@.
+0012f3e0  60 f4 12 00 06 00 00 00 - 08 8d 2e 01 08 8d 2e 01  `...............
+0012f3f0  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f400  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f410  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f420  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f430  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f440  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f450  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f460  88 f4 12 00 24 83 47 00 - 08 8d 2e 01 77 ae 4a 00  ....$.G.....w.J.
+0012f470  54 ae 4a 00 3a ae 4a 00 - 48 f6 12 00 08 8d 2e 01  T.J.:.J.H.......
+0012f480  60 ad 4a 00 00 8d 00 00 - 10 f6 12 00 99 86 47 00  `.J...........G.
+0012f490  06 00 00 00 2c 00 00 00 - 00 00 00 00 48 f6 12 00  ....,.......H...
+0012f4a0  08 8d 2e 01 08 8d 2e 01 - 0e 87 47 00 d4 f4 12 00  ..........G.....
+
+disassembling:
+[...]
+004ae26b       mov     eax, [eax]
+004ae26d       mov     edi, [eax]
+004ae26f       call    dword ptr [edi+$c]
+004ae272       push    dword ptr [ebp-$38]
+004ae275       push    $4ae614                ; '\ddeexec\Application'
+004ae27a       lea     eax, [ebp-$34]
+004ae27d       mov     edx, 5
+004ae282       call    -$aa37b ($403f0c)      ; System.@LStrCatN
+004ae287       mov     edx, [ebp-$34]
+004ae28a       mov     cl, 1
+004ae28c       mov     eax, ebx
+004ae28e       call    -$12bbf ($49b6d4)      ; Registry.TRegistry.OpenKey
+004ae293 089   lea     edx, [ebp-$3c]
+004ae296       mov     eax, [esi+$2fc]
+004ae29c       call    -$37295 ($47700c)      ; Controls.TControl.GetText
+004ae2a1       mov     ecx, [ebp-$3c]
+004ae2a4       xor     edx, edx
+004ae2a6       mov     eax, ebx
+004ae2a8       call    -$12689 ($49bc24)      ; Registry.TRegistry.WriteString
+004ae2ad 090   mov     eax, ebx
+004ae2af       call    -$12d54 ($49b560)      ; Registry.TRegistry.CloseKey
+004ae2b4 092   push    $4ae5d4
+004ae2b9       mov     eax, [$4b8278]
+004ae2be       push    dword ptr [eax]
+004ae2c0       push    $4ae5e0
+004ae2c5       mov     eax, [$4b8200]
+004ae2ca       mov     eax, [eax]
+004ae2cc       mov     eax, [eax+$300]
+004ae2d2       call    -$3cc1f ($4716b8)      ; StdCtrls.TCustomListBox.GetItemIndex
+004ae2d7       mov     edx, eax
+004ae2d9       lea     ecx, [ebp-$44]
+004ae2dc       mov     eax, [$4b83dc]
+004ae2e1       mov     eax, [eax]
+004ae2e3       mov     edi, [eax]
+004ae2e5       call    dword ptr [edi+$c]
+004ae2e8       push    dword ptr [ebp-$44]
+004ae2eb       push    $4ae634                ; '\ddeexec\IfExec'
+004ae2f0       lea     eax, [ebp-$40]
+004ae2f3       mov     edx, 5
+004ae2f8       call    -$aa3f1 ($403f0c)      ; System.@LStrCatN
+004ae2fd       mov     edx, [ebp-$40]
+004ae300       mov     cl, 1
+004ae302       mov     eax, ebx
+004ae304       call    -$12c35 ($49b6d4)      ; Registry.TRegistry.OpenKey
+004ae309 093   lea     edx, [ebp-$48]
+004ae30c       mov     eax, [esi+$300]
+004ae312       call    -$3730b ($47700c)      ; Controls.TControl.GetText
+004ae317       mov     ecx, [ebp-$48]
+004ae31a       xor     edx, edx
+004ae31c       mov     eax, ebx
+004ae31e     > call    -$126ff ($49bc24)      ; Registry.TRegistry.WriteString
+004ae323 094   mov     eax, ebx
+004ae325       call    -$12dca ($49b560)      ; Registry.TRegistry.CloseKey
+004ae32a 096   push    $4ae5d4
+004ae32f       mov     eax, [$4b8278]
+004ae334       push    dword ptr [eax]
+004ae336       push    $4ae5e0
+004ae33b       mov     eax, [$4b8200]
+004ae340       mov     eax, [eax]
+004ae342       mov     eax, [eax+$300]
+004ae348       call    -$3cc95 ($4716b8)      ; StdCtrls.TCustomListBox.GetItemIndex
+004ae34d       mov     edx, eax
+004ae34f       lea     ecx, [ebp-$50]
+004ae352       mov     eax, [$4b83dc]
+004ae357       mov     eax, [eax]
+004ae359       mov     edi, [eax]
+004ae35b       call    dword ptr [edi+$c]
+004ae35e       push    dword ptr [ebp-$50]
+004ae361       push    $4ae64c                ; '\ddeexec\Topic'
+004ae366       lea     eax, [ebp-$4c]
+004ae369       mov     edx, 5
+004ae36e       call    -$aa467 ($403f0c)      ; System.@LStrCatN
+004ae373       mov     edx, [ebp-$4c]
+004ae376       mov     cl, 1
+004ae378       mov     eax, ebx
+004ae37a       call    -$12cab ($49b6d4)      ; Registry.TRegistry.OpenKey
+004ae37f 097   lea     edx, [ebp-$54]
+004ae382       mov     eax, [esi+$304]
+004ae388       call    -$37381 ($47700c)      ; Controls.TControl.GetText
+004ae38d       mov     ecx, [ebp-$54]
+004ae390       xor     edx, edx
+004ae392       mov     eax, ebx
+004ae394       call    -$12775 ($49bc24)      ; Registry.TRegistry.WriteString
+004ae399 098   mov     eax, ebx
+004ae39b       call    -$12e40 ($49b560)      ; Registry.TRegistry.CloseKey
+004ae3a0 107   mov     eax, [$4b84b4]
+004ae3a5       cmp     byte ptr [eax], 0
+004ae3a8       jnz     loc_4ae4c4
+004ae3ae 109   mov     al, [$4ae65c]
+004ae3b3       push    eax
+004ae3b4       lea     eax, [ebp-4]
+004ae3b7       push    eax
+004ae3b8       lea     edx, [ebp-$58]
+004ae3bb       mov     eax, [esi+$2e4]
+004ae3c1       call    -$373ba ($47700c)      ; Controls.TControl.GetText
+004ae3c6       mov     eax, [ebp-$58]
+004ae3c9       mov     ecx, $4ae668
+004ae3ce       mov     edx, $4ae674
+004ae3d3       call    -$56438 ($457fa0)      ; SysUtils.StringReplace
+004ae3d8 111   push    $4ae5d4
+004ae3dd       mov     eax, [$4b8278]
+[...]
+
+date/time         : 2012-09-09, 13:51:59, 23ms
+computer name     : YUDENISOV-HOME1
+user name         : yudenisov
+registered owner  : DNA7 X86 / DNA Project
+operating system  : Windows NT New build 7600
+system language   : Russian
+system up time    : 1 hour 23 minutes
+program up time   : 2 minutes 13 seconds
+processors        : 4x Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+physical memory   : 1267/2985 MB (free/total)
+free disk space   : (C:) 31,07 GB
+display mode      : 1920x1080, 32 bit
+process id        : $1e00
+allocated memory  : 46,35 MB
+executable        : ExtMan.exe
+exec. date/time   : 2009-03-02 09:58
+version           : 0.1.5.145
+compiled with     : Delphi 5
+madExcept version : 3.0h
+callstack crc     : $4ab225b9, $6a2d6d85, $6a2d6d85
+count             : 2
+exception number  : 2
+exception class   : ERegistryException
+exception message : Konnte Daten fur '' nicht setzen.
+
+main thread ($1044):
+0049bdc9 +059 ExtMan.exe   Registry                TRegistry.PutData
+0049bc45 +021 ExtMan.exe   Registry                TRegistry.WriteString
+004af0bf +38f ExtMan.exe   edit_ext_pas    151 +56 Tedit_ext_form.save_Click
+0047831e +062 ExtMan.exe   Controls                TControl.Click
+004aae72 +01e ExtMan.exe   TFlatButtonUnit 534  +3 TFlatButton.Click
+004aae35 +0d5 ExtMan.exe   TFlatButtonUnit 525 +25 TFlatButton.MouseUp
+00478694 +030 ExtMan.exe   Controls                TControl.DoMouseUp
+00478709 +069 ExtMan.exe   Controls                TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls                TControl.WndProc
+0047ac4e +1d2 ExtMan.exe   Controls                TWinControl.WndProc
+0047a850 +02c ExtMan.exe   Controls                TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms                   StdWndProc
+77263573 +00a USER32.dll                           DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms                   TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms                   TApplication.HandleMessage
+004920eb +147 ExtMan.exe   Forms                   TCustomForm.ShowModal
+004b279e +02a ExtMan.exe   ext_haupt       680  +5 Text_form.edit_Click
+0047831e +062 ExtMan.exe   Controls                TControl.Click
+004aae72 +01e ExtMan.exe   TFlatButtonUnit 534  +3 TFlatButton.Click
+004aae35 +0d5 ExtMan.exe   TFlatButtonUnit 525 +25 TFlatButton.MouseUp
+00478694 +030 ExtMan.exe   Controls                TControl.DoMouseUp
+00478709 +069 ExtMan.exe   Controls                TControl.WMLButtonUp
+0047818d +111 ExtMan.exe   Controls                TControl.WndProc
+0047ac4e +1d2 ExtMan.exe   Controls                TWinControl.WndProc
+0047a850 +02c ExtMan.exe   Controls                TWinControl.MainWndProc
+0048c730 +014 ExtMan.exe   Forms                   StdWndProc
+77263573 +00a USER32.dll                           DispatchMessageA
+00494dd7 +083 ExtMan.exe   Forms                   TApplication.ProcessMessage
+00494e0e +00a ExtMan.exe   Forms                   TApplication.HandleMessage
+00495019 +081 ExtMan.exe   Forms                   TApplication.Run
+004b3933 +08b ExtMan.exe   ExtMan           28  +8 initialization
+76f81172 +010 kernel32.dll                         BaseThreadInitThunk
+
+thread $1380:
+779c5e4a +0a ntdll.dll     NtWaitForMultipleObjects
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1ac8:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $12d8:
+779c5e6a +0a ntdll.dll       NtWaitForSingleObject
+75b81796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+76f7effe +3e kernel32.dll    WaitForSingleObjectEx
+76f7efad +0d kernel32.dll    WaitForSingleObject
+70ab29b8 +38 MSVCR80.dll     _endthreadex
+76f81172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $ea0:
+779c5e6a +0a ntdll.dll       NtWaitForSingleObject
+75b81796 +66 KERNELBASE.dll  WaitForSingleObjectEx
+76f7effe +3e kernel32.dll    WaitForSingleObjectEx
+76f7efad +0d kernel32.dll    WaitForSingleObject
+70ab29b8 +38 MSVCR80.dll     _endthreadex
+76f81172 +10 kernel32.dll    BaseThreadInitThunk
+
+thread $f24:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $a80:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1fc0:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1070:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1154:
+779c4c1a +0a ntdll.dll                NtDelayExecution
+75b81870 +4f KERNELBASE.dll           SleepEx
+75b81813 +0a KERNELBASE.dll           Sleep
+0044e861 +0d ExtMan.exe     madExcept CallThreadProcSafe
+0044e8cb +37 ExtMan.exe     madExcept ThreadExceptFrame
+76f81172 +10 kernel32.dll             BaseThreadInitThunk
+>> created by main thread ($1044) at:
+775d642e +00 ole32.dll
+
+thread $d04:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $17a0:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $64c:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $18a4:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $19f8:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1db8:
+779c5e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+76f81172 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 ExtMan.exe                  0.1.5.145          C:\Util
+04af0000 SugarSyncShellExt.dll       1.0.0.1            C:\Program Files\SugarSync
+06320000 PhoneBrowser.dll            7.1.110.0          C:\Program Files\Nokia\Nokia PC Suite 7
+06410000 PhoneBrowser_rus.nlr        7.1.72.0           C:\Program Files\Nokia\Nokia PC Suite 7\Lang
+065f0000 PhoneBrowser_Nokia.ngr      7.1.21.0           C:\Program Files\Nokia\Nokia PC Suite 7\Resource
+069b0000 NGSCM.DLL                   7.1.159.0          C:\Program Files\Nokia\Nokia PC Suite 7
+10000000 DropboxExt.14.dll           1.0.0.14           C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+650b0000 ieframe.DLL                 8.0.7600.16385     C:\Windows\system32
+66090000 DAVHLPR.dll                 6.1.7600.16385     C:\Windows\System32
+660a0000 davclnt.dll                 6.1.7600.16385     C:\Windows\System32
+660c0000 ntlanman.dll                6.1.7600.16385     C:\Windows\System32
+660e0000 drprov.dll                  6.1.7600.16385     C:\Windows\System32
+667e0000 GrooveShellExtensions.dll   12.0.6421.1000     C:\Program Files\Microsoft Office\Office12
+66c40000 ieproxy.dll                 8.0.7600.16385     C:\Program Files\Internet Explorer
+66df0000 pshook.dll                  3.2.2.45           C:\Program Files\Yandex\Punto Switcher
+68520000 ntshrui.dll                 6.1.7600.16385     C:\Windows\system32
+69360000 msxml3.dll                  8.110.7600.16385   C:\Windows\System32
+69650000 ATL80.DLL                   8.0.50727.4053     C:\Windows\WinSxS\x86_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.4053_none_d1c738ec43578ea1
+69670000 GrooveNew.DLL               12.0.6413.1000     C:\Program Files\Microsoft Office\Office12
+69680000 GrooveUtil.DLL              12.0.6423.1000     C:\Program Files\Microsoft Office\Office12
+69c80000 tiptsf.dll                  6.1.7600.16385     C:\Program Files\Common Files\microsoft shared\ink
+69db0000 LINKINFO.dll                6.1.7600.16385     C:\Windows\system32
+69dc0000 SHDOCVW.dll                 6.1.7600.16385     C:\Windows\system32
+69df0000 ACTXPRXY.DLL                6.1.7600.16385     C:\Windows\system32
+69f70000 googledrivesync32.dll       1.3.3209.2688      C:\Program Files\Google\Drive
+6a000000 EhStorShell.dll             6.1.7600.16385     C:\Windows\system32
+6a040000 YandexDiskOverlays-2398.dll 0.5.0.2398         C:\Program Files\Yandex\YandexDisk\bin
+6a180000 ashShell.dll                7.0.1466.549       C:\Program Files\AVAST Software\Avast
+6a5c0000 MPR.dll                     6.1.7600.16385     C:\Windows\system32
+6a670000 msi.dll                     5.0.7600.16385     C:\Windows\system32
+6d120000 IconCodecService.dll        6.1.7600.16385     C:\Windows\system32
+6e3d0000 snxhk.dll                   7.0.1466.549       C:\Program Files\AVAST Software\Avast
+702d0000 MSVCP80.dll                 8.0.50727.6195     C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a
+70ab0000 MSVCR80.dll                 8.0.50727.6195     C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a
+71400000 CSCAPI.dll                  6.1.7600.16385     C:\Windows\system32
+71430000 dbghelp.dll                 6.1.7600.16385     C:\Windows\system32
+71530000 wsock32.dll                 6.1.7600.16385     C:\Windows\system32
+715b0000 MSVCP90.dll                 9.0.30729.4926     C:\Windows\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.4926_none_508ed732bcbc0e5a
+71640000 MSVCR90.dll                 9.0.30729.4926     C:\Windows\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.4926_none_508ed732bcbc0e5a
+71870000 StructuredQuery.dll         7.0.7600.16385     C:\Windows\System32
+718d0000 SearchFolder.dll            6.1.7600.16385     C:\Windows\system32
+722b0000 CSCDLL.dll                  6.1.7600.16385     C:\Windows\System32
+722c0000 cscui.dll                   6.1.7600.16385     C:\Windows\System32
+72500000 PortableDeviceApi.dll       6.1.7600.16385     C:\Windows\system32
+73900000 YandexDiskShellExt-2812.dll 0.5.0.2812         C:\Users\yudenisov\AppData\Roaming\Yandex\YandexDisk
+739c0000 EhStorAPI.dll               6.1.7600.16385     C:\Windows\system32
+73aa0000 GrooveSystemServices.dll    12.0.6421.1000     C:\Program Files\Microsoft Office\Office12
+73ad0000 thumbcache.dll              6.1.7600.16385     C:\Windows\system32
+73c30000 slc.dll                     6.1.7600.16385     C:\Windows\system32
+73f60000 ntmarta.dll                 6.1.7600.16385     C:\Windows\system32
+73f90000 MSImg32.dll                 6.1.7600.16385     C:\Windows\system32
+74210000 wkscli.dll                  6.1.7600.16385     C:\Windows\system32
+74220000 netutils.dll                6.1.7600.16385     C:\Windows\system32
+74290000 OLEPRO32.DLL                6.1.7600.16385     C:\Windows\system32
+742d0000 OLEACC.dll                  7.0.0.0            C:\Windows\system32
+74350000 WindowsCodecs.dll           6.1.7600.16385     C:\Windows\system32
+74480000 dwmapi.dll                  6.1.7600.16385     C:\Windows\system32
+745d0000 gdiplus.dll                 6.1.7600.16385     C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7600.16385_none_72fc7cbf861225ca
+74760000 uxtheme.dll                 6.1.7600.16385     C:\Windows\system32
+747e0000 comctl32.dll                6.10.7600.16385    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc
+74990000 PROPSYS.dll                 7.0.7600.16385     C:\Windows\system32
+74f80000 version.dll                 6.1.7600.16385     C:\Windows\system32
+75190000 WINSTA.dll                  6.1.7600.16385     C:\Windows\System32
+75300000 rsaenh.dll                  6.1.7600.16385     C:\Windows\system32
+75560000 CRYPTSP.dll                 6.1.7600.16385     C:\Windows\system32
+75790000 srvcli.dll                  6.1.7600.16385     C:\Windows\system32
+758b0000 Secur32.dll                 6.1.7600.16385     C:\Windows\System32
+759e0000 SSPICLI.DLL                 6.1.7600.16385     C:\Windows\System32
+75a00000 apphelp.dll                 6.1.7600.16385     C:\Windows\system32
+75a50000 CRYPTBASE.dll               6.1.7600.16385     C:\Windows\system32
+75ac0000 RpcRtRemote.dll             6.1.7600.16385     C:\Windows\system32
+75ad0000 profapi.dll                 6.1.7600.16385     C:\Windows\system32
+75b40000 MSASN1.dll                  6.1.7600.16385     C:\Windows\system32
+75b50000 WINTRUST.dll                6.1.7600.16385     C:\Windows\system32
+75b80000 KERNELBASE.dll              6.1.7600.16385     C:\Windows\system32
+75bd0000 DEVOBJ.dll                  6.1.7600.16385     C:\Windows\system32
+75bf0000 CFGMGR32.dll                6.1.7600.16385     C:\Windows\system32
+75c20000 CRYPT32.dll                 6.1.7600.16385     C:\Windows\system32
+75dd0000 advapi32.dll                6.1.7600.16385     C:\Windows\system32
+75e70000 oleaut32.dll                6.1.7600.16385     C:\Windows\system32
+75f00000 sechost.dll                 6.1.7600.16385     C:\Windows\SYSTEM32
+75f20000 GDI32.dll                   6.1.7600.16385     C:\Windows\system32
+75f70000 iertutil.dll                8.0.7600.16385     C:\Windows\system32
+76170000 comdlg32.dll                6.1.7600.16385     C:\Windows\system32
+761f0000 SHLWAPI.dll                 6.1.7600.16385     C:\Windows\system32
+76250000 PSAPI.DLL                   6.1.7600.16385     C:\Windows\system32
+76260000 LPK.dll                     6.1.7600.16385     C:\Windows\system32
+76270000 SHELL32.dll                 6.1.7600.16385     C:\Windows\system32
+76ec0000 NSI.dll                     6.1.7600.16385     C:\Windows\system32
+76ed0000 WS2_32.dll                  6.1.7600.16385     C:\Windows\system32
+76f10000 IMM32.DLL                   6.1.7600.16385     C:\Windows\system32
+76f30000 kernel32.dll                6.1.7600.16385     C:\Windows\system32
+77010000 SETUPAPI.dll                6.1.7600.16385     C:\Windows\system32
+771b0000 USP10.dll                   1.626.7600.16385   C:\Windows\system32
+77250000 USER32.dll                  6.1.7600.16385     C:\Windows\system32
+77320000 urlmon.dll                  8.0.7600.16385     C:\Windows\system32
+77460000 msvcrt.dll                  7.0.7600.16385     C:\Windows\system32
+77510000 CLBCatQ.DLL                 2001.12.8530.16385 C:\Windows\system32
+775a0000 ole32.dll                   6.1.7600.16385     C:\Windows\system32
+77700000 RPCRT4.dll                  6.1.7600.16385     C:\Windows\system32
+777b0000 MSCTF.dll                   6.1.7600.16385     C:\Windows\system32
+77880000 wininet.dll                 8.0.7600.16385     C:\Windows\system32
+77980000 ntdll.dll                   6.1.7600.16385     C:\Windows\SYSTEM32
+77ac0000 WLDAP32.dll                 6.1.7600.16385     C:\Windows\system32
+77b10000 imagehlp.dll                6.1.7600.16385     C:\Windows\system32
+77b40000 Normaliz.dll                6.1.7600.16385     C:\Windows\system32
+7c340000 MSVCR71.dll                 7.10.3052.4        C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+7c3a0000 MSVCP71.dll                 7.10.3077.0        C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+
+processes:
+0000 Idle                      0
+0004 System                    0
+0164 smss.exe                  0
+0200 csrss.exe                 0
+0254 wininit.exe               0
+025c csrss.exe                 1
+0284 services.exe              0
+029c lsass.exe                 0
+02a4 lsm.exe                   0
+0308 winlogon.exe              1
+0354 svchost.exe               0
+03a0 nvvsvc.exe                0
+03c8 svchost.exe               0
+0424 svchost.exe               0
+044c svchost.exe               0
+0470 svchost.exe               0
+0520 svchost.exe               0
+0598 NvXDSync.exe              1
+05a4 nvvsvc.exe                1
+05f8 svchost.exe               0
+06b8 svchost.exe               0
+06fc AsLdrSrv.exe              0
+0714 AvastSvc.exe              0
+0750 GFNEXSrv.exe              0
+07d0 spoolsv.exe               0
+01cc NetworkLicenseServer.exe  0
+01e8 svchost.exe               0
+02d4 Ath_CoexAgent.exe         0
+06c8 AdminService.exe          0
+0804 mDNSResponder.exe         0
+0820 HD-LogRotatorService.exe  0
+0844 CxAudMsg32.exe            0
+0870 DCService.exe             0
+08ec FileZilla Server.exe      0
+0aa8 CaptureLibService.exe     0
+0ad0 svchost.exe               0
+0af8 mdm.exe                   0
+0b20 ndsvc.exe                 0
+0c54 taskhost.exe              1 normal C:\Windows\system32
+0c94 Dwm.exe                   1 high   C:\Windows\system32
+0cb8 Explorer.EXE              1 normal C:\Windows
+0ccc PassThruSvr.exe           0
+0d64 PerlSock.exe              0
+0e30 PMBDeviceInfoProvider.exe 0
+0e4c PHotkey.exe               1
+0e5c BtvStack.exe              1 normal C:\Program Files\Bluetooth Suite
+0e64 CmUCReye.exe              1 normal C:\Windows
+0e94 RichVideo.exe             0
+0ea8 SeaPort.EXE               0
+0ef8 svchost.exe               0
+0f7c MsgTranAgt.exe            1
+0fa4 AthBtTray.exe             1 normal C:\Program Files\Bluetooth Suite
+0ff8 TeamViewer_Service.exe    0
+0950 AvastUI.exe               1 normal C:\Program Files\AVAST Software\Avast
+0960 vmware-usbarbitrator.exe  0
+0294 vmware-tray.exe           1 normal C:\Program Files\VMware\VMware Workstation
+0c0c vmnat.exe                 0
+0c44 svchost.exe               0
+0c80 WLIDSVC.EXE               0
+07b4 WLIDSVCM.EXE              0
+0498 WmiPrvSE.exe              0
+0b64 unsecapp.exe              0
+0f68 TeamViewer.exe            1 normal C:\Program Files\TeamViewer\Version7
+0658 nusb3mon.exe              1 normal C:\Program Files\Renesas Electronics\USB 3.0 Host Controller Driver\Application
+0e20 XobniService.exe          0
+10ac PVDesktop.exe             1
+10c8 brs.exe                   1 normal C:\Program Files\CyberLink\Shared Files
+10e8 vmware-authd.exe          0
+1134 networx.exe               1 normal C:\Program Files\NetWorx
+1140 PVDAgent.exe              1 normal C:\Program Files\PHotkey
+1148 POsd.exe                  1
+1184 vmnetdhcp.exe             0
+11b4 WmiPrvSE.exe              0
+11d8 Archivarius3000.exe       1 normal C:\Program Files\Archivarius 3000
+1234 vmware-hostd.exe          0
+12ec SearchIndexer.exe         0
+1474 tv_w32.exe                1
+14e4 PMBVolumeWatcher.exe      1 normal C:\Program Files\Sony\PMB
+15f4 2GISTrayNotifier.exe      1 normal C:\Program Files\2gis\3.0
+1604 PDVDServ.exe              1 normal C:\Program Files\CyberLink\PowerDVD
+161c chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+1624 sidebar.exe               1 normal C:\Program Files\Windows Sidebar
+16c4 xmarkssync.exe            1 normal C:\Program Files\Xmarks\IE Extension
+1790 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+17bc YandexDisk.exe            1 normal C:\Users\yudenisov\AppData\Roaming\Yandex\YandexDisk
+17c8 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+17f0 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+17fc chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+0a7c chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+08a4 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+0db0 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+1038 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+05bc chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+0550 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+10bc chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+10e0 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+05d8 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+1400 DTShellHlp.exe            1 normal C:\Program Files\DAEMON Tools Lite
+0df0 SugarSyncManager.exe      1 normal C:\Program Files\SugarSync
+1650 googledrivesync.exe       1 normal C:\Program Files\Google\Drive
+07b0 ouc.exe                   1 normal C:\Users\yudenisov\AppData\Roaming\Connect Manager
+0dd0 ComproRemote.exe          1 normal C:\Program Files\Common Files\VideoMate
+00a8 ComproSchedulerDTV.exe    1 normal C:\Program Files\Common Files\VideoMate
+0aa0 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+0c1c orbitdm.exe               1 normal C:\Program Files\Orbitdownloader
+09b4 TOTALCMD.EXE              1 normal C:\Program Files\Total Commander
+0ed0 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+1828 googledrivesync.exe       1 normal C:\Program Files\Google\Drive
+188c orbitnet.exe              1 normal C:\Program Files\Orbitdownloader
+1904 Dropbox.exe               1 normal C:\Users\yudenisov\AppData\Roaming\Dropbox\bin
+195c emedtray.exe              1 normal C:\Program Files\EmEditor
+1998 GoogleCalendarSync.exe    1 normal C:\Program Files\Google\Google Calendar Sync
+19d8 punto.exe                 1 normal C:\Program Files\Yandex\Punto Switcher
+1a5c svchost.exe               0
+1aac Ab.exe                    1 normal C:\Users\yudenisov\ABook
+1b0c chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+1b94 chrome.exe                1 normal C:\Users\yudenisov\AppData\Local\Google\Chrome\Application
+1c80 svchost.exe               0
+0a98 wmpnetwk.exe              0
+1e00 ExtMan.exe                1 normal C:\Util
+1d3c audiodg.exe               0
+
+hardware:
++ Batteries
+  - Адаптер блока питания (Microsoft)
+  - Батарея с ACPI-совместимым управлением (Microsoft)
+  - Составная батарея (Майкрософт)
++ Bluetooth Device
+  - Bluetooth HID Enum Device (driver 6.0.12.56)
+  - Bluetooth HID Manager (driver 6.0.12.56)
+  - Bluetooth VComm Manager (driver 6.0.12.56)
++ Computer
+  - ACPI компьютер на базе x86
++ Disk drives
+  - WDC WD6400BPVT-75HXZT3 ATA Device
++ Display adapters
+  - Intel(R) HD Graphics Family (driver 8.15.10.2372)
+  - NVIDIA GeForce GT 540M (driver 8.17.12.6743)
++ DVD/CD-ROM drives
+  - HL-DT-ST DVDRAM GT40N ATA Device
+  - PIZ TE7GDMB0 SCSI CdRom Device
++ Human Interface Devices
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство
+  - HID-совместимое устройство управления
+  - USB-устройство ввода
+  - VideoMate Root Enumerated Hid Device (driver 2.0.0.4)
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 2
+  - Intel(R) 6 Series/C200 Series Chipset Family 6 Port SATA AHCI Controller - 1C03 (driver 9.2.0.1011)
++ Imaging devices
+  - USB2.0 UVC 1.3M Webcam
++ Keyboards
+  - Клавиатура HID
+  - Стандартная клавиатура PS/2
++ Mice and other pointing devices
+  - HID-совместимая мышь
+  - PS/2-совместимая мышь
++ Modems
+  - Bluetooth DUN Modem (driver 6.0.12.56)
+  - Bluetooth Fax Modem (driver 6.0.12.56)
++ Monitors
+  - Универсальный монитор PnP
++ Network adapters
+  - Atheros AR8151 PCI-E Gigabit Ethernet Controller (NDIS 6.20) (driver 1.0.0.35)
+  - Atheros AR9002WB-1NG Wireless Network Adapter (driver 9.0.0.222)
+  - Bluetooth PAN Network Adapter (driver 6.0.12.56)
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.1.2.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.1.2.0)
+  - Адаптер мини-порта виртуального WiFi Microsoft
++ Ports (COM & LPT)
+  - Bluetooth Serial Port (COM10) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM11) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM12) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM13) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM14) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM15) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM7) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM8) (driver 6.0.12.56)
+  - Bluetooth Serial Port (COM9) (driver 6.0.12.56)
++ Processors
+  - Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+  - Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+  - Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+  - Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
++ Sound, video and game controllers
+  - Bluetooth AV Audio (driver 6.0.13.61)
+  - Bluetooth SCO Audio (driver 6.0.12.56)
+  - Conexant SmartAudio HD (driver 8.54.4.51)
+  - WebcamMax, WDM Video Capture (driver 7.0.0.88)
+  - Устройство с поддержкой High Definition Audio
++ Storage controllers
+  - AK0ZK80T IDE Controller
++ Storage volume shadow copies
+  - Универсальная теневая копия тома
++ System devices
+  - 2nd generation Intel® Core™ processor family DRAM Controller - 0104 (driver 9.2.0.1011)
+  - 2nd generation Intel® Core™ processor family PCI Express Controller - 0101 (driver 9.2.0.1011)
+  - Atheros Bluetooth Bus (driver 6.17.624.301)
+  - CMOS и часы
+  - High Precision Event Timer (driver 7.0.1.1011)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 1 - 1C10 (driver 9.2.0.1015)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 2 - 1C12 (driver 9.2.0.1015)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 4 - 1C16 (driver 9.2.0.1015)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 6 - 1C1A (driver 9.2.0.1015)
+  - Intel(R) 6 Series/C200 Series Chipset Family SMBus Controller - 1C22 (driver 9.2.0.1011)
+  - Intel(R) 82802 Firmware концентратор
+  - Intel(R) HM65 Express Chipset Family LPC Interface Controller - 1C49 (driver 9.2.0.1015)
+  - Intel(R) Management Engine Interface
+  - Microsoft ACPI-совместимая система
+  - Microsoft ACPI-совместимый встроенный контроллер
+  - Microsoft System Management BIOS драйвер
+  - Remote Desktop Device Redirector Bus
+  - UMBus перечислитель
+  - UMBus перечислитель корневой шины
+  - VMware VMCI Host Device (driver 9.1.54.0)
+  - Арифметический сопроцессор
+  - Диспетчер томов
+  - Драйвер клавиатуры сервера терминалов
+  - Драйвер мыши сервера терминалов
+  - Драйвер перечислителя виртуальных дисков (Майкрософт)
+  - Драйвер файла в качестве тома
+  - Интерфейс управления для ACPI Microsoft Windows
+  - Интерфейс управления для ACPI Microsoft Windows
+  - Интерфейс управления для ACPI Microsoft Windows
+  - Кнопка спящего режима ACPI
+  - Контроллер High Definition Audio (Microsoft)
+  - Контроллер прямого доступа к памяти
+  - Крышка ACPI
+  - Перечислитель композитной шины
+  - Перечислитель программных устройств Plug and Play
+  - Программируемый контроллер прерываний
+  - Расширенная шина ввода/вывода
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Ресурсы системной платы
+  - Системная плата
+  - Системный таймер
+  - Термальная зона ACPI
+  - Фиксированная функциональная кнопка ACPI
+  - Шина PCI
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Generic USB Hub
+  - HUAWEI Mobile Connect - Bus Enumerate Device (driver 2.6.2.12)
+  - Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host Controller - 1C26 (driver 9.2.0.1013)
+  - Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host Controller - 1C2D (driver 9.2.0.1013)
+  - Renesas Electronics USB 3.0 Host Controller (driver 2.0.34.0)
+  - Renesas Electronics USB 3.0 Root Hub (driver 2.0.34.0)
+  - Корневой USB-концентратор
+  - Корневой USB-концентратор
+  - Составное USB устройство
+
+cpu registers:
+eax = 014ef2dc
+ebx = 014a03ac
+ecx = 00000000
+edx = 0049bdce
+esi = 00000001
+edi = 00000000
+eip = 0049bdce
+esp = 0012f7a8
+ebp = 0012f7f0
+
+stack dump:
+0012f7a8  ce bd 49 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..I.............
+0012f7b8  bc f7 12 00 ce bd 49 00 - dc f2 4e 01 ac 03 4a 01  ......I...N...J.
+0012f7c8  01 00 00 00 00 00 00 00 - f0 f7 12 00 d8 f7 12 00  ................
+0012f7d8  00 00 00 00 b0 f2 4e 01 - ac 03 4a 01 00 00 00 00  ......N...J.....
+0012f7e8  0b 3f 40 00 b0 f2 4e 01 - 6c f8 12 00 4a bc 49 00  .?@...N.l...J.I.
+0012f7f8  01 00 00 00 28 00 00 00 - 0e 00 00 00 ec 65 4f 01  ....(........eO.
+0012f808  2c ed 49 00 c4 f0 4a 00 - 24 fa 12 00 58 35 40 00  ,.I...J.$...X5@.
+0012f818  6c f8 12 00 0e 00 00 00 - ec 65 4f 01 ec 65 4f 01  l........eO..eO.
+0012f828  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f838  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f848  0b 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012f858  00 00 00 00 00 00 00 00 - 00 00 00 00 ac 03 4a 01  ..............J.
+0012f868  74 01 51 01 94 f8 12 00 - 24 83 47 00 ec 65 4f 01  t.Q.....$.G..eO.
+0012f878  77 ae 4a 00 54 ae 4a 00 - 3a ae 4a 00 54 fa 12 00  w.J.T.J.:.J.T...
+0012f888  ec 65 4f 01 60 ad 4a 00 - 00 65 00 00 1c fa 12 00  .eO.`.J..e......
+0012f898  99 86 47 00 0e 00 00 00 - 40 00 00 00 00 00 00 00  ..G.....@.......
+0012f8a8  54 fa 12 00 ec 65 4f 01 - ec 65 4f 01 0e 87 47 00  T....eO..eO...G.
+0012f8b8  e0 f8 12 00 d8 98 2b 77 - 13 5a 26 77 46 69 28 77  ......+w.Z&wFi(w
+0012f8c8  44 00 00 00 e0 fa 12 00 - e0 fa 12 00 54 fa 12 00  D...........T...
+0012f8d8  ec 65 4f 01 90 81 47 00 - e0 fa 12 00 54 fa 12 00  .eO...G.....T...
+
+disassembling:
+[...]
+004af009       jnz     loc_4af01c
+004af00b 139   xor     ecx, ecx
+004af00d       mov     edx, $4af250           ; 'EditFlags'
+004af012       mov     eax, [ebp-8]
+004af015       call    -$13352 ($49bcc8)      ; Registry.TRegistry.WriteInteger
+004af01a       jmp     loc_4af02e
+004af01c 141   mov     ecx, $10000
+004af021       mov     edx, $4af250           ; 'EditFlags'
+004af026       mov     eax, [ebp-8]
+004af029       call    -$13366 ($49bcc8)      ; Registry.TRegistry.WriteInteger
+004af02e       xor     eax, eax
+004af030       pop     edx
+004af031       pop     ecx
+004af032       pop     ecx
+004af033       mov     fs:[eax], edx
+004af036       jmp     loc_4af042
+004af038       jmp     -$abdc9 ($403274)      ; System.@HandleAnyException
+004af03d 143   call    -$ab9b2 ($403690)      ; System.@DoneExcept
+004af042 145   mov     eax, [ebp-8]
+004af045       call    -$13aea ($49b560)      ; Registry.TRegistry.CloseKey
+004af04a 148   mov     eax, [$4b84ac]
+004af04f       mov     eax, [eax]
+004af051       mov     edx, $4af264
+004af056       call    -$ab0ff ($403f5c)      ; System.@LStrCmp
+004af05b       jz      loc_4af116
+004af061 150   push    $4af1dc
+004af066       mov     eax, [$4b8278]
+004af06b       push    dword ptr [eax]
+004af06d       push    $4af270                ; '\DefaultIcon'
+004af072       lea     eax, [ebp-$3c]
+004af075       mov     edx, 3
+004af07a       call    -$ab173 ($403f0c)      ; System.@LStrCatN
+004af07f       mov     edx, [ebp-$3c]
+004af082       mov     cl, 1
+004af084       mov     eax, [ebp-8]
+004af087       call    -$139b8 ($49b6d4)      ; Registry.TRegistry.OpenKey
+004af08c 151   mov     eax, [$4b8354]
+004af091       push    dword ptr [eax]
+004af093       push    $4af288
+004af098       lea     edx, [ebp-$44]
+004af09b       mov     eax, [$4b836c]
+004af0a0       mov     eax, [eax]
+004af0a2       call    -$5b007 ($4540a0)      ; SysUtils.IntToStr
+004af0a7       push    dword ptr [ebp-$44]
+004af0aa       lea     eax, [ebp-$40]
+004af0ad       mov     edx, 3
+004af0b2       call    -$ab1ab ($403f0c)      ; System.@LStrCatN
+004af0b7       mov     ecx, [ebp-$40]
+004af0ba       xor     edx, edx
+004af0bc       mov     eax, [ebp-8]
+004af0bf     > call    -$134a0 ($49bc24)      ; Registry.TRegistry.WriteString
+004af0c4 152   mov     eax, [ebp-8]
+004af0c7       call    -$13b6c ($49b560)      ; Registry.TRegistry.CloseKey
+004af0cc 153   push    0
+004af0ce       push    0
+004af0d0       push    0
+004af0d2       push    $8000000
+004af0d7       call    -$84c90 ($42a44c)      ; ShlObj.SHChangeNotify
+004af0dc 154   mov     eax, [ebp-4]
+004af0df       mov     eax, [eax+$2d4]
+004af0e5       mov     eax, [eax+$128]
+004af0eb       call    -$46abc ($468634)      ; Graphics.TPicture.GetIcon
+004af0f0       mov     edx, eax
+004af0f2       mov     eax, [$4b8350]
+004af0f7       mov     eax, [eax]
+004af0f9       mov     eax, [eax+$2d0]
+004af0ff       mov     eax, [eax+$128]
+004af105       call    -$46abe ($46864c)      ; Graphics.TPicture.SetIcon
+004af10a       jmp     loc_4af116
+004af10c 158   mov     eax, $4af294           ; 'Fehler - Erweiterung unbekannt'
+004af111       call    -$156c6 ($499a50)      ; Dialogs.ShowMessage
+004af116 160   mov     byte ptr [$4b8188], 0
+004af11d 161   mov     eax, [ebp-8]
+004af120       call    -$ac35d ($402dc8)      ; System.TObject.Free
+004af125 162   mov     eax, [ebp-4]
+004af128       call    -$1d3f1 ($491d3c)      ; Forms.TCustomForm.Close
+004af12d       xor     eax, eax
+004af12f       pop     edx
+004af130       pop     ecx
+004af131       pop     ecx
+004af132       mov     fs:[eax], edx
+004af135       push    $4af171
+004af13a       lea     eax, [ebp-$44]
+004af13d       mov     edx, 7
+004af142       call    -$ab557 ($403bf0)      ; System.@LStrArrayClr
+004af147       lea     eax, [ebp-$20]
+004af14a       call    -$ab583 ($403bcc)      ; System.@LStrClr
+004af14f       lea     eax, [ebp-$1c]
+004af152       mov     edx, 2
+004af157       call    -$ab56c ($403bf0)      ; System.@LStrArrayClr
+004af15c       lea     eax, [ebp-$14]
+004af15f       mov     edx, 3
+004af164       call    -$ab579 ($403bf0)      ; System.@LStrArrayClr
+004af169       ret
+004af16a       jmp     -$abc47 ($403528)      ; System.@HandleFinally
+004af16f       jmp     loc_4af13a
+004af171 163   pop     edi
+004af172       pop     esi
+004af173       pop     ebx
+004af174       mov     esp, ebp
+004af176       pop     ebp
+[...]
+

@@ -1,0 +1,63 @@
+USAGE:
+
+Sendmail mode (default):
+  msmtp.exe [option...] [--] recipient...
+  msmtp.exe [option...] -t [--] [recipient...]
+  Read a mail from standard input and transmit it to an SMTP or LMTP server.
+Server information mode:
+  msmtp.exe [option...] --serverinfo
+  Print information about a server.
+Remote Message Queue Starting mode:
+  msmtp.exe [option...] --rmqs=host|@domain|#queue
+  Send a Remote Message Queue Starting request to a server.
+
+OPTIONS:
+
+General options:
+  --version                    Print version.
+  --help                       Print help.
+  -P, --pretend                Print configuration info and exit.
+  -d, --debug                  Print debugging information.
+Changing the mode of operation:
+  -S, --serverinfo             Print information about the server.
+  --rmqs=host|@domain|#queue   Send a Remote Message Queue Starting request.
+Configuration options:
+  -C, --file=filename          Set configuration file.
+  -a, --account=id             Use the given account instead of the account
+                               named "default"; its settings may be changed
+                               with command line options.
+  --host=hostname              Set the server, use only command line settings;
+                               do not use any configuration file data.
+  --port=number                Set port number.
+  --timeout=(off|seconds)      Set/unset network timeout in seconds.
+  --protocol=(smtp|lmtp)       Use the given sub protocol.
+  --domain=string              Set the argument of EHLO or LHLO command.
+  --auth[=(on|off|method)]     Enable/disable authentication and optionally
+                               choose the method.
+  --user=[username]            Set/unset user name for authentication.
+  --tls[=(on|off)]             Enable/disable TLS encryption.
+  --tls-starttls[=(on|off)]    Enable/disable STARTTLS for TLS.
+  --tls-trust-file=[file]      Set/unset trust file for TLS.
+  --tls-crl-file=[file]        Set/unset revocation file for TLS.
+  --tls-key-file=[file]        Set/unset private key file for TLS.
+  --tls-cert-file=[file]       Set/unset private cert file for TLS.
+  --tls-certcheck[=(on|off)]   Enable/disable server certificate checks for TLS.
+  --tls-force-sslv3[=(on|off)] Enable/disable restriction to SSLv3.
+  --tls-min-dh-prime-bits=[b]  Set/unset minimum bit size of DH prime.
+  --tls-priorities=[prios]     Set/unset TLS priorities.
+Options specific to sendmail mode:
+  --auto-from[=(on|off)]       Enable/disable automatic envelope-from addresses.
+  -f, --from=address           Set envelope from address.
+  --maildomain=[domain]        Set the domain for automatic envelope from
+                               addresses.
+  -N, --dsn-notify=(off|cond)  Set/unset DSN conditions.
+  -R, --dsn-return=(off|ret)   Set/unset DSN amount.
+  --keepbcc[=(on|off)]         Enable/disable preservation of the Bcc header.
+  -X, --logfile=[file]         Set/unset log file.
+  --syslog[=(on|off|facility)] Enable/disable/configure syslog logging.
+  -t, --read-recipients        Read additional recipients from the mail.
+  --read-envelope-from         Read envelope from address from the mail.
+  --                           End of options.
+Accepted but ignored: -A, -B, -bm, -F, -G, -h, -i, -L, -m, -n, -O, -o, -v
+
+Report bugs to <marlam@marlam.de>.

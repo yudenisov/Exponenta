@@ -1,0 +1,44 @@
+A {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 90%;
+	font-style : normal;
+	font-weight : normal;
+	color : Yellow;
+	background-color : Black;
+	text-decoration : none;
+	top : auto;
+	left : auto;
+}
+A:HOVER {
+	font-family : Arial, Helvetica, sans-serif;
+	color : White;
+	font-weight : normal;
+}
+A:ACTIVE {
+	font-family : Arial, Helvetica, sans-serif;
+	color : Yellow;
+	font-weight : normal;
+}
+BODY {
+	background-color : Purple;
+	background-repeat : repeat;
+	font-family : Arial, Helvetica, sans-serif;
+	color : White;
+	background-image : url(images/back_violet.jpg);
+}
+TABLE {
+	background-color : Black;
+	color : White;
+	background-image : url(images/back_black.jpg);
+	border : 0px none;
+	font-size : 90%;
+	font-family : Arial, Helvetica, sans-serif;
+}
+TH {
+	background-image : url(images/back_violet.jpg);
+	background-repeat : repeat;
+	background-color : Purple;
+	font-weight : normal;
+	font-family : Arial, Helvetica, sans-serif;
+}
+

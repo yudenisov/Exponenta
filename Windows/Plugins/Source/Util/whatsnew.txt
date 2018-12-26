@@ -1,0 +1,96 @@
+                RAR - What's new in the latest version
+
+
+   Version 3.50
+
+   1. New -n<mask> and -n@<listfile> switches set additional include
+      filters, so only files matching the mask will be processed.
+
+   2. New -id[c,d,p,q] switch. Additionally to previously available
+      -idp switch (disable percentage indicator), switches -idc, -idd
+      and -idq instruct the console RAR to hide the copyright message,
+      "Done" message and all information messages.
+
+   3. Switch -e+<attr> allows to specify file include attributes mask.
+      For example, you can use -e+h switch to compress only hidden files.
+
+   4. Switch -ver[n] supports the optional 'n' parameter also when
+      archiving. It limits the maximum number of file versions.
+
+
+   Version 3.41
+
+   1. Corrections in Unicode processing for DBCS languages
+      (Japanese, Chinese).
+
+   2. When adding new files to already existing RAR solid archive,
+      RAR 3.40 compression ratio was lower than in RAR 3.30.
+      Corrected in this version.
+
+
+   Version 3.40
+
+   1. "Fastest" (-m1) RAR compression method has been modified
+      to provide much higher compression speed and lower ratio.
+      It may be useful for tasks requiring the high speed like
+      regular backups.
+
+      You may increase "Fastest" speed even more selecting 64KB
+      compression dictionary instead of default 4MB.
+
+   2. RAR/EMX version supports Unicode in file names when working
+      in OS/2, if OS/2 version is a new enough to provide Unicode API.
+
+      Our special thanks to Max Alekseyev, who helped to implement
+      OS/2 Unicode support.
+
+   3. Starting from this version, RAR volumes contain the volume number
+      field. Volume number is displayed by 'L' and 'V' commands
+      in the line with the total volume information.
+
+      This feature may be useful if original volume names are lost
+      and you need to rename them to correct names.
+
+   4. Commands 'L' and 'V' display NTFS "Compressed" attribute
+      in archive listing.
+
+   5. Switch -ag may include an optional text enclosed in '{' and '}'
+      characters. This text is inserted into archive name.
+      For example: -agHH{hours}MM{minutes}
+
+   6. RAR displays the operation progress while repairing
+      an archive containing the recovery record.
+
+
+   Version 3.30
+
+   1. Several -v<size> switches can be specified in the command
+      line mode to set different sizes for different volumes.
+      For example, 'rar a -v100k -v200k -v300k arcname' command
+      sets 100 KB size for first volume, 200KB for second
+      and 300KB for all following volumes.
+
+   2. New -st[name] switch to compress data from stdin
+      (standard input).
+
+   3. Data analyzing module is tuned to detect executable and audio
+      data more accurately. Erroneous selecting of executable
+      and audio algorithms could reduce the compression ratio
+      in some situations.
+
+   4. 'vt' and 'lt' commands display symlink target names,
+      when listing RAR/Unix archives contained symbolic links.
+      These commands also display NTFS stream names, when listing
+      WinRAR archives contained streams.
+
+
+   Version 3.20
+
+   1. 'rn' command allows to rename files inside of RAR archives.
+
+   2. 'lb' and 'vb' commands list contents of archive in the bare mode -
+      file names without any additional information.
+
+   3. RAR displays the operation percentage when creating recovery
+      volumes or reconstructing missing or corrupt volumes.
+

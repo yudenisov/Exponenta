@@ -1,0 +1,52 @@
+; German translation for NTFS Links 1.21
+; Author: Stefan Schäfer (sheepdog@gmx.de) (please, specify "TC" or "Total Commander" in the E-mail subject)
+
+; Haupt Dialog
+1=OK
+2=Abbruch
+3=&Einstellungen
+4=Hilfe
+5=E&rzeuge Link für "%s" als:
+6=E&rzeuge Links für %d ausgewählte Datei(en) in:
+7=Rekursions&tiefe für die Erzeugung von junctions:
+
+; Einstellungs dialog
+50=Einstellungen
+51=OK
+52=Abbruch
+53=Hilfe
+54=Speichere &Fensterposition
+55=Speichere &Rekursionstiefe
+56=S&tandard Rekursionstiefe:
+57=&Sprachdatei:
+58=Sprachdateien (*.lng)|*.lng|Alle Dateien (*.*)|*.*||
+59=&Hilfedatei:
+60=Hilfedateien (*.chm)|*.chm|Alle Dateien (*.*)|*.*||
+
+; Fehler dialog
+100=Fehler
+101=Über&springen
+102=&Wiederholen
+103=&Alle überspringen
+104=Ab&bruch
+105=Fehler beim Erstellen des Links zur Datei:\n%s
+106=Fehler beim Erstellen des Links zum Ordner:\n%s
+107=Fehler beim Erstellen des Ordners:\n%s
+108=Unbekannter Fehler!
+
+; Über box
+150=Über
+151=Ü&ber...
+152=Programm:
+153=Version:
+154=Autor:
+155=Alle Rechte vorbehalten.
+156=Homepage:
+
+; Verschiedene Fehlermeldungen
+1001=Fehlerhafte Anzahl von Kommandozeilenparametern!
+1002=Kann die Dateiliste nicht öffnen!
+1003=Es ist nicht möglcih, einen Link für mehrere Objekte zu erzeugen!
+1004=Kann das Kommando nicht ausführen.\nFehler Code: %d.
+1005=Kann die Hilfe Datei nicht öffnen!
+1006=Fehler beim Speichern der Einstellungen!

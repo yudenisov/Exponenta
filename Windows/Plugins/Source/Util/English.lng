@@ -1,0 +1,160 @@
+Russian Language for BDV Notepad 4.2
+by BaDeVlad
+
+; Lines started with ";" are comments.
+; Precisely as, lines which are not containing even one "=".
+; The division on section is not necessary, it is made only for convenience.
+; Principle of construction:
+;
+; <Identifier> = <Caption> = <Hint>
+;
+; <Identifier> specifies, for what element will be applied caption and hint.
+; <Caption> - caption of a button, menu item or text in a window.
+; <Hint> specifies hint of element. Not necessary and can not be applied for 
+; some elements (In such case is ignored).
+;
+; You can make and send me additional language file to include it in a package 
+; in updating process. Your compatriots will be grateful to you for the help!
+
+----------------------- Menu "File" -------------------------
+File                = &File
+
+New                 = &New                       = Create new document
+Open                = &Open...                   = Open document
+Save                = &Save                      = Save document
+Save As             = Save &As...
+Print               = &Print...                  = Print document
+Print Setup         = Print Set&up...
+Send                = S&end...                   = Send document by e-mail
+Last Used           = &Last Used Files
+Exit                = E&xit
+
+----------------------- Menu "Edit" -------------------------
+Edit                = &Edit
+
+Undo                = &Undo                      = Undo last action
+Redo                = &Redo                      = Redo
+Cut                 = Cu&t                       = Cut text to Clipboard
+Copy                = &Copy                      = Copy text to Clipboard
+Paste               = &Paste                     = Paste text from Clipboard
+Change Case         = C&hange Case
+  UpperCase         = &UPPERCASE
+  LowerCase         = &lowercase
+  TitleCase         = &Title Case
+  SentCase          = &Sentence case
+  ToggleCase        = tO&GGLE cASE
+Insert              = Insert
+  Insert Date       = &Date                      = Insert current date
+  Insert Time       = &Time                      = Insert current time
+  Insert File       = &File Name                 = Insert file name
+  Insert Color      = &Color                     = Insert Hex color representation
+Convert             = Co&nvert
+Select All          = Select &All                = Select all text
+
+----------------------- Menu "View" -------------------------
+View                = &View
+
+Toolbars            = &Toolbars
+  Statusbar         = &Statusbar
+  Toolbar File      = &File
+  Toolbar Edit      = &Edit
+  Toolbar Font      = Font &Presets
+  Toolbar Case      = &Change Case
+  Toolbar Find      = S&earch and Replace
+  Toolbar Symbol    = S&ymbol
+  Toolbar Filter    = C&har Filter
+  Toolbar Settings  = Se&ttings
+  Toolbar About     = &About
+Font Presets        = &Font Presets
+Word Wrap           = &Word Wrap
+Show URLs           = Show &URLs
+Start URLs          = &Start URLs
+SpecChar            = Special C&haracters
+Language            = &Language
+  Load LNG          = &Select Language...
+
+----------------------- Menu "Search" -------------------------
+Search              = &Search
+
+Find F              = Find Forward               = Find next fragment
+Find B              = Find Backward              = Find previous fragment
+Replace F           = Replace Forward            = Find & replace to end of document
+Replace B           = Replace Backward           = Find & replace to start of document
+
+----------------------- Menu "Help" -------------------------
+Help                = &Help
+
+ReadMe              = View ReadMe
+Site                = Visit Internet-site
+E-mail              = Send Letter to Tech-Support
+
+------------- Captions and Items of Toolbars ----------------
+File Caption        = File
+Edit Caption        = Edit
+Font Caption        = Font Presets
+  Other Colors      = Other Colors...
+  Preset Name       = Preset Name
+  Change Font       = Change Font
+  Change Background = Change Background
+Case Caption        = Change Case
+Find Caption        = Find and Replace
+  Case Sens         = &Case Sensitive
+  Find Text         = Find text
+  Replace All       = Replace &All
+  Replace Text      = Replace text
+Symbol Caption      = Symbol
+Settings Caption    = Settings
+  General Tab       = General
+    AutoSave        = Auto Save
+    Save Every      = Save Every
+    Minutes         = min.
+    Exit Esc        = Exit on <Escape>
+    Use MRU         = Use MRU List
+    MRU Files       = MRU Files
+    Clear Last Used = Clear MRU List
+  Edit Tab          = Editor
+    Undo Limit      = Undo Limit
+    Replace Tab     = Replace Tab with Spaces
+    Replace Open    = Replace Tab when Open
+    Tab Size        = Tab Size
+  Print Tab         = Print
+    Printer Setup   = Printer setup...
+    Top             = Top Margin (mm)
+    Bottom          = Bottom Margin (mm)
+    Left            = Left Margin (mm)
+    Right           = Right Margin (mm)
+    Text Mode       = &Text Mode
+  Associations Tab  = Associations
+    Assoc. Open     = Open (default)
+    Assoc. Edit     = Edit
+    Assoc. Print    = Print
+    Assoc. Add      = Add
+    Assoc. Remove   = Remove
+Filter Caption      = Char Filter
+  Start Char        = Start from char...
+  End Char          = End char...
+  Do Operation      = Do operation...
+  Replace Char      = Replace with char...
+  Increment Value   = Increment value
+  Prefix            = Prefix
+  Postfix           = Postfix
+  Apply             = Apply
+
+------------------------- Dialogs ---------------------------
+Can't save          = Can not save file "%s"!
+Can't open          = Can not open file "%s"!
+Can't find          = Text not found.
+Can't print         = Error printing!
+Replaces            = %d replaces was done.
+Changed             = File "%s" was changed. Do you want to save changes?
+CP Error            = Error in codepage file "%s"!
+Confirm Rem         = Do you want to remove selected extension from the list? Associations will be unchanged.
+
+Search result       = Search result
+Replace result      = Replace result
+Error               = Error!
+Warning             = Warning!
+
+--------------------- Open/Save Filter ------------------------
+
+Filter              = All supported formats|*.pas;*.cpp;*.c;*.bas;*.cp;*.lng;*.bat;*.ini;*.inf;*.log;*.dos;*.me;*.diz;*.htm;*.html;*.txt|Text documents (*.txt)|*.txt|HTML-documents (*.htm, *.html)|*.html;*.htm|Language files (*.lng)|*.lng|Codepage files (*.cp)|*.cp|All files (*.*)|*.*

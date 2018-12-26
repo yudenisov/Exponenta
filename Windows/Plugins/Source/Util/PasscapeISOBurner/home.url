@@ -1,0 +1,6 @@
+[DEFAULT]
+BASEURL=http://www.passcape.com
+
+[InternetShortcut]
+URL=http://www.passcape.com
+IconFile=http://www.passcape.com/favicon.ico

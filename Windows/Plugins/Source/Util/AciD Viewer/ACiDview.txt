@@ -1,0 +1,411 @@
+
+                                      ,gg
+      """"Y$b  ,d$P""Y$b  ,d$P ,d$P""Y$$'
+   ,d$P""Y$$' ,$$'  `""" ,$$' ,$$'  ,$$'
+  ,$$'  ,$$' ,$$'  ,$$' ,$$' ,$$'  ,$$'
+",$$' ",$$' ,$$' ",$$' ,$$' ,$$' ",$$' """"""""""""""""""""" "  ""   "" " """ "
+,$$'  .$$' ,$$'  ,$$' ,$$' ,$$'  ,$$' ,$$'  ,$$' ,$$  ,d$"""Y$b  ,$$' ,$$' ,$$
+`"""""""'  `"""""""'  `"'  `"""""""' ,$$'  ,$$' ,$$' ,$$""""""' ,$$' ,$$' ,$$'
+                                    ,$$'  ,$$' ,$$' ,$$'  ,$$' ,$$' ,$$' ,$$'
+ "  " ""   "" """  """"""""""""""" ,$$' ",$$' ,$$  ,$$' ",$$' ,$$' ,$$' ,$$'
+                                  ,$$'  ,$$' ,$$' ,$$'  ,$$' ,$$' ,$$' ,$$'
+                                  `"""""""'  `"'  `"""""""'  `"""""""""""'
+
+
+             A Multi-format Image Viewer by ACiD Productions, LLC
+          Coded by gz - Graphics by Alla Xul, Asphyx and Zerosynapse
+
+
+   Ú¿ÄÄÄ ÄÄ  Ä   Ä  ÄÄ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄ ùù
+   ÀÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³³ Documentation & Update History of ACiD Productions LLC's ACiD View ³ù
+   :³                                                                    ³:
+   ù³            By gz and RaD Man of ACiD Productions, LLC(tm)          ³³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅ¿
+ ùù ÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄ  Ä   Ä  ÄÄ ÄÄÄÀÙ
+
+            [ Current version of ACiD View: 6.10 / 2003-10-15ù06:10 ]
+
+            Up to date versions of ACiD View may be found on the ACiD
+            Website under the Info section, http://www.acid.org/.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Introduction to ACiD View  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+            We at  ACiD Productions, LLC  proudly  present  to  you the
+        first  Windows-based  viewer  for  the  artscene.  This  highly
+        innovative program is capable  of  displaying a wide variety of
+        formats such as ANSI, ASCII, ADF, BIN, GIF, JPEG, PNG, RIPscrip
+        & XBIN with additional supported  formats  underway.  ACiD View
+        for Windows utilizes its own internal ANSI routines  making  it
+        capable of viewing ANSI without  fussing with the configuration
+        of an internal device  driver.  We  hope  that  this version of
+        ACiD View provides you with  the  countless  hours  of pleasure
+        that we've sought after with its creation.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Features                 º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+     ş  Supports SAUCE descriptions in title bar and full SAUCE option
+     ş  Navigate and view files from a ZIP or RAR without decompressing
+     ş  Command Line viewing supported
+     ş  Slide Show mode
+     ş  Save-As PNG or AVI for ANSI animations
+     ş  Windows File Type/File Extension registration
+     ş  Drag and Drop Loading of image files into the viewer
+     ş  History kept of Viewed Files, File Masks, and Recent Directories
+     ş  Variable Speed ANSI viewing
+     ş  Modem-Simulation for animated ANSI viewing (2,400-57,600 bps)
+     ş  Multiple File Masking
+     ş  Drive and Directory switching
+     ş  Automatic Smooth Scrolling option for text-based viewing
+     ş  25-, and 50-line mode ANSI, ASCII and BIN viewing
+     ş  Built in Text-mode fonts: Standard IBM PC, Amiga, and AcidView
+     ş  ANSI and BIN Viewing in 80x25 or 80x50 text-modes
+     ş  ANSI and BIN Viewing in 640 pixels wide (1/1, 8x16 font) - Normal
+     ş  ANSI and BIN Viewing in 320 pixels wide (1/2, 4x8 font) - "MCGA"
+     ş  ANSI and BIN Viewing in 160 pixels wide (1/4, 2x4 font) - "VGA"
+     ş  ANSI and BIN Viewing in 80 pixels wide  (1/8, 1x2 font) - "SVGA"
+     ş  ANSI and BIN Viewing in Full Screen Mode
+     ş  Palette options: Color, iCE-Color, Greyscale, and ASCII-only
+     ş  Resident XBIN Font and XBIN Palette loading
+     ş  Secret RIPscrip Level 0-1 viewing
+     ş  (GIF) CompuServe [G]raphics [I]nterchange [F]ormat viewing
+     ş  (JPEG) [J]oint [P]hotographic [E]xperts [G]roup JFIF viewing
+     ş  (PNG) [P]ortable [N]etwork [G]raphics viewing
+     ş  Full mouse support
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ System Requirements      º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+     ş  VGA: Standard SVGA card in 640x480x16bit (1024x768 recommended)
+     ş  CPU: Pentium 586 or better processor (Pentium II 686 recommended)
+     ş  RAM: 2MB RAM required (10MB recommended)
+     ş  OS: Microsoft Windows 95* or above.
+
+        * = While ACiD View for Windows is coded with the users of
+            Windows in mind, this version has been tested and reported
+            to be compatible with both Linux under WineX and MacOS X
+            using Virtual PC.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ What ACiD View Displays  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+     ş  ACiD View will display any traditional text-mode format, not just
+        ANSI, in several different sizes.  Where as previous DOS versions
+        had various "VGA modes" you could use to scale down the size of
+        an ANSI, ACiD View utilizes your native display resolution and
+        offers several different font sizes to accomplish the same effect.
+        Supported sizes are: Normal (standard 8x16 font), Half-size (4x8),
+        Quarter-size (2x4) and Eighth-size (1x2).
+
+     ş  ACiD View shows GIF, JPEG and PNG graphics files.
+
+     ş  Support for other popular BBS image formats is in development.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ ACiD View Functions      º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+     Function Keys                      KeyPad
+    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿     ÚÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄ¿
+    ³ F1  = Help                  ³     ³ Num  ³ Next ³ Prev ³ -   ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³ Lock ³ Font ³ Font ³ Res ³
+    ³ F2  = Toggle Full Screen    ³     ÃÄÄÄÄÄÄÅÄÄÄÄÄÄÅÄÄÄÄÄÄÅÄÄÄÄÄ´
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³ Home ³  Up  ³ Page ³     ³
+    ³ F3  = Switch Font Size      ³     ³      ³      ³  Up  ³     ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ÃÄÄÄÄÄÄÅÄÄÄÄÄÄÅÄÄÄÄÄÄ´  +  ³
+    ³ F4  = Switch Character Set  ³     ³ Left ³      ³ Right³ Res ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³      ³      ³      ³     ³
+    ³ F5  = Refresh Display       ³     ÃÄÄÄÄÄÄÅÄÄÄÄÄÄÅÄÄÄÄÄÄÅÄÄÄÄÄ´
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³ End  ³ Down ³ Page ³     ³
+    ³ F6  = Toggle Smooth Scroll  ³     ³      ³      ³ Down ³     ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ÃÄÄÄÄÄÄÁÄÄÄÄÄÄÅÄÄÄÄÄÄ´Enter³
+    ³ F7  = Toggle BPS            ³     ³ Insert      ³ Del  ³     ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³             ³      ³     ³
+    ³ F8  = Start Slide Show      ³     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÙ
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+    ³ F9* = Toggle Ext/Blinking*  ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+    ³ F10 = Screen Capture to PNG ³
+    ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+    ³ F11 = Show full SAUCE info  ³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ ÚÄÄÄÄ·
+ ³ F1 º  Quick-Help :    Brief description of the keys.
+ ÀÍÍÍÍ¼
+ ÚÄÄÄÄ·
+ ³ F2 º  Full Screen :   Toggles between the native video mode defined
+ ÀÍÍÍÍ¼                  under Windows and Full Screen mode.
+ ÚÄÄÄÄ·
+ ³ F3 º  Font Size :     This determines the font size to be used while
+ ÀÍÍÍÍ¼                  displaying a text-based file.  Normal, Full Scale
+                         is 8x16, MCGA 4x8, VGA 2x4 and SVGA 1x2.  These
+                         heights are halved when in 50-Line mode.
+ ÚÄÄÄÄ·
+ ³ F4 º  Character Sets : Toggles which font will be used while displaying
+ ÀÍÍÍÍ¼                   a text-based file.  Options are 25-Line, 50-Line,
+                          Amiga Topaz and "ACiD View" PC DOS character sets.
+ ÚÄÄÄÄ·
+ ³ F5 º  Refresh :       Refreshes the display with the Modem Emulator
+ ÀÍÍÍÍ¼                  turned OFF, stripping the ANSI animation sequences.
+ ÚÄÄÄÄ·
+ ³ F6 º  Smooth Scroll : Toggles automatic smooth scrolling of a text-based
+ ÀÍÍÍÍ¼                  file.  If off, the user must manually scroll down
+                         from the top of the file using the keyboard, mouse
+                         wheel or sliding elevator bar.
+ ÚÄÄÄÄ·
+ ³ F7 º  Modem Speed :   Increases the modem emulator speed for text-based
+ ÀÍÍÍÍ¼                  files up to 57,600bps then restarting back at 2,400.
+ ÚÄÄÄÄ·
+ ³ F8 º  Slide Show :    Start/Stop Slide Show.  Refer to Slide Show context
+ ÀÍÍÍÍ¼                  menu for further details.  The Escape key will also
+                         abort the Slide Show.
+ ÚÄÄÄÄ·
+ ³ F9*º  Toggle Blink* : Determines if 16 background colors instead of
+ ÀÍÍÍÍ¼                  blinking will be used for ANSI and BIN display.
+ ÚÄÄÄÄ·
+ ³F10 º  Screen Capture : Captures the display to a PNG image file.
+ ÀÍÍÍÍ¼
+ ÚÄÄÄÄ·
+ ³F11 º  Display SAUCE : Displays full SAUCE information including the
+ ÀÍÍÍÍ¼                  extended COMMENT block.
+
+ * = Not yet available in this version of ACiD View.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ ACiD View Hot Keys º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ CTRL+O          : OPEN a specific file.
+ CTRL+J          : JUMP to Directory.  Expands selected folder in browser.
+
+ CTRL+UP         : Opens PREVIOUS file.
+ CTRL+DOWN       : Opens NEXT file.
+ ALT+LEFT        : Go backward through navigational history log.
+ ALT+RIGHT       : Go forward through navigational history log.
+
+ CTRL+LEFT       : INCREASE resolution (by decreasing font size)
+ CTRL+RIGHT      : DECREASE resolution (by increasing font size)
+
+ CTRL+1          : 2400 BPS Modem Emulation
+ CTRL+2          : 4800 BPS Modem Emulation
+ CTRL+3          : 9600 BPS Modem Emulation
+ CTRL+4          : 14,400 BPS Modem Emulation
+ CTRL+5          : 28,800 BPS Modem Emulation
+ CTRL+6          : 38,400 BPS Modem Emulation
+ CTRL+7          : 57,600 BPS Modem Emulation
+
+ SHIFT+F5        : Refresh display with Modem Emulation turned ON.
+ F5              : Refresh display with Modem Emulation turned OFF.
+
+ ALT+ENTER       : Display image in Full Screen mode.  This can also
+                   be done with the F2 key.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ ACiD View Mouse Controls º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ LEFT-CLICK   : Selects a file to view in the navigation window.
+ MIDDLE-CLICK : Toggles between Full Screen and Windowed mode for text-based
+                images.  This can also be done with the F2 key.
+ SCROLL-UP/DN : Scrolls the text-based image up and down in the image window.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Using ACiD View with Windows Explorer  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ When ACiD View is selected as the default viewer for file type such as
+ ANSI and ASCII, several options are available to the user from the
+ Windows file Explorer.
+
+ - Slide Show can be launched from Explorer by selecting any number of
+   images supported by ACiD View and selecting "Slideshow" from the
+   right-button context menu.
+
+ - Drag and Drop Loading.  Images can be dragged from Explorer right
+   in to ACiD View for display.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ ACiD View Slide Show Options    º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ Within the ACiD View GUI, there are several preference settings which can
+ be configured.
+
+ Full Screen Resolution - Four (4) resolutions are available to choose from
+ if Full Screen mode is enabled; 640x400, 640x480, 1024x768 and the Desktop
+ resolution.
+
+ Slide Show:
+
+ Files to be displayed in the Slide Show may be queued one of two ways,
+ either by a standard ASCII text file list of files ("Text File") or by
+ displaying the entire contents of a chosen Directory, RAR or ZIP file, the
+ default being the current directory.
+
+ Start Full Screen - This will start the Slide Show in Full Screen with the
+ resolution specified above.
+
+ Random - This will display the files queued in a random order.
+
+ Cycle - This will endlessly cycle through all the files in the queue until
+ the F8 or Escape key is pressed.
+
+ Delay - This is the amount of time to pause before showing the next image in
+ the queue.  The default value is 2000 milliseconds.
+
+ Other options such as File Mask, Font Size, Font Set, and Color are based on
+ the current settings.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ ACiD View Command Line Viewing  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ ACiD View now supports a full set of command line switches which
+ are useful to execute a Slide Show.
+
+ At present, you can specify a specific file you would like to view
+ from the command line using the following syntax:
+
+  ACiDview.exe [drive:][path][filename]
+
+  i.e.: ACiDview.exe R:\ACiD\Artpacks\Best_of\best.1994\SO-EVEND.ANS
+
+ACiD View for Windows Command Line Options:
+
+ ACiDview.exe /X /R:# /F:# /C:# /D:# /S:[0|1] /Y:[0|1] /A:[0|1]
+(continued)   /M:mask(s) @Inputname(s)
+
+ /X - required to execute Slide Show.
+
+ /R (Font Size)  /F (Font Set)     /C (Color)         /D (Display)
+  0 - Normal      0 - Normal        0 - Normal         0 - 640x400
+  1 - MCGA        1 - 50 Lines      1 - Greyscale      1 - 640x480
+  2 - VGA         2 - Amiga         2 - ASCII          2 - 1024x768
+  3 - SVGA        3 - AcidView                         3 - Desktop
+
+ /S - If 0, start display in a WINDOWED mode.
+      If 1, start FULL SCREEN using the display resolution specified
+      with the /D switch (or use the default value in the registry).
+ /A - If 0, then only show the files in the queue once.
+      If 1, then continuously repeat the Slide Show AGAIN once all
+      the files in queue have been shown.
+ /Y - If 0, display files in the order they are queued.  
+      If 1, display queued files at RANDOM.
+ /M - MASK(s) off semicolon delimited extension(s) listed in
+      quotes, e.g. "/M:*.ans;*.jpg" to be displayed.
+
+ @Inputname(s) - Space delimited file list that can include text file
+ lists (ending in .TXT), directories (ending with \), compressed files
+ (ending in .ZIP or .RAR), or supported graphics files.
+
+     -=- Default values are loaded from the registry -=-
+
+Examples:
+
+ ACiDview.exe /X acid-81a.rar acid-81b.rar
+
+     This will start a SLIDE SHOW and display all supported images
+     within acid-81a.rar and acid-81b.rar
+
+ ACiDview.exe /X /R:0 /F:1 /C:0 /D:0 /S:1 /Y:1 /A:1 /M:*.ans
+(continued)   acdu0194.zip acdu0294.zip favfiles.txt JD-DSOC2.ANS testdir\
+
+     A complex heap of options enabled, this example will begin a
+     Slide Show using NORMAL attributes for the font size and color
+     with a 50 LINE mode font set and FULL SCREEN display resolution
+     of 640x480.  ACiD View will proceed to display only the ANSI files
+     ending in .ANS within the ZIPs, those listed in the text file
+     favfiles.txt which end in .ANS, the local file JD-DSOC2.ANS,
+     and finally all the .ANS files in the relative local directory
+     testdir\, all in RANDOM order, repeating the Slide Show infinitely
+     over and over until the F8 or Escape key is pressed.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ ACiD View Windows Registry Keys º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ To re-initialize the Windows file type/file extension registration,
+ delete the following key:
+ HKEY_CURRENT_USER\Software\ACiD\ACiDView\Settings\registered
+
+ On slower computers, smooth scrolling parameters can be tweaked by
+ modifying the following key:
+ HKEY_CURRENT_USER\Software\ACiD\ACiDView\Settings\scrollAmt,scrollTimer
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Acquisition Viewer 6.10  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+  1) Added Save-As PNG (F10) and Save-As AVI for ANSI animations.
+  2) Added ability to navigate and view files within a ZIP or RAR.
+  3) Added Slide Show mode.
+  4) Added extensive support for the Command Line.
+  5) Added XBIN font and XBIN palette loading.
+  6) Added a stripped-down ASCII palette for viewing of "Hidden Greets".
+  7) Added a history of Viewed Files, File Masks, and Recent Directories.
+  8) Added a choice of resolutions for Full Screen mode.
+  9) Added bottom status bar which displays Modem-Emulation information.
+ 10) Improved emulation for Modem Speeds.
+ 11) Faster loading and rendering.
+ 12) Fixed bugs with update screen errors.
+ 13) Better ANSImation support.
+ 14) Improved Amiga Topaz font added which supports umlauts.
+ 15) Added more hidden features.  =)
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Acquisition Viewer 6.00  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ 1)  Initial public distribution of ACiD View for Microsoft Windows.
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Credits                  º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+ Code and Interface Design: gz
+ Splash Screens: Asphyx and Zerosynapse
+ Windows Icons: Alla Xul
+ Code Review: Eto, SIDS and Tasmaniac
+ Additional Thanks: Bob Copeland (ANSIconv),
+                    CodeProject.com (Explorer Window),
+                    Rich Geldreich (jpgd),
+                    Glenn Randers-Pehrson (libpng),
+                    Gershon Elber & Eric S. Raymond (libungif),
+                    Christian Scheurer & Johannes Winkelmann (urarlib),
+                    Jean-loup Gailly & Mark Adler (zlib),
+                    and Venturus of Vandals for the superior Amiga
+                    Topaz character set font for DOS.
+ Beta Testers: Anthem, Bhaal, Black Jack, Cat-Dog, Jashiin, Iron Lung,
+               L4s3r, Phayzed, Sublinear, Wikkesh and Yce!
+ Special Thanks: RaD Man
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ·
+³ Bugs?                    º
+ÀÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+        If you have any suggestions or manage to find any bugs, please
+        report them to the author, gz (gz@acid.org) and
+        cc: RaD Man (radman@acid.org).
+COMNTTodays magic keystrokes are:                                    CTRL+ALT+9 = Enable 9th column for 9x16 fonts in normal rez.    CTRL+ALT+R = Enable Hidden RIPscrip 0-1 emulation.              SAUCE00ACiD View 6 Documentation          gz & RaD Man        ACiD Productions    20031015IE   P š                           

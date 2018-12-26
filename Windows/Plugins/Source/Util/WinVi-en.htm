@@ -1,0 +1,2017 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <title>Help - WinVi</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="author" content="P. C. User">
+
+  <style>
+    h1, h2, h3, h4, h5, h6, table {
+      font-family: Arial, Helvetica, sans-serif;}
+    td {
+      font-size: smaller;
+      line-height: 110%;}
+    td, th {
+      vertical-align: top;
+      padding: 1px 4px 1px 4px;
+      background-color: #e0e0e0;}
+    table {
+      color: black;
+      border: 2px;}
+    code {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 100%;
+      line-height: 110%;}
+    b {
+      padding: 0 3px 0 3px;
+      background-color: #e0e0e0;}
+    b.notitle {
+      background-color: #c4c4c4;}
+  </style>
+</head><body bgcolor="#c4c4c4">
+
+<a name="Contents"></a>
+
+<h1>WinVi</h1>
+<h2>Table of Contents</h2>
+
+
+<p> <a href="#NotepadCompatible">Compatibility with Notepad</a>    <br>
+    <a href="#ExFileCommand"    >vi - File and Display Commands</a><br>
+    <a href="#Positioning"      >vi - Positioning</a>              <br>
+    <a href="#EditTextmode"     >vi - Editing Text</a>             <br>
+    <a href="#Insertmode"       >vi - Insert Mode</a>              <br>
+    <a href="#MoveCursor"       >vi - Cursor Movements</a>         <br>
+    <a href="#ExCommand"        >ex - Commands</a>                 <br>
+    <a href="#ExVariables"      >ex - Options</a>                  <br>
+    <a href="#SearchDlg"        >Search Dialog</a>                 <br>
+    <a href="#Settings"         >Settings</a>                      <br>
+    <a href="#SettingsProfile"  >Settings - Profile</a>            <br>
+    <a href="#SettingsFiletype" >Settings - File Type</a>          <br>
+    <a href="#SettingsDisplay"  >Settings - Display</a>            <br>
+    <a href="#SettingsEdit"     >Settings - Edit</a>               <br>
+    <a href="#SettingsFiles"    >Settings - Files</a>              <br>
+    <a href="#SettingsMapping"  >Settings - Keyboard Macros</a>    <br>
+    <a href="#SettingsShell"    >Settings - Shell</a>              <br>
+    <a href="#SettingsColors"   >Settings - Colors</a>             <br>
+    <a href="#SettingsFonts"    >Settings - Fonts</a>              <br>
+    <a href="#SettingsPrint"    >Settings - Print</a>              <br>
+    <a href="#SettingsLang"     >Settings - Language</a>           <br>
+</p>
+<br>
+
+
+<h2><a name="NotepadCompatible"></a>Compatibility with Notepad</h2>
+
+
+<p>WinVi handles files of (nearly) unlimited size without consuming lots of
+    memory.  There are a few special characteristics in order to offer maximum
+    compatibility with Windows Notepad:</p>
+
+<ul>
+<li>As a default preset, WinVi starts in input mode (this can be changed).
+    Keyboard shortcuts like Ctrl+C (^C) for copying a selected text are
+    available.  For selecting text, hold down the shift key while typing cursor
+    movement keys (see table).  You can also use the mouse if you are in insert
+    mode.  Drag the mouse over a part of the text with the left mouse
+    button held down.  You can select an entire word under the mouse cursor
+    by double clicking the left button.  
+<br><br>
+<table width="90%"><tbody>
+<tr>
+    <th>Key</th>
+    <th>Function</th>
+</tr><tr>
+    <td>^A<br></td>
+    <td>Select all</td>
+</tr><tr>
+    <td>^C</td>
+    <td>Copy selected text into clipboard ("copy")</td>
+</tr><tr>
+    <td>^X</td>
+    <td>Copy selected text into clipboard and remove ("cut")</td>
+</tr><tr>
+    <td>^V</td>
+    <td>Insert text from clipboard ("paste")</td>
+</tr><tr>
+    <td>{Del}</td>
+    <td>Remove selected text or character at the current cursor position</td>
+</tr><tr>
+    <td>{Ins}</td>
+    <td>Switch between insert and replace mode</td>
+</tr><tr>
+    <td>^{Home}, ^{End}</td>
+    <td>Move cursor to first / last text line</td>
+</tr><tr>
+    <td>{Home}, {End}</td>
+    <td>Move cursor to start / end of current line</td>
+</tr><tr>
+    <td>^{<code>&lt;-</code>}, ^{<code>-&gt;</code>}</td>
+    <td>Move cursor to previous / next start of word</td>
+</tr><tr>
+    <td>Arrow keys</td>
+    <td>Move cursor to adjacent character in left / right / up / down
+        direction</td>
+</tr><tr>
+    <td>{Page ^}, {Page v}</td>
+    <td>Scroll back / forward one page of text</td>
+</tr>
+</tbody></table><br>
+    With WinVi, ^{End} just positions to the start of the last line.  For
+    positioning to the end of the last line, release the control key and type
+    the {End} button again.
+</li><li>For moving the cursor by the left arrow key from a start of line to
+    the end of the previous line and vice versa, enable the corresponding
+    checkbox in Options - <a href="#SettingsEdit">Settings - Edit</a> by
+    activating "Line wrapping horizontal cursor movements".
+</li><li>If you rename WinVi32.exe to a file name starting with the letter
+    N (upper or lower case), the remainder of the command line is treated as
+    <i>one</i> filename.  Names containing spaces do not have to be set in
+    quotes.
+</li><li>If the WinVi32.exe file name starts with an <code>N</code>, the option
+    for printing is <code>/p</code> to preserve Notepad compatibility
+    (otherwise -p).
+</li><li>In the header and footer area, filename and page number can be printed
+    in addition to "normal" Characters (see
+    <a href="#SettingsPrint">Settings - Print</a>).
+<br><br>
+</li>
+</ul>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="ExFileCommand">vi - File and Display Commands</a></h2>
+
+
+<p>These commands are used in command mode (edit mode).
+    From insert, replace, and ex command mode, you enter this mode by typing
+    the {Esc} button.<br>
+</p>
+
+<p>Optional input is denoted as text in square brackets (can be left away),
+curly brackets indicate special keys.  Sometimes, identifiers for designated
+input are set in angle brackets for highlighting.  Alternative input
+are separated by a bar, as in <code>|</code>.<br>
+</p>
+
+<table width="100%">
+<tbody>
+<tr>
+    <th>Command</th>
+    <th>&nbsp;</th>
+    <th>Function</th>
+</tr><tr>
+    <td nowrap="true"><code>^L</code></td>
+    <td>&nbsp;</td>
+    <td>Refresh text display</td>
+</tr><tr>
+    <td nowrap="true"><code>^G</code></td>
+    <td>&nbsp;</td>
+    <td>Display file name, current line and total number of lines
+        (<code>:={Enter}</code> shows the current line number only)</td>
+</tr><tr>
+    <td nowrap="true"><code>^^</code></td>
+    <td>&nbsp;</td>
+    <td>Open previously edited file</td>
+</tr><tr>
+    <td nowrap="true"><code>:args{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Show list of files to edit (argument list)</td>
+</tr><tr>
+    <td nowrap="true"><code>:n{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Open next file in the argument list ("next")</td>
+</tr><tr>
+    <td nowrap="true"><code>:n files{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Replace argument list by the specified files and opens the first one
+        ("next").  Within the file list, the wildcard characters * and ?
+        can be used.</td>
+</tr><tr>
+    <td nowrap="true"><code>:rew{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Jump back to first file of argument list ("rewind")</td>
+</tr><tr>
+    <td nowrap="true"><code>:e [{TAB}|file]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Open file ("edit"); without specification of a file,
+        the current file is read again from disk.  The {Tab} key can be used
+        to get a list of files ({Tab} = tabulator = {<code>-&gt;|</code>});
+        When dragging files from the Windows Explorer on a WinVi window,
+        these files are appended to the argument list and the first one is
+        opened.</td>
+</tr><tr>
+    <td nowrap="true">&nbsp;</td>
+    <td><code>!</code></td>
+    <td>With <code>:n!</code>, <code>:e!</code>, or
+        <code>:q!</code>, a warning will be suppressed noting that the
+        working buffer has not been saved.
+        Any changes will be lost and the requested file is opened immediately,
+        for :q!, vi is closed immediately.</td>
+</tr><tr>
+    <td nowrap="true">&nbsp;</td>
+    <td><code>%<br>#</code></td>
+    <td>In the filename part of the ex command line (after
+        "<code>:e</code>", "<code>:w</code>", etc.), <code>%</code>
+        is replaced by the name of the current file, <code>#</code> by the
+        name of the file, which has been previously edited.  In WinVi, the
+        special meaning can be bypassed by doubling this character.</td>
+</tr><tr>
+    <td nowrap="true"><code>:[.]r {TAB}|file{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Reads the text of the file ("read") and inserts it behind the current
+        line (".") or a specified line.  When specifying line 0, the text is
+        inserted at the beginning of the working buffer.</td>
+</tr><tr>
+    <td nowrap="true"><code>:f file{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>"file" changes the current file name (saved in <code>%</code>),
+        e. g. for <code>:w</code> or <code>:e</code> without an explicit
+        file name.</td>
+</tr><tr>
+    <td nowrap="true"><code>:[1,$]w [&gt;&gt;][{TAB}|file]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Writes lines of the working buffer into a file ("write").  The default
+        line range is the entire file (<code>$</code> means "the last line").
+        With <code>&gt;&gt;</code>, the text is appended to the file.</td>
+</tr><tr>
+    <td nowrap="true"><code>:[1,$]wq [&gt;&gt;][{TAB}|file]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Same as <code>:w</code>, WinVi terminates after successfully writing
+        the file.</td>
+</tr><tr>
+    <td nowrap="true"><code>:[1,$]x [&gt;&gt;][{TAB}|file]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>("eXit") same as <code>:wq</code>, but the file will only be written if
+        the working buffer has changed.</td>
+</tr><tr>
+    <td nowrap="true">&nbsp;</td>
+    <td><code>!</code></td>
+    <td>Behind <code>:w</code>, <code>:wq</code>, or <code>:x</code>,
+        any warnings about write protection or file existence are suppressed.
+        The file is written in any case even if the read-only attribute is set.
+        </td>
+</tr><tr>
+    <td nowrap="true"><code>:q</code></td>
+    <td>&nbsp;</td>
+    <td>Close WinVi without saving ("quit")</td>
+</tr><tr>
+    <td nowrap="true"><code>ZZ</code></td>
+    <td>&nbsp;</td>
+    <td>Shortcut for <code>:x{Enter}</code>
+        - the working buffer will be written into the current file and WinVi
+        will be closed</td>
+</tr><tr>
+    <td nowrap="true"><code>:cd [..\|{TAB}|dir]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Changes the current working directory (.. is the next higher
+        directory) or shows the current directory if used without parameter.
+        </td>
+</tr><tr>
+    <td nowrap="true"><code>:vi [{TAB}|file]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Opens a file in a new WinVi window.  Without a parameter, an empty
+        new window is created.</td>
+</tr><tr>
+    <td nowrap="true"><code>z[n]{Enter}</code></td>
+    <td>&nbsp;</td>
+    <td>Changes the window height to the specified number of lines
+        (alternative: <code>:set lines=n{Enter})</code></td>
+</tr><tr>
+    <td nowrap="true"><code>:ve</code></td>
+    <td>&nbsp;</td>
+    <td>Shows the vi Version</td>
+</tr><tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr><tr>
+    <td nowrap="true"><code>^]</code></td>
+    <td>&nbsp;</td>
+    <td>Searches the word at the cursor position in the tags file and jumps
+        to the appropriate file and position.  "tags" is a text file
+        consisting of lines each describing the definition of a word.  Three
+        tab-separated fields contain name, filename, and an ex command to
+        locate the identifier within the file.</td>
+</tr><tr>
+    <td nowrap="true"><code>^T</code></td>
+    <td>&nbsp;</td>
+    <td>Jumps to the previous position in the tags stack.</td>
+</tr>
+</tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="Positioning"></a> vi - Positioning</h2>
+
+
+<table width="100%">
+<tbody>
+<tr>
+    <th>Command</th>
+    <th>Function</th>
+</tr><tr>
+    <td nowrap="true"><code>[n]^E</code></td>
+    <td>Scroll up the display by one line (n lines).  The cursor remains
+        in the current display line as long as scrolling can be performed.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]^Y</code></td>
+    <td>Scroll down the display by one line (n lines).  The cursor remains
+        in the current display line as long as scrolling can be performed.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]^D</code></td>
+    <td>Scroll up the display by half a window (n times).
+        The cursor keeps its screen position.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]^U</code></td>
+    <td>Scroll down the display by half a window (n times).
+        The cursor keeps its screen position.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]^F</code></td>
+    <td>Scroll up the display by a full window (n times / "forward").
+        The cursor keeps its screen position.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]^B</code></td>
+    <td>Scroll down the display by a full window (n times / "back").
+        The cursor keeps its screen position.</td>
+</tr><tr>
+    <td nowrap="true"><code>z[n]{Enter}</code></td>
+    <td>Move the current line and the cursor to the top.
+        The window size can be set to n lines.</td>
+</tr><tr>
+    <td nowrap="true"><code>z[n].</code></td>
+    <td>Move the current line and the cursor to the center of the window.
+        The window size can be set to n lines.</td>
+</tr><tr>
+    <td nowrap="true"><code>z[n]-</code></td>
+    <td>Move the current line and the cursor to the bottom.
+        The window size can be set to n lines.</td>
+</tr>
+</tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="EditTextmode">vi - Editing Text</a></h2>
+
+
+<table width="100%">
+<tbody>
+<tr>
+    <th>Command</th>
+    <th>Function</th>
+</tr><tr>
+    <td nowrap="true"><code>[n]i[text]{ESC}</code></td>
+    <td>text is inserted before the cursor position (n times)
+        (<a href="#Insertmode">"Insert mode"</a> after
+         <code>i I a A s S</code>)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]I[text]{ESC}</code></td>
+    <td>text is inserted at the start of the current line (n times)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]a[text]{ESC}</code></td>
+    <td>text is inserted behind the cursor position (n times)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]A[text]{ESC}</code></td>
+    <td>text is inserted at the end if the current line (n times)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]x</code></td>
+    <td>delete character at the cursor position on the current line
+        (or n characters from the cursor position)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]X</code></td>
+    <td>delete (n) character(s) left of the current cursor position</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]J</code></td>
+    <td>join n lines (default n = 2). A space is inserted at each former newline
+        position if the preceding character is not one of ( { [ space or tab and
+        the following character (after indenting tabs and spaces) is not
+        ) } ] . , ; or :</td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]d&lt;move&gt;</code></td>
+    <td>delete text up to the end of the (n-th) <a href="#MoveCursor">cursor
+        movement</a> <code>&lt;move&gt;</code> (and save it in the named
+        buffer <code>"x</code>), if used with&nbsp;<code>&lt;move&gt;</code>
+        <code>w</code>, <code>W</code> ("delete word") or <code>`{x}</code>
+        the deleted text ends before the cursor movement; additionally, the
+        previously deleted text is available in the unnamed buffer and can be
+        inserted simply with <code>P</code> or <code>p</code>.</td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]D</code></td>
+    <td>corresponds to <code>d$</code> (delete to the end of line)</td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]dd</code></td>
+    <td>delete entire line(s).  This is also put into the named buffer
+        <code>"1</code>, the old contents of buffer <code>"1</code> are moved
+        into buffer <code>"2</code> etc. up to <code>"9</code>).  If specified,
+        the deleted text is also saved in the named buffer <code>"x</code>
+        (see also <a href="#Copy_text">copy text</a>)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]r{x}</code></td>
+    <td>replace one (or n) character(s) in the current line by the character
+        "x", starting at the cursor position.  If count exceeds the number of
+        remaining characters on the line, further characters are appended.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]R[text]{ESC}</code></td>
+    <td>replace (n times) the text in the current line at the cursor position
+        by "text" (replace mode)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]~</code></td>
+    <td>change case (n times) within the current line starting at the cursor
+        position.  When used for non-ASCII characters, the result depends
+        on the current character set.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]c&lt;move&gt;[text]{ESC}</code></td>
+    <td>change text up to the end of the (n-th) <a href="#MoveCursor">cursor
+        movement</a> <code>&lt;move&gt;</code> to "text"; the specification of
+        <code>w</code> or <code>W</code> is treated as <code>ce</code>
+        or <code>cE</code> if the cursor is not positioned on a white space.
+        </td>
+</tr><tr>
+    <td nowrap="true"><code>[n]C[text]{ESC}</code></td>
+    <td>corresponds to <code>c$</code> (change to the end of the line)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]!&lt;move&gt;&lt;cmd&gt;{Enter}</code></td>
+    <td>the text up to the end of the (n-th) cursor movement
+        <code>&lt;move&gt;</code> is replaced by the output of the external
+        command <code>&lt;cmd&gt;</code>, the selected text is sent as
+        standard input to the started program <code>&lt;cmd&gt;</code>
+        (e.&nbsp;g. sort or grep)</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]s[text]{ESC}</code></td>
+    <td>replace (n) character(s) within the current line by "text"
+        ("substitute"); corresponds to <code>cl</code></td>
+</tr><tr>
+    <td nowrap="true"><code>[n]S[text]{ESC}</code></td>
+    <td>replace line(n) by "text"</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]&gt; &lt;move&gt;</code></td>
+    <td>indent line(s) up to the <a href="#MoveCursor">cursor movement</a>,
+        all lines in between are indented by the number of spaces specified in
+        <code>shiftwidth=</code> (default 4 spaces), if the resulting number of
+        spaces reach the value of <code>tabstop=</code> setting, the spaces
+        are replaces by the appropriate number of tabs.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]&gt;&gt;</code></td>
+    <td>line(s) are indented.</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]&lt; &lt;move&gt;</code></td>
+    <td>(n) line(s) up to the cursor movement <code>&lt;move&gt;</code> are
+        unindented (by up to <code>shiftwidth=</code> spaces).</td>
+</tr><tr>
+    <td nowrap="true"><code>[n]&lt;&lt;</code></td>
+    <td>unindent line(s).</td>
+</tr><tr>
+    <th colspan="2"><a name="Copy_text"></a>Copy and Paste</th>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]y&lt;move&gt;</code></td>
+    <td>copy ("yank") the text up to the end of the (n-th)
+        <a href="#MoveCursor">cursor movement</a> <code>&lt;move&gt;</code>
+        (into the named buffer <code>"x</code>).  <code>"x</code> can be any
+        letter, if uppercase letters are used (e.g. <code>"Xy$</code>), the
+        text is appended to the previous contents of the buffer (also with
+        <code>d D</code>).
+        As with <code>d</code> and <code>c</code>, <code>y`{x}</code> yanks
+        up to the position before the mark.</td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]Y</code></td>
+    <td>save entire line(s)</td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]yy</code></td>
+    <td>corresponds to <code>Y</code></td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]p</code></td>
+    <td>insert ("put") saved text (from buffer <code>"x</code>) behind the
+        position (n times), entire lines are inserted behind the next
+        line end.</td>
+</tr><tr>
+    <td nowrap="true"><code>["{x}][n]P</code></td>
+    <td>insert text before the cursor or before the current line.</td>
+</tr><tr>
+    <th colspan="2">Undo and Repetitions</th>
+</tr><tr>
+    <td nowrap="true"><code>u</code></td>
+    <td>undo last change</td>
+</tr><tr>
+    <td nowrap="true"><code>[n].</code></td>
+    <td>repeat last changing operation (with new repeat factor or line number
+        <code>n</code>);  WinVi can undo several changes by repeating
+        <code>u</code> with "<code>.</code>".
+        When typing <code>u</code> again, the last undo is reverted, i.e.
+        the original change is done again ignoring any number specification
+        before <code>u</code>.</td>
+</tr><tr>
+    <td nowrap="true"><code>"{m}[n]p</code></td>
+    <td>insert the text of the m-th previous deletion or yanking of entire lines
+        (n times) after the current line (<code>P</code> - before the current
+        line).</td>
+</tr><tr>
+    <td nowrap="true"><code>&</code></td>
+    <td>repeat the last substitute command
+        (<code>:s</code> - see <a href="#ExCommand">ex commands</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="Insertmode"></a>vi - Insert Mode</h2>
+
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td nowrap="true"><code>^H</code> &nbsp; or &nbsp; {Bksp}<br>
+      </td>
+      <td>delete last typed character (within the current line only)<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>^W</code><br>
+      </td>
+      <td>delete last typed word<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>^D</code><br>
+      </td>
+      <td>unindent the current line by &nbsp; <code>shiftwidth=</code>
+          &nbsp; character positions<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>0^D</code><br>
+      </td>
+      <td>unindent current line as far as possible<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>^T</code><br>
+      </td>
+      <td>indent current line by &nbsp; <code>shiftwidth=</code> &nbsp;
+          character positions<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true">{Esc}<br>
+      </td>
+      <td>exit insert mode, continue in
+        <a href="#EditTextmode">command mode</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="MoveCursor"></a>vi - Cursor Movements</h2>
+
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td nowrap="true"><code>[n]k</code> or {Up} or <code>^P</code><br>
+      </td>
+      <td>(n lines) up<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]h</code> or {<code>&lt;-</code>}<br>
+      </td>
+      <td>(n characters) to the left<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]l</code> or {<code>-&gt;</code>} or
+          {Space}<br>
+      </td>
+      <td>(n characters) to the right<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]j</code> or {Down} or <code>^N</code><br>
+      </td>
+      <td>(n lines) down<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]-</code><br>
+      </td>
+      <td>position to the first printable character (i.e. the first non-space
+          character) of the preceding (n-th) line<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]+</code> or {Enter}<br>
+      </td>
+      <td>position to the first printable character of the (n-th) following
+          line<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ <br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td nowrap="true"><code>0</code><br>
+      </td>
+      <td>(zero) start of line<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]^</code><br>
+      </td>
+      <td>first printable character behind the (n-th) preceding start of line
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]|</code>
+      </td>
+      <td>first (n-th) character column
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]$</code>
+      </td>
+      <td>(n-th) following end of line
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ <br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td nowrap="true"><code>[n]G</code><br>
+      </td>
+      <td>last (n-th) line of file, first printable character<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>``</code><br>
+      </td>
+      <td>jump back to the position before the previous jump with absolute
+          address<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>''</code><br>
+      </td>
+      <td>jump back to the start of the line of the previous absolute jump<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]H</code><br>
+      </td>
+      <td>top (n-th) screen line, first printable character<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>M</code><br>
+      </td>
+      <td>center screen line, first printable character<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]L</code><br>
+      </td>
+      <td>bottom (n-th) screen line, first printable character<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+ <br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <th colspan="2">Searching Specific Characters</th>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]f{x}</code>
+      </td>
+      <td>skip to the (n-th) following occurrence of character "x"
+          on the current line ("find")
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]F{x}</code>
+      </td>
+      <td>skip to the preceding (n-th) occurrence of character "x"
+          on the current line
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]t{x}</code>
+      </td>
+      <td>position before the (n-th) following occurrence of "x"
+          on the current line ('till x)
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]T{x}</code>
+      </td>
+      <td>position behind the (n-th) preceding occurrence of "x"
+          on the current line
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n];</code>
+      </td>
+      <td>repeat the previous <code>f F t T</code> positioning (n times)
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n],</code><br>
+      </td>
+      <td>repeat the previous <code>f F t T</code> positioning (n times), but in
+          opposite direction
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>%</code><br>
+      </td>
+      <td>search for the opposite brace, parenthesis, or square bracket
+          { ( [ ] ) }
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="WordBoundaries"></a>Word Boundaries<br>
+      </th>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]w</code><br>
+      </td>
+      <td>(n-th) following start of a word ( = sequence of letters, digits,
+          underline or sequence of printable characters not of this group)<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]W</code><br>
+      </td>
+      <td>(n-th) following start of a word behind a space, tab, or line
+          separator
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]e</code>
+      </td>
+      <td>(n-th) following end of a word
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]E</code>
+      </td>
+      <td>(n-th) following end of a word behind a space, tab, or line separator
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]b</code>
+      </td>
+      <td>(n-th) preceding start of a word
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]B</code>
+      </td>
+      <td>(n-th) preceding start of a word behind a space, tab, or line
+          separator
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<a name="EditMark"></a>
+<br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <th colspan="2">Position Markers
+      </th>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>m{x}</code>
+      </td>
+      <td>mark the current position with letter "x"
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>`{x}</code>
+      </td>
+      <td>jump to marked position "x"
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>'{x}</code>
+      </td>
+      <td>jump to the first printable character of the line containing mark "x"
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>``</code>
+      </td>
+      <td>jump back to the previous jump position (before entering
+          <code>`x</code>, <code>'x, <code>``</code>, or <code>''</code>)
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>''</code>
+      </td>
+      <td>jump to the first printable character of the line of the previous
+          jump position
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <th colspan="2">Search for Character Strings
+      </th>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]/[expr][/]{Enter}</code>
+      </td>
+      <td>search for the (n-th) following occurrence of a character string,
+          matching <code>&lt;expr&gt;</code> ("RE" - "regular expression").
+          If <code>&lt;expr&gt;</code> is left empty, the previously
+          specified expression is used again.
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]?[expr][?]{Enter}</code>
+      </td>
+      <td>search for the (n-th) preceding occurrence
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]n</code>
+      </td>
+      <td>search for the (n-th) occurrence of the previously searched expression
+          ("next") in the original direction
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[n]N</code>
+      </td>
+      <td>search for the (n-th) occurrence of the previously searched expression
+          in the opposite original direction
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>``</code>
+      </td>
+      <td>jump back to the position where the last search started
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>''</code>
+      </td>
+      <td>jump back to the first printable character of the line where the last
+          search started
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<a name="RegExp"></a>
+<br>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <th colspan="2">Elements for Regular Expressions
+      </th>
+    </tr>
+    <tr>
+      <td><code>^</code>
+      </td>
+      <td>start of line<br>
+      </td>
+    </tr>
+    <tr>
+      <td><code>$</code>
+      </td>
+      <td>end of line<br>
+      </td>
+    </tr>
+    <tr>
+      <td><code>.</code>
+      </td>
+      <td>match any character except end-of-line characters
+          (CR-LF, CR, LF, RS, NUL)
+      </td>
+    </tr>
+    <tr>
+      <td><code>\</code>
+      </td>
+      <td>"quotes" the following character (disables or enables the special
+          meaning of it).  The affected characters are
+          <code>^ $ . * [ ] \</code> and <code>/ ?</code> for search operations.
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>\&lt;</code>
+      </td>
+      <td>start of word (see <a href="#WordBoundaries">word boundaries</a>)<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>\&gt;</code>
+      </td>
+      <td>end of word<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[list]</code>
+      </td>
+      <td>a character of the list<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[^list]</code>
+      </td>
+      <td>a character not being part of the list
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>[x-y]</code>
+      </td>
+      <td>a character within the range from "x" to "y" (Example:
+          <code>[0-9A-Za-z_]</code>)
+      </td>
+    </tr>
+    <tr>
+      <td><code>*</code>
+      </td>
+      <td>defines a sequence of any length of the preceding character
+          (e.&nbsp;g. "<code>.*</code>"=any sequence of any non-newline
+           characters including the empty string)
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>\(expr[\|expr]\)</code><br>
+      </td>
+      <td>(search for one of the alternative expressions), select
+          the matched string for reference in substitution strings in
+          <code>:s</code>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>\x</code><br>
+      </td>
+      <td>WinVi-specific: match the letter x exactly as typed disregarding the
+          current <code>ignorecase</code> setting
+          (see <a href="#ExVariables">ex - Options</a>)
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>\%hh</code><br>
+      </td>
+      <td>WinVi-specific: the character with the specified hexadecimal encoding
+          <code>&lt;hh&gt;</code> (also matches end-of-line characters)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="ExCommand"></a>ex - Commands</h2>
+
+
+<p>In WinVi, a list of available ex commands can be requested by typing the
+tab key after the initial colon.  Generally, the tab key can be used to
+automatically complete the current argument on the ex command line.  This is
+especially useful for expanding file names.</p>
+
+<p><a href="#ExFileCommand">File commands</a> have been discussed earlier
+and will not repeated here.</p>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <th>Command
+      </th>
+      <th>&nbsp;
+      </th>
+      <th>Function
+      </th>
+    <tr>
+      <td nowrap="true"><code>:[.[,.]]s/expr[/rep[/[g][c]]]{Enter}</code>
+      </td>
+      <td><br>
+      </td>
+      <td>Substitution - replace (between lines m and n, default is current
+          line) the first (or all if <code>g</code> is specified - "global")
+          <code>&lt;expr&gt;</code> matching string by
+          <code>&lt;rep&gt;</code> (empty string if not specified).
+          Instead of "<code>/</code>", any other special character can be
+          used as separator.<br>
+          <code>c</code> requests a confirmation before each substitution.
+      </td>
+    </tr>
+    <tr>
+      <td><code>:[.[,.]]s [g][c]{Enter}</code>
+      </td>
+      <td><br>
+      </td>
+      <td>Repeat the last substitution with the previous values for
+          <code>&lt;expr&gt;</code> and <code>&lt;rep&gt;</code>
+      </td>
+    </tr>
+    <tr>
+      <td>Line numbers:
+      </td>
+      <td><code>.</code>
+      </td>
+      <td>current line
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>+|- [n]</code><br>
+      </td>
+      <td>each specified line number can be incremented or decremented by
+          appending &nbsp; <code>+|- [n]</code> &nbsp;, if n is missing,
+          an increment/decrement value of 1 is assumed
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td><code>n</code>
+      </td>
+      <td>n-th line
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td><code>$</code>
+      </td>
+      <td>last line of file (use shortcut <code>%</code> for <code>1,$</code>)
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>'{x}</code>
+      </td>
+      <td>line containing marker "x"
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>/expr/</code>
+      </td>
+      <td>next line matching&nbsp;<code>&lt;expr&gt;</code> starting the search
+          at the following line
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>?expr?</code>
+      </td>
+      <td>next preceding line matching&nbsp;<code>&lt;expr&gt;</code> starting
+          the search at the preceding line
+      </td>
+    </tr>
+    <tr>
+      <td><code>&lt;rep&gt;</code> (replacement string):
+      </td>
+      <td>&amp;
+      </td>
+      <td>the string matched with <code>&lt;expl&gt;</code>
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>\n</code>
+      </td>
+      <td>the string matching the n-th with
+          &nbsp;<code>\( \)</code>&nbsp; surrounded search pattern
+          (number between 1 and 9)
+      </td>
+    </tr><tr>
+      <td>Control codes:<br>
+      </td>
+      <td><code>^V</code><br>
+      </td>
+      <td>disables the special behaviour of the following control key and
+          prompts the hexadecimal special notation in the ex command line.
+          Example for the replacement of all Unix end-of-lines by Windows line
+          ends in WinVi:
+          When typing <code>:%s/^.*{^V}{^J}/&{^V}{^M}{^V}{^J}/{Enter}</code>,
+          the command <code>:%s/^.*\%0a/&\%0d\%0a/</code> is executed.
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>:[.[,.]]d{Enter}</code>
+      </td>
+      <td><br>
+      </td>
+      <td>delete the specified line(s) (corresponds to &nbsp;<code>dd</code>)
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>:.{Enter}</code>
+      </td>
+      <td><br>
+      </td>
+      <td>place the cursor on the first printable character of the specified
+          line
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<h2><a name="ExVariables"></a>ex - Options</h2>
+
+
+<p>Boolean values are changed with the command &nbsp;
+   <code>:set &lt;option&gt;{Enter}</code> &nbsp; for activating and &nbsp;
+   <code>:set no&lt;option&gt;{Enter}</code> &nbsp; for deactivating the
+   specified flag, other options (denoted with &nbsp;<code>=</code>&nbsp;)
+   expect numerical or string values.  Many options can be abbreviated.</p>
+
+<p>In WinVi, a list of available options is displayed when typing &nbsp;
+   <code>:set</code>{Space}{Tab} &nbsp;.</p>
+
+<table width="100%">
+  <tbody>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>all</code>
+      </td>
+      <td><br>
+      </td>
+      <td>display of all options and its current settings.  In WinVi, the
+          Settings dialog is opened.
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>ai</code>
+      </td>
+      <td nowrap="true"><code>autoindent</code>
+      </td>
+      <td>0
+      </td>
+      <td>automatic indenting as in the preceding line, after <code>O</code>
+          (Open) as in the following line
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>aw</code>
+      </td>
+      <td nowrap="true"><code>autowrite</code>
+      </td>
+      <td>0
+      </td>
+      <td>automatic save of changes in the current file when opening another
+          file<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>ic</code>
+      </td>
+      <td nowrap="true"><code>ignorecase</code>
+      </td>
+      <td>1
+      </td>
+      <td>ignore upper or lower case when searching (also applies to
+          national special characters like accented vowels)<br>
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>magic</code>
+      </td>
+      <td>1
+      </td>
+      <td>special handling of &nbsp; <code>. * ? [ ]</code> &nbsp; when
+          searching (if <code>nomagic</code> is set, the special meaning is
+          activated by a preceding <code>\</code>)
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>list</code>
+      </td>
+      <td>0
+      </td>
+      <td>display of tab characters as &nbsp; <code>^I</code>&nbsp;&nbsp;
+          and unconditional display of end-of-line codes
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>nu</code>
+      </td>
+      <td nowrap="true"><code>number</code>
+      </td>
+      <td>0
+      </td>
+      <td>display of line numbers
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>ro</code>
+      </td>
+      <td nowrap="true"><code>readonly</code>
+      </td>
+      <td>0
+      </td>
+      <td>display a warning when trying to save the current file
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>sm</code>
+      </td>
+      <td nowrap="true"><code>showmatch</code>
+      </td>
+      <td>0
+      </td>
+      <td>when inserting a closing parenthesis, brace or square bracket,
+          the corresponding opening parenthesis is highlighted for one second,
+          <br>
+          when positioning the cursor in command mode on any parenthesis, brace
+          or square bracket, the corresponding one is highlighted for one
+          second.
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>terse</code>
+      </td>
+      <td>0
+      </td>
+      <td>some status messages are displayed in short form
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>vo</code>
+      </td>
+      <td nowrap="true"><code>viewonly</code>
+      </td>
+      <td>0
+      </td>
+      <td>prevents changing the current buffer (in WinVi only)<br>
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>ws</code>
+      </td>
+      <td nowrap="true"><code>wrapscan</code>
+      </td>
+      <td>1
+      </td>
+      <td>searching wraps around end/start of file
+      </td>
+    </tr>
+    <tr>
+      <td><code>am</code>
+      </td>
+      <td nowrap="true"><code>ansimode</code>
+      </td>
+      <td>1
+      </td>
+      <td>WinVi-specific: treating the current file as ANSI text<br>
+      </td>
+    </tr>
+    <tr>
+      <td><code>dm</code>
+      </td>
+      <td nowrap="true"><code>dosmode</code>
+      </td>
+      <td>0
+      </td>
+      <td>WinVi-specific: treating the current file as DOS text with
+          OEM character set
+      </td>
+    </tr>
+    <tr>
+      <td><code>hm</code>
+      </td>
+      <td nowrap="true"><code>hexmode</code>
+      </td>
+      <td>0
+      </td>
+      <td>WinVi-specific: display in hexadecimal mode
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>co=</code>
+      </td>
+      <td nowrap="true"><code>columns=</code>
+      </td>
+      <td><br>
+      </td>
+      <td>set width of window to specified number of characters
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>lines=</code>
+      </td>
+      <td><br>
+      </td>
+      <td>set the window height to the specified number of lines
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td nowrap="true"><code>scroll=</code>
+      </td>
+      <td>0
+      </td>
+      <td>maximum number of line scroll operations used for positioning,
+          the value 0 is replaced by the number of visible lines - 2
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>sw=</code>
+      </td>
+      <td nowrap="true"><code>shiftwidth=</code>
+      </td>
+      <td>4
+      </td>
+      <td>number of space positions inserted or deleted when
+          indenting/unindenting with &nbsp; <code>&gt; &lt; ^T ^D</code> &nbsp;
+          at the start of a line
+      </td>
+    </tr>
+    <tr>
+      <td nowrap="true"><code>ts=</code>
+      </td>
+      <td nowrap="true"><code>tabstop=</code>
+      </td>
+      <td>8
+      </td>
+      <td>number of character positions used for displaying a tab
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>tags=</code>
+      </td>
+      <td><br>
+      </td>
+      <td>list of file names used for the &nbsp;<code>:tag</code>&nbsp; command
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>tmpdirectory=</code>
+      </td>
+      <td><br>
+      </td>
+      <td>directory used for temporary files (default: system TEMP folder)
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>ansicodepage=</code>
+      </td>
+      <td><br>
+      </td>
+      <td>name of the Windows NLS resource used for display and input in the
+          corresponding mode (default is depending on the Windows system or
+          the regional settings),  see also <b>Character Tables</b>
+          in section <a href="#SettingsFiletype">Settings - File Type</a>
+      </td>
+    </tr>
+    <tr>
+      <td><br>
+      </td>
+      <td nowrap="true"><code>oemcodepage=</code>
+      </td>
+      <td><br>
+      </td>
+      <td>see above<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<a name="SearchDlg"><h2>Search Dialog</h2></a>
+<p>This dialog appears when typing {Alt+F3} or when choosing the corresponding
+toolbar button or menu entry. The search dialog contains the following fields:
+</p>
+<ul>
+<li><b>Search string</b><br>
+    Enter the string to search for.  This is a <a href="#RegExp">regular
+    expression</a> pattern if the following checkbox is activated.  Otherwise,
+	the string is matched literally.</li>
+<li><b>regular expression search</b><br>
+    Activate this option to search a pattern which is built according to the
+    <a href="#RegExp">regular expression</a> rules.  If deactivated, the search
+    is carried out literally.  If this option is combined with the hexadecimal
+    flag, any \x prefix can be omitted in the search pattern.  The dot
+    (<code>.</code>) still matches an entire byte, not just a hexadecimal digit.
+    </li>
+<li><b>hexadecimal</b><br>
+    The search string is interpreted as a sequence of hexadecimal numbers.
+    Spaces can be inserted for separating hexadecimal codes of the bytes.</li>
+<li><b>match case</b><br>
+    The upper or lower case of letters will be observed when activated.  This
+    flag is prefilled according to the <code>ignorecase</code> option but can
+    be changed to override this option.</li>
+<li><b>whole word</b><br>
+    The option corresponds to surrounding the search pattern by the regular
+    expression elements <code>\&lt;</code> and <code>\&gt;</code>.</li>
+<li><b>wrap around EOF</b><br>
+    Search continues at the start/end of the buffer if no occurrence is found.
+    This flag is prefilled according to the <code>wrapscan</code> option but can
+    be changed to override this option.</li>
+<li><b>up / down</b><br>
+    Use this selection to choose a direction for searching.</li>
+<li><b>Find next</b><br>
+    Push the button to actually search.  The next found occurrence of the
+    search string is highlighted if the search is successful.</li>
+<li><b>Replace &gt;&gt;</b><br>
+    This button expands the dialog by replace options.  It can be pushed after
+    a successful search.</li>
+<li><b>Replace string</b><br>
+    This field is visible after pushing the "Replace &gt;&gt;"
+    button.  Specify a replacement string if you want to change the found text.
+    </li>
+<li><b>Replace</b><br>
+    Push this button to replace the highlighted occurrence of the search string.
+    This button is disabled if no text is selected.</li>
+<li><b>Replace All</b><br>
+    Push this button to replace all occurrences of the search string within the
+    file.</li>
+</ul>
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+
+<a name="Settings"><h2>Settings</h2></a>
+<p>The contents of the tab sheets is described in the following sections.
+Outside of the tab sheets, there is a Profile selection dropdown box at the
+upper border of the dialog for file specific settings.  When selecting a
+different profile, all settings are changed as previously saved for that
+profile.  Creating and automatic selection of profiles is described in the
+next chapter.
+At the bottom of the dialog, there are selection controls for permanently saving
+the current settings and the usual buttons for Apply, OK and Cancel.
+
+<a name="SettingsProfile"><h3>Settings - Profile</h3></a>
+<p>Profiles can be set up if different settings should be applied to files with
+different extensions or paths.<br>
+The settings of a particular profile are automatically loaded when a file
+with a corresponding path or extension is opened or when the path or name of
+the current file changes and relates to a different profile afterwards.<br>
+File name comparison is case insensitive.
+For yet unnamed files or files without a full path, the current working folder
+is used to select an appropriate profile.<br>
+<br>
+If several profiles can be found for the current file, the best matching profile
+will be used.  This search determines the first profile out of the following
+list:
+<ol>
+ <li>first profile with empty extension field and a longest possible match
+     of the path, if there is no other profile matching at least the same path
+     length and at least one extension, otherwise</li>
+ <li>first profile matching the path as far as possible and matching one
+     extension, otherwise</li>
+ <li>first profile with empty extension and matching the path as far as
+     possible, otherwise</li>
+ <li>first profile with an empty path matching one extension, otherwise</li>
+ <li>first profile except <code>"(default)"</code> with empty path and extension
+     fields, otherwise</li>
+ <li>the Default profile.</li>
+</ol>
+The steps for creating a new profile are:<br>
+<ol>
+ <li>First, select a profile with the settings that are most in common with
+     the new profile settings.  This prevents exhausting adopting the same
+     settings again.  When creating your first profile, only the
+     <code>"(default)"</code> profile is available.  When selecting another
+     profile, the relating settings are loaded immediately.
+ <li>Push button <code>"<u>C</u>reate new profile..."</code> in the profile
+     tab sheet of the settings dialog and</li>
+ <li>enter a name for identifying the new profile, then push <code>"OK"</code>.
+     </li>
+ <li>Now you can enter paths and/or file name extensions into the two fields,
+     which should be used to select the new profile.  Multiple specifications
+     should be separated by comma or semicolon.
+ <li>The checkbox <code>"Per<u>m</u>anent setting as default for this dialog
+     box"</code> specifies if the bottom <code>"<u>P</u>ermanent setting"</code>
+     option is activated by default.  This can also be set for the Default
+     profile.
+ <li>The current settings in the other tab sheets still contain the values of
+     the previously loaded profile.  You can change them now as desired.</li>
+ <li>Finally, the new settings are saved and applied by selecting
+     <code>"<u>P</u>ermanent setting"</code> and clicking the
+     <code>"OK"</code> button.</li>
+</ol>
+</p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsFiletype"><h3>Settings - File Type</h3></a>
+<p>This dialog affects the procedure for opening a file.
+These options do not change the current operating mode.
+
+<ul>
+<li><b>Standard newline character</b><br>
+    In the first group, the standard encoding of end-of-line indicators are
+    defined.  This setting determines how to handle the return/enter
+    key in input/replace mode, on the other hand it defines which newline
+    encodings will not be indicated with additional special symbols.
+    If the current setting is not set to CR/LF, the status bar indicates the
+    non-default newline handling with [Lf] or [Cr], depending on the type of
+    text (after Ctrl+G or after reading or writing a file).</li>
+
+<li><b>Initial text / hexadecimal mode</b><br>
+    In the lower left corner, an automatic switch between text and
+    hexadecimal view is selected for open operations of a file.<br>
+    Text or hexadecimal display for already loaded files can be selected in
+    the toolbar or menu <code>Options</code> -> <code>Hex edit mode</code>
+    in the main window.</li>
+
+<li><b>Initial character set</b><br>
+    In the top right corner, the automatic selection of code pages can be
+    specified.  This selection is also applied only when a file is being opened.
+    <acronym title="American National Standards Institute">ANSI</acronym>
+    is the usual setting for Windows files.
+    The PC character set (also called
+    <acronym title="Original Equipment Manufacturer">OEM</acronym> character
+    set) uses different codes for several special characters and is mostly
+    used in DOS programs.  The third choice (<acronym title="Extended Binary
+    Coded Decimal Interchange Code">EBCDIC</acronym>) is rare, it is sometimes
+    necessary for compatibility with related computer systems.</li>
+
+<li><b>Character mapping</b><br>
+    In the 32-bit version of WinVi, the bottom right corner of this tab sheet
+    shows a codepage selection field for ANSI and PC character sets.
+    These values should only be changed if working with foreign language files.
+    With the default setting ("system"), the system default codepages are used,
+    e.&nbsp;g. 1252 for western ANSI character encoding and
+    437 for the original American OEM character set.<br>
+    These codepage settings are used when switching between ANSI and DOS
+    character sets.  On the other hand, they are used for converting
+    Unicode texts inserted from the clipboard.
+    <br>
+    Please note that the actual representation depends on the
+    <a href="#SettingsFonts">font settings</a>.
+    It cannot be changed for all fonts.<br>
+    In the Windows registry key
+<code>[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Nls\Codepage]</code>,
+    the installed resources are listed, which can be used for the code page
+    settings.  If necessary, the needed files can be extracted from the CAB
+    files of the system installation CD, copied into the system folder and
+    entered into the registry.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsDisplay"><h3>Settings - Display</h3></a>
+<p>In this dialog, the visual appearance can be modified.
+<ul>
+<li><b>ShowMatch (highlight matching parentheses)</b><br>
+    If a positioning command places the cursor on a parenthesis, a brace or a
+    square bracket (i.e. (, ), {, }, [ or ]), the relating counterpart is
+    highlighted for one second, if its position is within the visible part of
+    the window.  In insert mode, highlighting only appears after input of a
+    closing parenthesis, brace or square bracket.
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;[no]showmatch"</code>.</li>
+<li><b>Terse (short status messages)</b><br>
+    Some messages displayed in the status bar are show in a short form
+    (e. g. after reading a file).
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;[no]terse"</code>.</li>
+<li><b>Automatic activation on file drag & drop</b><br>
+    When dragging a file on the WinVi window (e. g. from the Windows Explorer)
+    the WinVi window is automatically put into the front.</li>
+<li><b>Line numbers</b><br>
+    A line number is displayed in front of each line.
+    The line numbers count from 1.
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;[no]number"</code>.</li>
+<li><b>Refresh background bitmap</b><br>
+    When using a background picture for the main display, the picture may be
+    misarranged after adding or deleting lines.  If this setting is activated
+    the following lines are refreshed in this case.
+    This setting has no effect if no bitmap background is selected.</li>
+<li><b>Hexadecimal address representation (hexadecimal mode only)</b><br>
+    The addresses in hexadecimal mod (first column) are usually displayed
+    as decimal numbers.  With this setting, the numbers are hexadecimal.
+    </li>
+<li><b>TabStop</b><br>
+    This value describes the distances between tab positions in text mode.
+    The default value of 8 means, that each eight character positions from the
+    first column another tab stop is set.
+    When using a proportional font, the average character width is used.
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;tabstop=N"</code>.</li>
+<li><b>Maximum scroll range</b><br>
+    For Positioning outside of the current window, this value specifies the
+    maximum number of lines to scroll.  If positioning would require more
+    scrolling, the entire text area of the window is redrawn with the
+    new target position centered in the middle.
+    A value of 5 means that jumps to lines within the range of 5 lines before
+    and behind the visible window are done by scrolling.  Any movement outside
+    of this area results in a direct jump.
+    The value 0 has a special meaning, it replaces a number of the visible lines
+    - 2.
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;scroll=N"</code>.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsEdit"><h3>Settings - Edit</h3></a>
+
+<p>In this dialog, you can change settings for editing.
+<ul>
+<li><b>Initial insert mode</b><br>
+    If the initial insert mode is activated, you can start typing text
+    immediately after the start of WinVi.  If deactivated, WinVi works in
+    command mode when started.  If this option is deactivated, WinVi also
+    changes into command mode after file operations, e. g. when typing the
+    save toolbar button.</li>
+<li><b>AutoWrite</b><br>
+    If this option is activated, a changed file buffer is automatically written
+    when opening another file.</li>
+<li><b>AutoIndent</b><br>
+    When inserting new lines with 'O', 'o' or when typing the enter key in
+    insert mode, the new line will get the same white space area as the
+    line from which the inserting operation is initiated.
+    The indentation is done with as much tab characters as possible,
+    the remaining space is filled up with spaces.
+    If tabstop is set to just one space, only spaces are used to indent.</li>
+<li><b>Line wrapping horizontal cursor movements</b><br>
+    If activated, the cursor right key jumps into the next line if it is
+    already positioned at the last character of a line.  Analogously,
+    a left cursor movement from the first column positions to the last
+    position of the preceding line.  Additionally, the backspace key deletes
+    the preceding newline character if typed in the first column in insert mode.
+    </li>
+<li><b>Multi-line !/c/d/y operations on entire rows</b><br>
+    Multi-line shell, change, delete, or yank operations are extended to
+    the entire lines if this option is activated.  For example, as with a
+    standard vi, the command <code>dj</code> delete two lines, the result is
+    the same as with <code>2dd</code>.
+    If this option is deactivated, the command <code>dj</code> just removes
+    the text between the current cursor position and the same column in the next
+    line, while <code>2dd</code> still removes two entire lines.
+    </li>
+<li><b>Undo memory</b><br>
+    The entered value determines the maximum memory amount used for saving
+    removed or replaced text areas for later undo.
+    When reaching the specified memory amount, the oldest undo information
+    is removed.  Any older operation cannot be undone afterwards.</li>
+<li><b>ReadOnly as default</b><br>
+    If this option is activated, the file buffer is marked as read-only.
+    This flag can be set even if the actual file is not marked as read-only.
+    The file attribute remains unchanged.  Note that the read-only flag can
+    be bypassed with the command <code>:w!</code>.  So, this flag does not
+    provide real protection against overwriting a file.
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;readonly"</code>.</li>
+<li><b>ShiftWidth: ... spaces</b><br>
+    In this field you can specify how many spaces are inserted or deleted with
+    the commands <code>&lt;&lt;</code> and <code>&gt;&gt;</code>.</li>
+<li><b>WrapScan (search across EOF)</b><br>
+    If this option is set, an unsuccessful forward search continues at the
+    beginning of the file.  Analogously, an unsuccessful backward search is
+    continued at the bottom of the file.
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;wrapscan"</code>.</li>
+<li><b>IgnoreCase (upper case same as lower case)</b><br>
+    This option activates case independent search operations.  This also applies
+    to national special characters (accented vowels etc.) as defined by the
+    currently selected character set (ANSI / DOS / EBCDIC).
+    This value can also be set with the command
+    <code>"<a href="#ExVariables">:set</a>&nbsp;ignorecase"</code>.</li>
+<li><b>Magic (regular expression matching)</b><br>
+    If <code>magic</code> is switched off, search patterns (regular expressions)
+    handle the characters <code>.</code>, <code>*</code>, <code>[</code>,
+    <code>]</code> and <code>?</code> literally.  Use the \ character to enable
+    the special meaning for regular expression search.
+    With enabled magic option, these characters have the meaning as described
+    in table <a href="#RegExp">Regular Expressions</a>.
+    The characters <code>^</code> and <code>$</code> always have a special
+    meaning, this is independent from the magic setting.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsFiles"><h3>Settings - Files</h3></a>
+
+<p>This dialog offers file specific settings.
+<ul>
+<li><b>Start disk paging at occupation of ... KByte</b><br>
+    Starting at the specified file size, a swapping file is automatically
+    generated in the directory for temporary files.  This reduces the
+    virtual memory consumption and usually makes the system much faster.
+    The swapping files get a name of the form <code>wvi*.tmp</code>.</li>
+<li><b>Use system default temp folder</b><br>
+    Indicate the directory where to write the swapping intermediate files
+    described above.</li>
+<li><b>Tags file list</b><br>
+    Specify the list of tag files here which are used to lookup identifier
+    definitions.  The files can be separated by comma or semicolon.</li>
+<li><b>Quit immediately if more files to edit</b><br>
+    When the main window is closed, WinVi normally checks the argument list
+    (see <a href="#ExFileCommand">ex command</a> </code>:args</code>) if there
+    are further files behind the current file.  By activating this flag you
+    can disable this check.  If activated, a message box informs you of
+    more files to edit if the current file is not the last one and you have
+    to close the window again to really exit.</li>
+<li><b>Server tab expansion in domains/workgroups</b><br>
+    This list is used for listing host names if you try to tab-expand a UNC
+    file name at the host portion of the file name.  In many networks, there
+    are domains or workgroups which can be reached only after waiting some
+    time.  You can reduce the waiting time after typing
+    <code>":e \\{Tab}"</code> by specifying the main host groups in this list
+    which is always easily accessible.  The default value
+    is<code> * </code> which expands to all domains and workgroups where
+    a particular host names should be searched in.
+    The entries in this list can be separated by comma or semicolon.
+    The wildcard characters<code> * </code>and<code> ? </code>can be used to
+    filter part of domain/workgroup names.</li>
+<li><b>Lower-case file names</b><br>
+    This option allows filenames to be converted to lower-case characters
+    for better readability if you are used to handling with Unix file names.
+    Be careful when using this option with networked resources, especially
+    with NFS.  In many cases, these file systems distinguish between upper and
+    lower case.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsMapping"><h3>Settings - Keyboard Macros</h3></a>
+
+<p>In this dialog you can change the keyboard settings.
+<ul>
+<li><b>Defined Macros</b><br>
+    This list shows the currently defined keyboard macros.  It is empty if you
+    did not yet define any keyboard shortcut.
+    For changing or deleting an existing macro, first select the macro name
+    before changing the properties in the right part of this tab sheet.</li>
+<li><b>Map</b><br>
+    This choice allows a conversion of any input key sequence to an
+    "executable" character sequence.</li>
+<li><b>Abbreviation</b><br>
+    In contrast to a map entry, this choice is used to expand abbreviated
+    words.  The input key sequence is echoed while typing and will be replaced
+    after finishing input of the abbreviation.  To initiate abbreviation lookup,
+    it is necessary to enter a special character or to finish input with {Esc}.
+    </li>
+<li><b>Name</b><br>
+    The name entered in this field is not used for macro processing.  It is
+    just a convenient handle for the user to identify the macro in the selection
+    list.</li>
+<li><b>Input key sequence</b><br>
+    Here, the input keys are described.  Special keys like function or cursor
+    keys can be denoted in readable form.  Spaces can be interspersed for
+    readability.  To avoid misinterpretation, any characters (especially spaces)
+    that are to match exactly, should be surrounded by single or double
+    quotes.</li>
+<li><b>Key sequence to replace with</b><br>
+    This is the "target" key sequence, i.e. it is the key sequence WinVi
+    operates with.  This can be input text, mode change keys, cursor movement
+    keys or menu choice keys.  The same syntax rules as for the input key
+    sequence apply.</li>
+<li><b>Insert / replace mode</b><br>
+    Macro replacement is done if WinVi was in insert mode (I-beam cursor)
+    at the beginning of the input key sequence.</li>
+<li><b>Command mode</b><br>
+    Macro replacement is done if WinVi is was in command mode (block cursor)
+    at the beginning of the input key sequence.</li>
+<li><b>Command line mode (ex commands)</b><br>
+    The macro replacement is done on the ex command line in the
+    lower window area.</li>
+<li><b>Set</b><br>
+    Use this button to add the macro definition to the list.</li>
+<li><b>Delete</b><br>
+    This deletes the selected macro definition from the list.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsShell"><h3>Settings - Shell</h3></a>
+
+<p>In this dialog you can change the settings for external shell commands.
+<ul>
+<li><b>Path and file name of shell</b><br>
+    This is the command interpreter executing external commands.
+    Usually, this field contains <code>COMMAND.COM</code> for Windows 95,
+    Windows 98 and Windows Me, maybe preceded with the path.
+    For Windows NT, Windows 2000 and Windows XP, the command interpreter is
+    <code>CMD.EXE</code>.</li>
+<li><b>Format of shell command</b><br>
+    This field describes the call of a single command.<code> %0 </code> is used
+    for command interpreter described above.<code> %1 </code>is replaced by
+    the actual shell command to execute.  The standard value is<code>
+    %0 /c %1 </code>.  When using another shell (e. g. Cygwin bash), this
+    field should be adjusted accordingly, e. g.<code> %0 -c "%1" </code>.</li>
+<li><b>Expand tab key with forward slash for directories</b><br>
+    It might be necessary to use forward slashes instead of backslashes when
+    using particular command interpreters (e. g. Cygwin bash).  Activate this
+    option if WinVi should use forward slashes for external commands.</li>
+<li><b>URL for help file</b><br>
+    Enter the URL of this help file in this field.  This value is handed to
+    the browser when typing the help key (F1).  A local file starts with
+    the prefix<code> file:// </code>, external HTTP-URLs are beginning
+    with<code> http://</code>.  Any occurrences
+    of<code> %EXEPATH </code>or<code> %LANG </code>are replaced by the
+    path of WinVi or the current language used respectively.  A trailing <code>#</code>
+    delimits the anchor name reference within the file, which is automatically
+    appended by WinVi.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsColors"><h3>Settings - Colors</h3></a>
+
+<p>In this dialog you can change the colors used for the text presentation in
+the main window.
+<ul>
+<li><b>Edit area</b><br>
+    Here you can specify how the main area of the editor appears.</li>
+<li><b>Selected area</b><br>
+    These colors are used to display the selected area.  They are also used
+    for selections resulting from the <code>c</code> command
+    (see <a href="#EditTextmode">vi - Editing Text</a>).</li>
+<li><b>Matched parenthesis</b><br>
+    If the ShowMatch option is activated (see
+    <a href="#SettingsDisplay">Settings - Display</a>), relating parentheses
+    are highlighted.  The colors for this purpose are set here.</li>
+<li><b>End of line</b><br>
+    The special characters for indicating non-standard line end codes as well
+    as the tilde used for indicating the end of file are show in this
+    color.</li>
+<li><b>Basic colors</b><br>
+    In this section the basic colors can be chosen which are available without
+    dithering even with very low color resolution.</li>
+<li><b>User defined</b><br>
+    In this subdialog, any available color can be mixed.</li>
+<li><b>Background bitmap</b><br>
+    You can select a bitmap file to be used as the background for non-selected
+    areas in the main window (see also "Refresh background bitmap" in
+    <a href="#SettingsDisplay">Settings - Display</a>).</li>
+<li><b>System color</b><br>
+    For the main area and for selected text the system color specifies the
+    colors defined in the display section of the control panel.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsFonts"><h3>Settings - Fonts</h3></a>
+
+<p>In this dialog you can choose the fonts used for text display in the main
+window area.
+<ul>
+<li><b>Text Mode</b><br>
+    This font is used for normal text display when hexadecimal mode is switched
+    off.  Besides fonts with constant character widths you can also select
+    proportional fonts.  However, the more complex calculations for positioning
+    require additional resources resulting in slower display.<br>
+    Some fonts (e. g. Courier New, Lucida Console or Arial) allow the selection
+    of several national character set layouts.  If you do not use the default
+    value here, it may be a good idea to also change the codepage settings
+    (see <a href="#SettingsFiletype">Settings - File Type</a>).</li>
+<li><b>Hexadecimal Mode</b><br>
+    Here, you specify the font face used in hexadecimal mode.
+    Generally, proportional fonts are also available here but they are
+    not recommended because of the irregular alignment.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsPrint"><h3>Settings - Print</h3></a>
+
+<p>This dialog contains all settings for printing.
+<ul>
+<li><b>Border Distances</b><br>
+    Specify the distances between paper edges and the printed area here.</li>
+<li><b>Border Area - Header text</b><br>
+    Here you can enter a title text printed in top of the first line of each
+    page.  There are a few character sequences that are replaced:
+    <table>
+    <tr><td>&amp;n</td><td>This is replaced by the name of the current file.
+        </td></tr>
+    <tr><td>&amp;p</td><td>The serial number of the current printing page is
+        inserted here.</td></tr>
+    <tr><td>&amp;&amp;</td><td>Two ampersands are printed as one literal
+        ampersand in the header or footer line.
+    </table>
+    </li>
+<li><b>Border Area - Footer text</b><br>
+    This text is printed at the bottom of each printing page.  You can use
+    the same special character sequences as in the border area.</li>
+<li><b>Border lines</b><br>
+    If activated, a thin black line is drawn around the printed area.</li>
+<li><b>Boxed header / footer</b><br>
+    This flag activated printing of a thin black line around the header and
+    footer text lines.</li>
+<li><b>Print line numbers</b><br>
+    Each text line of the file is preceded by a line serial number.
+    In long lines split on several printing lines only one number is printed
+    in front of the first printed line.</li>
+<li><b>Paper Format - Use default</b><br>
+    This selection activates the predefined default orientation of the paper.
+    </li>
+<li><b>Paper Format - Portrait</b><br>
+    This selection activates the portrait orientation, i.e. the top line is
+    positioned at a short paper edge.</li>
+<li><b>Paper Format - Landscape</b><br>
+    This selection activates the landscape orientation, i.e. the top line is
+    positioned at a long paper edge.</li>
+<li><b>Paper Format - Double column</b><br>
+    When choosing this point, the text is printed in two columns with a long
+    paper edge in top of the first print line.  When activating the
+    <b>Separator line</b> a thin separator line is printed between the two text
+    columns.</li>
+<li><b>Font</b><br>
+    Select the printing font here.  This font is also used for printing the
+    header and footer areas.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+<a name="SettingsLang"><h3>Settings - Language</h3></a>
+
+<p>Select the language used for menus, dialog boxes, and other messages in the
+status bar.<br>
+The 32-bit version of WinVi sometimes shows messages provided by the system.
+These messages are not translated.
+<ul>
+<li><b>Automatic selection</b><br>
+    With this selection, the system settings are used.  That is the language
+    chosen in the Regional Settings area of the Control Panel.
+    However, English is used as the default if the system language is not
+    available.</li>
+</ul></p>
+
+<p>^ To <a href="#Contents">table of contents</a></p>
+
+
+</body></html>

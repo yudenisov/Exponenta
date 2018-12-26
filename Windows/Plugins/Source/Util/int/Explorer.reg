@@ -1,0 +1,15 @@
+REGEDIT4
+
+;для каталогов
+[HKEY_CLASSES_ROOT\Folder\shell\description]
+@="Description..."
+
+[HKEY_CLASSES_ROOT\Folder\shell\description\command]
+@="pde.exe \"%1\" -O:he -C:pde_win.ini"
+
+;для файлов
+[HKEY_CLASSES_ROOT\*\shell\description]
+@="Description..."
+
+[HKEY_CLASSES_ROOT\*\shell\description\command]
+@="pde.exe \"%1\" -O:he -C:pde_win.ini"

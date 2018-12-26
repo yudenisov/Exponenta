@@ -1,0 +1,52 @@
+; Spanish translation for NTFS Links 1.21
+; Author: Sergei (helix751-nospam@yahoo.com)
+
+; Main dialog
+1=Aceptar
+2=Cancelar
+3=&Configuración
+4=Ayuda
+5=C&rear vínculos para "%s" como:
+6=C&rear vínculos para %d archivo(s) seleccionado(s) en:
+7=Pro&fundidad de recursión para crear uniones:
+
+; Settings dialog
+50=Configuración
+51=Aceptar
+52=Cancelar
+53=Ayuda
+54=Guardar posición de la &ventana
+55=Guardar profundidad de &recursión
+56=Pro&fundidad de recursión por defecto:
+57=Archivo de i&dioma:
+58=Archivos de idioma (*.lng)|*.lng|Todos los archivos (*.*)|*.*||
+59=Archivo de &ayuda:
+60=Archivos de ayuda (*.chm)|*.chm|Todos los archivos (*.*)|*.*||
+
+; Error dialog
+100=Error
+101=&Saltar
+102=&Reintentar
+103=Saltar &todos
+104=&Cancelar
+105=Error creando vínculo para el archivo:\n%s
+106=Error creando vínculo para la carpeta:\n%s
+107=Error creando la carpeta:\n%s
+108=¡Error desconocido!
+
+; About box
+150=Acerca de
+151=&Acerca de...
+152=Programa:
+153=Versión:
+154=Autor:
+155=Todos los Derechos reservados.
+156=Página de inicio:
+
+; Miscellaneous error messages
+1001=Número incorrecto de parámetros en línea de comandos!
+1002=Imposible abrir lista de archivos!
+1003=No puede crear un vínculo hacia varios objetos!
+1004=No se pudo ejecutar comando.\nCódigo de error: %d.
+1005=No se pudo abrir archivo de ayuda!
+1006=Error al guardar configuración!

@@ -1,5 +1,8 @@
 # EXPONENTA
 
+Набор пакетов для удалённого администрирования (Admin Pack) компьютерами
+под управлением операционной системы Windows.
+
 Пакет для удалённого взлома компьютера и управления. «Зловред»
 универсальный, поэтому автор не указывает его класс. Близкий
 класс в категории зловредов — стайлеры (Stealer). Антивирусами
@@ -12,12 +15,35 @@
 
   - Возможна скрытая установка методами социальной инженерии.
 
+  - Возможна скрытая установка с использованием уязвимостей Windows.
+
   - В работе требует права локального администратора.
 
   - Скрытно устанавливает пакеты на заражённый компьютер.
 
   - Запускает файлы на удалённом компьютере. Результат передаётся
-    «Хозяину» по FTP либо по HTTP протоколу
+    «Хозяину» по FTP либо по HTTP протоколу.
+
+  - Даёт возможность удалённо включать доступ по telnet, winrm, ssh,
+    rdp, smb протоколам.
+
+  - Создаёт “универсальную” учётную запись для доступа к компьютеру по
+    указанным протоколам с правами локального администратора или
+    администратора домена.
+
+  - Собственно «зловред» запускается с закрытого сайта, программы для
+    создания которого также приводятся.
+
+  - Возможность изменения переменных окружения и кустов реестра.
+
+  - Возможность установки пакетов инсталляторами со штатными
+    деинсталляторами, с записью в реестре Windows.
+
+  - Публичная доступность Admin Packs для скачки по http и ftp
+    протоколам.
+
+  - Возможность отмены сделанных изменений на компьютере и полного
+    удаления пакета программ средствами штатных деинсталляторов.
 
 # СИСТЕМНЫЕ ТРЕБОВАНИЯ
 
@@ -51,6 +77,18 @@
 
 Программа Exponenta устанавливает эти пакеты сразу же после собственной
 инсталляции.
+
+Данные пакеты входят в Admin Pack, и будут установлены в любом случае,
+даже без инсталляции боевых модулей «зловреда». Этот модуль
+устанавливается и удаляется опционально. Возможна установка
+Admin Pack для облегчения работы администратора без боевого модуля, при
+этом править файлы конфигурации практически не потребуется.
+
+Все плагины к стайлеру Exponenta (полнофункциональные Admin Pack)
+скачиваются и устанавливаются в каталог c:1ведомого компьютера.
+Их установка из этой папки может производиться в автоматическом режиме
+либо вручную, администратором ведомого компьютера. На всякий случай
+папка c:1 должна иметь атрибут “скрытый” для всех пользователей.
 
 # ИНСТАЛЛЯЦИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ
 
@@ -92,6 +130,9 @@ WhatsApp/Viber. Автор не даёт консультации по крим�
 
 # EXPONENTA
 
+It is a set of packets and scripts for remote administration (Admin
+Pack) of computers working under Windows Operation Systems.
+
 It is a packet for remote computer hacking and control of it. It
 combines a set of functions therefore the author cannot carry it to a
 certain class of malwares. The most close class in category of malwares
@@ -104,6 +145,30 @@ operation. References to them can be found in documentation.
 
   - The hidden installation is possible by methods of social
     engineering.
+
+  - The hidden installation is possible by windows exploits.
+
+  - It makes possible to get remotely access to slave computer with
+    telnet, winrm, ssh, rdp, smb protocols.
+
+  - It creates «universal» account for remote access to slave computer
+    on these protocols with local administrator or domain administrator
+    rights.
+
+  - Actually “malware” is started from the closed website, programs for
+    its creation are also provided.
+
+  - It makes possible changing of environment variables and registry
+    records.
+
+  - It makes possible to setup packets by its own installators with
+    uninstallers and setting up the records in Windows Registry;
+
+  - The Admin Pack is enabled for public download on http and ftp
+    protocols.
+
+  - It is possible to canceled the changes of computer state and full
+    delete of all packets by mean of its own uninstallers.
 
   - The program requires the right of the local administrator by the
     operation.
@@ -145,7 +210,20 @@ operation. References to them can be found in documentation.
 
   - The installed wget package from Chocolatey.
 
-The Exponenta program sets them at once after the installation.
+The Exponenta program sets up them at once after the installation.
+
+These packets enter at Admin Pack, and will be set up anyway, even
+without installation of fighting modules of “malware”. This module is
+established and removed optionally. The Admin Pack installation for
+simplification of the administrator work without fighting module is
+possible, at the same time it will not be required to edit configuration
+files practically.
+
+All plug-ins to a stayler of Exponenta (full-functional Admin Packs) are
+downloaded and established in the c:1slave computer directory. Their
+installation from this folder can be made in the automatic mode or
+manually, by the administrator of the slave computer. Just in case the
+c:1 folder should have attribute “hidden” for all users.
 
 # INSTALLATION OF THE SOFTWARE
 

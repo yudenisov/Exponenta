@@ -1,0 +1,547 @@
+<UniHighlighter version="1.8">
+  <Info>
+    <General Name="VRML97" Extensions="wrl"/>
+    <Author Name="Akulov Nikolay" Email="delphiworld@mail.ru" Web="www.delphiworld.narod.ru" Copyright="Copyright (c) Akulov Nikolay, 2005" Company="" Remark=""/>
+    <Version Version="1" Revision="0" Date="37612,5713735069"/>
+    <History>
+    </History>
+    <Sample>
+      <S>#VRML V2.0 utf8</S>
+      <S>Transform {</S>
+      <S>  children [</S>
+      <S>    NavigationInfo { headlight FALSE } # We'll add our own light</S>
+      <S>    DirectionalLight {        # First child</S>
+      <S>        direction 0 0 -1      # Light illuminating the scene</S>
+      <S>    }</S>
+      <S>  ] # end of children for world</S>
+      <S>}</S>
+      <S>DEF Example_2 Script {</S>
+      <S>    field   SFNode myself USE Example_2</S>
+      <S>    field   SFNode root USE ROOT_TRANSFORM</S>
+      <S>    field   MFString url "foo.wrl"</S>
+      <S>    eventIn MFNode   nodesLoaded</S>
+      <S>    eventIn SFBool   trigger_event</S>
+      <S></S>
+      <S>    url "javascript:</S>
+      <S>        function trigger_event(value, ts){</S>
+      <S>            // do something and then fetch values</S>
+      <S>            Browser.createVRMLFromURL(url, myself, 'nodesLoaded');</S>
+      <S>        }</S>
+      <S></S>
+      <S>        function nodesLoaded(value, timestamp){</S>
+      <S>            if (value.length &gt; 5) {</S>
+      <S>                 // do something more than 5 nodes in this MFNode...</S>
+      <S>            }</S>
+      <S>            root.addChildren = value;</S>
+      <S>        }"</S>
+      <S>}</S>
+    </Sample>
+  </Info>
+  <Scheme File="" Name=""/>
+ <CodeFolding>
+  <FoldRegion AddCloseKeyword="1" AllowNoSubFolds="0" Skip="0" Type="0" WholeWords="0">
+   <Open Keyword="{" RegExp="" UseRegExp="0"/>
+   <Close Keyword="}" RegExp="" UseRegExp="0"/>
+   <SubFoldRegions>
+   </SubFoldRegions>
+  </FoldRegion>
+  <FoldRegion AddCloseKeyword="1" AllowNoSubFolds="0" Skip="0" Type="0" WholeWords="0">
+   <Open Keyword="[" RegExp="" UseRegExp="0"/>
+   <Close Keyword="]" RegExp="" UseRegExp="0"/>
+   <SubFoldRegions>
+   </SubFoldRegions>
+  </FoldRegion>
+		<SkipRegions>
+ 			<String Open="&quot;" Close="&quot;" Escape="\" />
+			<String Open="&apos;" Close="&apos;" Escape="\" />
+			<SingleLineComment Open="#" />
+		</SkipRegions>
+ </CodeFolding>
+  <Range Name="Root" Attributes="0,16777215;False:False." Style="" CaseSensitive="True"
+         Delimiters="!&quot;%&amp;'()*+,-./:;&lt;=&gt;?@[\]^{|}~">
+    <Rule OpenSymbolPartOfTerm="Right" CloseSymbolPartOfTerm="False"/>
+    <Keywords Name="Nodes" Attributes="6029497,16777215;False:True." Style="">
+      <word value="Anchor"/>
+      <word value="Appearance"/>
+      <word value="AudioClip"/>
+      <word value="Background"/>
+      <word value="Billboard"/>
+      <word value="Box"/>
+      <word value="Browser"/>
+      <word value="Collision"/>
+      <word value="Color"/>
+      <word value="ColorInterpolator"/>
+      <word value="Cone"/>
+      <word value="Contour2D"/>
+      <word value="Coordinate"/>
+      <word value="CoordinateDeformer"/>
+      <word value="CoordinateInterpolator"/>
+      <word value="Cylinder"/>
+      <word value="CylinderSensor"/>
+      <word value="DirectionalLight"/>
+      <word value="DropSensor"/>
+      <word value="ElevationGrid"/>
+      <word value="Extrusion"/>
+      <word value="Fog"/>
+      <word value="GeoCoordinate"/>
+      <word value="GeoElevationGrid"/>
+      <word value="GeoLocation"/>
+      <word value="GeoLOD"/>
+      <word value="GeoMetadata"/>
+      <word value="GeoOrigin"/>
+      <word value="GeoPositionInterpolator"/>
+      <word value="GeoTouchSensor"/>
+      <word value="Group"/>
+      <word value="ImageTexture"/>
+      <word value="IndexedFaceSet"/>
+      <word value="IndexedLineSet"/>
+      <word value="Inline"/>
+      <word value="KbdSensor"/>
+      <word value="length()"/>
+      <word value="LOD"/>
+      <word value="Material"/>
+      <word value="MFColor"/>
+      <word value="MFFloat"/>
+      <word value="MFInt32"/>
+      <word value="MFNode"/>
+      <word value="MFRotation"/>
+      <word value="MFString"/>
+      <word value="MFTime"/>
+      <word value="MFVec2f"/>
+      <word value="MFVec3f"/>
+      <word value="MovieTexture"/>
+      <word value="myself"/>
+      <word value="NavigationInfo"/>
+      <word value="Normal"/>
+      <word value="NormalInterpolator"/>
+      <word value="NurbsCurve"/>
+      <word value="NurbsCurve2D"/>
+      <word value="NurbsGroup"/>
+      <word value="NurbsPositionInterpolator"/>
+      <word value="NurbsSurface"/>
+      <word value="NurbsTextureSurface"/>
+      <word value="OrientationInterpolator"/>
+      <word value="PixelTexture"/>
+      <word value="PlaneSensor"/>
+      <word value="PointLight"/>
+      <word value="PointSet"/>
+      <word value="Polyline2D"/>
+      <word value="PositionInterpolator"/>
+      <word value="ProximitySensor"/>
+      <word value="root"/>
+      <word value="ScalarInterpolator"/>
+      <word value="Script"/>
+      <word value="SFBool"/>
+      <word value="SFColor"/>
+      <word value="SFFloat"/>
+      <word value="SFImage"/>
+      <word value="SFInt32"/>
+      <word value="SFNode"/>
+      <word value="SFRotation"/>
+      <word value="SFString"/>
+      <word value="SFTime"/>
+      <word value="SFVec2f"/>
+      <word value="SFVec3f"/>
+      <word value="Shape"/>
+      <word value="Sound"/>
+      <word value="Sphere"/>
+      <word value="SphereSensor"/>
+      <word value="SpotLight"/>
+      <word value="Switch"/>
+      <word value="Text"/>
+      <word value="Text3D"/>
+      <word value="textureCoordinate"/>
+      <word value="TimeSensor"/>
+      <word value="TouchSensor"/>
+      <word value="Transform"/>
+      <word value="TrimmedSurface"/>
+      <word value="Viewpoint"/>
+      <word value="VisibilitySensor"/>
+      <word value="VrmlMatrix"/>
+      <word value="WorldInfo"/>
+    </Keywords>
+    <Keywords Name="Fields" Attributes="12615808,16777215;False:True." Style="">
+      <word value="add"/>
+      <word value="addChildren"/>
+      <word value="addRoute"/>
+      <word value="addTrimmingContour"/>
+      <word value="ambientColor"/>
+      <word value="ambientIntensity"/>
+      <word value="angle"/>
+      <word value="appearance"/>
+      <word value="array"/>
+      <word value="attenuation"/>
+      <word value="autoOffset"/>
+      <word value="avatarSize"/>
+      <word value="axisOfRotation"/>
+      <word value="b"/>
+      <word value="backUrl"/>
+      <word value="bboxCenter"/>
+      <word value="bboxSize"/>
+      <word value="beamWidth"/>
+      <word value="beginCap"/>
+      <word value="bindTime"/>
+      <word value="bottom"/>
+      <word value="bottomRadius"/>
+      <word value="bottomUrl"/>
+      <word value="ccw"/>
+      <word value="center"/>
+      <word value="child1Url"/>
+      <word value="child2Url"/>
+      <word value="child3Url"/>
+      <word value="child4Url"/>
+      <word value="children"/>
+      <word value="choice"/>
+      <word value="collide"/>
+      <word value="collideTime"/>
+      <word value="color"/>
+      <word value="colorIndex"/>
+      <word value="colorPerVertex"/>
+      <word value="comp"/>
+      <word value="controlPoint"/>
+      <word value="convex"/>
+      <word value="coord"/>
+      <word value="coordIndex"/>
+      <word value="creaseAngle"/>
+      <word value="createVRMLFromString"/>
+      <word value="createVRMLFromURL"/>
+      <word value="cross"/>
+      <word value="crossSection"/>
+      <word value="cutOffAngle"/>
+      <word value="cycleInterval"/>
+      <word value="cycleTime"/>
+      <word value="data"/>
+      <word value="deleteRoute"/>
+      <word value="depth"/>
+      <word value="description"/>
+      <word value="diffuseColor"/>
+      <word value="dimension"/>
+      <word value="direction"/>
+      <word value="directOutput"/>
+      <word value="diskAngle"/>
+      <word value="divide"/>
+      <word value="dot"/>
+      <word value="dropOffRate"/>
+      <word value="dropTime"/>
+      <word value="duration_changed"/>
+      <word value="emissiveColor"/>
+      <word value="enabled"/>
+      <word value="endCap"/>
+      <word value="enterTime"/>
+      <word value="exitTime"/>
+      <word value="faceType"/>
+      <word value="family"/>
+      <word value="fieldOfView"/>
+      <word value="fieldOfViewfields"/>
+      <word value="filename"/>
+      <word value="focalDistance"/>
+      <word value="fogType"/>
+      <word value="FontStyle"/>
+      <word value="fraction_changed"/>
+      <word value="frontUrl"/>
+      <word value="g"/>
+      <word value="geoCoords"/>
+      <word value="geoGridOrigin"/>
+      <word value="geometry"/>
+      <word value="geoSystem"/>
+      <word value="geovalue_changed"/>
+      <word value="getAxis"/>
+      <word value="getCurrentFrameRate"/>
+      <word value="getCurrentSpeed"/>
+      <word value="getHSV"/>
+      <word value="getName"/>
+      <word value="getTransform"/>
+      <word value="getVersion"/>
+      <word value="getWorldURL"/>
+      <word value="groundAngle"/>
+      <word value="groundColor"/>
+      <word value="headlight"/>
+      <word value="height"/>
+      <word value="heightAngle"/>
+      <word value="hitGeoCoord_changed"/>
+      <word value="hitNormal"/>
+      <word value="hitNormal_changed"/>
+      <word value="hitPoint"/>
+      <word value="hitPoint_changed"/>
+      <word value="hitTexCoord"/>
+      <word value="hitTexCoord_changed"/>
+      <word value="hitTextCoord_changed"/>
+      <word value="horizontal"/>
+      <word value="image"/>
+      <word value="indexOfRefraction"/>
+      <word value="info"/>
+      <word value="inputCoord"/>
+      <word value="inputTransform"/>
+      <word value="intensity"/>
+      <word value="inverse"/>
+      <word value="isA"/>
+      <word value="isactive"/>
+      <word value="isBound"/>
+      <word value="isOver"/>
+      <word value="jump"/>
+      <word value="justification"/>
+      <word value="justify"/>
+      <word value="key"/>
+      <word value="keyDown"/>
+      <word value="keyUp"/>
+      <word value="keyValue"/>
+      <word value="keyWeight"/>
+      <word value="knot"/>
+      <word value="language"/>
+      <word value="leftToRight"/>
+      <word value="leftUrl"/>
+      <word value="length"/>
+      <word value="level"/>
+      <word value="loadURL"/>
+      <word value="location"/>
+      <word value="loop"/>
+      <word value="map"/>
+      <word value="material"/>
+      <word value="materialIndex"/>
+      <word value="matrix"/>
+      <word value="maxAngle"/>
+      <word value="maxBack"/>
+      <word value="maxExtent"/>
+      <word value="maxFront"/>
+      <word value="maxPosition"/>
+      <word value="minAngle"/>
+      <word value="minBack"/>
+      <word value="minFront"/>
+      <word value="minPosition"/>
+      <word value="multiply"/>
+      <word value="multLeft"/>
+      <word value="multMatrixVec"/>
+      <word value="multRight"/>
+      <word value="multvec"/>
+      <word value="multVecMatrix"/>
+      <word value="mustEvaluate"/>
+      <word value="name"/>
+      <word value="negate"/>
+      <word value="nodeChain"/>
+      <word value="normalIndex"/>
+      <word value="normalize"/>
+      <word value="normalPerVertex"/>
+      <word value="numPoints"/>
+      <word value="offset"/>
+      <word value="on"/>
+      <word value="order"/>
+      <word value="orientation"/>
+      <word value="orientation_changed"/>
+      <word value="outputCoord"/>
+      <word value="parameter"/>
+      <word value="parts"/>
+      <word value="pitch"/>
+      <word value="point"/>
+      <word value="position"/>
+      <word value="position_changed"/>
+      <word value="priority"/>
+      <word value="proxy"/>
+      <word value="r"/>
+      <word value="radius"/>
+      <word value="range"/>
+      <word value="removeChildren"/>
+      <word value="removeTrimmingContour"/>
+      <word value="renderCulling"/>
+      <word value="repeatS"/>
+      <word value="repeatT"/>
+      <word value="replaceWorld"/>
+      <word value="rightUrl"/>
+      <word value="rootNode"/>
+      <word value="rootUrl"/>
+      <word value="rotateYUp"/>
+      <word value="rotation"/>
+      <word value="rotation_changed"/>
+      <word value="scale"/>
+      <word value="scaleFactor"/>
+      <word value="scaleOrientation"/>
+      <word value="set_bind"/>
+      <word value="set_colorIndex"/>
+      <word value="set_coordIndex"/>
+      <word value="set_crossSection"/>
+      <word value="set_fraction"/>
+      <word value="set_height"/>
+      <word value="set_normalIndex"/>
+      <word value="set_orientation"/>
+      <word value="set_scale"/>
+      <word value="set_spine"/>
+      <word value="set_texCoordIndex"/>
+      <word value="set_yScale"/>
+      <word value="setAxis"/>
+      <word value="setDescription"/>
+      <word value="setHSV"/>
+      <word value="setTransform"/>
+      <word value="shapeType"/>
+      <word value="shininess"/>
+      <word value="side"/>
+      <word value="size"/>
+      <word value="skyAngle"/>
+      <word value="skyColor"/>
+      <word value="slerp"/>
+      <word value="solid"/>
+      <word value="source"/>
+      <word value="spacing"/>
+      <word value="spatialize"/>
+      <word value="specularColor"/>
+      <word value="speed"/>
+      <word value="spine"/>
+      <word value="startIndex"/>
+      <word value="startTime"/>
+      <word value="stopTime"/>
+      <word value="string"/>
+      <word value="style"/>
+      <word value="subtract"/>
+      <word value="summary"/>
+      <word value="surface"/>
+      <word value="tessellation"/>
+      <word value="tessellationScale"/>
+      <word value="texCoord"/>
+      <word value="texCoordIndex"/>
+      <word value="texture"/>
+      <word value="textureCoordIndex"/>
+      <word value="textureTransform"/>
+      <word value="time"/>
+      <word value="title"/>
+      <word value="top"/>
+      <word value="topToBottom"/>
+      <word value="topUrl"/>
+      <word value="toString"/>
+      <word value="touchTime"/>
+      <word value="trackPoint_changed"/>
+      <word value="translation"/>
+      <word value="translation_changed"/>
+      <word value="transparency"/>
+      <word value="transpose"/>
+      <word value="trimmingContour"/>
+      <word value="type"/>
+      <word value="uDimension"/>
+      <word value="uKnot"/>
+      <word value="uOrder"/>
+      <word value="url"/>
+      <word value="uTessellation"/>
+      <word value="value"/>
+      <word value="value_changed"/>
+      <word value="vDimension"/>
+      <word value="vector"/>
+      <word value="vertexOrdering"/>
+      <word value="visibilityLimit"/>
+      <word value="visibilityRange"/>
+      <word value="vKnot"/>
+      <word value="vOrder"/>
+      <word value="vTessellation"/>
+      <word value="wDimension"/>
+      <word value="weight"/>
+      <word value="whichChild"/>
+      <word value="whichChoice"/>
+      <word value="whichChoise"/>
+      <word value="width"/>
+      <word value="wKnot"/>
+      <word value="wOrder"/>
+      <word value="wrapS"/>
+      <word value="wrapT"/>
+      <word value="x"/>
+      <word value="xDimension"/>
+      <word value="xSpacing"/>
+      <word value="y"/>
+      <word value="yScale"/>
+      <word value="z"/>
+      <word value="zDimension"/>
+      <word value="zSpacing"/>
+    </Keywords>
+    <Keywords Name="Events" Attributes="43008,16777215;False:True." Style="">
+      <word value="MFColor"/>
+      <word value="MFFloat"/>
+      <word value="MFInt32"/>
+      <word value="MFNode"/>
+      <word value="MFRotation"/>
+      <word value="MFString"/>
+      <word value="MFTime"/>
+      <word value="MFVec2f"/>
+      <word value="MFVec3f"/>
+      <word value="SFBool"/>
+      <word value="SFColor"/>
+      <word value="SFFloat"/>
+      <word value="SFImage"/>
+      <word value="SFInt32"/>
+      <word value="SFNode"/>
+      <word value="SFRotation"/>
+      <word value="SFString"/>
+      <word value="SFTime"/>
+      <word value="SFVec2f"/>
+      <word value="SFVec3f"/>
+    </Keywords>
+    <Keywords Name="Params" Attributes="37779,16777215;False:True." Style="">
+      <word value="ALL"/>
+      <word value="AUTO"/>
+      <word value="BINDINGS"/>
+      <word value="BOLD"/>
+      <word value="BOTTOM"/>
+      <word value="CENTER"/>
+      <word value="CLAMP"/>
+      <word value="CLOCKWISE"/>
+      <word value="CONVEX"/>
+      <word value="COUNTERCLOCKWISE"/>
+      <word value="CULLING"/>
+      <word value="DEFAULT"/>
+      <word value="DEFAULTS"/>
+      <word value="ENUMS"/>
+      <word value="FACE"/>
+      <word value="FALSE"/>
+      <word value="FAMILY"/>
+      <word value="FILE"/>
+      <word value="FORMAT"/>
+      <word value="ITALIC"/>
+      <word value="JUSTIFICATION"/>
+      <word value="LEFT"/>
+      <word value="NONE"/>
+      <word value="NULL"/>
+      <word value="OFF"/>
+      <word value="ON"/>
+      <word value="OVERALL"/>
+      <word value="PARTS"/>
+      <word value="PER_FACE"/>
+      <word value="PER_FACE_INDEXED"/>
+      <word value="PER_PART"/>
+      <word value="PER_PART_INDEXED"/>
+      <word value="PER_VERTEX"/>
+      <word value="PER_VERTEX_INDEXED"/>
+      <word value="REPEAT"/>
+      <word value="RIGHT"/>
+      <word value="SHAPE"/>
+      <word value="SIDES"/>
+      <word value="SOLID"/>
+      <word value="STYLE"/>
+      <word value="TRUE"/>
+      <word value="TYPE"/>
+      <word value="UNKNOWN_FACE_TYPE"/>
+      <word value="UNKNOWN_ORDERING"/>
+      <word value="UNKNOWN_SHAPE_TYPE"/>
+      <word value="WRAP"/>
+    </Keywords>
+    <Keywords Name="Keywords" Attributes="0,16777215;True:True.B" Style="">
+      <word value="DEF"/>
+      <word value="eventIn"/>
+      <word value="eventOut"/>
+      <word value="exposedField"/>
+      <word value="EXTERNPROTO"/>
+      <word value="field"/>
+      <word value="IS"/>
+      <word value="new"/>
+      <word value="PROTO"/>
+      <word value="ROUTE"/>
+      <word value="TO"/>
+      <word value="USE"/>
+      <word value="function"/>
+      <word value="javascript"/>
+    </Keywords>
+    <Range Name="Remarks #" Attributes="255,16777215;False:True.I" Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="#" CloseOnEol="True"/>
+    </Range>
+    <Range Name="Remarks //" Attributes="255,16777215;False:True.I" Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="//" CloseOnEol="True"/>
+    </Range>
+  </Range>
+  <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), Vitalik(vetal-x@mail.ru), 2002-2004)</CopyRight>
+</UniHighlighter>
+

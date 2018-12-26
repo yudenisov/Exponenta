@@ -1,0 +1,15 @@
+
+
+Thu Nov 29 09:35:40 2018
+Command line: fidentify
+
+cygwin warning:
+  MS-DOS style path detected: C:\Users\yuden\photorec.sig
+  Preferred POSIX equivalent is: /Users/yuden/photorec.sig
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+fidentify 7.0-WIP, Data Recovery Utility, August 2014
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+628 first-level signatures enabled

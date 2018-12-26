@@ -1,0 +1,140 @@
+Swedish language for BDV Notepad 4.1
+by Leif Larsson
+
+----------------------- Menu "File" -------------------------
+File        = &Arkiv
+
+New         = &Nytt                       = Skapa ett nytt dokument
+Open        = &Öppna...                   = Öppna ett dokument
+Save        = &Spara                      = Spara ett dokument
+Save As     = Spara so&m...
+Print       = Skriv &ut...                = Skriv ut ett dokument
+Print Setup = U&tskriftsformat...
+Send        = S&kicka e-post...           = Skicka ett dokument med e-post
+Last Used   = S&enast använda filer
+Exit        = &Avsluta
+
+----------------------- Menu "Edit" -------------------------
+Edit                = &Redigera
+
+Undo                = &Ångra              = Ångra den senaste åtgärden
+Redo                = Å&ngra Inmatning    = Ångra Inmatning
+Cut                 = &Klipp ut           = Klipp ut text och lägg i Urklipp
+Copy                = K&opiera            = Kopiera text och lägg i Urklipp
+Paste               = K&listra in         = Klistra in text från Urklipp
+Change Case         = &Ändra skiftläge
+  UpperCase         = &VERSALER
+  LowerCase         = &gemener
+  TitleCase         = &Första Stor
+  SentCase          = &Stor efter punkt
+  ToggleCase        = s&KIFTA lÄGE
+Insert              = &Infoga
+  Insert Date       = &Datum               = Infoga aktuellt datum
+  Insert Time       = &Tid                 = Infoga aktuell tid
+  Insert File       = &Filnamn             = Infoga filnamn
+  Insert Color      = F&ärg                = Infoga färgkod i Hex
+Convert             = Kon&vertera
+Select All          = &Markera allt        = Markera hela texten
+
+----------------------- Menu "View" -------------------------
+View                = &Visa
+
+Toolbars            = &Verktygsfält
+Statusbar           = &Statusfält
+  Toolbar File      = &Arkiv
+  Toolbar Edit      = &Redigera
+  Toolbar Font      = &Förvalda teckensnitt
+  Toolbar Case      = &Ändra skiftläge
+  Toolbar Find      = &Sök och ersätt
+  Toolbar Symbol    = &Symbollista
+  Toolbar Filter    = Teckenfilter
+  Toolbar Settings  = &Inställningar...
+  Toolbar About     = &Om
+Font Presets        = &Förvalda teckensnitt
+Word wrap           = &Radbyte
+Show URLs           = Visa &URL:er
+Start URLs          = S&tarta URL:er
+SpecChar            = Sp&ecialtecken
+Language            = &Språk
+  Load LNG          = &Öppna språkfil...
+
+----------------------- Menu "Searh" -------------------------
+Search              = &Sök
+
+Find F              = Sök &framåt             = Sök nästa förekomst
+Find B              = Sök &bakåt              = Sök föregående förekomst
+Replace F           = E&rsätt framåt          = Sök och byt ut till slutet av dokumentet
+Replace B           = Ers&ätt bakåt           = Sök och byt ut till början av dokumentet
+
+----------------------- Menu "Help" -------------------------
+Help                = &Hjälp
+
+ReadMe              = &Visa ReadMe
+Site                = &Besök webbplatsen
+E-mail              = &Skicka e-post till supporten
+
+------------- Captions and Items of Toolbars ----------------
+File Caption        = Arkiv
+Edit Caption        = Redigera
+Font Caption        = Förvalda teckensnitt
+  Other Colors      = Andra färger...
+  Preset Name       = Förvalt teckensnitt
+  Change Font       = Byt teckensnitt
+  Change Background = Byt bakgrundsfärg
+Case Caption        = Skifta läge
+Find Caption        = Sök och ersätt
+  Case Sens         = &Matcha gemener/VERSALER
+  Find Text         = Sök text
+  Replace All       = Ersätt &alla
+  Replace Text      = Ersätt text
+Symbol Caption      = Symbol
+Settings Caption    = Inställningar
+  General Tab       = Allmänt
+    AutoSave        = A&utospara
+    Save Every      = Spara var
+    Minutes         = min.
+    Exit Esc        = &Avsluta med <Esc>
+    Clear Last Used = Töm listan Senast använda filer
+  Edit Tab          = Redigerare
+    Undo Limit      = Antal Ångra-steg
+    Replace Tab     = &Ersätt tabbar med mellanslag
+    Replace Open    = E&rsätt tabbar när filen är öppen
+    Tab Size        = Tabblängd:
+  Print Tab         = Utskrift
+    Printer Setup   = Utskriftsinställningar...
+    Top             = &Toppmarginal (mm)
+    Bottom          = &Bottenmarginal (mm)
+    Left            = &Vänster (mm)
+    Right           = &Höger (mm)
+    Text Mode       = &Textläge
+  Associations Tab  = Filassociationer
+    Assoc. Open     = Öppna (standard)
+    Assoc. Edit     = Redigera
+    Assoc. Print    = Utskrift
+Filter Caption      = Teckenfilter
+  Start Char        = Starta från tecknet...
+  End Char          = Sluttecken...
+  Do Operation      = Starta operationen...
+  Replace Char      = Ersätt med tecken...
+  Increment Value   = Stegvärde
+  Prefix            = Prefix
+  Postfix           = Postfix
+  Apply             = Verkställ
+
+------------------------- Dialogs ---------------------------
+Can't save     = Kan inte spara "%s"!
+Can't open     = Kan inte öppna "%s"!
+Can't find     = Hittade inte söksträngen.
+Replaces       = %d instanser ersatta.
+Save changes   = Spara ändringarna till fil
+Changed        = Vill du spara ändringarna i "%s"?
+CP Error       = Fel i codepage-filen "%s"!
+
+Search result  = Sökresultat
+Replace result = Resultat av Ersätt
+Error          = Fel!
+Warning        = Varning!
+
+--------------------- Open/Save Filter ------------------------
+
+Filter              = Alla understödda format|*.pas;*.cpp;*.c;*.bas;*.cp;*.lng;*.bat;*.ini;*.inf;*.log;*.dos;*.me;*.diz;*.htm;*.html;*.txt|Textfiler (*.txt)|*.txt|HTML-dokument (*.htm, *.html)|*.html;*.htm|Språkfiler (*.lng)|*.lng|Codepage-filer (*.cp)|*.cp|Alla filer (*.*)|*.*

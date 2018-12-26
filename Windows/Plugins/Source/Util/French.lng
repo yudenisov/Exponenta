@@ -1,0 +1,154 @@
+Russian Language for BDV Notepad 4.0
+by BaDeVlad
+
+; Lines started with ";" are comments.
+; Precisely as, lines which are not containing even one "=".
+; The division on section is not necessary, it is made only for convenience.
+; Principle of construction:
+;
+; <Identifier> = <Caption> = <Hint>
+;
+; <Identifier> specifies, for what element will be applied caption and hint.
+; <Caption> - caption of a button, menu item or text in a window.
+; <Hint> specifies hint of element. Not necessary and can not be applied for 
+; some elements (In such case is ignored).
+;
+; You can make and send me additional language file to include it in a package 
+; in updating process. Your compatriots will be grateful to you for the help!
+
+----------------------- Menu "File" -------------------------
+File                = &Fichier
+
+New                 = &Nouveau                   = Créer un nouveau document
+open		= &Ouvrir...			       = Ouvrir un document
+save		= &Sauver			             = Sauver le document
+save as	= Sauver &comme...	            
+print		= Im&primer...		      	 = Imprimer le document
+print setup	= Propriétés d'i&mpression...		
+send		= &Envoyer...			       = Envoyer le document par e-mail
+Last Used   = Dernier fichier uti&lisé
+exit		= &Sortir			             = Sortir du programme
+
+----------------------- Menu "Edit" -------------------------
+Edit                = &Editer
+
+Undo                = &Annuler			= Annuler la dernière action
+Redo                = &Refaire			= Refaire la dernière action
+Cut                 = Cou&per		      	= Couper le texte dans le presse-papier
+Copy                = &Copier			      = Copier le texte dans le presse-papier
+Paste               = &Coller		      	= Coller le texte dans le presse-papier
+Change Case         = C&hanger la Casse
+  UpperCase         = Maj&uscule
+  LowerCase         = Minuscu&le
+  TitleCase         = &Titre
+  ToggleCase        = Casse inversée
+Insert              = Insérer
+  Insert Date       = &Date                      = Insérer la date actuelle
+  Insert Time       = &Heure                     = Insérer l'heure actuelle
+  Insert File       = Nom du &Fichier            = Insérer le nom du fichier
+  Insert Color      = &Couleur                   = Insérer la couleur en Hexadécimal
+Convert             = Co&nvertir
+Select All		  = Sélectionner &tout	       = Sélectionner le texte
+
+----------------------- Menu "View" -------------------------
+View                = &Affichage
+
+Toolbars            = &Barre d'outils
+  Statusbar         = &Barre de &status
+  Toolbar File      = &Fichier
+  Toolbar Edit      = &Editer
+  Toolbar Font      = Choix des &Polices
+  Toolbar Case      = &Changer la Casse
+  Toolbar Find      = Ch&ercher et Remplacer
+  Toolbar Symbol    = S&ymboles
+  Toolbar Filter    = Filtre des caractères
+  Toolbar Settings  = Proprié&tés
+  Toolbar About     = &A propos
+Font Presets        = Choix des &Polices
+Word Wrap           = Retours à la li&gne
+Show URLs           = M&ontrer les urls
+Start URLs          = Démar&rer les urls
+Language            = &Language
+Load LNG            = &Charger un language...
+
+----------------------- Menu "Search" -------------------------
+Search              = &Chercher
+
+Find F              = Suivant                    = Chercher le prochain fragment
+Find B              = Précédent                  = Chercher le fragment précédent
+Replace F           = Remplacer le suivant       = Chercher & remplacer à la fin du document
+Replace B           = Remplacer le précédent     = Chercher & remplacer au début du document
+
+----------------------- Menu "Help" -------------------------
+Help                = &Aide
+
+ReadMe              = Afficher le ReadMe
+Site                = Visiter le site  Internet
+E-mail              = Envoyer un email au Support Technique
+
+------------- Captions and Items of Toolbars ----------------
+File Caption        = Fichier
+Edit Caption        = Editer
+Font Caption        = Choix des Polices
+  Other Colors      = Autre Couleurs
+  Preset Name       = Changer le Nom de la Police
+  Change Font       = Changer de Police
+  Change Background = Changer l'Arrière Plan
+Case Caption        = Changer la Casse
+Find Caption        = Chercher et Remplacer
+  Case Sens         = &Casse Sensitive
+  Find Text         = Chercher un texte
+  Replace All       = Remplacer &Tout
+  Replace Text      = Remplacer un texte
+Symbol Caption      = Symboles
+Settings Caption    = Propriétés
+  General Tab       = Générales
+    AutoSave        = Sauvegarde Automatique
+    Save Every      = Sauver Après
+    Minutes         = min.
+    Exit Esc        = Sortir avec <Escape>
+    Clear Last Used = Nettoyer la liste des fichiers utilisés
+  Edit Tab          = Editeur
+    Undo Limit      = Limite du retour arrière
+    Replace Tab     = Remplacer Tab par l'Espace
+    Replace Open    = Remplacer Tab par Enter
+    Tab Size        = Taille de Tabulation
+    Print Tab       = Imprimer
+    Printer Setup   = Propriétés d'impression...
+    Top             = Marge du haut (mm)
+    Bottom          = Marge du bas (mm)
+    Left            = Marge de gauche (mm)
+    Right           = Marge de droite (mm)
+    Text Mode       = Mode &Texte
+  Associations Tab  = Associations
+    Assoc. Open     = Ouvrir (défaut)
+    Assoc. Edit     = Editer
+    Assoc. Print    = Imprimer
+Filter Caption      = Filtrer les carac..
+  Start Char        = Caractère de départ...
+  End Char          = Caractère de fin...
+  Do Operation      = Opération à faire...
+  Replace Char      = Remplacer avec le caractère
+  Increment Value   = Valeur Incrémentielle
+  Prefix            = Préfixe
+  Postfix           = Suffixe
+  Apply             = Appliquer
+
+------------------------- Dialogs ---------------------------
+Can't save          = Ne peux pas sauver le fichier "%s"!
+Can't open          = Ne peux pas ouvrir le fichier "%s"!
+Can't find          = Texte non trouvé.
+Can't print         = Erreur d'impression !
+Replaces            = la modification de %d a été faîte.
+Changed             = Le fichier "%s" a été changé. Voulez-vous sauver les changements?
+CP Error            = Erreur dans le fichier code "%s"!
+
+Search result       = Résultat de la recherche
+Replace result      = Résultat des remplacements
+Error               = Erreur!
+Warning             = Attention!
+
+--------------------- Open/Save Filter ------------------------
+
+Filter              = Tous les formats supportés |*.pas;*.cpp;*.c;*.bas;*.cp;*.lng;*.bat;*.ini;*.inf;*.log;*.dos;*.me;*.diz;*.htm;*.html;*.txt|Les documents textes (*.txt)|*.txt|Les documents html  (*.htm, *.html)|*.html;*.htm|Les fichiers de langue (*.lng)|*.lng|Les fichiers code (*.cp)|*.cp|Tous les fichiers  (*.*)|*.*
+

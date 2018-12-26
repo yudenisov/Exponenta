@@ -1,0 +1,74 @@
+<UniHighlighter version="1.8">
+  <Info>
+    <General Name="XML" Extensions="XML Files"/>
+    <Author Name="Akulov Nikolay" Email="delphiworld@mail.ru" Web="www.delphiworld.narod.ru" Copyright="Copyright (c) Akulov Nikolay, 2005" Company="" Remark=""/>
+    <Version Version="1" Revision="0" Date="37612,5723941898"/>
+    <History>
+    </History>
+    <Sample>
+      <S>&lt;?xml version="1.0"?&gt;</S>
+      <S>&lt;!-- Comment --&gt;</S>
+      <S>&lt;root version="&test;"&gt;</S>
+      <S>  &lt;![CDATA[ **CDATA section** ]]&gt;</S>
+      <S>&lt;/root&gt;</S>
+    </Sample>
+  </Info>
+  <Scheme File="" Name=""/>
+ <CodeFolding>
+  <FoldRegion AddCloseKeyword="1" AllowNoSubFolds="0" Skip="0" Type="0" WholeWords="0">
+   <Open Keyword="{" RegExp="" UseRegExp="0"/>
+   <Close Keyword="}" RegExp="" UseRegExp="0"/>
+   <SubFoldRegions>
+   </SubFoldRegions>
+  </FoldRegion>
+		<SkipRegions>
+			<String Open="&quot;" Close="&quot;" Escape="\" />
+			<String Open="&apos;" Close="&apos;" Escape="\" />
+			<MultiLineComment Open="/*" Close="*/" />
+			<SingleLineComment Open="//" />
+			<SingleLineComment Open="#" />
+		</SkipRegions>
+ </CodeFolding>
+  <Range Name="Root" Attributes="0,16777215;False:False." Style=""
+         Delimiters="!&quot;#$%'()*+,-.:;&lt;=&gt;?@[\]^`{|}~">
+    <Rule OpenSymbolPartOfTerm="Right" CloseSymbolPartOfTerm="False"/>
+    <Keywords Name="KeyWords" Attributes="0,16777215;True:True.B" Style="">
+      <word value="function"/>
+      <word value="if"/>
+    </Keywords>
+    <Range Name="Tag Name" Attributes="0,16777215;True:True.B" Style=""
+           Delimiters="!#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="&lt;" CloseSymbol="&gt;"/>
+      <Range Name="Parameter Value" Attributes="8421504,16777215;False:True." Style=""
+             Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+        <Rule OpenSymbol="&quot;" CloseSymbol="&quot;"/>
+      </Range>
+      <Range Name="Parameter Name" Attributes="12615680,16777215;False:True." Style=""
+             Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+        <Rule OpenSymbol=" " CloseSymbol="="/>
+      </Range>
+      <Range Name="Quotes" Attributes="8421504,16777215;False:True." Style=""
+             Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+        <Rule OpenSymbol="'" CloseSymbol="'"/>
+      </Range>
+    </Range>
+    <Range Name="Remarks" Attributes="255,16777215;False:True.I" Style="" CaseSensitive="True"
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="&lt;!--" OpenSymbolPartOfTerm="Left" CloseSymbol="&gt;"/>
+    </Range>
+    <Range Name="Special Chars" Attributes="428238,16777215;False:True." Style=""
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="&amp;" CloseOnTerm="True"/>
+    </Range>
+    <Range Name="Version" Attributes="8388863,16777215;False:True." Style="" CaseSensitive="True"
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="&lt;?" CloseSymbol="&gt;"/>
+    </Range>
+    <Range Name="Doctype" Attributes="16711935,16777215;False:True." Style="" CaseSensitive="True"
+           Delimiters="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~">
+      <Rule OpenSymbol="&lt;!" CloseSymbol="&gt;"/>
+    </Range>
+  </Range>
+  <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), Vitalik(vetal-x@mail.ru), 2002-2004)</CopyRight>
+</UniHighlighter>
+

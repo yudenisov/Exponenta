@@ -1,0 +1,6 @@
+[DEFAULT]
+BASEURL=http://z-oleg.com/secur/avz/
+[InternetShortcut]
+URL=http://z-oleg.com/secur/avz/
+IconFile=http://z-oleg.com/favicon.ico
+IconIndex=1

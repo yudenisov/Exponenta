@@ -1,0 +1,21 @@
+Image Cache Routine (JS)
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Comment to hide from old Browsers. Does Not Work With Netscape!!
+
+images1 = new Image();  // add as many of these two lines as necessery for caching the images
+images2 = new Image();  // set varible as image
+images1.src = "1.bmp";  // insert the name of the image to be shown with the document
+images2.src = "2.bmp";  // insert the name of the image to be shown on event
+
+function imagechange(IMG_Name, IMG_Replacement)
+{IMG_Name.src = IMG_Replacement.src;}
+// insert the call    OnMouseOver="imagechange(name_of_the_image_tag, images1);"    into your IMG tag insert the info images1 as set above
+
+function imagechangeback(IMG_Name, IMG_Replacement)
+{IMG_Name.src = IMG_Replacement.src;}
+// insert the call    OnMouseOut="imagechangeback(name_of_the_image_tag, images2);"    into your IMG tag insert the info images2 as set above
+
+// so your image tag should look like this <IMG Name="img1" SRC="1.bmp" OnMouseOver="imagechange(img1, images2);" OnMouseOut="imagechangeback(img1, images1);">
+
+// -->
+</SCRIPT>

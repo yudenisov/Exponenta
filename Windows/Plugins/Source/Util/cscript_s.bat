@@ -1,0 +1,1 @@
+%SystemRoot%\System32\CScript.exe //I //Logo //S %*

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+File contains list and configuration of VSL modules.
+Every module must contain name and class elements.
+Description and parameters elements are optional.
+Names of core categories i.e. Tools, Encoders,
+Decoders, Analysers and Distortions cannot be changed.
+Sequence of categories in application window is 
+the same as in this file.
+-->
+
+<modules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://vsl.sourceforge.net/modules"
+xsi:schemaLocation="http://vsl.sourceforge.net/modules modules.xsd">
+
+ <category name="Encoders">
+  <module>
+   <name>LSB.E</name>
+   <description>LSB - Least Significant Bit steganography encoder</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl</class>
+   <parameters>
+    <parameter>
+     <name>startbits</name>
+     <description>The start bit position for possible bits (0-7 integer)</description>
+     <default>0</default>
+    </parameter>
+    <parameter>
+     <name>endbits</name>
+     <description>The end bit position for possible bits (0-7 integer)</description>
+     <default>0</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>KLT.E</name>
+   <description>Encoder that employs two-dimensional Karhunen-Loeve Transform</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganography.klt.KltImpl</class>
+   <parameters>
+    <parameter>
+     <name>block size</name>
+     <description>Size of blocks to which image will be divided</description>
+     <default>8</default>
+    </parameter>
+    <parameter>
+     <name>start position</name>
+     <description>Specifies the lowest index of diagonal values in which message will be encoded</description>
+     <default>3</default>
+    </parameter>
+    <parameter>
+     <name>end position</name>
+     <description>Specifies the highest index of diagonal values in which message will be encoded</description>
+     <default>4</default>
+    </parameter>
+    <parameter>
+     <name>eig cols vectors</name>
+     <description>Path to the file that will hold eigenvectors calculated between image columns</description>
+     <default>cols.txt</default>
+    </parameter>
+    <parameter>
+     <name>eig rows vectors</name>
+     <description>Path to the file that will hold eigenvectors calculated between image columns</description>
+     <default>rows.txt</default>
+    </parameter>
+    <parameter>
+     <name>key</name>
+     <description>Path to the file that will hold key required to extract message</description>
+     <default>key.txt</default>
+    </parameter>
+    <parameter>
+     <name>mean</name>
+     <description>Path to the file that will hold mean value of used image component</description>
+     <default>mean.txt</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>F5.E</name>
+   <description>F5 - F5 steganography encoder</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganography.f5.F5Impl</class>
+   <parameters>
+    <parameter>
+     <name>password</name>
+     <description>Password used in F5 steganography process</description>
+     <default>abc123</default>
+    </parameter>
+    <parameter>
+     <name>quality</name>
+     <description>Quality (0 to 100) of the output JPEG</description>
+     <default>100</default>
+    </parameter>
+    <parameter>
+     <name>comment</name>
+     <description>JPEG comment</description>
+     <default>JPEG Encoder Copyright 1998, James R. Weeks and BioElectroMech</default>
+    </parameter>
+   </parameters>
+  </module>
+ </category>	
+ <category name="Decoders">
+  <module>
+   <name>LSB.D</name>
+   <description>LSB - Least Significant Bit steganography decoder</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganography.lsb.LsbImpl</class>
+   <parameters>
+    <parameter>
+     <name>startbits</name>
+     <description>The start bit position for possible bits (0-7 integer)</description>
+     <default>0</default>
+    </parameter>
+    <parameter>
+     <name>endbits</name>
+     <description>The end bit position for possible bits (0-7 integer)</description>
+     <default>0</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>KLT.D</name>
+   <description>Decoder that employs two-dimensional Karhunen-Loeve Transform</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganography.klt.KltImpl</class>
+   <parameters>
+    <parameter>
+     <name>block size</name>
+     <description>Size of blocks to which image was divided</description>
+     <default>8</default>
+    </parameter>
+    <parameter>
+     <name>start position</name>
+     <description>Specifies the lowest index of diagonal values in which message was encoded</description>
+     <default>3</default>
+    </parameter>
+     <parameter>
+     <name>end position</name>
+     <description>Specifies the highest index of diagonal values in which message was encoded</description>
+     <default>4</default>
+    </parameter>
+    <parameter>
+     <name>eig cols vectors</name>
+     <description>Path to the file that holds eigenvectors calculated between image columns</description>
+     <default>cols.txt</default>
+    </parameter>
+    <parameter>
+     <name>eig rows vectors</name>
+     <description>Path to the file that holds eigenvectors calculated between image columns</description>
+     <default>rows.txt</default>
+    </parameter>
+    <parameter>
+     <name>key</name>
+     <description>Path to the file that holds key required to extract message</description>
+     <default>key.txt</default>
+    </parameter>
+    <parameter>
+     <name>mean</name>
+     <description>Path to the file that holds mean value of used image component</description>
+     <default>mean.txt</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>F5.D</name>
+   <description>F5 - F5 steganography decoder</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganography.f5.F5Impl</class>
+   <parameters>
+    <parameter>
+     <name>password</name>
+     <description>Password used in F5 steganography process</description>
+     <default>abc123</default>
+    </parameter>
+   </parameters>
+  </module>
+ </category>	
+ <category name="Analysers">
+  <module>
+   <name>LSB-RS</name>
+   <description>LSB RS Analysis - Least Significant Bit steganalysis technique proposed by J.Fridrich et al. at Binghamton University, NY.</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganalysis.lsb.RSAnalysisImpl</class>
+   <parameters>
+    <parameter>
+     <name>x mask size</name>
+     <description>The x mask size for RS Analysis mask</description>
+     <default>2</default>
+    </parameter>
+    <parameter>
+     <name>y mask size</name>
+     <description>The y mask size for RS Analysis mask</description>
+     <default>2</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>BSM-SVM</name>
+   <description>Steganalysis proposed by I.Avcibas et al. at Uludag University, Bursa. Uses Binary Similarity Measures and SVM as classifier</description>
+   <class>pl.edu.zut.wi.vsl.modules.steganalysis.bsm.BsmImpl</class>
+   <parameters>
+    <parameter>
+     <name>model</name>
+     <description>Path to the file that contains output model file produced by libsvm</description>
+     <default>model_file</default>
+    </parameter>
+    <parameter>
+     <name>scaling params</name>
+     <description>Path to the file that contains scaling factors (range file) created during scaling training data for SVM</description>
+     <default>scaling_params_file</default>
+    </parameter>
+    <parameter>
+     <name>predict probability</name>
+     <description>Whether to predict probability estimates, 0 or 1; for one-class SVM only 0 is supported</description>
+     <default>0</default>
+    </parameter>
+    <parameter>
+     <name>test data</name>
+     <description>Path to a file that will store test data for a classifier</description>
+     <default>test_data</default>
+    </parameter>
+    <parameter>
+     <name>scaled test data</name>
+     <description>Path to a file that will store scaled test data for a classifier</description>
+     <default>scaled_test_data</default>
+    </parameter>
+    <parameter>
+     <name>svm output</name>
+     <description>Path to a file that will store output (result) of the classification process</description>
+     <default>svm_output</default>
+    </parameter>
+   </parameters>
+  </module>
+ </category>
+ <category name="Distortions">
+  <module>
+   <name>Salt-Pepper</name>
+   <description>Salt and Papper Noise - noise that represents itself as randomly occurring white and black pixels</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.SaltPepperImpl</class>
+   <parameters>
+    <parameter>
+     <name>density</name>
+     <description>Density of noise - real value in range (0;1></description>
+     <default>0.05</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Gauss Noise</name>
+   <description>Gaussian Noise - noise that has a probability density function of the normal (Gaussian) distribution</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.GaussianNoiseImpl</class>
+   <parameters>
+    <parameter>
+     <name>mean</name>
+     <description>Real value of gaussian noise mean</description>
+     <default>0</default>
+    </parameter>
+    <parameter>
+     <name>variation</name>
+     <description>Real positivie value of gaussian noise variation</description>
+     <default>7.7</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Crop</name>
+   <description>Cropping of the image - module extracts the absolute rectangular region of pixels from its source Image as specified by the x, y, w, and h parameters</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.CroppingImpl</class>
+   <parameters>
+    <parameter>
+     <name>x</name>
+     <description>The x location of the top of the rectangle to be extracted</description>
+     <default>0</default>
+    </parameter>
+    <parameter>
+     <name>y</name>
+     <description>The y location of the top of the rectangle to be extracted</description>
+     <default>0</default>
+    </parameter>
+    <parameter>
+     <name>w</name>
+     <description>The width of the rectangle to be extracted</description>
+     <default>77</default>
+    </parameter>
+    <parameter>
+     <name>h</name>
+     <description>The height of the rectangle to be extracted</description>
+     <default>77</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Resize</name>
+   <description>Resizes images using bicubic interpolation</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.ResizeImpl</class>
+   <parameters>
+    <parameter>
+     <name>xscale</name>
+     <description>the factor by which coordinates are scaled along the X axis direction</description>
+     <default>0.77</default>
+    </parameter>
+    <parameter>
+     <name>yscale</name>
+     <description>the factor by which coordinates are scaled along the Y axis direction</description>
+     <default>0.77</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Median</name>
+   <description>Applies median filter on the given image</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.MedianFilteringImpl</class>
+   <parameters>
+    <parameter>
+     <name>radius</name>
+     <description>Radius of filtering mask. For example radius equal 1 will filter image with mask 3x3</description>
+     <default>1</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Gamma</name>
+   <description>Applies gamma correction on the given image</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.GammaImpl</class>
+   <parameters>
+    <parameter>
+     <name>r gamma</name>
+     <description>Gamma factor for the red component</description>
+     <default>2.0</default>
+    </parameter>
+    <parameter>
+     <name>g gamma</name>
+     <description>Gamma factor for the green component</description>
+     <default>2.0</default>
+    </parameter>
+    <parameter>
+     <name>b gamma</name>
+     <description>Gamma factor for the blue component</description>
+     <default>2.0</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>JPEG</name>
+   <description>Performs JPEG lossy compresion on image</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.JpegImpl</class>
+   <parameters>
+    <parameter>
+     <name>quality</name>
+     <description>Quality of JPEG compression - 0.0 means high compression is important, wheras 1.0 means high image quality is important</description>
+     <default>0.85</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Gauss Blur</name>
+   <description>Blurs an image by a Gaussian function</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.GaussianBlurImpl</class>
+   <parameters>
+    <parameter>
+     <name>radius</name>
+     <description>Radius of filtering mask - for example radius equal 1 will filter image with mask 3x3</description>
+     <default>1</default>
+    </parameter>
+   </parameters>
+  </module>
+  <module>
+   <name>Sharpen</name>
+   <description>A filter which subtracts Gaussian blur from an image, sharpening it</description>
+   <class>pl.edu.zut.wi.vsl.modules.distortions.UnsharpMaskImpl</class>
+   <parameters>
+    <parameter>
+     <name>amount</name>
+     <description>Amount of sharpening</description>
+     <default>1</default>
+    </parameter>
+    <parameter>
+     <name>radius</name>
+     <description>Radius of filtering mask - for example radius equal 1 will filter image with mask 3x3</description>
+     <default>1</default>
+    </parameter>
+    <parameter>
+     <name>threshold</name>
+     <description>Difference between value of blured value and pixel value above which this filter will be applied</description>
+     <default>2</default>
+    </parameter>
+   </parameters>
+  </module>
+ </category>
+</modules>
+

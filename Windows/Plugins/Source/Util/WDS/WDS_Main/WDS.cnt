@@ -1,0 +1,25 @@
+:BASE WDS.hlp
+1 Программа
+2 О программе=AboutProgram@WDS.hlp
+2 Благодарности=Thanks@WDS.hlp
+1 Работа в программе
+2 Структура программы=StructureOfProgram@WDS.hlp
+2 Открытие файла=FileOpen@WDS.hlp
+2 Сохранение документа=FileSave@WDS.hlp
+2 Единство содержимого документа=OneDocContent@WDS.hlp
+2 Создание файла=FileCreate@WDS.hlp
+2 Печать документа=FilePrint@WDS.hlp
+2 Меню Вид=MenuView@WDS.hlp
+2 Справочники=HelpTopics@WDS.hlp
+2 Просмотр и проверка=Preview@WDS.hlp
+1 Работа в редакторе кода
+2 Работа в редакторе=EditorWork@WDS.hlp
+2 Работа с буфером=WorkWithClipbrd@WDS.hlp
+2 Вставить в редактор=InsertIntoEditor@WDS.hlp
+2 Поиск текста=TextSearch@WDS.hlp
+2 Исследование кода=CodeExplorer@WDS.hlp
+2 Возможности разработчика=DeveloperPossibilities@WDS.hlp
+2 Работа с макросами=MacroWork@WDS.hlp
+1 Дополнительно
+2 Регулярные выражения=RegExp@WDS.hlp
+2 Полезные советы=Advices@WDS.hlp

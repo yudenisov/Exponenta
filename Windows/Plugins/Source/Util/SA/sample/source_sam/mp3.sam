@@ -1,0 +1,44 @@
+[tree]
+1
+1
+0
+0
+[source]
+C:\Afon\StringAll\sample\mp3
+[target]
+C:\Afon\StringAll\sample\tree\mp3.js
+
+1
+1
+0
+0
+
+[counter]
+0
+1
+1
+0
+[slash]
+0
+1
+0
+[dirpattern]
+foldersTree=gFld(".!","")
+aux1=insFld(foldersTree,gFld(".!",""))
+aux2=insFld(aux1,gFld(".!",""))
+[filepattern]
+insDoc(foldersTree,gLnk(2,"!","music.mkm.lan!\!.!"))
+insDoc(aux1,gLnk(2,"^!","^!\!.!"))
+insDoc(aux2,gLnk(2,"<a href='3!//2!//1!//!.!'>^!</a>","music.mkm.lan!\!.!"))
+[replace0]
+01: _
+[replace1]
+01: <_>
+[include]
+*.mp3
+*.m3u
+*.avi
+[exclude]
+_vti_
+[title]
+[footer]

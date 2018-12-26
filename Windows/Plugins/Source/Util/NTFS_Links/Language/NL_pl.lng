@@ -1,0 +1,52 @@
+; Polski interfejs wtyczki NTFS Links 1.21 - Pawel Wawrzyszko
+; Autor: Konstantin Vlasov (support@flint-inc.ru)
+
+; Main dialog
+1=OK
+2=Anuluj
+3=&Ustawienia
+4=Pomoc
+5=U&twórz ³¹cze dla "%s" jako:
+6=U&twórz ³¹cze dla %d wybranych plików w:
+7=&G³êbokoœæ rekurencji dla tworzonych ³¹czy:
+
+; Settings dialog
+50=Ustawienia
+51=OK
+52=Anuluj
+53=Pomoc
+54=Zachowaj pozycjê &okna
+55=Zachowaj &g³êbokoœæ rekurencji
+56=&Domyœlna g³êbokoœæ rekursji:
+57=Plik &jêzykowy:
+58=Pliki jêzykowe (*.lng)|*.lng|Wszystkie pliki (*.*)|*.*||
+59=Plik &Pomocy:
+60=Pliki pomocy (*.chm)|*.chm|Wszystkie pliki (*.*)|*.*||
+
+; Error dialog
+100=B³¹d
+101=&Pomiñ
+102=Po&nów
+103=Pomiñ &wszystkie
+104=&Anuluj
+105=B³¹d przy tworzeniu ³¹cza dla pliku:\n%s
+106=B³¹d przy tworzeniu ³¹cza dla katalogu:\n%s
+107=B³¹d przy tworzeniu katalogu:\n%s
+108=Nieznany b³¹d!
+
+; About box
+150=O programie
+151=&O programie...
+152=Program:
+153=Wersja:
+154=Autor:
+155=Wszelkie prawa zastrze¿one.
+156=Strona:
+
+; Miscellaneous error messages
+1001=Niew³aœciwa liczba parametrów w linii poleceñ!
+1002=Nie mo¿na otworzyæ listy plików!
+1003=Nie mo¿na utworzyæ 1 ³¹cza dla kilku obiektów!
+1004=Nie mo¿na wykonaæ polecenia.\nKod b³êdu: %d.
+1005=Nie mo¿na otworzyæ pliku pomocy!
+1006=B³¹d przy zachowywaniu ustawieñ!

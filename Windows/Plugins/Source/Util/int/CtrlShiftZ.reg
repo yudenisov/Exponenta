@@ -1,0 +1,7 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Far\KeyMacros\Shell\CtrlShiftZ]
+"Sequence"="CtrlZ"
+"DisableOutput"=dword:00000001
+"Description"="Стандартный радактор описаний;"
+

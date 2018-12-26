@@ -1,0 +1,72 @@
+                              For English text scroll down, please!
+-------------------------------------------------------------------------------------------------
+Здесь я привожу описание, какие строки интерфейса в каких случаях используются. Это может помочь
+тем, кто решил перевести программу на другой язык.
+-------------------------------------------------------------------------------------------------
+; Основной диалог
+1, 2, 3, 4 - кнопки в нижней части диалога.
+5 - строка, отображающаяся над полем ввода каталога назначения в случае, когда выделен один файл.
+6 - эта же строка в случае, когда выделен один каталог или несколько файлов/каталогов.
+7 - строка описания параметра "глубина рекурсии".
+
+; Диалог настроек
+50 - заголовок.
+51, 52, 53 - кнопки.
+54, 55, 56 - три последовательно идущие опции в верхней части диалога.
+57 - название поля ввода для языкового файла.
+58 - набор масок файлов, отображающихся в диалоге открытия в поле "Тип файлов".
+59, 60 - то же, что и 57, 58, но для поля файла справки.
+
+; Диалог ошибки
+100 - заголовок.
+101, 102, 103, 104 - кнопки.
+105, 106, 107, 108 - сообщения для разных типов ошибок, возникающих при создании ссылок.
+
+; Диалог "О программе"
+150 - заголовок.
+151 - название пункта, добавляющегося к системному меню основного диалога (щелчок на значке в заголовке слева).
+152, 153, 154, 155, 156 - различные строки интерфейса в самом диалоге (из строк всё понятно).
+
+; Разные сообщения об ошибках
+1001 - выдаётся, если программе передано слишком мало параметров командной строки.
+1002 - ошибка при попытке прочитать файл списка, указанный первым параметром.
+1003 - была произведена попытка создания ссылки с фиксированным именем для нескольких файлов/каталогов.
+1004 - при щелчке на одной из ссылок в диалоге "О программе" произошла ошибка - не удалось открыть ссылку в браузере.
+1005 - указанный файл справки не найден или не может быть открыт.
+1006 - не удалось сохранить настройки (например, если INI-файл имеет атрибут "только для чтения").
+
+-------------------------------------------------------------------------------------------------
+Here I write a description of when every interface line is used in the program. This can help
+translators to create their own LNG-files for other languages.
+-------------------------------------------------------------------------------------------------
+; Main dialog
+1, 2, 3, 4 - buttons at the bottom of the dialog.
+5 - the line shown above the exit box of the destination folder, shown when only one file was selected.
+6 - the same line, but in case when one folder or several files or folders are selected.
+7 - the description of the "Recursion depth" parameter.
+
+; Settings dialog
+50 - title of the dialog.
+51, 52, 53 - the buttons.
+54, 55, 56 - the three successive options at the top of the dialog.
+57 - the name of the language file edit box.
+58 - the set of file masks that are shown in the "File type" field in Open dialog.
+59, 60 - the same to the 57, 58, but for the help file.
+
+; Error dialog
+100 - title of the dialog.
+101, 102, 103, 104 - the buttons.
+105, 106, 107, 108 - messages for different kinds of errors, appearing while creating links.
+
+; About box
+150 - title of the dialog.
+151 - name of the menu item, which is added to the main dialog's system menu (left-click on the icon in the left part of the title).
+152, 153, 154, 155, 156 - different lines in the dialog itself.
+
+; Miscellaneous error messages
+1001 - it appears, when there are too few command-line parameters.
+1002 - the program was not able to read the list file, that is specified in the first parameter.
+1003 - an attempt to create a link with some fixed name for several files/folders.
+1004 - after clicking on some link in the "About" dialog there was an error while trying to open the link in browser.
+1005 - the help file specified is absent or cannot be opened.
+1006 - could not save settings (for example, if the INI-file has "read-only" attribute set).

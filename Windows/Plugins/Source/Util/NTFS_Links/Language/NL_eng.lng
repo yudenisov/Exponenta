@@ -1,0 +1,52 @@
+; English translation for NTFS Links 1.21
+; Author: Konstantin Vlasov (support@flint-inc.ru)
+
+; Main dialog
+1=OK
+2=Cancel
+3=&Settings
+4=Help
+5=C&reate link for "%s" as:
+6=C&reate links for %d selected file(s) in:
+7=Recursion &depth for creating junctions:
+
+; Settings dialog
+50=Settings
+51=OK
+52=Cancel
+53=Help
+54=Save &window position
+55=Save &recursion depth
+56=&Default recursion depth:
+57=&Language file:
+58=Language files (*.lng)|*.lng|All files (*.*)|*.*||
+59=&Help file:
+60=Help files (*.chm)|*.chm|All files (*.*)|*.*||
+
+; Error dialog
+100=Error
+101=&Skip
+102=&Retry
+103=Skip &all
+104=&Cancel
+105=Error on creating link for the file:\n%s
+106=Error on creating link for the folder:\n%s
+107=Error on creating the folder:\n%s
+108=Unknown error!
+
+; About box
+150=About
+151=&About...
+152=Program:
+153=Version:
+154=Author:
+155=All rights reserved.
+156=Homepage:
+
+; Miscellaneous error messages
+1001=Incorrect number of command-line parameters!
+1002=Cannot open list of files!
+1003=One cannot create one link for several objects!
+1004=Could not execute command.\nError code: %d.
+1005=Could not open help file!
+1006=Error while saving settings!

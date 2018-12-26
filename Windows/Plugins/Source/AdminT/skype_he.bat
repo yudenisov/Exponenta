@@ -1,0 +1,1 @@
+"C:\Program Files\Hidden Start\hstart64.exe" /NOCONSOLE /D="C:\Users\yuden" "C:\Program Files (x86)\Logitech\LWS\Webcam Software\LWS.exe -hide" "C:\Program Files (x86)\CyberLink\YouCam\YCMMirage.exe" "C:\Program Files (x86)\CyberLink\YouCam\YouCamTray.exe /s" "C:\Program Files (x86)\Skype\Phone\Skype.exe"

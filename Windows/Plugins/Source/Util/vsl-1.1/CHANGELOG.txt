@@ -1,0 +1,27 @@
+VSL: Virtual Steganographic Laboratory
+
+    You can view and submit bugs or feature requests at 
+    http://sourceforge.net/apps/mantisbt/vsl/
+
+Version 1.1 (2011-02-07)
+========================
+* Changed description of the "scaling params" BSM-SVM module (0000001)
+* Changed LIBSVM to version 2.89
+* Improved Display window tool sizing (0000002)
+* Added XML schema for modules configuration file (0000005)
+* Fixed Display window sizing issue (0000007)
+* Fixed handling files with alpha channel in Gaussian Noise, Median, 
+  Salt & Pepper and KLT modules (0000008)
+* Added new module for JPEG DCT steganography - F5 (0000009)
+* Added support for JPEG steganography
+* Improved executions efficiency
+* Changed Display window image filter to show all supported formats
+* Improved Output: added drop down for selecting output image format
+* Fixed NPE in the Input window
+* Added "-1" as an error return value along with gentle error handling in 
+  Report
+* Fixed Input connecting bug
+
+Version 1.0 (2009-06-02)
+========================
+* Initial release of the VSL toolkit
