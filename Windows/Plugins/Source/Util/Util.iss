@@ -15,7 +15,7 @@ MinVersion=6.0.6001
 SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
-Output=no
+Output=yes
 OutputDir=d:\Download
 OutputBaseFilename=UtilSetup
 
@@ -27,7 +27,7 @@ Source: "*.*"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly unins
 
 Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; Flags: deletevalue noerror uninsdeletevalue; ValueType: string; ValueName: "UTIL"; ValueData: "{app}"
 
-Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; Flags: noerror; ValueType: string; ValueName: "PATH"; ValueData: "{olddata};{app}"
+; Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; Flags: noerror; ValueType: string; ValueName: "PATH"; ValueData: "{olddata};{app}"
 
 [UninstallRun]
 

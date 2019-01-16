@@ -120,3 +120,5 @@ winhlp32.exe -- Программа для чтения файлов справки для MS Windows 32 (актуальна
 WinPhotoPreview.cmd -- Program for Graphics Preview in Windows 10 at the style ala Windows 7\nВ
 WinVi32.exe -- Программа для редактирования текстовых файлов (совметимая с редактором UNIX Vi).
 wscript_s.bat -- Запуск WSH скрипта со специальными параметрами в оболочке Wscript\nВ
+hs_help.cmd -- Программа помощи (справочник) по командам организации диалогового интерфейса к консольным программам\nВ данном пакете такие программы имеют префикс hs_\nВ
+dosbox.bat -- Command File for run the dosbox emulator with my parameters\nВ
