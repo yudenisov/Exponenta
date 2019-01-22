@@ -10,6 +10,7 @@ net stop SQLWriter
 net stop mssql$sqlexpress
 net stop MSSQLSERVER
 net stop postgresql-x64-9.6
+net stop postgresql-x64-11
 net stop IBG_gds_db
 net stop W3SVC
 net stop "FileZilla Server"
@@ -30,11 +31,6 @@ net stop nginx
 net stop MySQL57
 rem net stop VMwareHostd
 rem net stop MySQL
-rem net stop SynchronetWeb
-rem net stop SynchronetFTP
-rem net stop SynchronetMail
-rem net stop SynchronetBBS
-rem net stop SynchronetServices
 net stop cygserver
 rem net stop i2p
 rem net stop tor

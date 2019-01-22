@@ -10,32 +10,27 @@ net stop SQLWriter
 net stop mssql$sqlexpress
 net stop MSSQLSERVER
 net stop postgresql-x64-9.6
+net stop postgresql-x64-11
 net stop IBG_gds_db
 net stop W3SVC
 net stop "FileZilla Server"
-net stop ftpsvc
-net stop Tftpd32_svc
-net stop stunnel
-net stop UnrealIRCd
-net stop Apache2.4
-net stop php_cgi_2000
-net stop php_cgi_2001
-net stop php_cgi_2002
-net stop php_cgi_2003
-net stop php_cgi_2004
-net stop php_cgi_2005
-net stop php_cgi_2006
-net stop php_cgi_2007
-net stop nginx
-net stop MySQL57
+rem net stop ftpsvc
+rem net stop Tftpd32_svc
+rem net stop stunnel
+rem net stop UnrealIRCd
+rem net stop Apache2.4
+rem net stop php_cgi_2000
+rem net stop php_cgi_2001
+rem net stop php_cgi_2002
+rem net stop php_cgi_2003
+rem net stop php_cgi_2004
+rem net stop php_cgi_2005
+rem net stop php_cgi_2006
+rem net stop php_cgi_2007
 net stop VMwareHostd
+net stop nginx
 net stop MySQL
-rem net stop SynchronetWeb
-rem net stop SynchronetFTP
-rem net stop SynchronetMail
-rem net stop SynchronetBBS
-rem net stop SynchronetServices
-net stop cygserver
+rem net stop cygserver
 net stop i2p
 net stop tor
 net stop TokenBroker
