@@ -1,0 +1,13 @@
+[Unit]
+Description=TigerVNC remote desktop server
+After=syslog.target network.target
+
+[Service]
+Type=forking
+PAMname=login
+Restart=on-failure
+ExecStart=/usr/bin/vncserver -depth 16 -geometry 1360x768 -localhost no :10000
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+#! /bin/sh
+
+test x"$SHELL" = x"" && SHELL=/bin/bash
+test x"$1"     = x"" && set -- default
+
+unset DBUS_SESSION_BUS_ADDRESS
+export SHELL=/bin/bash
+xrdb $HOME/.Xresources
+xsetroot -solid-grey
+export XKL_XMODMAP_DISABLE=1
+
+vncconfig -iconic &
+$SHELL -l <<EOF
+exec /etc/X11/Xsession "$@"
+#/usr/bin/mate-session
+EOF
+vncserver -kill $DISPLAY

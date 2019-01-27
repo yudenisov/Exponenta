@@ -1,2 +1,0 @@
-@echo off
-"%COMMANDER_PATH%\TOTALCMD64.EXE"

@@ -1,106 +1,55 @@
+F@..k all of you, I am exponent functions\! (From a joke about mentally
+sick person)
+
+Мне пофиг, я — экспонента\! (Из анекдота про психически
+неуравновешенного человека)
+
 # EXPONENTA
 
-Набор пакетов для удалённого администрирования (Admin Pack) компьютерами
-под управлением операционной системы Windows.
+A set of packages for remote control and management (Admin Pack) to
+computers and servers
 
-Пакет для удалённого взлома компьютера и управления. «Зловред»
-универсальный, поэтому автор не указывает его класс. Близкий
-класс в категории зловредов — стайлеры (Stealer). Антивирусами
-программное обеспечение обозначается как malware-gen.
+Набор пакетов для удалённого администрирования (Admin Pack) компьютерами
+и серверами.
+
+## ОПИСАНИЕ
+
+Админ пак Exponenta предназначен для первоначальной настройки под
+управлением операционной системы Windows/Linux/FreeBSD/MacOS X
+(пока только wish list) после её установки, с целью придания ей новых
+возможностей и уменьшения её защищённости по-умолчанию. Настройка
+включает в себя установка сервисов и открытие удалённого доступа к
+компьютеру.
+
+Пакет Exponenta для удалённого взлома компьютера и управления. «Зловред»
+универсальный, поэтому автор не указывает его класс. Близкий класс в
+категории зловредов — стилеры (Stealer). Антивирусами программное
+обеспечение обозначается как malware-gen. «Зловред» предназначен для
+скрытой установки админ-пака Exponenta на компьютеры под управлением
+указанных операционных систем и запуска служб, которые первоначально
+или по соображениям безопасности постоянно отключены в разных версиях
+этих дистрибутивов. (Примечание. Функционал стилера является
+экспериментальным и автором не проверялся на валидность).
+Файлы стилера распространяются отдельно.
 
 Для работы «зловред» требует дополнительные пакеты и программы. Ссылки —
 в документации.
 
-# ЗАЯВЛЕННЫЕ ФУНКЦИИ
+## ЗАЯВЛЕННЫЕ ФУНКЦИИ
 
-  - Возможна скрытая установка методами социальной инженерии.
+Смотри соответствующий файл FEATURES.MD и descript.ion
 
-  - Возможна скрытая установка с использованием уязвимостей Windows.
-
-  - В работе требует права локального администратора.
-
-  - Скрытно устанавливает пакеты на заражённый компьютер.
-
-  - Запускает файлы на удалённом компьютере. Результат передаётся
-    «Хозяину» по FTP либо по HTTP протоколу.
-
-  - Даёт возможность удалённо включать доступ по telnet, winrm, ssh,
-    rdp, smb протоколам.
-
-  - Создаёт “универсальную” учётную запись для доступа к компьютеру по
-    указанным протоколам с правами локального администратора или
-    администратора домена.
-
-  - Собственно «зловред» запускается с закрытого сайта, программы для
-    создания которого также приводятся.
-
-  - Возможность изменения переменных окружения и кустов реестра.
-
-  - Возможность установки пакетов инсталляторами со штатными
-    деинсталляторами, с записью в реестре Windows.
-
-  - Публичная доступность Admin Packs для скачки по http и ftp
-    протоколам.
-
-  - Возможность отмены сделанных изменений на компьютере и полного
-    удаления пакета программ средствами штатных деинсталляторов.
-
-# СИСТЕМНЫЕ ТРЕБОВАНИЯ
-
-  - Компьютер с установленной Microsoft Windows 7 SP1 — Windows 10 Pro
-    или Microsoft Windows Server 2008 R2 — 2016.
-
-  - Учётная запись локального администратора компьютера или
-    администратора домена.
-
-  - Установленные в системе пакеты PowerShell 2.0, Console FTP client,
-    systeminfo.exe. Эти пакеты изначально присутствуют на указанных
-    компьютерах, просто эти пакеты не должны быть удалены
-    администратором.
-
-НЕОБХОДИМЫЕ ДОПОЛНИТЕЛЬНЫЕ ПАКЕТЫ ДЛЯ РАБОТЫ
-
-  - Менеджер пакетов chocolatey.
-
-  - Модифицированная программа Elevation.
-
-  - Зарегистрированная программа Hidden Start.
-
-  - Программа duck — консольный клиент для обмена информацией с
-    облачными сервисами.
-
-  - Установленный из Chocolatey пакет sysinternals.
-
-  - Установленный из Chocolatey пакет curl.
-
-  - Установленный из Chocolatey пакет wget.
-
-Программа Exponenta устанавливает эти пакеты сразу же после собственной
-инсталляции.
-
-Данные пакеты входят в Admin Pack, и будут установлены в любом случае,
-даже без инсталляции боевых модулей «зловреда». Этот модуль
-устанавливается и удаляется опционально. Возможна установка
-Admin Pack для облегчения работы администратора без боевого модуля, при
-этом править файлы конфигурации практически не потребуется.
-
-Все плагины к стайлеру Exponenta (полнофункциональные Admin Pack)
-скачиваются и устанавливаются в каталог c:1ведомого компьютера.
-Их установка из этой папки может производиться в автоматическом режиме
-либо вручную, администратором ведомого компьютера. На всякий случай
-папка c:1 должна иметь атрибут “скрытый” для всех пользователей.
-
-# ИНСТАЛЛЯЦИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ
+ИНСТАЛЛЯЦИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ
 
 Посмотрите файл INSTALL.MD в каталоге с готовыми плагинами для Windows
 (только на русском языке)
 
-# ПЕРЕСБОРКА ПРОГРАММЫ И ПЛАГИНОВ ДЛЯ ИНСТАЛЛЯЦИИ
+ПЕРЕСБОРКА ПРОГРАММЫ И ПЛАГИНОВ ДЛЯ ИНСТАЛЛЯЦИИ
 
 Посмотрите соответствующие файлы README.MD в каталогах с исходным кодом
 (только на русском языке).
 
-# ДОПОЛНИТЕЛЬНО
+ДОПОЛНИТЕЛЬНО
 
 Компоненты стайлера не относятся к вирусам и нежелательным программам и
 поэтому не опознаются антивирусными программами. Стайлер эксплуатирует
@@ -114,7 +63,7 @@ Admin Pack для облегчения работы администратора
 заражения стайлером — корпоративная культура работы с входящими
 сообщениями в организации.
 
-# КОНТАКТЫ
+КОНТАКТЫ
 
 По вопросам тестового использования, обнаружения заражения обратитесь к
 автору по e-mail, ICQ 120105414, Messenger и Telegram (@yudenisov),
@@ -128,114 +77,67 @@ WhatsApp/Viber. Автор не даёт консультации по крим�
 консультаций уточняйте при обращении, фиксированной цены нет. Оплата
 идёт по безналичному расчёту или через платёжные сервисы или банки.
 
-# EXPONENTA
+## DESCRIPTION
 
-It is a set of packets and scripts for remote administration (Admin
-Pack) of computers working under Windows Operation Systems.
+The administrator’’s package of Exponenta is intended for initial
+control running the Windows/Linux/FreeBSD/MacOS X operating system (so
+far only wish list) after its installation, for the purpose of giving of
+new functions and reduction of its security to it by default. Control
+includes installation of services and opening of remote access to the
+computer.
 
-It is a packet for remote computer hacking and control of it. It
-combines a set of functions therefore the author cannot carry it to a
-certain class of malwares. The most close class in category of malwares
-— stealer.
+Exponenta package for remote computer hacking and management. “Malware”
+is universal therefore the author does not specify his class. A nearest
+class in this category of malwares — Stealer. The software is designated
+by antiviruses as malware-gen. “Malware” is intended for the hidden
+installation the Admin Pack Exponenta on computers under control of the
+specified operating systems and start of services which originally or
+constantly for safety reasons are disconnected in different versions of
+these distribution kits. (Note. The functionality of a stealer is
+experimental and was not checked by the author for validity). Files of a
+stealer extend separately.
 
-This package requires additional packets and the software for the
-operation. References to them can be found in documentation.
+## DECLARED FEATURES
 
-# THE STATED FUNCTIONS
+See corresponded files FEATURES.MD and descript.ion
 
-  - The hidden installation is possible by methods of social
-    engineering.
+## WHAT NEW?
 
-  - The hidden installation is possible by windows exploits.
+You watch updating of versions of the program in the WHATSNEWS.MD file
 
-  - It makes possible to get remotely access to slave computer with
-    telnet, winrm, ssh, rdp, smb protocols.
+## DEPENDENCES
 
-  - It creates «universal» account for remote access to slave computer
-    on these protocols with local administrator or domain administrator
-    rights.
+For their installation the package demands the additional software which
+delivered together with the operating system or downloaded from the
+Internet. It is possible to see the list of such dependences and the
+program for their installation in the DEPENDENCES.MD file.
 
-  - Actually “malware” is started from the closed website, programs for
-    its creation are also provided.
+## INSTALLATION OF THE SOFTWARE
 
-  - It makes possible changing of environment variables and registry
-    records.
+Look at the INSTALL.MD file in the directory with ready modules (only in
+Russian). It needs the permissions of local administrator or domain
+administrator for starting installation of these pakages.
 
-  - It makes possible to setup packets by its own installators with
-    uninstallers and setting up the records in Windows Registry;
+For Stealer installation these permissions it is possible (but you must
+not use) to receive fraudulently, by the method of social engineering,
+or by having used a Metasploit package.
 
-  - The Admin Pack is enabled for public download on http and ftp
-    protocols.
-
-  - It is possible to canceled the changes of computer state and full
-    delete of all packets by mean of its own uninstallers.
-
-  - The program requires the right of the local administrator by the
-    operation.
-
-  - The program allows to hidden install packages on the infected
-    computer.
-
-  - The program allows to launch files on the remote computer. The
-    result of operation of these programs is transferred to “Master” on
-    FTP or HTTP protocol.
-
-# SYSTEM REQUIREMENTS
-
-  - The computer with Microsoft Windows 7 SP1 — Microsoft Windows 10 Pro
-    or Microsoft Windows Server 2008 R2 — 2016 to be installed.
-
-  - The account of a local administrator of a computer or a domain
-    administrator is present.
-
-  - Packages of the PowerShell 2.0, the console FTP client, the
-    systeminfo.exe shall be installed in system. These packets are
-    present at the specified systems initially, they shall not be
-    removed by the administrator at all.
-
-# NECESSARY ADDITIONAL PACKETS FOR OPERATION
-
-  - Chocolatey Package Manager.
-
-  - The modified version of the Elevation program.
-
-  - The registered version of the Hidden Start program.
-
-  - The duck program is a console client for synchronization of cloud
-    services.
-
-  - The installed sysinternals package from Chocolatey.
-
-  - The installed curl package from Chocolatey.
-
-  - The installed wget package from Chocolatey.
-
-The Exponenta program sets up them at once after the installation.
-
-These packets enter at Admin Pack, and will be set up anyway, even
-without installation of fighting modules of “malware”. This module is
-established and removed optionally. The Admin Pack installation for
-simplification of the administrator work without fighting module is
-possible, at the same time it will not be required to edit configuration
-files practically.
-
-All plug-ins to a stayler of Exponenta (full-functional Admin Packs) are
-downloaded and established in the c:1slave computer directory. Their
-installation from this folder can be made in the automatic mode or
-manually, by the administrator of the slave computer. Just in case the
-c:1 folder should have attribute “hidden” for all users.
-
-# INSTALLATION OF THE SOFTWARE
-
-Look at the INSTALL.MD file in the directory with ready Windows modules
-(only in Russian)
-
-# REMODULAR ASSEMBLY FOR INSTALLATION
+## REMODULAR ASSEMBLY FOR INSTALLATION
 
 Look at the appropriate README.MD files in directories with the initial
 modules (only in Russian).
 
-# IN ADDITION
+## IN ADDITION
+
+This program thought for simplification of initial setup of computers
+running on the Microsoft Windows and the GNU/Linux operating system
+(UBUNTU, Kali). Then the module of a stealer intended only for remote
+installation if the Admin Pack on «accountable computers» of the
+organization’s system administrator began to be written. The author
+warns about inadmissibility of criminal use of these programs and
+distribution of these programs in the compiled versions, including
+examples of distribution of these programs by methods of social
+engineering.
 
 Both the main modules of a stealer, and its plug-ins do not belong to
 malwares and potentially unwanted programs and therefore they are not

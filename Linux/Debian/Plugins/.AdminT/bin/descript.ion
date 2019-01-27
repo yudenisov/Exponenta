@@ -1,0 +1,4 @@
+.copy_systigervnc_kali_files.sh -- Копирование настроек TigerVNC Server для запуска в качестве службы (от имени пользователя root)\nВ
+.copy_tftpd-hpa_kali_files.sh -- копирование настроек ftpd-hpa.\nВ
+tftpd-hpa_adjust_kali.sh -- Настройка TFTP BSD сервера в Kali Linux с пониженными требованиями к безопасности файлов.\nВ
+tigervnc_adjust_kali.sh -- Настройка TigerVNC сервера в Kali Linux (установка, настройка пароля, настройка как сервиса. Запускать в Интерактивном режиме!)\nВ
