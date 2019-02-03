@@ -1,10 +1,10 @@
-000-index.txt -- оглавление проекта (этот файл)\ncontents of project (this file)\nВ
-Docs -- наброки к документации проекта\n- Documentation for packages (Draft)\n\nВ
-Files -- дополнительные файлы проекта (тестирование, развёртка серверного модуля и т.п.)\nAdditional Files for project (testing, elaborating server module)\nВ
-LICENSE.md -- Лицензионное соглашение для пакета\nLicense for project and its parts\nВ
-README.MD -- Файл описания пакета\nВ
-Windows -- Windows-версия Exponenta\nWindows Version of Exponenta\nВ
-descript.ion -- оглавление проекта (этот файл)\ncontents of project (this file)\nВ
-FEATURES.MD -- Файл с основными функциями проекта\nFile with main features of project\nВ
-WHATSNEWS.MD -- Файл с сосновными изменениями в проекте\nFile with main changes in project\nВ
-Linux -- Linux Versions of Exponenta\nВ
+000-index.txt -- оглавление проекта (этот файл)\n-- contents of project (this file)\nВ
+Docs -- наброки к документации проекта\nВ
+Files -- дополнительные файлы проекта (тестирование, развёртка серверного модуля и т.п.)\nВ
+Linux	-- Catalog with Linux Versions of Exponenta\nВ
+Windows -- Windows-версия стайлера Exponenta\nВ
+LICENSE.md	-- Лицензионное соглашение для пакета\n-- License for project and its parts\nВ
+README.MD	-- Файл описания пакета\nВ
+descript.ion	-- оглавление проекта (этот файл)\n-- contents of project (this file)\nВ
+FEATURES.MD	-- Файл с основными функциями проекта\n-- File with main features of project\nВ
+WHATSNEWS.MD	-- Файл с сосновными изменениями в проекте\n-- File with main changes in project\nВ

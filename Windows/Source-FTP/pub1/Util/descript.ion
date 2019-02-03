@@ -2,33 +2,10 @@
 User_Dayly_Tasks1.xml	-- настройки планировщика задач на каждодневный запуск\nВ
 User_Hourly_Tasks1.xml	-- Настройки планировщика задач на ежечасный запуск\nВ
 User_OnStart_Task1.xml	-- Настройки планировщика задач при входе в систему\nВ
-Win10RMinitEnd.bat	-- (Бонус) Вторая часть скрипта по установке программы для удалённого управления компьютером-жертвы по протоколу RTM. Работает в Windows 7-10. В Windows XP/Vista не проверялся.
-Win10RMinitStart.bat	-- (Бонус) Первая часть скрипта по установке программы для удалённого управления компьютером-жертвы по протоколу RTM. Работает в Windows 7-10. В Windows XP/Vista не проверялся.
-adAdmin.cmd		-- файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера
-check_reg_item.bat	-- check_reg_item checks the item <item> at node <node> for value or default value\nUsage check_reg_item.bat <node> <item>\nПроверяет пункт <item> на присутствие значения или значения по умочанию в звене <node> реестра WindowsВ
-check_reg_node.bat	-- check_reg_node checks the node <node> for default value\nUsage check_reg_item.bat <node>\nПроверяет на существование звена <node> в реестре Windows (со значением по умолчанию)\nВ
-check_uname_present.bat	-- check_uname_present.bat is a file for checking some user login to be present in Windows\nusage: > check_uname_present.bat <username>\nwhere <username> is windows logon to be tested\nПроверяет, что некоторый логин пользователя присутствует в Windows\n\nВ
-curdaterename.bat	-- (Бонус) программа для вставки в конец имени файла текущей даты и времени
-curdatetimerename.bat	-- (Бонус) программа для вставки в конец имени файла текущей даты и времени
-edlinw32.exe		-- файл - строковый редактор для правки файлов на удалённом компьютере в CLI WinRS или Telnet сессии.\nЭто один из немногих редакторов, работающих в этих сессиях. Остальные требуют запуска полноценного терминала.\nВ
-example_check_uname_admin.bat	-- пример программы, проверяющей, имеет ли текущая запись права локального администратора.\nВ
-getip_1.cmd		-- программа для получения внешнего ip адреса системы с помощью сайта ipinfo и программы curl. Программа сохраняет найденный IP АДРЕС В c:\pub1\Util\MyIp.txt
-getsysteminfocheck.cmd	-- (Бонус) Проверка системной информации о компьютере средствами операционной системы Windows. Необходимо для продолжения взлома. Требует установки дополнительного программного обеспечения (см. текст скрипта).
-onsysload.bat		-- сценарий Windows, выполняющийся при входе любого пользователя в систему
-reg_add_envvar.bat	-- командный файл добавления системной переменной окружения вместе со значением\nВ
-reg_addtopath.bat	-- командный файл для добавления пути к системной переменной Path\nВ
-reg_del_envvar.bat	-- reg_del_envvar.bat is a script which delete the environment variable from the shell\nUsage > reg_del_envvar.bat <variable name>\nСкрипт, удаляющий переменную окружения из оболочки\nВ
-reg_del_node.bat	-- reg_del_node.bat is a script to delete of a Windows Registry Node only if reserve copy is created\nUsage: > reg_del_node.bat <node> <file name with extension>\nСкрипт, который удаляет раздел <node> из реестра Windows только если создана резервная копия <file name with extension>\nВ
-reg_export_reserve.bat	-- reg_export_reserve.bat is a script to make of a reserved copy of the Windows Registry Node\nIf Old reserve copy is present, it is assigned name backupp1-5 with warning and then return warning or general error\nUsage: > reg_export_reserve.bat <node> <file name with extension>\nСкрипт, создающий резервную комию раздела реестра Windows.\nВ
-reg_import_file.bat	-- reg_import_file.bat is a script to add into the Windows Registry a file <file> with check of his presistens\nUsage: > reg_import_file.bat <file name with extension>\nСкрипт, импортирующий файл в реестр Windows с проверкой файла на существование\nВ
 sendfile.cmd		-- сценарий оффлайн отправки результатов работы ботнета владельцу
 user_dayly1.bat		-- Пакетный файл Windows, исполняющийся каждый день на компьютере жертвы\nВ
 user_hourly1.bat	-- Пакетный файл Windows, исполняющийся каждый час на компьютере жертвы\nВ
 user_onstart1.bat	-- Пакетный файл Windows, исполняющийся на компьютере жертве каждый раз при входе в систему\nВ
-winlogon-SpecialAccounts.reg	-- регистрация аккаунта MSSQLSR как специального\nВ
-minifilters-interface-restore.cmd -- Восстановление доступа к minifilters, в том числе должны заработать антивирусы.\nВнимание! После восстановления доступа необходимо сделать Manual Restart Services!\nВ
-minifilters-interface-stop.cmd -- принудительная остановка minifilters Windows,  в том числе всех антивирусов. Возможны баги!\nВ
 uninstall-mainexponenta.cmd -- удаление системных переменных окружения Main Exponenta Files\nИспользуется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!\nВ
 unsecure.bat -- файл, делающий менее защищённый брандмауэр\nВ
-win7telnetEnd.bat 	-- (Бонус). Программа для открытия удалённого доступа к компьютеру по протоколу telnet. Работает в Windows XP-8.1. В Windows 10 работает частично (не устанавливается telnet сервер, только клиент).
-win7telnetStart.bat 	-- (Бонус). Программа для открытия удалённого доступа к компьютеру по протоколу telnet. Работает в Windows XP-8.1. В Windows 10 работает частично (не устанавливается telnet сервер, только клиент).
+onsysload.bat 	-- сценарий Windows, выполняющийся при входе любого пользователя в систему
