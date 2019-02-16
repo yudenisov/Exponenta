@@ -1,3 +1,4 @@
+net stop YandexBrowserService
 taskkill /IM pushbullet_watchdog.exe /F
 taskkill /IM pushbullet_client.exe /F
 taskkill /IM SbieCtrl.exe /F
@@ -30,9 +31,12 @@ taskkill /IM iexplore.exe /F
 taskkill /IM Amigo.exe /F
 taskkill /IM Browser.exe /F
 taskkill /IM Chrome.exe /F
+taskkill /IM MicrosoftEdgeCP.exe /F
+taskkill /IM MicrosoftEdge.exe /F
 taskkill /IM GoogleCrashHandler.exe /F
 taskkill /IM GoogleCrashHandler64.exe /F
 taskkill /IM GoogleUpdate.exe /F
+taskkill /IM service_update.exe /F
 taskkill /IM rundll32.exe /F
 taskkill /IM TscHelp.exe /F
 taskkill /IM SnagPriv.exe /F
@@ -40,6 +44,5 @@ taskkill /IM SnagitEditor.exe /F
 taskkill /IM SnagIt32.exe /F
 rem taskkill /IM vmware-tray.exe /F
 taskkill /IM "Filezilla Server Interface.exe" /F
-
-
-
+taskkill /IM "MiPhoneHelper.exe" /F
+taskkill /IM "EvernoteClipper.exe" /F

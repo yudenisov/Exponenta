@@ -73,6 +73,11 @@ if not exist %Dest_DIR%\Util\InstallChocolateyPackets.bat goto pass_Chocolatey
 call %Dest_DIR%\Util\InstallChocolateyPackets.bat
 :pass_Chocolatey
 
+rem Unpack KMS_Tools_Portable
+if not exist %Dest_DIR%\Util\KMS-Portable-Unpack.bat goto pass_KMS
+call %Dest_DIR%\Util\KMS-Portable-Unpack.bat
+:pass_KMS
+
 rem Refresh Environment
 if not exist %Chocolatey%\Bin\RefreshEnv.cmd goto pass_Refresh
 call %Chocolatey%\Bin\RefreshEnv.cmd

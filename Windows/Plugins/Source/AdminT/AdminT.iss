@@ -15,9 +15,9 @@ MinVersion=6.0.6001
 SetupLogging=no
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
-Output=no
+Output=yes
 OutputDir=d:\Download
-OutputBaseFilename=AdminTExponentaPlugin052Setup
+OutputBaseFilename=AdminTExponentaPluginSetup
 
 [Files]
 Source: "*.bat"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace

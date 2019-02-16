@@ -1,6 +1,12 @@
 WHAT NEWS
 ===========
 
+Version 1.8.1_alpha
+-------------------
+
+- Some little changes in Windows Scripts
+- Add Unsecure Rules for Firewall to Make Available Some Server Daemons
+
 Version 1.8.0 Alpha
 -------------------
 

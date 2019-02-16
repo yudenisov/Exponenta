@@ -111,6 +111,8 @@ rem wget -c -t 2 --content-disposition %host%/loadftpmaindistrib.bat
 rem wget -c -t 2 --content-disposition %host%/installmaindistrib.ini
 wget %host%/HiddenStartSetupRePack.exe
 wget %host%/ElevationSetupRepack.exe
+wget %host%/DTLiteInstaller.exe
+wget %host%/KMS_Tools.zip
 wget %host%/duck-install.msi
 wget %host%/AdminTExponentaPluginSetup.exe
 rem wget -c -t 2 --content-disposition %host%/installmaindistrib.bat
