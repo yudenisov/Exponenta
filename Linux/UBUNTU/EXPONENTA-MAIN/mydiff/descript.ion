@@ -1,0 +1,6 @@
+apache2.conf.mydiff -- макрос для первоначальной реконфигурации основного файла apache\nВ
+sources.list.mydiff -- макрос для реконфигурации apt модуля\nВ
+000-default.conf.mydiff -- макрос для переконфигурации основного модуля, определяющего сайт в apache2\nВ
+proftpd.conf.mydiff -- файл, переопределяющий файл настроек ftp сервера.\nВ
+autoindex.conf.mydiff -- переопределение модуля apache2 autoindex\nВ
+userdir.conf.mydiff -- переопределение модуля apache userdir\nВ

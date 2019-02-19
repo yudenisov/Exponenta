@@ -1,0 +1,1 @@
+s/"	Options Indexes FollowSymLinks"/"#	Options Indexes FollowSymLinks\n	Options -Indexes +FollowSymLinks +Includes"/

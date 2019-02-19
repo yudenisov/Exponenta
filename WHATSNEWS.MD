@@ -1,6 +1,11 @@
 WHAT NEWS
 ===========
 
+Version 1.8.2_alpha
+-------------------
+
+- Create working packet of Exponenta for Linux Admin Pack
+
 Version 1.8.1_alpha
 -------------------
 

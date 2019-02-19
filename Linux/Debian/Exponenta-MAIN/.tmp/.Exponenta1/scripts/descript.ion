@@ -1,5 +1,0 @@
-del_userwebsite.sh -- удаление пользовательского веб-сайта\nВ
-new-apache.sh -- создание Apache сервера\nВ
-new-proftpd.sh -- создание ftp ервера\nВ
-new-ubuntuinit.sh -- скрипт, инициализирующий ubuntu (присутствует только в альфа-версии)\nВ
-new_userwebsite.sh -- создание пользовательскеого веб-сайта\nВ

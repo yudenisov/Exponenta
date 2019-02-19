@@ -17,7 +17,6 @@ Exponenta for Linux Admin Pack and Stealer
 
 Для установки стилера эти права можно получить обманным путём, методом социальной инженерии, или воспользовавшись пакетом Metasploit.
 
-For Stealer installation these permissions it is possible (but you must not use) to receive fraudulently, by the method of social engineering, or by having used a Metasploit package.
 
 ОСНОВНЫЕ ВОЗМОЖНОСТИ ПРОГРАММЫ
 -------------------------------------------------------------
