@@ -13,7 +13,7 @@ fi
 httppref=http 
 httphost=
 httpport=80
-httpMainFolder=ExponentaLinux
+httpMainFolder=ExponentaForLinux
 
 # Create Source Directories
 #echo "Creating Temproraries..."
@@ -43,7 +43,7 @@ Host=$httppref"://"$httphost":"$httpport"/"$httpMainFolder
 # Load Main Files
 # echo "Loading Exponenta1-Main-Install.tar.gz..."
 cd $LocalFolder
-curl $Host/Exponenta1-Main-Install.tar.gz  > /dev/null 2> /dev/null
+curl $Host/Exponenta1-Main-Install.tar.gz -o Exponenta1-Main-Install.tar.gz  > /dev/null 2> /dev/null
 
 # Extract Installation Files
 #

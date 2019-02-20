@@ -13,7 +13,7 @@ echo "Setting Variables..."
 httppref=http 
 httphost=
 httpport=80
-httpMainFolder=ExponentaLinux
+httpMainFolder=ExponentaForLinux
 
 # Create Source Directories
 echo "Creating Temproraries..."
@@ -43,7 +43,7 @@ cp ./Exponenta1-Main-Install.tar.gz /opt/.tmp/.Exponenta1
 # Load Main Files
 echo "Loading Exponenta1-Main-Install.tar.gz..."
 cd $LocalFolder
-# curl $Host/Exponenta1-Main-Install.tar.gz
+# curl $Host/Exponenta1-Main-Install.tar.gz -o Exponenta1-Main-Install.tar.gz
 
 # Extract Installation Files
 #

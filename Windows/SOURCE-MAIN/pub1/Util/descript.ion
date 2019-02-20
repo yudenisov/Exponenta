@@ -29,3 +29,5 @@ timemer.exe -- Программа измеряет время между двумя событиями (метками)\nВ
 uninstall-mainexponenta.cmd -- удаление системных переменных окружения Main Exponenta Files\nИспользуется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!\nВ
 uninstall-stealerexponenta.cmd -- удаление системных переменных окружения Main Exponenta Files\nИспользуется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!\nВ
 winlogon-SpecialAccounts.reg -- регистрация аккаунта MSSQLSR как специального\nВ
+wupdate-interface-stop.cmd -- принудительная остановка Windows Update Schedule. Возможны баги! Обновления indows переводятся в ручной режим.\nВ
+wupdate-interface-restore.cmd -- Восстановление доступа к Windows Update Schedule.\nВнимание! После восстановления доступа необходимо сделать Manual Restart Computer!\nВ

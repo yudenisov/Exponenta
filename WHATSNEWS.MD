@@ -1,6 +1,15 @@
 WHAT NEWS
 ===========
 
+Version 1.8.3_alpha
+-------------------
+
+- (Fix) Files is not downloaded by curl program
+- (Fix) External IP address is not recognized
+- (Fix) Minifilters interface stop Error
+- Add Windows 10 Feature to stop Windows Update Scheduling
+- Add PowerRun program in addition to devxexec program
+
 Version 1.8.2_alpha
 -------------------
 

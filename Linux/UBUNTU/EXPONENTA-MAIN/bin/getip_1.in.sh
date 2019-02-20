@@ -19,5 +19,6 @@ if [ -f $Exponenta1/bin/MyIP.external ]
 then
 	rm $Exponenta1/bin/MyIP.external
 fi
-curl http://ipinfo.io/ip > $Exponenta1/bin/MyIP.external
+# curl http://ipinfo.io/ip > $Exponenta1/bin/MyIP.external
+curl http://ident.me > $Exponenta1/bin/MyIP.external
 exit 0

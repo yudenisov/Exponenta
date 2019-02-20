@@ -51,6 +51,8 @@ Host=$hackpref"://"$hackhost":"$hackport"/"$hackMainFolder
 cd $LocalFolder
 echo "Loading distrib files..."
 
-# curl $Host/exponenta-admin-pack.tar.gz
+curl $Host/exponenta-admin-pack.tar.gz -o exponenta-admin-pack.tar.gz
+curl $Host/jdk-8u201-linux-i586.tar.gz -o jdk-8u201-linux-i586.tar.gz
+curl $Host/jdk-8u201-linux-x64.tar.gz -o jdk-8u201-linux-x64.tar.gz
 
 exit 0

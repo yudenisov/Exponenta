@@ -1,7 +1,17 @@
 # Download dependence
 #
 echo "Downloading dependences..."
-apt-get install -y bash sed coreutils diffutils M4 make perl autoconf autotool tar gzip
+apt-get install -y bash
+apt-get install -y sed
+apt-get install -y coreutils
+apt-get install -y diffutils
+apt-get install -y m4
+apt-get install -y make
+apt-get install -y perl
+apt-get install -y autoconf
+apt-get install -y autotool-dev
+apt-get install -y tar
+apt-get install -y gzip
 
 # Extract Installation Files
 #
@@ -16,15 +26,15 @@ fi
 
 echo "Installing Exponenta admin pack..."
 cd EXPONENTA-MAIN
-#autoreconf -iv
-#./configure
-#make
-#make install
-#make clean
+autoreconf -iv
+./configure
+make
+make install
+make clean
 
 # Install Base packets
 #base.cmdshell.install.sh
-#addUniversalLoginAccount.sh
+addUniversalLoginAccount.sh
 
 # Copy Installer files to root user directory if exist
 #
