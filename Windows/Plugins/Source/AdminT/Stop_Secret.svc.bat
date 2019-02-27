@@ -1,20 +1,20 @@
-net stop PimIndexMaintenanceSvc_14083b
-net stop UserDataSvc_14083b
-net stop UnistoreSvc_14083b
-net stop OneSyncSvc_14083b
-net stop CDPUserSvc_14083b
-net stop cbdhsvc_14083b
+net stop PimIndexMaintenanceSvc_12d2b4da
+net stop UserDataSvc_12d2b4da
+net stop UnistoreSvc_12d2b4da
+net stop OneSyncSvc_12d2b4da
+net stop CDPUserSvc_12d2b4da
+net stop cbdhsvc_12d2b4da
 net stop DoSvc
-net stop PrintWorkflow_14083b
-net stop MessagingService_14083b
-net stop DevicesFlowUserSvc_14083b
-net stop DevicePickerUserSvc_14083b
-net stop ConsentUXUserSvc_14083b
-net stop CaptureService_14083b
-net stop BlueToothUserService_14083b
-net stop BcastDVRUserService_14083b
+net stop PrintWorkflow_12d2b4da
+net stop MessagingService_12d2b4da
+net stop DevicesFlowUserSvc_12d2b4da
+net stop DevicePickerUserSvc_12d2b4da
+net stop ConsentUXUserSvc_12d2b4da
+net stop CaptureService_12d2b4da
+net stop BlueToothUserService_12d2b4da
+net stop BcastDVRUserService_12d2b4da
 net stop SshdBroker
-net stop WpnUserService_14083b
+net stop WpnUserService_12d2b4da
 net stop lfSvc
 taskkill /IM "CompatTelRunner.exe" /F
 taskkill /IM "RuntimeBroker.exe" /F

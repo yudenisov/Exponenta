@@ -4,7 +4,7 @@
 ; Exponenta Styler
 
 [Setup]
-AppName=Exponenta Style rMain Files
+AppName=Exponenta Stealer Main Files
 AppVersion=1.5.1
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
@@ -16,8 +16,8 @@ SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
 Output=yes
-OutputDir=d:\yudenisov\Distrib
-OutputBaseFilename=ExponentaFTPStylerMainFiles151SetupRePack
+OutputDir=d:\Download
+OutputBaseFilename=ExponentaFTPStealer
 
 [Dirs]
 Name: {app}\Util; Attribs: hidden; Permissions: everyone-full
@@ -25,8 +25,8 @@ Name: {app}\Util; Attribs: hidden; Permissions: everyone-full
 [Files]
 Source: "*.cmd"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.bat"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
-Source: "*.exe"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
-Source: "*.reg"; DestDir: "{app}\Util"; Attribs: hidden; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+;Source: "*.exe"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+;Source: "*.reg"; DestDir: "{app}\Util"; Attribs: hidden; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.xml"; DestDir: "{app}\Util"; Attribs: hidden; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: descript.ion; DestDir: "{app}\Util"; Attribs: hidden; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 ;Source: "*.md"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace

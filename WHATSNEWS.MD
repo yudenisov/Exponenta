@@ -1,6 +1,15 @@
 WHAT NEWS
 ===========
 
+Version 1.8.3.1_alpha
+---------------------
+
+- (Fix) Stealer does not receive the commands from server
+- (Fix) System Info Module doesn't work
+- Change The documentation
+- Add references to create host web server for stealer management
+- Some Little Improvements in Modules
+
 Version 1.8.3_alpha
 -------------------
 

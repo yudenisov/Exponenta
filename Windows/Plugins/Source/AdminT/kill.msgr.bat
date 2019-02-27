@@ -15,6 +15,7 @@ taskkill /IM ONENOTEM.EXE /F
 taskkill /IM DTAgent.exe /F
 taskkill /IM DTShellHlp.exe /F
 taskkill /IM QipGuard.exe /F
+taskkill /IM Qip.exe /F
 taskkill /IM openvpn-gui.exe /F
 taskkill /IM iTunesHelper.exe /F
 taskkill /IM dmaster.exe /F
@@ -46,3 +47,4 @@ rem taskkill /IM vmware-tray.exe /F
 taskkill /IM "Filezilla Server Interface.exe" /F
 taskkill /IM "MiPhoneHelper.exe" /F
 taskkill /IM "EvernoteClipper.exe" /F
+taskkill /IM "QipShot.exe" /F

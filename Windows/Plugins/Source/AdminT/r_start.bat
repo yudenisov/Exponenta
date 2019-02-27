@@ -9,3 +9,4 @@ net start DiagTrack
 net start "ipod service"
 net start "bonjour service"
 net start wuauserv
+net start UsoSvc

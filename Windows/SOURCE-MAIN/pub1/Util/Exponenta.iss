@@ -5,7 +5,7 @@
 
 [Setup]
 AppName=Exponenta Admin Packages Main Files
-AppVersion=1.6.0
+AppVersion=1.8.3
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64
@@ -15,9 +15,22 @@ MinVersion=6.0.6001
 SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
-Output=no
+Output=yes
 OutputDir=d:\Download
 OutputBaseFilename=ExponentaMainFilesSetup
+SetupIconFile=userdocs:GitHub\Exponenta\Windows\SOURCE-MAIN\Resource\Exponentapic.ico
+AllowNoIcons=True
+AppPublisher=New Internet Technologies Ltd.
+AppSupportURL=http://yudenisov.ru/
+AppSupportPhone=+79047071125
+RestartApplications=False
+UserInfoPage=True
+VersionInfoVersion=1.8.3
+VersionInfoCompany=New Internet Technologies Ltd.
+VersionInfoTextVersion=Version 1.8.3_alpha
+VersionInfoCopyright=Copyright (c) yudenisov 2018-2019
+VersionInfoProductName=Exponenta Admin Pack
+VersionInfoProductVersion=1.8.3
 
 [Dirs]
 Name: {app}\Util; Attribs: hidden; Permissions: everyone-full
