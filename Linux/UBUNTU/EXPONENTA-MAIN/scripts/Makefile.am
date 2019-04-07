@@ -1,6 +1,8 @@
-bin_SCRIPTS = new_userwebsite.sh new-apache.sh new-proftpd.sh del_userwebsite.sh
+packagedatadir = $(datadir)/@PACKAGE@
+packagedata_DATA = duck-repository.sources.list
+bin_SCRIPTS = new_userwebsite.sh new-apache.sh new-proftpd.sh del_userwebsite.sh duck-install.sh
 CLEANFILES = $(bin_SCRIPTS)
-EXTRA_DIST = new_userwebsite.in.sh new-apache.in.sh new-proftpd.in.sh del_userwebsite.in.sh 
+EXTRA_DIST = new_userwebsite.in.sh new-apache.in.sh new-proftpd.in.sh del_userwebsite.in.sh duck-install.in.sh
 
 
 do_subst = sed -e  's,[@]datadir[@],$(datadir),g' \
@@ -27,6 +29,12 @@ new-proftpd.sh : new-proftpd.in.sh
 	chmod g-w $@
 
 del_userwebsite.sh : del_userwebsite.in.sh
+	$(do_subst) < $(srcdir)/$< > $@
+	chmod +x $@
+	chmod o-w $@
+	chmod g-w $@
+
+duck-install.sh : duck-install.in.sh
 	$(do_subst) < $(srcdir)/$< > $@
 	chmod +x $@
 	chmod o-w $@

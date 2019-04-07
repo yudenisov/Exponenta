@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([Exponenta-Admin-Pack], [1.1.0_alpha], [yudenisov@mail.ru])
+AC_INIT([Exponenta-Admin-Pack], [1.2.0_alpha], [yudenisov@mail.ru])
 
 # Checks for programs.
 AC_PROG_INSTALL

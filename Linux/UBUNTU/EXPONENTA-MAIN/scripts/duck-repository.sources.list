@@ -1,0 +1,2 @@
+deb https://s3.amazonaws.com/repo.deb.cyberduck.io nightly main
+deb https://s3.amazonaws.com/repo.deb.cyberduck.io stable main

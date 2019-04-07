@@ -5,7 +5,7 @@
 
 [Setup]
 AppName=Exponenta Admin Packages Main Files
-AppVersion=1.8.3
+AppVersion=1.9.3.1
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64

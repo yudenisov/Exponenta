@@ -63,7 +63,17 @@ if not exist %Dest_DIR%\Util\ElevationInstall.bat goto pass_Elevation
 call %Dest_DIR%\Util\ElevationInstall.bat
 :pass_Elevation
 
-rem Install Elevation Plugin
+rem Install Utils...
+if not exist %Dest_DIR%\Util\UtilsInstall.bat goto pass_Util
+call %Dest_DIR%\Util\UtilsInstall.bat
+:pass_Util
+
+rem Install AdminSet01...
+if not exist %Dest_DIR%\Util\AdminSet01Install.bat goto pass_AdminSet01
+call %Dest_DIR%\Util\AdminSet01Install.bat
+:pass_AdminSet01
+
+rem Install AdminT Plugin
 if not exist %Dest_DIR%\Util\AdminTInstall.bat goto pass_AdminT
 call %Dest_DIR%\Util\AdminTInstall.bat
 :pass_AdminT

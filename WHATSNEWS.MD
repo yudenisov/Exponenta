@@ -1,6 +1,21 @@
 WHAT NEWS
 ===========
 
+Version 1.8.4.0_alpha
+---------------------------
+
+- (Add) New Scripts at Exponenta For Linux
+- (Delete) Some Unwanted Programs by Antivirus
+- Some Little Improvements
+
+Version 1.8.3.2_alpha
+---------------------
+
+- (Fix) Time to Start Stealer
+- (Fix) Don't sent the system information of the styler
+- (Fix) Remove Viruses From AdminT
+- Some Little Improvements in Modules
+
 Version 1.8.3.1_alpha
 ---------------------
 
@@ -9,6 +24,7 @@ Version 1.8.3.1_alpha
 - Change The documentation
 - Add references to create host web server for stealer management
 - Some Little Improvements in Modules
+- Add Resources (Icons) to Admin Pack
 
 Version 1.8.3_alpha
 -------------------

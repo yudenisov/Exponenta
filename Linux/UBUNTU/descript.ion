@@ -1,5 +1,5 @@
 EXPONENTA-DEST -- Каталог со скриптами для скрытой установки Админ-пака\nВ
 descript.ion -- Описание каталога (на русском языке)\nВ
 EXPONENTA-MAIN -- Каталог с основными файлами Админ-пака\nВ
-create-exponenta-admin-pack.sh -- Создание архивного файла дистрибутива для xponenta Admin Pack\nСозданный архив не забудьте скопировать в папку ./EXPONENTA-DEST/opt.tmp.Exponenta1\nВ
 create-exponenta-admin-pack.bat -- Создание архивного файла дистрибутива для xponenta Admin Pack\nСозданный архив не забудьте скопировать в папку ./EXPONENTA-DEST/opt.tmp.Exponenta1\nВ
+create-exponenta-admin-pack.sh -- Создание архивного файла дистрибутива для xponenta Admin Pack\nСозданный архив не забудьте скопировать в папку ./EXPONENTA-DEST/opt.tmp.Exponenta1\nВ

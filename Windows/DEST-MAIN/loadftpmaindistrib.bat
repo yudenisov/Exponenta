@@ -69,7 +69,6 @@ md %PUB1%\Distrib\plugins
 %SystemRoot%\System32\attrib.exe +H %PUB1%\Distrib
 %SystemRoot%\System32\attrib.exe +H %PUB1%\Distrib\plugins
 
-
 rem Go to Temprorary Directory
 cd /d %curdir%
 

@@ -3,19 +3,19 @@ rem net start cygserver
 net start VMwareHostd
 rem net start VisualSVNServer
 rem net start vdfssvc
-net start vsvnjobsvc
+rem net start vsvnjobsvc
 net start W3SVC
 rem net start WowzaStreamingEngine430
 rem net start WowzaStreamingEngineManager430
 net start "FileZilla Server"
 rem net start ftpsvc
 rem net start Tftpd32_svc
-net start stunnel
+rem net start stunnel
 rem net start postgresql-x64-9.6
 net start postgresql-x64-11
-rem net start IBG_gds_db
+net start IBG_gds_db
 net start mssql$sqlexpress
-rem net start MSSQLSERVER
+net start MSSQLSERVER
 net start SQLWriter
 net start SQLSERVERAGENT
 net start SQLBrowser
@@ -37,6 +37,6 @@ net start MySQL
 net start i2p
 net start tor
 net start TokenBroker
-rem net stop FDResPub
-rem net stop sshd
+rem net start FDResPub
+rem net start sshd
 

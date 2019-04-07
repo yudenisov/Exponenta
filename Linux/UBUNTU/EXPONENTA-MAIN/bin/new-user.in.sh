@@ -14,6 +14,8 @@
 # * -1 if wrong numbers of arguments
 # * 0 otherwise
 
+apt install -y whois
+
 # Check if script has no arguments $# == 0
 if [ $# -ne 2 ] 
 then

@@ -6,7 +6,6 @@ check_reg_node.bat -- check_reg_node checks the node <node> for default value\nU
 check_uname_present.bat -- check_uname_present.bat is a file for checking some user login to be present in Windows\nusage: > check_uname_present.bat <username>\nwhere <username> is windows logon to be tested\nПроверяет, что некоторый логин пользователя присутствует в Windows\n\nВ
 chock.install.cmd -- Инсталлятор менеджера пакетов Chocolatey\nВ
 choc_pack.install.cmd -- Пакетный файл для инсталляции программ через менеджер пакетов Chocolatey\nВ
-cmdow.exe -- Программа для управления окнами и запуском оконных приложений (в том числе экрана консоли) смотри список параметров с опцией /?\nВ
 curdaterename.bat -- (Бонус) программа для вставки в конец имени файла текущей даты и времени
 curdatetimerename.bat -- (Бонус) программа для вставки в конец имени файла текущей даты и времени
 datetimemsec.exe -- Данная команда делает отметку текущего времени, с разделителем или без\nВ

