@@ -5,19 +5,34 @@
 
 [Setup]
 AppName=AdminT Exponenta Plugin
-AppVersion=0.5.3
+AppVersion=0.5.4
 AllowRootDirectory=yes
-AllowCancelDuringInstall=yes
+AllowCancelDuringInstall=False
 ArchitecturesAllowed=x86 x64
 Compression=lzma2/max
 DefaultDirName={%Elevation|c:\Elevation}
-MinVersion=6.0.6001
-SetupLogging=no
+MinVersion=0,5.01.2600sp3
+SetupLogging=True
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
 Output=yes
 OutputDir=d:\Download
 OutputBaseFilename=AdminTExponentaPluginSetup
+AppCopyright=Copyright (c) yudenisov 2018-2019
+LicenseFile=..\..\..\..\LICENSE.md
+RestartIfNeededByRun=False
+SetupIconFile=..\..\..\SOURCE-MAIN\Resource\Exponentapic.ico
+AppPublisher=New Internet Technologies Ltd.
+AppPublisherURL=http://anticriminalonline.ru/
+AppSupportURL=http://yudenisov.ru/
+AppContact=yudenisov@mail.ru
+AppSupportPhone=+79047071125
+UserInfoPage=True
+VersionInfoVersion=0.5.4
+VersionInfoCompany=New Internet Technologies Ltd.
+VersionInfoCopyright=Copyright (c) Yuri A. Denisov, 2018-2019
+VersionInfoProductName=AdminT Exponenta Plugin
+SolidCompression=True
 
 [Files]
 Source: "*.bat"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
@@ -36,7 +51,4 @@ Source: "*.url"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uni
 ;Source: "*.md"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 
 [Registry]
-
-Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; Flags: deletevalue noerror uninsdeletevalue; ValueType: string; ValueName: "AdminT"; ValueData: "{app}"
-Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; Flags: noerror; ValueType: string; ValueName: "PATH"; ValueData: "{olddata};{app}"
-
+Root: "HKLM"; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; ValueType: string; ValueName: "AdminT"; ValueData: "{app}"; Flags: deletevalue noerror uninsdeletevalue

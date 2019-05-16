@@ -13,5 +13,5 @@ rem %SystemRoot%\System32\chcp.exe 1251
 %SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\"Domain Administrators" /add
 %SystemRoot%\System32\net.exe localgroup Администраторы %DomainUser%\MSSQLSR /add
 %SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\MSSQLSR /add
-call reg_import_file.bat winlogon-SpecialAccounts.reg
+call %PUB1%\Util\reg_import_file.bat %PUB1%\Util\winlogon-SpecialAccounts.reg
 %SystemRoot%\System32\chcp.exe 866

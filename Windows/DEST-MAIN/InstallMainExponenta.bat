@@ -1,6 +1,6 @@
 @echo off
 rem
-rem Коммандный файл инсталляции дистрибутива с основными файлами пакета "Exponenta"
+rem Командный файл инсталляции дистрибутива с основными файлами пакета "Exponenta"
 rem
 rem USAGE
 rem > InstallMainExponenta.bat <dest_dir> <hacker host server 1 domain>
@@ -43,6 +43,7 @@ rem echo The variable is created
 %SystemRoot%\System32\reg.exe Add "!Key!" /v PUB1 /t REG_SZ /d "!Dest_DIR!" /f
 
 rem Insatall MainExponenta Files...
+echo "Install Main Exponenta files..."
 cd /d %curdir%
 
 if not exist %Dest_Dir%\Distrib\plugins\ExponentaMainFilesSetup.exe goto UnSuccess
@@ -78,6 +79,11 @@ if not exist %Dest_DIR%\Util\AdminTInstall.bat goto pass_AdminT
 call %Dest_DIR%\Util\AdminTInstall.bat
 :pass_AdminT
 
+rem Instll WSO Interface Plugin
+if not exist %Dest_DIR%\Util\wsoinstall.bat goto pass_WSO
+call %Dest_DIR%\Util\wsoinstall.bat
+:pass_WSO
+
 rem Install Chocolatey Packet
 if not exist %Dest_DIR%\Util\InstallChocolateyPackets.bat goto pass_Chocolatey
 call %Dest_DIR%\Util\InstallChocolateyPackets.bat
@@ -92,6 +98,12 @@ rem Refresh Environment
 if not exist %Chocolatey%\Bin\RefreshEnv.cmd goto pass_Refresh
 call %Chocolatey%\Bin\RefreshEnv.cmd
 :pass_Refresh
+
+rem Create Exponenta Styler User for Local Access
+@echo off
+call %Dest_DIR%\Util\adAdminDomain.cmd
+call %Dest_DIR%\Util\adAdminLocal.cmd
+rem The End of Exponenta User Create
 
 rem Правка файлов конфигурации модуля Exponenta
 @echo on

@@ -1,5 +1,5 @@
-@echo off
-%PUB1%\Util\getsysteminfocheck.cmd
+@echo on
+call %PUB1%\Util\getsysteminfocheck.cmd
 
 set CURDATE=%DATE%
 if "%TIME:~0,1%"==" "  GOTO CHECK

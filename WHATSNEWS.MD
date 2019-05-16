@@ -1,6 +1,20 @@
 WHAT NEWS
 ===========
 
+Version 1.8.5.0_alpha
+----------------------------
+
+- (Add) Clean old files before update Expoinenta for Windows
+- (Add) Update Modules for Windows XP/Windows 2003
+- (Add) Modules For Simple Chocolatey Installation
+- (Fix) Change Compression Method for Avast Free Antivirus
+- (Add) Copyright information for Legal Purples
+- (Add) Now Some Modules is Installed at Windows XP SP3
+- (Add) Distribution at SVN Server
+- (Add) Meterpreter Backdoor Service in Stealer (not Tested)
+- (Add) Threads Installer in Stealer (not Tested)
+- Rewrite SendFile for Stealer
+
 Version 1.8.4.0_alpha
 ---------------------------
 

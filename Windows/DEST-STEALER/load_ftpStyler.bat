@@ -96,8 +96,10 @@ rem Маска для файлов
 rem set ftpFileMask=*
 rem Локальный каталог
 set LocalFolderZ=%PUB1%\Distrib\Zlovred
- 
- 
+
+rem Delete old versions of the files in catalog C:\pub1\Distrib\plugins
+del /Q /F %LocalFolderZ%\*.*
+
 ::Генерируем файл FTP команд
 > %CommFTP% (
   echo open %host% %ftpport%
@@ -124,7 +126,7 @@ del /f /q %CommFTP%
 
 rem Копируем wget и запускаем установку в каталоге %LocalFolder%
 copy wget.exe %LocalFolderZ%\wget.exe
-copy ExponentaInstallerFtpHidden.exe %LocalFolderZ%\ExponentaInstallerFtpHidden.exe
+rem copy ExponentaInstallerFtpHidden.exe %LocalFolderZ%\ExponentaInstallerFtpHidden.exe
 copy install_Styler.ini %LocalFolderZ%\
 copy installFTP_Stylerdistrib.bat %LocalFolderZ%\
 copy Install_StylerFTP.bat %LocalFolderZ%\

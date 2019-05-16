@@ -21,6 +21,11 @@ call :read_settings %~dp0\installmaindistrib.ini || exit /b 1
 rem Go to Temprorary Directory
 cd /d %curdir%
 
+rem Run PreChocoInstall.bat
+if not exist %LocalFolder%\prechocoinstall.bat goto pass_PreCHInstall
+call %LocalFolder%\prechocoinstall.bat
+:pass_PreCHInstall
+
 rem Запускаем инсталлятор стайлера "Экспонента"
 call InstallMainExponenta.bat %PUB1% %Hacker_host1%
 cd /d %curdir%

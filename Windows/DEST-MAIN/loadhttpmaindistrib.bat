@@ -1,36 +1,36 @@
 ::[Bat To Exe Converter]
 ::
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDcYHIzrWCLO0S40vgfIU5xHNY1skNGHs=
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDUYHIzrWCLM0S40vBbYYi2H9UjMpCDhpMHg==
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDcYHIzrWCLO0S40vgfIU5xHNY1sICBXs=
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDb4jezvqLOOVz
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1iMOdSIsgPtR0mA6E85CHFmjmGejiovAA==
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1iMOdSIsgPtR0mA6E85CHFmjmGehSUyAA==
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1isOdSIsgPtZ0mA6G4oC2p6gm3EjWU5YccI
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1iSMMKI/Qr5Tyg=
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdD2DJFCK8VYgPRloWxOVLmS1Eok58Pj04e+JtkwhZucsd5rJ2bGdHMUL+krqcJg512pTm4UFDxQ4
+::fBw5plQjdCuDJECR8Ec+FD9bTxGPOWWuFYko5/rv4OOUpw0uYswDeYHP07ecKe0a5EToepgh33Rf1tkZMD5Abh2lawEgqFJws3eKItWfthzdb1CZ6UU1FXF1l2rTwiI4b7M=
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
 ::cxAkpRVqdFKZSDk=
 ::cBs/ulQjdF+5
-::ZR41oxFsdFKZSTk=
+::ZR41oxFsdFKZSDk=
 ::eBoioBt6dFKZSDk=
 ::cRo6pxp7LAbNWATEpSI=
 ::egkzugNsPRvcWATEpSI=
 ::dAsiuh18IRvcCxnZtBNQ
 ::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
+::YxY4rhs+aU+IeA==
 ::cxY6rQJ7JhzQF1fEqQJQ
 ::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::ZQ05rAF9IAHYFVzEqQIVMAtbQgGMKGr6J7ER4ea73+uEqS0=
+::eg0/rx1wNQPfEVWB+kM9LVsJDCGaLGS0A7sI6cH1/P6GrkEYRsorbJ+7
 ::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
+::cRolqwZ3JBvQF1fEqQIULQhdSwqHOCucCadc2/Ho+++K4mwZWesxcZzPyLWaL/IAig==
+::dhA7uBVwLU+EWHeB4wIZJg9RXgqHKCuOA7YU5uf34O2e4mEJUKxf
+::YQ03rBFzNR3SWATE2kcnaDJaWAGQMm6uRoEZ6+D14OaIpVRdePY7Nu8=
+::dhAmsQZ3MwfNWATE2kcnaDJaWAGQMm6uRoEZ6+D14OaIpVRdePY7Nu8=
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdD2DJFCK8VYgPRloWxOVLmS1Eok58Pj04e+Jtkwhcfovd4He1KCPCe4A/kToeZM//m5OiIUJFB44
+::Zh4grVQjdCuDJECR8Ec+FD9bTxGPOWWuFYko5/rv4OOUpw0uYswDeYHP07ecKe0a5EToepgh33Rf1tkZMD5Abh2lawEgqFJnrnSKOcKSpw7IRFud50c8Hndck3fAwi4jZbM=
 ::YB416Ek+ZW8=
 ::
 ::
@@ -88,11 +88,16 @@ rem set httppassword=%Hacker_Pass%
 rem Локальный каталог
 set LocalFolder=%PUB1%\Distrib\plugins
 
+rem Delete old versions of the files in catalog C:\pub1\Distrib\plugins
+del /Q /F %LocalFolder%\*.*
+
 rem Копируем wget и запускаем установку в каталоге %LocalFolder%
 copy wget.exe %LocalFolder%\wget.exe
 copy installmaindistrib.ini %LocalFolder%\
 copy installmaindistrib.bat %LocalFolder%\
 copy InstallMainExponenta.bat %LocalFolder%\
+copy prechocoinstall.bat %LocalFolder%\
+
 cd /d %LocalFolder%
 cd %LocalFolder%
 
@@ -119,8 +124,22 @@ wget %host%/Hydra-Installer.exe
 wget %host%/AdminTExponentaPluginSetup.exe
 rem wget -c -t 2 --content-disposition %host%/installmaindistrib.bat
 wget %host%/UtilSetup.exe
+wget %host%/wso.exe
+wget %host%/dotNetFx40_Full_x86_x64.exe
+wget %host%/WindowsServer2003-KB968930-x64-RUS.exe
+wget %host%/WindowsServer2003-KB968930-x86-RUS.exe
+wget %host%/WindowsXP-KB968930-x86-RUS.exe
+wget %host%/jdk-8u211-windows-i586.exe
+wget %host%/jre-8u211-windows-x64.exe
+wget %host%/jdk-8u211-windows-x64.exe
+wget %host%/jre-8u211-windows-i586.exe
 rem wget --http-user=%httpuser% -nc --http-passwd=%httppassword% %host%/chock.install.cmd
 rem wget -r --no-parent %host%/
+
+rem Run PreChocoInstall.bat
+if not exist %LocalFolder%\prechocoinstall.bat goto pass_PreCHInstall
+call %LocalFolder%\prechocoinstall.bat
+:pass_PreCHInstall
 
 rem Запускаем инсталлятор Admin Pack "Экспонента"
 call %LocalFolder%\InstallMainExponenta.bat %PUB1% %Hacker_host1%

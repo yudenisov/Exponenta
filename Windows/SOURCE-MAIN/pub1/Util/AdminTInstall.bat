@@ -1,6 +1,6 @@
-rem Install Elevation Plugin
+rem Install AdminT Plugin
 if not exist %PUB1%\Distrib\plugins\AdminTExponentaPluginSetup.exe goto pass_AdminT
-echo "Install Elevation Plugin..."
+echo "Install AdminT Plugin..."
 %PUB1%\Distrib\plugins\AdminTExponentaPluginSetup.exe /VERYSILENT /NOCANCEL 
 :pass_AdminT
 

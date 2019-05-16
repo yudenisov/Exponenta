@@ -1,5 +1,5 @@
 @echo off
-%PUB1%\Util\getGoogleChrome_UsersProfile.cmd %1
+call %PUB1%\Util\getGoogleChrome_UsersProfile.cmd %1
 
 rem Определяем переменные:
 rem Основная папка

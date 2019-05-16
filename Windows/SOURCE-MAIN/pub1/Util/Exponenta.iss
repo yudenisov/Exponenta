@@ -5,32 +5,37 @@
 
 [Setup]
 AppName=Exponenta Admin Packages Main Files
-AppVersion=1.9.3.1
+AppVersion=1.8.5.0
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64
 Compression=lzma2/max
 DefaultDirName={%PUB1|c:\pub1}
-MinVersion=6.0.6001
+MinVersion=0,5.01.2600sp3
 SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
 Output=yes
 OutputDir=d:\Download
 OutputBaseFilename=ExponentaMainFilesSetup
-SetupIconFile=userdocs:GitHub\Exponenta\Windows\SOURCE-MAIN\Resource\Exponentapic.ico
+SetupIconFile=..\..\Resource\Exponentapic.ico
 AllowNoIcons=True
 AppPublisher=New Internet Technologies Ltd.
 AppSupportURL=http://yudenisov.ru/
 AppSupportPhone=+79047071125
 RestartApplications=False
 UserInfoPage=True
-VersionInfoVersion=1.8.3
+VersionInfoVersion=1.8.5.0
 VersionInfoCompany=New Internet Technologies Ltd.
-VersionInfoTextVersion=Version 1.8.3_alpha
+VersionInfoTextVersion=Version 1.8.5.0_alpha
 VersionInfoCopyright=Copyright (c) yudenisov 2018-2019
 VersionInfoProductName=Exponenta Admin Pack
-VersionInfoProductVersion=1.8.3
+VersionInfoProductVersion=1.8.5.0
+AppPublisherURL=http://anticriminalonline.ru/
+AppContact=yudenisov@mail.ru
+SolidCompression=True
+LicenseFile=..\..\..\..\LICENSE.md
+AppCopyright=Copyright (c) Yuri A. Denisov 2018-2019
 
 [Dirs]
 Name: {app}\Util; Attribs: hidden; Permissions: everyone-full

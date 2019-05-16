@@ -35,7 +35,7 @@ set SubFolder1=
 rem Маска для файлов
 set fileMask=*
 rem Локальный каталог
-set LocalFolder=%PUB1%\Util
+set LocalFolderU=%PUB1%\Util
  
  
 ::Генерируем файл FTP команд
@@ -46,7 +46,7 @@ set LocalFolder=%PUB1%\Util
   echo binary
   echo prompt
   echo hash
-  echo lcd "%LocalFolder%"
+  echo lcd "%LocalFolderU%"
   if "%Mainfolder%" neq "" echo cd "%Mainfolder%"
   if "%SubFolder%" neq "" echo cd "%SubFolder%"
   if "%SubFolder1%" neq "" echo cd "%SubFolder1%"
@@ -62,8 +62,6 @@ ftp.exe -s:%CommFTP%
 ::Удаляем пакетник
 del /f /q %CommFTP%
 
-REM Получаем внешний IP адрес маршрутизатора
-call "%PUB1%\Util\getip_1.cmd"
 REM !!! Конец обязательной части 1 !!!
 REM Обязательная часть 2. Сюда можно вставлять произвольные пользовательские программы
 

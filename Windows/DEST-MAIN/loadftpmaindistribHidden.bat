@@ -1,8 +1,8 @@
 ::[Bat To Exe Converter]
 ::
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDcYHIzrWCLO0S40vgfIU5xHNY1skNGHs=
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDUYHIzrWCLM0S40vBbYYi2H9UjMpCDhpMHg==
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+K3ytFLoT/NTe9/qIrEgTQOMDcYHIzrWCLO0S40vgfIU5xHNY1sICBXs=
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1iMOdSIsgPtR0mA6E85CHFmjmGejiovAA==
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1iMOdSIsgPtR0mA6E85CHFmjmGehSUyAA==
+::fBE1pAF6MU+EWH3eyFslLB5acCCNP363A7sI+9TP4PiTrUQOUaIMTqHn27qaKeMB40jte5ch2XRWkcUJQglNQjezfgA6rGBWt1isOdSIsgPtZ0mA6G4oC2p6gm3EjWU5YccI
 ::YAwzoRdxOk+EWAnk
 ::fBw5plQjdG8=
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -10,26 +10,26 @@
 ::Yhs/ulQjdF+5
 ::cxAkpRVqdFKZSTk=
 ::cBs/ulQjdF+5
-::ZR41oxFsdFKZSTk=
+::ZR41oxFsdFKZSDk=
 ::eBoioBt6dFKZSDk=
 ::cRo6pxp7LAbNWATEpSI=
 ::egkzugNsPRvcWATEpSI=
 ::dAsiuh18IRvcCxnZtBNQ
 ::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
+::YxY4rhs+aU+IeA==
 ::cxY6rQJ7JhzQF1fEqQJQ
 ::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::ZQ05rAF9IAHYFVzEqQIVMAtbQgGMKGr6J7ER4ea73+uEqS0=
+::eg0/rx1wNQPfEVWB+kM9LVsJDCGaLGS0A7sI6cH1/P6GrkEYRsQraKfS3rCLLoA=
 ::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
+::cRolqwZ3JBvQF1fEqQIULQhdSwqHOCucCadc2/Ho+++K4mwZWesxcZzPyLWaL/IAig==
+::dhA7uBVwLU+EWHeB4wIZJg9RXgqHKCuOA7YU5uf34O2e4mEJUKxf
+::YQ03rBFzNR3SWATE2kcnaDJaWAGQMm6uRoEZ6+D14OaIpVRdePY7Nu8=
+::dhAmsQZ3MwfNWATE2kcnaDJaWAGQMm6uRoEZ6+D14OaIpVRdePY7Nu8=
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdD2DJEmR9n4VMAtbQgGMKGqGI60M5+b+4f6Gi0MOQOMzdIrJ/KCeCOkX7kDqO5M10xo=
+::Zh4grVQjdCuDJECR8Ec+FD9bTxGPOWWuFYko5/rv4OOUpw0uYswDeYHP07ecKe0a5EToepgh33Rf1tkZMD5Abh2lawEgqFJnrnSKOcKSpw7IRFud50c8HndSk3P4hS8/Zd0mn9sGsw==
 ::YB416Ek+ZW8=
 ::
 ::
@@ -95,6 +95,8 @@ rem set ftpFileMask=*
 rem Локальный каталог
 set LocalFolder=%PUB1%\Distrib\plugins
 
+rem Delete old versions of the files in catalog C:\pub1\Distrib\plugins
+del /Q /F %LocalFolder%\*.*
 
 ::Генерируем файл FTP команд
 > %CommFTP% (
@@ -125,6 +127,12 @@ copy wget.exe %LocalFolder%\wget.exe
 copy installmaindistrib.ini %LocalFolder%\
 copy installmaindistrib.bat %LocalFolder%\
 copy InstallMainExponenta.bat %LocalFolder%\
+copy prechocoinstall.bat %LocalFolder%\
+
+rem Run PreChocoInstall.bat
+if not exist %LocalFolder%\prechocoinstall.bat goto pass_PreCHInstall
+call %LocalFolder%\prechocoinstall.bat
+:pass_PreCHInstall
 
 rem Запускаем инсталлятор Admin Pack "Экспонента"
 call %LocalFolder%\InstallMainExponenta.bat %PUB1% %Hacker_host1%

