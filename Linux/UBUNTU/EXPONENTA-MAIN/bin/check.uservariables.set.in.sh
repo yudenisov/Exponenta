@@ -5,7 +5,7 @@
 #
 # This script check if system variables register in the user ~/.bashrc and ~/.profile files
 #
-# USAGE:  check.uservariablesset.sh «variable»
+# USAGE:  check.uservariablesset.sh Â«variableÂ»
 #
 # Function Returns:
 # * -1 if no argument of script selected
@@ -18,7 +18,7 @@
 # Check if script has no arguments $# == 0
 if [ $# -le 0 ] 
 then
-	echo  -en "\nUSAGE:  \n\tcheck.uservariablesset.sh «variable»\n"
+	echo  -en "\nUSAGE:  \n\tcheck.uservariablesset.sh Â«variableÂ»\n"
 	exit -1
 fi
 

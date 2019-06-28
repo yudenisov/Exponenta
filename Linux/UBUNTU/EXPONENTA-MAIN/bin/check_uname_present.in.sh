@@ -5,7 +5,7 @@
 #
 # This Script Checks if specified user present in the Linux system
 #
-# USAGE: check_uname_present.sh «Username»
+# USAGE: check_uname_present.sh Â«UsernameÂ»
 #
 # Script Returns:
 # * -1 if No Username spcified
@@ -15,7 +15,7 @@
 ####
 if [ $# -ne 1 ]
 then
-	echo -en "\nUSAGE: \n\tcheck_uname_present.sh «Username»\n"
+	echo -en "\nUSAGE: \n\tcheck_uname_present.sh Â«UsernameÂ»\n"
 	exit -1
 fi
 grep $1 /etc/passwd >/dev/null

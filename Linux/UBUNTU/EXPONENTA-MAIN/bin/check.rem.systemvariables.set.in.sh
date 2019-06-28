@@ -5,7 +5,7 @@
 #
 # This script check if system variables register in the system /etc/profile and /etc/profile.d/* files
 #
-# USAGE:  check.rem.systemvariables.set.sh «variable»
+# USAGE:  check.rem.systemvariables.set.sh Â«variableÂ»
 #
 # Function Returns:
 # * -1 if no argument of script selected
@@ -18,7 +18,7 @@
 # Check if script has no arguments $# == 0
 if [ $# -le 0 ] 
 then
-	echo -en "\nUSAGE:  \n\tcheck.rem.systemvariables.set.sh «variable»\n"
+	echo -en "\nUSAGE:  \n\tcheck.rem.systemvariables.set.sh Â«variableÂ»\n"
 	exit -1
 fi
 

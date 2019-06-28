@@ -11,6 +11,7 @@ net stop SQLWriter
 net stop mssql$sqlexpress
 net stop MSSQLSERVER
 rem net stop postgresql-x64-9.6
+net stop postgresql-10
 net stop postgresql-x64-11
 net stop IBG_gds_db
 net stop W3SVC
@@ -36,6 +37,12 @@ rem net stop cygserver
 net stop i2p
 net stop tor
 net stop TokenBroker
+net stop "ProtonVPN Service"
+rem Windows 7 Specific
+net stop WMPNetworkSvc
+net stop IISADMIN
+net stop upnphost
+net stop msdts
 rem net stop FDResPub
 rem net stop sshd
 rem cscript c:\Elevation\asf_close.vbs //NoLogo

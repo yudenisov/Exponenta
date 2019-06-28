@@ -12,6 +12,7 @@ rem net start ftpsvc
 rem net start Tftpd32_svc
 rem net start stunnel
 rem net start postgresql-x64-9.6
+net start postgresql-10
 net start postgresql-x64-11
 net start IBG_gds_db
 net start mssql$sqlexpress
@@ -37,6 +38,11 @@ net start MySQL
 net start i2p
 net start tor
 net start TokenBroker
+net start "ProtonVPN Service"
+rem Windows 7 Specific
+rem net start WMPNetworkSvc
+net start IISADMIN
+rem net start upnphost
+net start msdts
 rem net start FDResPub
-rem net start sshd
 

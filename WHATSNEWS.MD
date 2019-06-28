@@ -1,6 +1,13 @@
 WHAT NEWS
 ===========
 
+Version 2.0.0.0_alpha
+---------------------
+
+- (Modify) Installer of Admin Pack. Now Plugins Installer is not Part of Exponenta Admin Pack Installer
+- Clean OLd Data and Documentation
+- Change Directory Structure in Distributive
+
 Version 1.8.5.0_alpha
 ----------------------------
 

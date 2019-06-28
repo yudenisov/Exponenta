@@ -3,7 +3,7 @@
 #
 # delUniversalLoginAccoont.sh
 #
-# This Script remove local admin user with login «MSSQLSR» and password «Admin01234» from system
+# This Script remove local admin user with login Â«MSSQLSRÂ» and password Â«Admin01234Â» from system
 #
 # The Script returns:
 # * 2 if general ERROR occur when running the script

@@ -5,7 +5,7 @@
 #
 # This script deletes the specified user from the sudo group
 #
-# USAGE:  deluser.sudo.sh «user»
+# USAGE:  deluser.sudo.sh Â«userÂ»
 #
 # Function Returns:
 # * -1 if no argument of script selected
@@ -18,7 +18,7 @@
 # Check if script has no arguments $# == 0
 if [ $# -le 0 ] 
 then
-	echo -en "\nUSAGE:  \n\tdeluser.sudo.sh «user»\n"
+	echo -en "\nUSAGE:  \n\tdeluser.sudo.sh Â«userÂ»\n"
 	exit -1
 fi
 
