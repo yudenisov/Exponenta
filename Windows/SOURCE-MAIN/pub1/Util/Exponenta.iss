@@ -5,7 +5,7 @@
 
 [Setup]
 AppName=Exponenta Admin Packages Main Files
-AppVersion=1.8.5.0
+AppVersion=2.0.0.0
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64
@@ -25,12 +25,12 @@ AppSupportURL=http://yudenisov.ru/
 AppSupportPhone=+79047071125
 RestartApplications=False
 UserInfoPage=True
-VersionInfoVersion=1.8.5.0
+VersionInfoVersion=2.0.0.0
 VersionInfoCompany=New Internet Technologies Ltd.
-VersionInfoTextVersion=Version 1.8.5.0_alpha
+VersionInfoTextVersion=Version 2.0.0.0_alpha
 VersionInfoCopyright=Copyright (c) yudenisov 2018-2019
 VersionInfoProductName=Exponenta Admin Pack
-VersionInfoProductVersion=1.8.5.0
+VersionInfoProductVersion=2.0.0.0
 AppPublisherURL=http://anticriminalonline.ru/
 AppContact=yudenisov@mail.ru
 SolidCompression=True

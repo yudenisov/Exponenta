@@ -4,8 +4,8 @@
 ; Exponenta Styler
 
 [Setup]
-AppName=Exponenta Stealer Main Files
-AppVersion=1.6.4.1
+AppName=SRV-POL Main Files
+AppVersion=1.6.4.2
 AllowRootDirectory=yes
 AllowCancelDuringInstall=yes
 ArchitecturesAllowed=x86 x64
@@ -17,9 +17,9 @@ UsePreviousAppDir=yes
 DisableStartupPrompt=yes
 Output=yes
 OutputDir=d:\Download
-OutputBaseFilename=ExponentaHTTPStealer
+OutputBaseFilename=SRVPOLHTTP
 RestartIfNeededByRun=False
-VersionInfoVersion=1.6.4.1
+VersionInfoVersion=1.6.4.2
 SolidCompression=True
 
 [Dirs]

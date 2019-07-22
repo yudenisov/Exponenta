@@ -6,6 +6,7 @@ net stop named
 net stop WowzaStreamingEngineManager430
 net stop WowzaStreamingEngine430
 net stop SQLSERVERAGENT
+net stop SQLAGENT$SQLEXPRESS
 net stop SQLBrowser
 net stop SQLWriter
 net stop mssql$sqlexpress
@@ -30,7 +31,9 @@ rem net stop php_cgi_2005
 rem net stop php_cgi_2006
 rem net stop php_cgi_2007
 rem net stop VMwareHostd
-net stop nginx
+rem net stop nginx
+net stop nginx-service
+net stop php
 net stop MySQL
 rem net stop MySQL57
 rem net stop cygserver

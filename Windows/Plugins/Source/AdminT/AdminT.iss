@@ -5,7 +5,7 @@
 
 [Setup]
 AppName=AdminT Exponenta Plugin
-AppVersion=0.5.4
+AppVersion=0.5.5
 AllowRootDirectory=yes
 AllowCancelDuringInstall=False
 ArchitecturesAllowed=x86 x64
@@ -28,8 +28,8 @@ AppSupportURL=http://yudenisov.ru/
 AppContact=yudenisov@mail.ru
 AppSupportPhone=+79047071125
 UserInfoPage=True
-VersionInfoVersion=0.5.4
-VersionInfoCompany=New Internet Technologies Ltd.
+VersionInfoVersion=0.5.5
+VersionInfoCompany=New Internet Technologies Inc.
 VersionInfoCopyright=Copyright (c) Yuri A. Denisov, 2018-2019
 VersionInfoProductName=AdminT Exponenta Plugin
 SolidCompression=True

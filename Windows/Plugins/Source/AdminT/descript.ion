@@ -46,3 +46,5 @@ telnet_start.cmd -- программа запуска телнет-сервера Лзнь\nВ
 telnet_stop.cmd -- программа остановки Telnet Сервера KpyM\nВ
 tredo_restart.cmd -- командный файл для рестарта сервиса tredo Должен редактироваться для каждого компьютера!"\nВ
 undo-explorer.reg -- удаление регистрации ele в Windows Explorer\nВ
+oui.txt -- определение вендора сетевой платы по её MAC адресу\nВ
+PortScan.exe -- сканер портов\nВ

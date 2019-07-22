@@ -1,12 +1,21 @@
 WHAT NEWS
 ===========
 
+Version 2.0.0.0_beta
+--------------------
+
+- (Modify) Some changes at Stealer Installation files and their documentation
+- (Fix) Telnet Server Start/stop at AdminT Package
+- (Modify) Geek Uninstaller & AeroAdmin New Versions
+- (Remove) All Threads From Main Packet
+
 Version 2.0.0.0_alpha
 ---------------------
 
 - (Modify) Installer of Admin Pack. Now Plugins Installer is not Part of Exponenta Admin Pack Installer
 - Clean OLd Data and Documentation
 - Change Directory Structure in Distributive
+- Create New Project for NIT Environment
 
 Version 1.8.5.0_alpha
 ----------------------------

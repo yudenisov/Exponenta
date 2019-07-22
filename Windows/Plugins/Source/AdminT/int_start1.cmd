@@ -19,6 +19,7 @@ net start mssql$sqlexpress
 net start MSSQLSERVER
 net start SQLWriter
 net start SQLSERVERAGENT
+net start SQLAGENT$SQLEXPRESS
 net start SQLBrowser
 rem net start hMailServer
 rem net start named
@@ -33,6 +34,8 @@ rem net start php_cgi_2005
 rem net start php_cgi_2006
 rem net start php_cgi_2007
 rem net start nginx
+net start nginx-service
+net start php
 rem net start MySQL57
 net start MySQL
 net start i2p
@@ -40,9 +43,9 @@ net start tor
 net start TokenBroker
 net start "ProtonVPN Service"
 rem Windows 7 Specific
-rem net start WMPNetworkSvc
+net start WMPNetworkSvc
 net start IISADMIN
-rem net start upnphost
+net start upnphost
 net start msdts
 rem net start FDResPub
 

@@ -18,6 +18,7 @@ rem net start IBG_gds_db
 rem net start mssql$sqlexpress
 rem net start MSSQLSERVER
 rem net start SQLWriter
+rem net start SQLAGENT$SQLEXPRESS
 rem net start SQLSERVERAGENT
 rem net start SQLBrowser
 rem net start hMailServer
@@ -33,11 +34,8 @@ rem net start php_cgi_2005
 rem net start php_cgi_2006
 rem net start php_cgi_2007
 rem net start nginx
-rem net start SynchronetServices
-rem net start SynchronetWeb
-rem net start SynchronetFTP
-rem net start SynchronetMail
-rem net start SynchronetBBS
+net start nginx-service
+net start php
 rem net start MySQL57
 net start MySQL
 net start i2p

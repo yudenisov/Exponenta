@@ -5,7 +5,7 @@
 
 [Setup]
 AppName=Hidden Start
-AppVersion=4.5.0
+AppVersion=4.5.0.1
 AllowRootDirectory=yes
 ArchitecturesAllowed=x86 x64
 Compression=lzma2/max
@@ -20,8 +20,8 @@ OutputBaseFilename=HiddenStart450SetupRePack
 LicenseFile=.\License.rtf
 RestartIfNeededByRun=False
 UserInfoPage=True
-VersionInfoVersion=4.5.0
-VersionInfoCompany=New Internet Technologies Ltd.
+VersionInfoVersion=4.5.0.1
+VersionInfoCompany=New Internet Technologies Inc.
 VersionInfoProductName=Hidden Files Repack
 SolidCompression=True
 VersionInfoCopyright=Copyright (c) Alexandr Avdonin 2017

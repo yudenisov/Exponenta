@@ -19,6 +19,7 @@ net start mssql$sqlexpress
 net start MSSQLSERVER
 net start SQLWriter
 net start SQLSERVERAGENT
+net start SQLAGENT$SQLEXPRESS
 net start SQLBrowser
 rem net start hMailServer
 rem net start named
@@ -32,7 +33,9 @@ rem net start php_cgi_2004
 rem net start php_cgi_2005
 rem net start php_cgi_2006
 rem net start php_cgi_2007
-net start nginx
+rem net start nginx
+net start nginx-service
+net start php
 rem net start MySQL57
 net start MySQL
 net start i2p
@@ -45,5 +48,4 @@ net start IISADMIN
 net start upnphost
 net start msdts
 rem net start FDResPub
-
 

