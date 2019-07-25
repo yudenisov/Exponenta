@@ -1,11 +1,12 @@
 WHAT NEWS
 ===========
 
-Version 2.0.1.0_beta
+Version 2.0.1.2_beta
 --------------------
 
 - (Add) Some Mimikatz Features Enable/Disable
 - (Add) Unsecure WinRM Options
+- (Add) Some New Auxiliary commands
 
 Version 2.0.0.0_beta
 --------------------
