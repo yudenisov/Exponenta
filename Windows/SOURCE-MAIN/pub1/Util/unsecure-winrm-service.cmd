@@ -1,0 +1,12 @@
+call winrm set winrm/config/service @{AllowUnencrypted="True"}
+call winrm set winrm/config/service @{IPv4Filter="*"}
+call winrm set winrm/config/service @{IPv6Filter="*"}
+call winrm set winrm/config/service @{EnableCompatibilityHttpListener="False"}
+call winrm set winrm/config/service @{EnableCompatibilityHttpsListener="False"}
+call winrm set winrm/config/service/Auth @{Basic="True"}
+call winrm set winrm/config/service/Auth @{Kerberos="True"}
+call winrm set winrm/config/service/Auth @{Negotiate="True"}
+call winrm set winrm/config/service/Auth @{Certificate="False"}
+call winrm set winrm/config/service/Auth @{CredSSP="True"}
+call winrm set winrm/config/service/DefaultPorts @{HTTP="5985"}
+call winrm set winrm/config/service/DefaultPorts @{HTTPS="5986"}

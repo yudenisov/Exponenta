@@ -1,0 +1,10 @@
+call winrm set winrm/config/client @{AllowUnencrypted="True"}
+call winrm set winrm/config/client/Auth @{Basic="True"}
+call winrm set winrm/config/client/Auth @{Kerberos="True"}
+call winrm set winrm/config/client/Auth @{Negotiate="True"}
+call winrm set winrm/config/client/Auth @{Certificate="False"}
+call winrm set winrm/config/client/Auth @{CredSSP="True"}
+call winrm set winrm/config/client/DefaultPorts @{HTTP="5985"}
+call winrm set winrm/config/client/DefaultPorts @{HTTPS="5986"}
+call winrm set winrm/config/client @{URLPrefix="wsman"}
+call winrm set winrm/config/client @{TrustedHosts="<local>,web.yudenisov.ru"}
