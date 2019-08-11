@@ -1,0 +1,1871 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="AsciiDoc 8.6.9">
+<title>EXPONENTA FOR WINDOWS</title>
+<style type="text/css">
+/* Shared CSS for AsciiDoc xhtml11 and html5 backends */
+
+/* Default font. */
+body {
+  font-family: Georgia,serif;
+}
+
+/* Title font. */
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle,
+#author, #revnumber, #revdate, #revremark,
+#footer {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+  color: navy;
+}
+
+strong {
+  font-weight: bold;
+  color: #083194;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1, h2, h3 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  padding-top: 0.5em;
+}
+h3 {
+  float: left;
+}
+h3 + * {
+  clear: left;
+}
+h5 {
+  font-size: 1.0em;
+}
+
+div.sectionbody {
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul, ol, li > p {
+  margin-top: 0;
+}
+ul > li     { color: #aaa; }
+ul > li > * { color: black; }
+
+.monospaced, code, pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  color: navy;
+  padding: 0;
+  margin: 0;
+}
+pre {
+  white-space: pre-wrap;
+}
+
+#author {
+  color: #527bbd;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#email {
+}
+#revnumber, #revdate, #revremark {
+}
+
+#footer {
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+#preamble {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.0em;
+  margin-bottom: 2.0em;
+  margin-right: 10%;
+  color: #606060;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  color: #527bbd;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #f0f0f0;
+  padding: 0.5em;
+}
+
+div.listingblock > div.content {
+  border: 1px solid #dddddd;
+  border-left: 5px solid #f0f0f0;
+  background: #f8f8f8;
+  padding: 0.5em;
+}
+
+div.quoteblock, div.verseblock {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  margin-right: 10%;
+  border-left: 5px solid #f0f0f0;
+  color: #888;
+}
+
+div.quoteblock > div.attribution {
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+div.verseblock > pre.content {
+  font-family: inherit;
+  font-size: inherit;
+}
+div.verseblock > div.attribution {
+  padding-top: 0.75em;
+  text-align: left;
+}
+/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 3px solid #dddddd;
+}
+
+div.exampleblock > div.content {
+  border-left: 3px solid #dddddd;
+  padding-left: 0.5em;
+}
+
+div.imageblock div.content { padding-left: 0; }
+span.image img { border-style: none; vertical-align: text-bottom; }
+a.image:visited { color: white; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: normal;
+  color: navy;
+}
+dd > *:first-child {
+  margin-top: 0.1em;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.arabic {
+  list-style-type: decimal;
+}
+ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+ol.lowerroman {
+  list-style-type: lower-roman;
+}
+ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+div.compact ul, div.compact ol,
+div.compact p, div.compact p,
+div.compact div, div.compact div {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+tfoot {
+  font-weight: bold;
+}
+td > div.verse {
+  white-space: pre;
+}
+
+div.hdlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+div.hdlist tr {
+  padding-bottom: 15px;
+}
+dt.hdlist1.strong, td.hdlist1.strong {
+  font-weight: bold;
+}
+td.hdlist1 {
+  vertical-align: top;
+  font-style: normal;
+  padding-right: 0.8em;
+  color: navy;
+}
+td.hdlist2 {
+  vertical-align: top;
+}
+div.hdlist.compact tr {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.comment {
+  background: yellow;
+}
+
+.footnote, .footnoteref {
+  font-size: 0.8em;
+}
+
+span.footnote, span.footnoteref {
+  vertical-align: super;
+}
+
+#footnotes {
+  margin: 20px 0 20px 0;
+  padding: 7px 0 0 0;
+}
+
+#footnotes div.footnote {
+  margin: 0 0 5px 0;
+}
+
+#footnotes hr {
+  border: none;
+  border-top: 1px solid silver;
+  height: 1px;
+  text-align: left;
+  margin-left: 0;
+  width: 20%;
+  min-width: 100px;
+}
+
+div.colist td {
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  vertical-align: top;
+}
+div.colist td img {
+  margin-top: 0.3em;
+}
+
+@media print {
+  #footer-badges { display: none; }
+}
+
+#toc {
+  margin-bottom: 2.5em;
+}
+
+#toctitle {
+  color: #527bbd;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+div.toclevel3 {
+  margin-left: 4em;
+  font-size: 0.9em;
+}
+div.toclevel4 {
+  margin-left: 6em;
+  font-size: 0.9em;
+}
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+div.unbreakable { page-break-inside: avoid; }
+
+
+/*
+ * xhtml11 specific
+ *
+ * */
+
+div.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead, p.table.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.table {
+  margin-top: 0;
+}
+/* Because the table frame attribute is overriden by CSS in most browsers. */
+div.tableblock > table[frame="void"] {
+  border-style: none;
+}
+div.tableblock > table[frame="hsides"] {
+  border-left-style: none;
+  border-right-style: none;
+}
+div.tableblock > table[frame="vsides"] {
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+
+/*
+ * html5 specific
+ *
+ * */
+
+table.tableblock {
+  margin-top: 1.0em;
+  margin-bottom: 1.5em;
+}
+thead, p.tableblock.header {
+  font-weight: bold;
+  color: #527bbd;
+}
+p.tableblock {
+  margin-top: 0;
+}
+table.tableblock {
+  border-width: 3px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: #527bbd;
+  border-collapse: collapse;
+}
+th.tableblock, td.tableblock {
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: #527bbd;
+}
+
+table.tableblock.frame-topbot {
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+table.tableblock.frame-sides {
+  border-top-style: hidden;
+  border-bottom-style: hidden;
+}
+table.tableblock.frame-none {
+  border-style: hidden;
+}
+
+th.tableblock.halign-left, td.tableblock.halign-left {
+  text-align: left;
+}
+th.tableblock.halign-center, td.tableblock.halign-center {
+  text-align: center;
+}
+th.tableblock.halign-right, td.tableblock.halign-right {
+  text-align: right;
+}
+
+th.tableblock.valign-top, td.tableblock.valign-top {
+  vertical-align: top;
+}
+th.tableblock.valign-middle, td.tableblock.valign-middle {
+  vertical-align: middle;
+}
+th.tableblock.valign-bottom, td.tableblock.valign-bottom {
+  vertical-align: bottom;
+}
+
+
+/*
+ * manpage specific
+ *
+ * */
+
+body.manpage h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
+}
+body.manpage h2 {
+  border-style: none;
+}
+body.manpage div.sectionbody {
+  margin-left: 3em;
+}
+
+@media print {
+  body.manpage div#toc { display: none; }
+}
+
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install(2);
+/*]]>*/
+</script>
+</head>
+<body class="manpage">
+<div id="header">
+<h1>
+EXPONENTA FOR WINDOWS Manual Page
+</h1>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+<h2>NAME</h2>
+<div class="sectionbody">
+<p>exponenta -
+   модульный админ пак для Microsoft Windows
+</p>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_description">DESCRIPTION</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Exponenta содержит в себе набор скриптов и утилит для управления и
+первоначальной настройки компьютера под управлением операционной системы
+Microsoft Windows. Скрипты управляют реестром Windows, открывают
+удалённый доступ к компьютеру и т.д. Смотри описание утилит и скриптов
+ниже.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_author">AUTHOR</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Exponenta была написана Юрием Денисовым</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resources">RESOURCES</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>GitHub:
+<a href="http://github.com/yudenisov/Exponenta">http://github.com/yudenisov/Exponenta</a></p></div>
+<div class="paragraph"><p>Main web site: <a href="http://yudenisov.ru">http://yudenisov.ru</a></p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copying">COPYING</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Copyright &#169; 2015-2019 Yuri Denisov (yudenisov). Свободное
+распространение данной программы гарантируется модифицированной BSD
+лицензией.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exponenta_admin_pack">Exponenta Admin pack</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><strong>Год,дата выпуска:</strong> 2019</p></div>
+<div class="paragraph"><p><strong>Copyright:</strong> © New Internet Technology Inc., 2016-2019</p></div>
+<div class="paragraph"><p><strong>Лицензия:</strong> BSD (Open Source)</p></div>
+<div class="paragraph"><p><strong>Разрядность:</strong> 32 bit</p></div>
+<div class="paragraph"><p><strong>Поддерживаемые платформы:</strong> Microsoft Windows XP SP3, Microsoft Windows
+7, Microsoft Windows 8.1, Microsoft Windows 10, Windows 2003 Server SP1,
+Windows 2008 Server R2, Windows 2012 Server R2, Windows 2016 Server,
+Windows 2019 Server,</p></div>
+<div class="paragraph"><p>Админ пак «Экспонента» (Exponenta) представляет собой модульное
+средство, выполняющее следующие функции:</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Управление реестром Windows;
+</p>
+</li>
+<li>
+<p>
+Предоставление удалённого доступа к компьютеру;
+</p>
+</li>
+<li>
+<p>
+«Жёсткая блокировка» антивирусов и автоматического обновления Windows;
+</p>
+</li>
+<li>
+<p>
+Активация и дезактивация защиты от программы mimikatz;
+</p>
+</li>
+<li>
+<p>
+Добавление в компьютер «универсальной учётной записи» для удалённого
+доступа;
+</p>
+</li>
+<li>
+<p>
+Получение внешнего IP адреса компьютера (при помощи запроса к
+сторонним сервисам);
+</p>
+</li>
+<li>
+<p>
+Проверка системной информации о компьютере;
+</p>
+</li>
+<li>
+<p>
+И многое другое, неочевидное для пользователя.
+</p>
+</li>
+</ol></div>
+<div class="paragraph"><p>Функциональность админ пака расширяется плагинами, которые также
+являются самостоятельными программными продуктами, переупакованными
+автором админ-пака.</p></div>
+<div class="paragraph"><p>Админ-пак устанавливается в каталог %PUB1%\Util (по умолчанию
+C:\pub1\Util). Инсталлятор представляет собой Inno Setup EXE файл,
+устанавливающий в папку по умолчанию основные скрипты, а также
+устанавливающий переменные окружения. Скрипты затем запускаются из
+комендной строки. Из соображений безопасности запрещается автозапуск
+этих скриптов после установки.</p></div>
+<div class="paragraph"><p>Внимание! Админ пак может быть использован в злонамеренных целях,
+например, для написания вредонсной программы-стайлера. Именно поэтому
+многие «параноидальные антивирусы», типа Avast Free Antivirus, опознают
+дистрибутив с данными скриптами как malware (вредоносное программное
+обеспечение), в то время как другие антивирусы (ESET NOD32, Kaspersky
+Internet Security) выдают предупреждающее сообщение о возможной его
+потенциальной опасности. Автор заявляет, что в дистрибутиве нет и не
+может быть по определению вирусов, а злонамеренность в применении
+скриптов лежит на пользователе и администраторе, их запускающем. Сами по
+себе скрипты также не содержат вредоносного кода.</p></div>
+<div class="paragraph"><p><strong><em>Категория:</em></strong> Админ-паки | <strong><em>Добавил:</em></strong> yudenis | <strong>Теги:</strong> Админ пак,
+Exponenta, Windows 7, Windows Server, Windows 10, admin-pack, new
+internet technologies, Windows XP SP3</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_состав_продукта">Состав продукта</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>В данный админ-пак входят следующие скрипты, файлы и утилиты:</p></div>
+<div class="dlist"><dl>
+<dt class="hdlist1">
+<strong>adAdminDomain.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл создания учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>adAdminLocal.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл создания учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>before.exe</strong>
+</dt>
+<dd>
+<p>
+  Программа приостанавливает выполнение командного файла до отметки
+  времени startTime, и продолжает выполнение до отметки времени EndTime
+  Программа полезна, если Вы по каким-то причинам не хотите использовать
+  планировщик заданий.<br>
+  Usage: BEFORE.EXE starttime [endtime] [nowait]
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>check_reg_item.bat</strong>
+</dt>
+<dd>
+<p>
+  check_reg_item checks the item «item» at node «node» for value or
+  default value<br>
+  Usage check_reg_item.bat «node» «item»<br>
+  Проверяет пункт «item» на присутствие значения или значения по
+  умочанию в звене «node» реестра Windows
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>check_reg_node.bat</strong>
+</dt>
+<dd>
+<p>
+  check_reg_node checks the node «node» for default value<br>
+  Usage check_reg_item.bat «node»<br>
+  Проверяет на существование звена «node» в реестре Windows (со
+  значением по умолчанию)
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>check_uname_present.bat</strong>
+</dt>
+<dd>
+<p>
+  check_uname_present.bat is a file for checking some user login to be
+  present in Windows<br>
+  Usage: check_uname_present.bat «username»<br>
+  where «username» is windows logon to be tested<br>
+  Проверяет, что некоторый логин пользователя присутствует в Windows
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>choc_pack.install.cmd</strong>
+</dt>
+<dd>
+<p>
+  Пакетный файл для инсталляции программ через менеджер пакетов
+  Chocolatey
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>chock.install.cmd</strong>
+</dt>
+<dd>
+<p>
+  Инсталлятор менеджера пакетов Chocolatey
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>curdaterename.bat</strong>
+</dt>
+<dd>
+<p>
+  (Бонус) программа для вставки в конец имени файла текущей даты и
+  времени
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>curdatetimerename.bat</strong>
+</dt>
+<dd>
+<p>
+  (Бонус) программа для вставки в конец имени файла текущей даты и
+  времени
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>datetimemsec.exe</strong>
+</dt>
+<dd>
+<p>
+  Данная команда делает отметку текущего времени, с разделителем или
+  без<br>
+  Usage: datetimemsec.exe [/delims]<br>
+  Вывод «YYYY[delims]MM[delims]hh[delims]mm[delims]ss[delims]Msc»<br>
+  для использования в команде FOR /F, и использования «случайных» строк
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>deAdminDomain.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл удаления учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>deAdminLocal.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл удаления учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>dis-lsaprotect.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт дезактивации защиты LSA на компьютерах с Microsoft Windows 7 -
+  10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>dis-somemimikatz-features.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт для дезактивации некоторых особенностей операционных систем,
+  необходимых для успешного запуска программы Mimikatz. Программа
+  бесполезна для Windows 10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>dis-wdigest.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт для дезактивации WDigest протокола на компьютерах с Windows 7
+  -10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>edlinw32.exe</strong>
+</dt>
+<dd>
+<p>
+  файл - строковый редактор для правки файлов на удалённом компьютере в
+  CLI WinRS или Telnet сессии.<br>
+  Это один из немногих редакторов, работающих в этих сессиях. Остальные
+  требуют запуска полноценного терминала.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>en-lsaprotect.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт активации защиты LSA на компьютерах с операционной системой
+  Microsoft Windows 7 - 10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>en-somemimikatz-features.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт, включающий некоторые возможности системы, необходимые для
+  запуска программы mimikatz. Скрипт бесполезен в Windows 10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>en-wdigest.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт, включающий WDigest протокол авторизации
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>example_check_uname_admin.bat</strong>
+</dt>
+<dd>
+<p>
+  пример программы, проверяющей, имеет ли текущая запись права
+  локального администратора.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>getip_1.cmd</strong>
+</dt>
+<dd>
+<p>
+  программа для получения внешнего ip адреса системы с помощью сайта
+  ipinfo и программы curl. Программа сохраняет найденный IP АДРЕС В
+  c:\pub1\Util\MyIp.txt
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>getsysteminfocheck.cmd</strong>
+</dt>
+<dd>
+<p>
+  (Бонус) Проверка системной информации о компьютере средствами
+  операционной системы Windows. Необходимо для продолжения взлома.
+  Требует установки дополнительного программного обеспечения (см. текст
+  скрипта).
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>inkeys.exe</strong>
+</dt>
+<dd>
+<p>
+  Функция возвращает Errorlevel = число ASCII Code нажатой клавиши или
+  0<br>
+  Usage: INKEYS.EXE [[string1] prompt_string]<br>
+  ;(c) <a href="mailto:mak_soft@mail.ru">mak_soft@mail.ru</a><br>
+  any params - suppress this help message. Return only Errorlevel Number
+  and ERRORLEVEL<br>
+  if string1 is nubmer - wait key number of seconds<br>
+  ERRORLEVEL=0 -no key pressed<br>
+  ERRORLEVEL=ASCII code of key<br>
+  любой параметр выводит это сообщение. Выводит только число
+  Errorlevel<br>
+  Если строка 1 число, то программа ожидает нажатия на клавишу это число
+  секунд.<br>
+  ERRORLEVEL = 0 - клавиша не нажата<br>
+  ERRORLEVEL = ASCII коду нажатой клавиши<br>
+  Команда незаменима при построении интерактивных диалоговых оболочек в
+  Commnd Shell
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>minifilters-interface-restore.cmd</strong>
+</dt>
+<dd>
+<p>
+  Восстановление доступа к minifilters, в том числе должны заработать
+  антивирусы.<br>
+  Внимание! После восстановления доступа необходимо сделать Manual
+  Restart Services!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>minifilters-interface-stop.cmd</strong>
+</dt>
+<dd>
+<p>
+  принудительная остановка minifilters Windows, в том числе всех
+  антивирусов. Возможны баги!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>PartOfDomain.bat</strong>
+</dt>
+<dd>
+<p>
+  скрипт WMI, который проверяет, является ли данный компьютер частью
+  домена, и выдающий информацию о домене.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_add_envvar.bat</strong>
+</dt>
+<dd>
+<p>
+  командный файл добавления системной переменной окружения вместе со
+  значением<br>
+  Usage: reg_add_envvar.bat «variable name» «value»<br>
+  где «variable name» имя системной переменной, «value» её значение<br>
+  <br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_addtopath.bat</strong>
+</dt>
+<dd>
+<p>
+  командный файл для добавления пути к системной переменной Path<br>
+  Usage: reg_addtopath.bat «Path name»<br>
+  где «Path name» путь, добавляемый в переменную Path<br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_del_envvar.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_del_envvar.bat is a script which delete the environment variable
+  from the shell<br>
+  Скрипт, удаляющий системную переменную окружения из оболочки<br>
+  Usage: reg_del_envvar.bat «variable name»<br>
+  где «variable name» имя системной переменной
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_del_node.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_del_node.bat is a script to delete of a Windows Registry Node only
+  if reserve copy is created<br>
+  Скрипт, который удаляет раздел «node» из реестра Windows только если
+  создана резервная копия «file name with extension»<br>
+  Usage: reg_del_node.bat «node» «file name with extension»
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_export_reserve.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_export_reserve.bat is a script to make of a reserved copy of the
+  Windows Registry Node<br>
+  If Old reserve copy is present, it is assigned name backupp1-5 with
+  warning and then return warning or general error<br>
+  Скрипт, создающий резервную копию раздела реестра Windows.<br>
+  Usage: reg_export_reserve.bat «node» «file name with extension»<br>
+  где «node» имя раздела реестра, «file name with extension» резервная
+  копия ветви реестра. Расширение нужно указывать явно (обычно оно reg).
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_import_file.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_import_file.bat is a script to add into the Windows Registry a
+  file «file» with check of his presistens<br>
+  Скрипт, импортирующий файл в реестр Windows с проверкой файла на
+  существование<br>
+  Usage: reg_import_file.bat «file name with extension»<br>
+  где «file name with extension» - файл с резервной копией куста реестра
+  (обычно имеет расширение .reg). Расширение нужно указывать явно.<br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reset_route.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт для очистки кэша DNS и таблицы маршрутов операционной системы.
+  Скрипт используется, когда компьютер по каким-то причинам не может
+  получить доступ к определённым узлам в Интернете, и это не проблемы
+  провайдера.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Restart_Explorer.bat</strong>
+</dt>
+<dd>
+<p>
+  скрипт перезапускает системные процессы Explorer.exe и dwm.exe.
+  Применяется, когда окна и элементы управления ведут себя «неподобающим
+  образом» или зависают. Запускается от имени администратора компьютера.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-001.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт удаляет правила брандмауэра, заданные программой
+  UnSecure-001.cmd
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-002.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт настраивает программы удалённого доступа telnet, rdp и winrm
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-003.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт удаляет шару со всех локальных дисков и диска C:
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-004.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт запрещает анонимный доступ к шаре и нулевую сессию для SMB
+  протокола
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>ShareAllDiscs.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт расшаривает все диски на компьютере (может не работать)
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>telnet_start.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт запускает службу KpyM Telnet SSH Server v1.19a
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>telnet_stop.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт останавливает службу KpyM Telnet SSH Server v1.19a
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>timemer.exe</strong>
+</dt>
+<dd>
+<p>
+  Программа измеряет время между двумя событиями (метками)<br>
+  TimeMer (c) 2003 by Michael Korotkin<br>
+  Usage: timemer.exe string start|stop|view<br>
+  где string - временная метка (строка символов)<br>
+  return ERRORLEVEL: 0-254 number of hours, 255 - error<br>
+  ERRORLEVEL: 0-254 число часов,<br>
+  ERRORLEVEL=255 - ошибка
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>tredo_restart.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт перезапускает интерфейс tredo. Вместо номера интерфейса 13
+  поставьте номер своего tredo интерфейса
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>uninstall-mainexponenta.cmd</strong>
+</dt>
+<dd>
+<p>
+  удаление системных переменных окружения Main Exponenta Files<br>
+  Используется для деактивации или удаления стайлера. После запуска
+  этого файла стайлер работать не будет!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>uninstall-stealerexponenta.cmd</strong>
+</dt>
+<dd>
+<p>
+  удаление системных переменных окружения Main Exponenta Files<br>
+  Используется для деактивации или удаления стайлера. После запуска
+  этого файла стайлер работать не будет!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>UNSECURE_ALL.cmd</strong>
+</dt>
+<dd>
+<p>
+  контейнер для всех скриптов UnSecure. Обращаться с осторожностью!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Unsecure-001.cmd</strong>
+</dt>
+<dd>
+<p>
+  This script Adds Firewall Rules, Which allow next task<br>
+</p>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Allowed all ftp connections by ftp.exe program<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all telnet connections on ports 23 and 972<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all winrm connections on port 5985<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all ssh connections on port 22<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all rdp connections on port 3389<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all RAdmin connections on port 4899<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all SMB Shared Connections on port 445<br>
+</p>
+</li>
+<li>
+<p>
+Allowed All RPC Connections on Ports 135, 137, 139<br>
+</p>
+</li>
+<li>
+<p>
+Allowed Remote Meterpreter Connections on Port 4444<br>
+</p>
+</li>
+<li>
+<p>
+Adjust System Services for Autostart<br>
+  Скрипт добавляет правила брандмауэра, разрешающие следующие задачи:<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает все соединения программе FTP.EXE<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает соединения telnet по портам 23 и 972<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает WinRM соединения на порт 5985<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает SSH соединения на порт 22<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает RDP соединения на порт 3389<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает RAdmin соединения на порт 4899<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает SMB шару на порту 445<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает SMB и RPC соединения на портах 135, 137, 139<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает удалённые Meterpreter соединения на порт 4444<br>
+</p>
+</li>
+<li>
+<p>
+Настраивает автостарт системных сервисов.
+</p>
+</li>
+</ol></div>
+</dd>
+<dt class="hdlist1">
+<strong>Unsecure-002.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт настраивает программы удалённого доступа telnet, rdp и winrm
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Unsecure-003.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт расшаривает локальный диск C:
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>UnSecure-004.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт делает возможным запуск планировщика задач Windows, разрешает
+  нулевую сессию SMB протокола и анонимный доступ к шаре.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>unsecure-winrm-client.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт включает некоторые небезопасные настройки WinRM клиента.
+  Используйте, если Вам не удалось установить WinRM соединение штатными
+  средствами
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>unsecure-winrm-service.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт включает некоторые небезопасные настройки WinRM сервера.
+  Используйте, если Вам не удалось установить WinRM соединение штатными
+  средствами
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>update-chocolatey.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрытое обновление всех программ, установленных менеджером пакетов
+  chocolatey
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>winlogon-SpecialAccounts.reg</strong>
+</dt>
+<dd>
+<p>
+  регистрация аккаунта MSSQLSR как специального<br>
+  В специальный аккаунт Microsoft Windows нельзя зайти локально (только
+  удалённо), и он не показывается в списке аккаунтов для входа в Windows
+  7-10<br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>wupdate-interface-restore.cmd</strong>
+</dt>
+<dd>
+<p>
+  Восстановление доступа к Windows Update Schedule.<br>
+  Внимание! После восстановления доступа необходимо сделать Manual
+  Restart Computer!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>wupdate-interface-stop.cmd</strong>
+</dt>
+<dd>
+<p>
+  принудительная остановка Windows Update Schedule. Возможны баги!
+  Обновления indows переводятся в ручной режим.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>descript.ion</strong>
+</dt>
+<dd>
+<p>
+  описание каталога (этот файл в кодировке ANSI CP-1251)
+</p>
+</dd>
+</dl></div>
+<div class="paragraph"><p>Все скрипты и утилиты являются консольными, запускаются на выполнение из
+консоли (терминала) Microsoft Windows, с указанием префикса пути
+«%PUB1%\Util\».</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_news">WHAT NEWS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="version-2012_beta">Version 2.0.1.2_beta</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Add) Some Mimikatz Features Enable/Disable
+</p>
+</li>
+<li>
+<p>
+(Add) Unsecure WinRM Options
+</p>
+</li>
+<li>
+<p>
+(Add) Some New Auxiliary commands
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-2000_beta">Version 2.0.0.0_beta</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Modify) Some changes at Stealer Installation files and their
+documentation
+</p>
+</li>
+<li>
+<p>
+(Fix) Telnet Server Start/stop at AdminT Package
+</p>
+</li>
+<li>
+<p>
+(Modify) Geek Uninstaller &amp; AeroAdmin New Versions
+</p>
+</li>
+<li>
+<p>
+(Remove) All Threads From Main Packet
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-2000_alpha">Version 2.0.0.0_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Modify) Installer of Admin Pack. Now Plugins Installer is not Part of
+Exponenta Admin Pack Installer
+</p>
+</li>
+<li>
+<p>
+Clean OLd Data and Documentation
+</p>
+</li>
+<li>
+<p>
+Change Directory Structure in Distributive
+</p>
+</li>
+<li>
+<p>
+Create New Project for NIT Environment
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-1850_alpha">Version 1.8.5.0_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Add) Clean old files before update Expoinenta for Windows
+</p>
+</li>
+<li>
+<p>
+(Add) Update Modules for Windows XP/Windows 2003
+</p>
+</li>
+<li>
+<p>
+(Add) Modules For Simple Chocolatey Installation
+</p>
+</li>
+<li>
+<p>
+(Fix) Change Compression Method for Avast Free Antivirus
+</p>
+</li>
+<li>
+<p>
+(Add) Copyright information for Legal Purples
+</p>
+</li>
+<li>
+<p>
+(Add) Now Some Modules is Installed at Windows XP SP3
+</p>
+</li>
+<li>
+<p>
+(Add) Distribution at SVN Server
+</p>
+</li>
+<li>
+<p>
+(Add) Meterpreter Backdoor Service in Stealer (not Tested)
+</p>
+</li>
+<li>
+<p>
+(Add) Threads Installer in Stealer (not Tested)
+</p>
+</li>
+<li>
+<p>
+Rewrite SendFile for Stealer
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-1840_alpha">Version 1.8.4.0_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Add) New Scripts at Exponenta For Linux
+</p>
+</li>
+<li>
+<p>
+(Delete) Some Unwanted Programs by Antivirus
+</p>
+</li>
+<li>
+<p>
+Some Little Improvements
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-1832_alpha">Version 1.8.3.2_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Fix) Time to Start Stealer
+</p>
+</li>
+<li>
+<p>
+(Fix) DonГўв‚¬в„ўt sent the system information of the styler
+</p>
+</li>
+<li>
+<p>
+(Fix) Remove Viruses From AdminT
+</p>
+</li>
+<li>
+<p>
+Some Little Improvements in Modules
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-1831_alpha">Version 1.8.3.1_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Fix) Stealer does not receive the commands from server
+</p>
+</li>
+<li>
+<p>
+(Fix) System Info Module doesnГўв‚¬в„ўt work
+</p>
+</li>
+<li>
+<p>
+Change The documentation
+</p>
+</li>
+<li>
+<p>
+Add references to create host web server for stealer management
+</p>
+</li>
+<li>
+<p>
+Some Little Improvements in Modules
+</p>
+</li>
+<li>
+<p>
+Add Resources (Icons) to Admin Pack
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-183_alpha">Version 1.8.3_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+(Fix) Files is not downloaded by curl program
+</p>
+</li>
+<li>
+<p>
+(Fix) External IP address is not recognized
+</p>
+</li>
+<li>
+<p>
+(Fix) Minifilters interface stop Error
+</p>
+</li>
+<li>
+<p>
+Add Windows 10 Feature to stop Windows Update Scheduling
+</p>
+</li>
+<li>
+<p>
+Add PowerRun program in addition to devxexec program
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-182_alpha">Version 1.8.2_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Create working packet of Exponenta for Linux Admin Pack
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-181_alpha">Version 1.8.1_alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Some little changes in Windows Scripts
+</p>
+</li>
+<li>
+<p>
+Add Unsecure Rules for Firewall to Make Available Some Server Daemons
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-180-alpha">Version 1.8.0 Alpha</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Add main modules for Exponenta Linux Admin Pack Install and work
+</p>
+</li>
+<li>
+<p>
+Add a documentation for Linux Modules
+</p>
+</li>
+<li>
+<p>
+Correct modules of Exponenta Windows Stealer Main File (clean
+distributive)
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect2">
+<h3 id="version-170-beta">Version 1.7.0 beta</h3>
+<div class="ulist"><ul>
+<li>
+<p>
+Change the documentation (was made more friendly and law correct)
+</p>
+</li>
+<li>
+<p>
+Began to add Exponenta for Linux
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-08-11 08:30:08 +04
+</div>
+</div>
+</body>
+</html>

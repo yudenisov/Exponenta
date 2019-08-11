@@ -1,0 +1,194 @@
+﻿<DL>
+<dt><strong>adAdminDomain.cmd</strong></dt>
+	<dd>файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера</dd>	
+<dt><strong>adAdminLocal.cmd</strong></dt>
+	<dd>файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера</dd>	
+<dt><strong>before.exe</strong></dt>
+	<dd>Программа приостанавливает выполнение командного файла до отметки времени startTime, и продолжает выполнение до отметки времени EndTime Программа полезна, если Вы по каким-то причинам не хотите использовать планировщик заданий.<br />
+	Usage: BEFORE.EXE starttime [endtime] [nowait]</dd>
+<dt><strong>check_reg_item.bat</strong></dt>
+	<dd>check_reg_item checks the item «item» at node «node» for value or default value<br />
+	Usage check_reg_item.bat «node» «item»<br />
+	Проверяет пункт «item» на присутствие значения или значения по умочанию в звене «node» реестра Windows</dd>	
+<dt><strong>check_reg_node.bat</strong></dt>
+	<dd>check_reg_node checks the node «node» for default value<br />
+	Usage check_reg_item.bat «node»<br />
+	Проверяет на существование звена «node» в реестре Windows (со значением по умолчанию)</dd>	
+<dt><strong>check_uname_present.bat</strong></dt>
+	<dd>check_uname_present.bat is a file for checking some user login to be present in Windows<br />
+	Usage: check_uname_present.bat «username»<br />
+	where «username» is windows logon to be tested<br />
+	Проверяет, что некоторый логин пользователя присутствует в Windows</dd>
+<dt><strong>choc_pack.install.cmd</strong></dt>
+	<dd>Пакетный файл для инсталляции программ через менеджер пакетов Chocolatey</dd>	
+<dt><strong>chock.install.cmd</strong></dt>
+	<dd>Инсталлятор менеджера пакетов Chocolatey</dd>	
+<dt><strong>curdaterename.bat</strong></dt>
+	<dd>(Бонус) программа для вставки в конец имени файла текущей даты и времени</dd>	
+<dt><strong>curdatetimerename.bat</strong></dt>
+	<dd>(Бонус) программа для вставки в конец имени файла текущей даты и времени</dd>	
+<dt><strong>datetimemsec.exe</strong></dt>
+	<dd>Данная команда делает отметку текущего времени, с разделителем или без<br />
+	Usage: datetimemsec.exe [/delims]<br />
+	Вывод «YYYY[delims]MM[delims]hh[delims]mm[delims]ss[delims]Msc» <br />
+	для использования в команде FOR /F, и использования «случайных» строк</dd>	
+<dt><strong>deAdminDomain.cmd</strong></dt>
+	<dd>файл удаления учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера</dd>	
+<dt><strong>deAdminLocal.cmd</strong></dt>
+	<dd>файл удаления учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера</dd>	
+<dt><strong>dis-lsaprotect.cmd</strong></dt>
+	<dd>скрипт дезактивации защиты LSA на компьютерах с Microsoft Windows 7 - 10</dd>	
+<dt><strong>dis-somemimikatz-features.cmd</strong></dt>
+	<dd>скрипт для дезактивации некоторых особенностей операционных систем, необходимых для успешного запуска программы Mimikatz. Программа бесполезна для Windows 10</dd>	
+<dt><strong>dis-wdigest.cmd</strong></dt>
+	<dd>скрипт для дезактивации WDigest протокола на компьютерах с Windows 7 -10</dd>	
+<dt><strong>edlinw32.exe</strong></dt>
+	<dd>файл - строковый редактор для правки файлов на удалённом компьютере в CLI WinRS или Telnet сессии.<br />
+	Это один из немногих редакторов, работающих в этих сессиях. Остальные требуют запуска полноценного терминала.</dd>	
+<dt><strong>en-lsaprotect.cmd</strong></dt>
+	<dd>скрипт активации защиты LSA на компьютерах с операционной системой Microsoft Windows 7 - 10</dd>	
+<dt><strong>en-somemimikatz-features.cmd</strong></dt>
+	<dd>скрипт, включающий некоторые возможности системы, необходимые для запуска программы mimikatz. Скрипт бесполезен в Windows 10</dd>	
+<dt><strong>en-wdigest.cmd</strong></dt>
+	<dd>скрипт, включающий WDigest протокол авторизации</dd>	
+<dt><strong>example_check_uname_admin.bat</strong></dt>
+	<dd>пример программы, проверяющей, имеет ли текущая запись права локального администратора.</dd>	
+<dt><strong>getip_1.cmd</strong></dt>
+	<dd>программа для получения внешнего ip адреса системы с помощью сайта ipinfo и программы curl. Программа сохраняет найденный IP АДРЕС В c:\pub1\Util\MyIp.txt</dd>	
+<dt><strong>getsysteminfocheck.cmd</strong></dt>
+	<dd>(Бонус) Проверка системной информации о компьютере средствами операционной системы Windows. Необходимо для продолжения взлома. Требует установки дополнительного программного обеспечения (см. текст скрипта).</dd>	
+<dt><strong>inkeys.exe</strong></dt>
+	<dd>Функция возвращает Errorlevel = число ASCII Code нажатой клавиши или 0<br />
+	Usage: INKEYS.EXE [[string1] prompt_string]<br />
+	;(c) mak_soft@mail.ru<br />
+	any params - suppress this help message. Return only Errorlevel Number and ERRORLEVEL<br />
+	if string1 is nubmer - wait key number of seconds<br />
+	ERRORLEVEL=0 -no key pressed<br />
+	ERRORLEVEL=ASCII code of key<br />
+	любой параметр выводит это сообщение. Выводит только число Errorlevel<br />
+	Если строка 1 число, то программа ожидает нажатия на клавишу это число секунд.<br />
+	ERRORLEVEL = 0 - клавиша не нажата<br />
+	ERRORLEVEL = ASCII коду нажатой клавиши<br />
+	Команда незаменима при построении интерактивных диалоговых оболочек в Commnd Shell</dd>
+<dt><strong>minifilters-interface-restore.cmd</strong></dt>
+	<dd>Восстановление доступа к minifilters, в том числе должны заработать антивирусы.<br />
+	Внимание! После восстановления доступа необходимо сделать Manual Restart Services!</dd>	
+<dt><strong>minifilters-interface-stop.cmd</strong></dt>
+	<dd>принудительная остановка minifilters Windows, в том числе всех антивирусов. Возможны баги!</dd>	
+<dt><strong>PartOfDomain.bat</strong></dt>
+	<dd>скрипт WMI, который проверяет, является ли данный компьютер частью домена, и выдающий информацию о домене.</dd>	
+<dt><strong>reg_add_envvar.bat</strong></dt>
+	<dd>командный файл добавления системной переменной окружения вместе со значением<br />
+	Usage: reg_add_envvar.bat «variable name» «value»<br />
+	где «variable name» имя системной переменной, «value» её значение<br />
+	<br />
+	</dd>	
+<dt><strong>reg_addtopath.bat</strong></dt>
+	<dd>командный файл для добавления пути к системной переменной Path<br />
+	Usage: reg_addtopath.bat «Path name»<br />
+	где «Path name» путь, добавляемый в переменную Path<br />
+	</dd>	
+<dt><strong>reg_del_envvar.bat</strong></dt>
+	<dd>reg_del_envvar.bat is a script which delete the environment variable from the shell<br />
+	Скрипт, удаляющий системную переменную окружения из оболочки<br />
+	Usage: reg_del_envvar.bat «variable name»<br />
+	где «variable name» имя системной переменной</dd>	
+<dt><strong>reg_del_node.bat</strong></dt>
+	<dd>reg_del_node.bat is a script to delete of a Windows Registry Node only if reserve copy is created<br />
+	Скрипт, который удаляет раздел «node» из реестра Windows только если создана резервная копия «file name with extension»<br />
+	Usage: reg_del_node.bat «node» «file name with extension»</dd>
+<dt><strong>reg_export_reserve.bat</strong></dt>
+	<dd>reg_export_reserve.bat is a script to make of a reserved copy of the Windows Registry Node<br />
+	If Old reserve copy is present, it is assigned name backupp1-5 with warning and then return warning or general error<br />
+	Скрипт, создающий резервную копию раздела реестра Windows.<br />
+	Usage: reg_export_reserve.bat «node» «file name with extension»<br />
+	где «node» имя раздела реестра, «file name with extension» резервная копия ветви реестра. Расширение нужно указывать явно (обычно оно reg).</dd>
+<dt><strong>reg_import_file.bat</strong></dt>
+	<dd>reg_import_file.bat is a script to add into the Windows Registry a file «file» with check of his presistens<br />
+	Скрипт, импортирующий файл в реестр Windows с проверкой файла на существование<br />
+	Usage: reg_import_file.bat «file name with extension»<br />
+	где «file name with extension» - файл с резервной копией куста реестра (обычно имеет расширение .reg). Расширение нужно указывать явно.<br />
+	</dd>
+<dt><strong>reset_route.cmd</strong></dt>
+	<dd>скрипт для очистки кэша DNS и таблицы маршрутов операционной системы. Скрипт используется, когда компьютер по каким-то причинам не может получить доступ к определённым узлам в Интернете, и это не проблемы провайдера.</dd>	
+<dt><strong>Restart_Explorer.bat</strong></dt>
+	<dd>скрипт перезапускает системные процессы Explorer.exe и dwm.exe. Применяется, когда окна и элементы управления ведут себя «неподобающим образом» или зависают. Запускается от имени администратора компьютера.</dd>	
+<dt><strong>Secure-001.cmd</strong></dt>
+	<dd>скрипт удаляет правила брандмауэра, заданные программой UnSecure-001.cmd</dd>	
+<dt><strong>Secure-002.cmd</strong></dt>
+	<dd>скрипт настраивает программы удалённого доступа telnet, rdp и winrm</dd>	
+<dt><strong>Secure-003.cmd</strong></dt>
+	<dd>скрипт удаляет шару со всех локальных дисков и диска C:</dd>	
+<dt><strong>Secure-004.cmd</strong></dt>
+	<dd>скрипт запрещает анонимный доступ к шаре и нулевую сессию для SMB протокола</dd>	
+<dt><strong>ShareAllDiscs.cmd</strong></dt>
+	<dd>скрипт расшаривает все диски на компьютере (может не работать)</dd>	
+<dt><strong>telnet_start.cmd</strong></dt>
+	<dd>скрипт запускает службу KpyM Telnet SSH Server v1.19a</dd>	
+<dt><strong>telnet_stop.cmd</strong></dt>
+	<dd>скрипт останавливает службу KpyM Telnet SSH Server v1.19a</dd>	
+<dt><strong>timemer.exe</strong></dt>
+	<dd>Программа измеряет время между двумя событиями (метками)<br />
+	TimeMer (c) 2003 by Michael Korotkin<br />
+	Usage: timemer.exe string start|stop|view<br />
+	где string - временная метка (строка символов)<br />
+	return ERRORLEVEL: 0-254 number of hours, 255 - error<br />
+	ERRORLEVEL: 0-254 число часов,<br />
+	ERRORLEVEL=255 - ошибка</dd>
+<dt><strong>tredo_restart.cmd</strong></dt>
+	<dd>скрипт перезапускает интерфейс tredo. Вместо номера интерфейса 13 поставьте номер своего tredo интерфейса</dd>	
+<dt><strong>uninstall-mainexponenta.cmd</strong></dt>
+	<dd>удаление системных переменных окружения Main Exponenta Files<br />
+	Используется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!</dd>	
+<dt><strong>uninstall-stealerexponenta.cmd</strong></dt>
+	<dd>удаление системных переменных окружения Main Exponenta Files<br />
+	Используется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!</dd>	
+<dt><strong>UNSECURE_ALL.cmd</strong></dt>
+	<dd>контейнер для всех скриптов UnSecure. Обращаться с осторожностью!</dd>	
+<dt><strong>Unsecure-001.cmd</strong></dt>
+	<dd>This script Adds Firewall Rules, Which allow next task<br />
+	1. Allowed all ftp connections by ftp.exe program<br />
+	2. Allowed all telnet connections on ports 23 and 972 <br />
+	3. Allowed all winrm connections on port 5985<br />
+	4. Allowed all ssh connections on port 22<br />
+	5. Allowed all rdp connections on port 3389<br />
+	6. Allowed all RAdmin connections on port 4899<br />
+	7. Allowed all SMB Shared Connections on port 445<br />
+	8. Allowed All RPC Connections on Ports 135, 137, 139<br />
+	9. Allowed Remote Meterpreter Connections on Port 4444<br />
+	10. Adjust System Services for Autostart<br />
+	Скрипт добавляет правила брандмауэра, разрешающие следующие задачи:<br />
+	1. Разрешает все соединения программе FTP.EXE<br />
+	2. Разрешает соединения telnet по портам 23 и 972<br />
+	3. Разрешает WinRM соединения на порт 5985<br />
+	4. Разрешает SSH соединения на порт 22<br />
+	5. Разрешает RDP соединения на порт 3389<br />
+	6. Разрешает RAdmin соединения на порт 4899<br />
+	7. Разрешает SMB шару на порту 445<br />
+	8. Разрешает SMB и RPC соединения на портах 135, 137, 139<br />
+	9. Разрешает удалённые Meterpreter соединения на порт 4444<br />
+	10. Настраивает автостарт системных сервисов.</dd>		
+<dt><strong>Unsecure-002.cmd</strong></dt>
+	<dd>скрипт настраивает программы удалённого доступа telnet, rdp и winrm</dd>	
+<dt><strong>Unsecure-003.cmd</strong></dt>
+	<dd>скрипт расшаривает локальный диск C:</dd>	
+<dt><strong>UnSecure-004.cmd</strong></dt>
+	<dd>скрипт делает возможным запуск планировщика задач Windows, разрешает нулевую сессию SMB протокола и анонимный доступ к шаре.</dd>	
+<dt><strong>unsecure-winrm-client.cmd</strong></dt>
+	<dd>скрипт включает некоторые небезопасные настройки WinRM клиента. Используйте, если Вам не удалось установить WinRM соединение штатными средствами</dd>	
+<dt><strong>unsecure-winrm-service.cmd</strong></dt>
+	<dd>скрипт включает некоторые небезопасные настройки WinRM сервера. Используйте, если Вам не удалось установить WinRM соединение штатными средствами</dd>	
+<dt><strong>update-chocolatey.cmd</strong></dt>
+	<dd>скрытое обновление всех программ, установленных менеджером пакетов chocolatey</dd>	
+<dt><strong>winlogon-SpecialAccounts.reg</strong></dt>
+	<dd>регистрация аккаунта MSSQLSR как специального<br />
+	В специальный аккаунт Microsoft Windows нельзя зайти локально (только удалённо), и он не показывается в списке аккаунтов для входа в Windows 7-10<br />
+	</dd>	
+<dt><strong>wupdate-interface-restore.cmd</strong></dt>
+	<dd>Восстановление доступа к Windows Update Schedule.<br />
+	Внимание! После восстановления доступа необходимо сделать Manual Restart Computer!</dd>	
+<dt><strong>wupdate-interface-stop.cmd</strong></dt>
+	<dd>принудительная остановка Windows Update Schedule. Возможны баги! Обновления indows переводятся в ручной режим.</dd>	
+<dt><strong>descript.ion</strong></dt>
+	<dd>описание каталога (этот файл в кодировке ANSI CP-1251)</dd>
+</DL>

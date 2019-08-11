@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="AsciiDoc 8.6.9">
+<title></title>
+<style type="text/css">
+/*
+ * compact.css, version 1.6
+ * Author:  Alex Efros <powerman@powerman.name>
+ * Licence: Public Domain
+ *
+ * Usage: asciidoc -a theme=compact ...
+ */
+
+*   { padding: 0;  margin: 0; }
+img { border: 0; }
+
+/*** Layout ***/
+
+body                        { margin: 10px 20px; }
+#header br                  { display: none; }
+#revnumber                  { display: block; }
+#toc                        { margin: 1em 0; }
+.toclevel2                  { margin-left: 1em; }
+#footer                     { margin-top: 2em; }
+
+#preamble .sectionbody,
+h2,
+h3,
+h4,
+h5                          { margin: 1em 0 0 0; }
+
+.admonitionblock,
+.listingblock,
+.sidebarblock,
+.exampleblock,
+.tableblock,
+.literalblock               { margin: 1em 0; }
+.admonitionblock td.icon    { padding-right: 0.5em; }
+.admonitionblock td.content { padding-left:  0.5em; }
+.listingblock .content      { padding: 0.5em; }
+.sidebarblock > .content    { padding: 0.5em; }
+.exampleblock > .content    { padding: 0 0.5em; }
+.tableblock caption         { padding: 0 0 0.5em 0; }
+.tableblock thead th,
+.tableblock tbody td,
+.tableblock tfoot td        { padding: 0 0.5em; }
+.quoteblock                 { padding: 0 2.0em; }
+
+.paragraph                  { margin: 1em 0 0 0; }
+.sidebarblock .paragraph:first-child,
+.exampleblock .paragraph:first-child,
+.admonitionblock .paragraph:first-child  { margin: 0; }
+
+   .ulist,    .olist,    .dlist,    .hdlist,    .qlist   { margin: 1em 0; }
+li .ulist, li .olist, li .dlist, li .hdlist, li .qlist,
+dd .ulist, dd .olist, dd .dlist, dd .hdlist, dd .qlist   { margin: 0; }
+ul                          { margin-left: 1.5em; }
+ol                          { margin-left: 2em; }
+dd                          { margin-left: 3em; }
+td.hdlist1                  { padding-right: 1em; }
+
+/*** Fonts ***/
+
+body                        { font-family: Verdana, sans-serif; }
+#header                     { font-family: Georgia, serif;      }
+#header h1                  { font-family: Arial,   sans-serif; }
+#footer                     { font-family: Georgia, serif;      }
+#email                      { font-size: 0.85em; }
+#revnumber                  { font-size: 0.75em; }
+#toc                        { font-size: 0.9em;  }
+#toctitle                   { font-weight: bold; }
+#footer                     { font-size: 0.8em; }
+
+h2, h3, h4, h5, .title      { font-family: Arial,   sans-serif; }
+h2                          { font-size: 1.5em; }
+.sectionbody                { font-size: 0.85em; }
+.sectionbody .sectionbody   { font-size: inherit; }
+h3                          { font-size: 159%; } /* 1.35em */
+h4                          { font-size: 141%; } /* 1.2em */
+h5                          { font-size: 118%; } /* 1em */
+.title                      { font-size: 106%;   /* 0.9em */
+                              font-weight: bold;
+                            }
+
+tt, .monospaced             { font-family: monospace; font-size: 106%; } /* 0.9em */
+pre                         { font-size: 141%; } /* 1.2em */
+p code                      { font-size: 118%; } /* 1em */
+dt, td.hdlist1, .qlist em   { font-family: Times New Roman, serif;
+                              font-size: 118%;   /* 1em */
+                              font-style: italic;
+                            }
+.tableblock tfoot td        { font-weight: bold; }
+
+/*** Colors and Backgrounds ***/
+
+h1                          { color: #527bbd; border-bottom: 2px solid silver; }
+#footer                     {                 border-top:    2px solid silver; }
+
+h2                          { color: #527bbd; border-bottom: 2px solid silver; }
+h3                          { color: #5D7EAE; border-bottom: 2px solid silver; }
+h3                          { display: inline-block; }
+h4,h5                       { color: #5D7EAE; }
+
+.admonitionblock td.content { border-left: 2px solid silver; }
+.listingblock .content      { background: #f4f4f4;   border: 1px solid silver; border-left: 5px solid #e0e0e0; }
+.sidebarblock > .content    { background: #ffffee;   border: 1px solid silver; border-left: 5px solid #e0e0e0; }
+.exampleblock > .content    {                   border-left: 2px solid silver; }
+.quoteblock                 {                   border-left: 5px solid #e0e0e0; }
+.tableblock table {
+    border-collapse: collapse;
+    border-width: 3px;
+    border-color: #527bbd;
+}
+.tableblock table[frame=hsides] { border-style: solid none; }
+.tableblock table[frame=border] { border-style: solid;      }
+.tableblock table[frame=void]   { border-style: none;       }
+.tableblock table[frame=vsides] { border-style: none solid; }
+.tableblock table[rules=all] tbody tr *,
+.tableblock table[rules=rows] tbody tr * {
+    border-top: 1px solid #527bbd;
+}
+.tableblock table[rules=all] tr *,
+.tableblock table[rules=cols] tr * {
+    border-left: 1px solid #527bbd;
+}
+.tableblock table tbody tr:first-child * {
+    border-top: 1px solid white; /* none don't work here... %-[] */
+}
+.tableblock table tr *:first-child {
+    border-left: none;
+}
+.tableblock table[frame] thead tr *,
+.tableblock table[frame] thead tr * {
+    border-top: 1px solid white;
+    border-bottom: 2px solid #527bbd;
+}
+.tableblock table tr td p.table,
+.tableblock table tr td p.table * {
+    border: 0px;
+}
+
+em			    { color: #3C598A; }
+tt, .monospaced             { color: #3C598A; background: #F4F4F4; }
+.literalblock tt            { background: inherit; }
+
+li                          { color: #a0a0a0; }
+li > *                      { color: black; }
+
+span.aqua { color: aqua; }
+span.black { color: black; }
+span.blue { color: blue; }
+span.fuchsia { color: fuchsia; }
+span.gray { color: gray; }
+span.green { color: green; }
+span.lime { color: lime; }
+span.maroon { color: maroon; }
+span.navy { color: navy; }
+span.olive { color: olive; }
+span.purple { color: purple; }
+span.red { color: red; }
+span.silver { color: silver; }
+span.teal { color: teal; }
+span.white { color: white; }
+span.yellow { color: yellow; }
+
+span.aqua-background { background: aqua; }
+span.black-background { background: black; }
+span.blue-background { background: blue; }
+span.fuchsia-background { background: fuchsia; }
+span.gray-background { background: gray; }
+span.green-background { background: green; }
+span.lime-background { background: lime; }
+span.maroon-background { background: maroon; }
+span.navy-background { background: navy; }
+span.olive-background { background: olive; }
+span.purple-background { background: purple; }
+span.red-background { background: red; }
+span.silver-background { background: silver; }
+span.teal-background { background: teal; }
+span.white-background { background: white; }
+span.yellow-background { background: yellow; }
+
+span.big { font-size: 2em; }
+span.small { font-size: 0.6em; }
+
+span.underline { text-decoration: underline; }
+span.overline { text-decoration: overline; }
+span.line-through { text-decoration: line-through; }
+
+/*** Misc ***/
+
+.admonitionblock td.icon    { vertical-align: top; }
+.attribution                { text-align: right; }
+.unbreakable		    { page-break-inside: avoid; }
+
+ul                          { list-style-type: disc; }
+ol.arabic                   { list-style-type: decimal; }
+ol.loweralpha               { list-style-type: lower-alpha; }
+ol.upperalpha               { list-style-type: upper-alpha; }
+ol.lowerroman               { list-style-type: lower-roman; }
+ol.upperroman               { list-style-type: upper-roman; }
+.hdlist td                  { vertical-align: top; }
+
+
+
+
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([1-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName.toLowerCase() == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install();
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_состав_продукта">Состав продукта</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>В данный админ-пак входят следующие скрипты, файлы и утилиты:</p></div>
+<div class="dlist"><dl>
+<dt class="hdlist1">
+<strong>adAdminDomain.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл создания учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>adAdminLocal.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл создания учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>before.exe</strong>
+</dt>
+<dd>
+<p>
+  Программа приостанавливает выполнение командного файла до отметки
+  времени startTime, и продолжает выполнение до отметки времени EndTime
+  Программа полезна, если Вы по каким-то причинам не хотите использовать
+  планировщик заданий.<br>
+  Usage: BEFORE.EXE starttime [endtime] [nowait]
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>check_reg_item.bat</strong>
+</dt>
+<dd>
+<p>
+  check_reg_item checks the item «item» at node «node» for value or
+  default value<br>
+  Usage check_reg_item.bat «node» «item»<br>
+  Проверяет пункт «item» на присутствие значения или значения по
+  умочанию в звене «node» реестра Windows
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>check_reg_node.bat</strong>
+</dt>
+<dd>
+<p>
+  check_reg_node checks the node «node» for default value<br>
+  Usage check_reg_item.bat «node»<br>
+  Проверяет на существование звена «node» в реестре Windows (со
+  значением по умолчанию)
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>check_uname_present.bat</strong>
+</dt>
+<dd>
+<p>
+  check_uname_present.bat is a file for checking some user login to be
+  present in Windows<br>
+  Usage: check_uname_present.bat «username»<br>
+  where «username» is windows logon to be tested<br>
+  Проверяет, что некоторый логин пользователя присутствует в Windows
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>choc_pack.install.cmd</strong>
+</dt>
+<dd>
+<p>
+  Пакетный файл для инсталляции программ через менеджер пакетов
+  Chocolatey
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>chock.install.cmd</strong>
+</dt>
+<dd>
+<p>
+  Инсталлятор менеджера пакетов Chocolatey
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>curdaterename.bat</strong>
+</dt>
+<dd>
+<p>
+  (Бонус) программа для вставки в конец имени файла текущей даты и
+  времени
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>curdatetimerename.bat</strong>
+</dt>
+<dd>
+<p>
+  (Бонус) программа для вставки в конец имени файла текущей даты и
+  времени
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>datetimemsec.exe</strong>
+</dt>
+<dd>
+<p>
+  Данная команда делает отметку текущего времени, с разделителем или
+  без<br>
+  Usage: datetimemsec.exe [/delims]<br>
+  Вывод «YYYY[delims]MM[delims]hh[delims]mm[delims]ss[delims]Msc»<br>
+  для использования в команде FOR /F, и использования «случайных» строк
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>deAdminDomain.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл удаления учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>deAdminLocal.cmd</strong>
+</dt>
+<dd>
+<p>
+  файл удаления учётной записи MSSQLSR с паролем и наделение её правами
+  локального администратора компьютера
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>dis-lsaprotect.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт дезактивации защиты LSA на компьютерах с Microsoft Windows 7 -
+  10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>dis-somemimikatz-features.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт для дезактивации некоторых особенностей операционных систем,
+  необходимых для успешного запуска программы Mimikatz. Программа
+  бесполезна для Windows 10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>dis-wdigest.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт для дезактивации WDigest протокола на компьютерах с Windows 7
+  -10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>edlinw32.exe</strong>
+</dt>
+<dd>
+<p>
+  файл - строковый редактор для правки файлов на удалённом компьютере в
+  CLI WinRS или Telnet сессии.<br>
+  Это один из немногих редакторов, работающих в этих сессиях. Остальные
+  требуют запуска полноценного терминала.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>en-lsaprotect.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт активации защиты LSA на компьютерах с операционной системой
+  Microsoft Windows 7 - 10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>en-somemimikatz-features.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт, включающий некоторые возможности системы, необходимые для
+  запуска программы mimikatz. Скрипт бесполезен в Windows 10
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>en-wdigest.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт, включающий WDigest протокол авторизации
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>example_check_uname_admin.bat</strong>
+</dt>
+<dd>
+<p>
+  пример программы, проверяющей, имеет ли текущая запись права
+  локального администратора.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>getip_1.cmd</strong>
+</dt>
+<dd>
+<p>
+  программа для получения внешнего ip адреса системы с помощью сайта
+  ipinfo и программы curl. Программа сохраняет найденный IP АДРЕС В
+  c:\pub1\Util\MyIp.txt
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>getsysteminfocheck.cmd</strong>
+</dt>
+<dd>
+<p>
+  (Бонус) Проверка системной информации о компьютере средствами
+  операционной системы Windows. Необходимо для продолжения взлома.
+  Требует установки дополнительного программного обеспечения (см. текст
+  скрипта).
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>inkeys.exe</strong>
+</dt>
+<dd>
+<p>
+  Функция возвращает Errorlevel = число ASCII Code нажатой клавиши или
+  0<br>
+  Usage: INKEYS.EXE [[string1] prompt_string]<br>
+  ;(c) <a href="mailto:mak_soft@mail.ru">mak_soft@mail.ru</a><br>
+  any params - suppress this help message. Return only Errorlevel Number
+  and ERRORLEVEL<br>
+  if string1 is nubmer - wait key number of seconds<br>
+  ERRORLEVEL=0 -no key pressed<br>
+  ERRORLEVEL=ASCII code of key<br>
+  любой параметр выводит это сообщение. Выводит только число
+  Errorlevel<br>
+  Если строка 1 число, то программа ожидает нажатия на клавишу это число
+  секунд.<br>
+  ERRORLEVEL = 0 - клавиша не нажата<br>
+  ERRORLEVEL = ASCII коду нажатой клавиши<br>
+  Команда незаменима при построении интерактивных диалоговых оболочек в
+  Commnd Shell
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>minifilters-interface-restore.cmd</strong>
+</dt>
+<dd>
+<p>
+  Восстановление доступа к minifilters, в том числе должны заработать
+  антивирусы.<br>
+  Внимание! После восстановления доступа необходимо сделать Manual
+  Restart Services!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>minifilters-interface-stop.cmd</strong>
+</dt>
+<dd>
+<p>
+  принудительная остановка minifilters Windows, в том числе всех
+  антивирусов. Возможны баги!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>PartOfDomain.bat</strong>
+</dt>
+<dd>
+<p>
+  скрипт WMI, который проверяет, является ли данный компьютер частью
+  домена, и выдающий информацию о домене.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_add_envvar.bat</strong>
+</dt>
+<dd>
+<p>
+  командный файл добавления системной переменной окружения вместе со
+  значением<br>
+  Usage: reg_add_envvar.bat «variable name» «value»<br>
+  где «variable name» имя системной переменной, «value» её значение<br>
+  <br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_addtopath.bat</strong>
+</dt>
+<dd>
+<p>
+  командный файл для добавления пути к системной переменной Path<br>
+  Usage: reg_addtopath.bat «Path name»<br>
+  где «Path name» путь, добавляемый в переменную Path<br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_del_envvar.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_del_envvar.bat is a script which delete the environment variable
+  from the shell<br>
+  Скрипт, удаляющий системную переменную окружения из оболочки<br>
+  Usage: reg_del_envvar.bat «variable name»<br>
+  где «variable name» имя системной переменной
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_del_node.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_del_node.bat is a script to delete of a Windows Registry Node only
+  if reserve copy is created<br>
+  Скрипт, который удаляет раздел «node» из реестра Windows только если
+  создана резервная копия «file name with extension»<br>
+  Usage: reg_del_node.bat «node» «file name with extension»
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_export_reserve.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_export_reserve.bat is a script to make of a reserved copy of the
+  Windows Registry Node<br>
+  If Old reserve copy is present, it is assigned name backupp1-5 with
+  warning and then return warning or general error<br>
+  Скрипт, создающий резервную копию раздела реестра Windows.<br>
+  Usage: reg_export_reserve.bat «node» «file name with extension»<br>
+  где «node» имя раздела реестра, «file name with extension» резервная
+  копия ветви реестра. Расширение нужно указывать явно (обычно оно reg).
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reg_import_file.bat</strong>
+</dt>
+<dd>
+<p>
+  reg_import_file.bat is a script to add into the Windows Registry a
+  file «file» with check of his presistens<br>
+  Скрипт, импортирующий файл в реестр Windows с проверкой файла на
+  существование<br>
+  Usage: reg_import_file.bat «file name with extension»<br>
+  где «file name with extension» - файл с резервной копией куста реестра
+  (обычно имеет расширение .reg). Расширение нужно указывать явно.<br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>reset_route.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт для очистки кэша DNS и таблицы маршрутов операционной системы.
+  Скрипт используется, когда компьютер по каким-то причинам не может
+  получить доступ к определённым узлам в Интернете, и это не проблемы
+  провайдера.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Restart_Explorer.bat</strong>
+</dt>
+<dd>
+<p>
+  скрипт перезапускает системные процессы Explorer.exe и dwm.exe.
+  Применяется, когда окна и элементы управления ведут себя «неподобающим
+  образом» или зависают. Запускается от имени администратора компьютера.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-001.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт удаляет правила брандмауэра, заданные программой
+  UnSecure-001.cmd
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-002.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт настраивает программы удалённого доступа telnet, rdp и winrm
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-003.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт удаляет шару со всех локальных дисков и диска C:
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Secure-004.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт запрещает анонимный доступ к шаре и нулевую сессию для SMB
+  протокола
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>ShareAllDiscs.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт расшаривает все диски на компьютере (может не работать)
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>telnet_start.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт запускает службу KpyM Telnet SSH Server v1.19a
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>telnet_stop.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт останавливает службу KpyM Telnet SSH Server v1.19a
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>timemer.exe</strong>
+</dt>
+<dd>
+<p>
+  Программа измеряет время между двумя событиями (метками)<br>
+  TimeMer (c) 2003 by Michael Korotkin<br>
+  Usage: timemer.exe string start|stop|view<br>
+  где string - временная метка (строка символов)<br>
+  return ERRORLEVEL: 0-254 number of hours, 255 - error<br>
+  ERRORLEVEL: 0-254 число часов,<br>
+  ERRORLEVEL=255 - ошибка
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>tredo_restart.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт перезапускает интерфейс tredo. Вместо номера интерфейса 13
+  поставьте номер своего tredo интерфейса
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>uninstall-mainexponenta.cmd</strong>
+</dt>
+<dd>
+<p>
+  удаление системных переменных окружения Main Exponenta Files<br>
+  Используется для деактивации или удаления стайлера. После запуска
+  этого файла стайлер работать не будет!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>uninstall-stealerexponenta.cmd</strong>
+</dt>
+<dd>
+<p>
+  удаление системных переменных окружения Main Exponenta Files<br>
+  Используется для деактивации или удаления стайлера. После запуска
+  этого файла стайлер работать не будет!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>UNSECURE_ALL.cmd</strong>
+</dt>
+<dd>
+<p>
+  контейнер для всех скриптов UnSecure. Обращаться с осторожностью!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Unsecure-001.cmd</strong>
+</dt>
+<dd>
+<p>
+  This script Adds Firewall Rules, Which allow next task<br>
+</p>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Allowed all ftp connections by ftp.exe program<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all telnet connections on ports 23 and 972<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all winrm connections on port 5985<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all ssh connections on port 22<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all rdp connections on port 3389<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all RAdmin connections on port 4899<br>
+</p>
+</li>
+<li>
+<p>
+Allowed all SMB Shared Connections on port 445<br>
+</p>
+</li>
+<li>
+<p>
+Allowed All RPC Connections on Ports 135, 137, 139<br>
+</p>
+</li>
+<li>
+<p>
+Allowed Remote Meterpreter Connections on Port 4444<br>
+</p>
+</li>
+<li>
+<p>
+Adjust System Services for Autostart<br>
+  Скрипт добавляет правила брандмауэра, разрешающие следующие задачи:<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает все соединения программе FTP.EXE<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает соединения telnet по портам 23 и 972<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает WinRM соединения на порт 5985<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает SSH соединения на порт 22<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает RDP соединения на порт 3389<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает RAdmin соединения на порт 4899<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает SMB шару на порту 445<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает SMB и RPC соединения на портах 135, 137, 139<br>
+</p>
+</li>
+<li>
+<p>
+Разрешает удалённые Meterpreter соединения на порт 4444<br>
+</p>
+</li>
+<li>
+<p>
+Настраивает автостарт системных сервисов.
+</p>
+</li>
+</ol></div>
+</dd>
+<dt class="hdlist1">
+<strong>Unsecure-002.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт настраивает программы удалённого доступа telnet, rdp и winrm
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>Unsecure-003.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт расшаривает локальный диск C:
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>UnSecure-004.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт делает возможным запуск планировщика задач Windows, разрешает
+  нулевую сессию SMB протокола и анонимный доступ к шаре.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>unsecure-winrm-client.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт включает некоторые небезопасные настройки WinRM клиента.
+  Используйте, если Вам не удалось установить WinRM соединение штатными
+  средствами
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>unsecure-winrm-service.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрипт включает некоторые небезопасные настройки WinRM сервера.
+  Используйте, если Вам не удалось установить WinRM соединение штатными
+  средствами
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>update-chocolatey.cmd</strong>
+</dt>
+<dd>
+<p>
+  скрытое обновление всех программ, установленных менеджером пакетов
+  chocolatey
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>winlogon-SpecialAccounts.reg</strong>
+</dt>
+<dd>
+<p>
+  регистрация аккаунта MSSQLSR как специального<br>
+  В специальный аккаунт Microsoft Windows нельзя зайти локально (только
+  удалённо), и он не показывается в списке аккаунтов для входа в Windows
+  7-10<br>
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>wupdate-interface-restore.cmd</strong>
+</dt>
+<dd>
+<p>
+  Восстановление доступа к Windows Update Schedule.<br>
+  Внимание! После восстановления доступа необходимо сделать Manual
+  Restart Computer!
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>wupdate-interface-stop.cmd</strong>
+</dt>
+<dd>
+<p>
+  принудительная остановка Windows Update Schedule. Возможны баги!
+  Обновления indows переводятся в ручной режим.
+</p>
+</dd>
+<dt class="hdlist1">
+<strong>descript.ion</strong>
+</dt>
+<dd>
+<p>
+  описание каталога (этот файл в кодировке ANSI CP-1251)
+</p>
+</dd>
+</dl></div>
+<div class="paragraph"><p>Все скрипты и утилиты являются консольными, запускаются на выполнение из
+консоли (терминала) Microsoft Windows, с указанием префикса пути
+«%PUB1%\Util\».</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr></div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-08-10 17:39:23 +04
+</div>
+</div>
+</body>
+</html>

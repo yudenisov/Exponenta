@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2019.6.24.0" projectFile="D:\yudenisov\GitHub\Exponenta\Docs\DRAFT\WINDOWS\SOURCE-MAIN\RUS\CHM\Exponenta.shfbproj" started="10.08.2019 20:12:04">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files\EWSoftware\Sandcastle Help File Builder\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files\HTML Help Workshop\&#39;
+Locating components in the following folder(s):
+    D:\yudenisov\GitHub\Exponenta\Docs\DRAFT\WINDOWS\SOURCE-MAIN\RUS\CHM
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2019.6.24.0
+Copyright &#169; 2006-2019, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+    Last step completed in 00:00:00,0260
+</buildStep>
+<buildStep step="Failed">
+
+SHFB: Error BE0065: BUILD FAILED: The project does not have any documentation sources defined
+   в SandcastleBuilder.Utils.BuildEngine.BuildProcess.ValidateDocumentationSources()
+   в SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build()
+
+</buildStep>
+</shfbBuild>

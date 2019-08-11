@@ -1,6 +1,12 @@
 WHAT NEWS
 ===========
 
+Version 2.0.1.3_beta
+--------------------
+
+- (Add) Online Documentation
+- (Fix) Restart Explorer Module
+
 Version 2.0.1.2_beta
 --------------------
 
