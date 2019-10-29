@@ -11,7 +11,7 @@ AllowCancelDuringInstall=False
 ArchitecturesAllowed=x86 x64
 Compression=lzma2/max
 DefaultDirName={%Elevation|c:\Elevation}
-MinVersion=0,5.01.2600sp3
+MinVersion=0,6.0
 SetupLogging=True
 UsePreviousAppDir=yes
 DisableStartupPrompt=yes
@@ -45,6 +45,8 @@ Source: "*.inf"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uni
 Source: "*.ini"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.jar"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 ;Source: "*.lib"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+Source: "*.ps1"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
+Source: "*.reg"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.txt"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 Source: "*.url"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace
 ;Source: "*.xml"; DestDir: "{app}"; Flags: recursesubdirs uninsremovereadonly uninsrestartdelete restartreplace

@@ -1,3 +1,7 @@
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow RDP port" dir=out protocol=tcp localport=3389 action=allow
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow RDP port" dir=in protocol=tcp localport=3389 action=allow
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow RAdmin port" dir=out protocol=tcp localport=4899 action=allow
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow RAdmin port" dir=in protocol=tcp localport=4899 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow vnc port 5900" dir=out protocol=tcp localport=5900 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow vnc port 5900" dir=in protocol=tcp localport=5900 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow vnc port 5800" dir=out protocol=tcp localport=5800 action=allow
@@ -5,6 +9,8 @@
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow Apache Ubuntu port 11080" dir=in protocol=tcp localport=11080 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow Apache Ubuntu port 11080" dir=out protocol=tcp localport=11080 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow Nginx Ubuntu port 14080" dir=in protocol=tcp localport=14080 action=allow
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow Nginx Windows port 4080" dir=out protocol=tcp localport=14080 action=allow
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow Nginx Windows port 4080" dir=in protocol=tcp localport=14080 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow Nginx Ubuntu port 14080" dir=out protocol=tcp localport=14080 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow IIS port 10080" dir=in protocol=tcp localport=10080 action=allow
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow IIS port 10080" dir=out protocol=tcp localport=10080 action=allow
@@ -12,10 +18,18 @@
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 21" protocol=tcp localport=11021 action=allow dir=out
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 20" protocol=tcp localport=11020 action=allow dir=in
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 20" protocol=tcp localport=11020 action=allow dir=out
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 11021" protocol=tcp localport=11021 action=allow dir=in
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 11021" protocol=tcp localport=11021 action=allow dir=out
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 11020" protocol=tcp localport=11020 action=allow dir=in
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port 11020" protocol=tcp localport=11020 action=allow dir=out
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port Range" protocol=tcp localport=50000-50100 action=allow dir=in
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla FTP port Range" protocol=tcp localport=50000-50100 action=allow dir=out
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla Admin port 14147" protocol=tcp localport=14147 action=allow dir=in
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow FileZilla Admin port 14147" protocol=tcp localport=14147 action=allow dir=out
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow WinRM HTTP port" protocol=tcp localport=5985 action=allow dir=in
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow WinRM HTTP port" protocol=tcp localport=5985 action=allow dir=out
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow WinRM HTTPS port" protocol=tcp localport=5986 action=allow dir=in
+%SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow WinRM HTTPS port" protocol=tcp localport=5986 action=allow dir=out
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow SSH Ubuntu port 11022" protocol=tcp localport=11022 action=allow dir=in
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow SSH Ubuntu port 11022" protocol=tcp localport=11022 action=allow dir=out
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow SSH Kali port 14022" protocol=tcp localport=14022 action=allow dir=in
