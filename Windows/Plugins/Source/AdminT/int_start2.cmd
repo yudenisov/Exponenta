@@ -45,7 +45,8 @@ rem net start "ProtonVPN Service"
 rem Windows 7 Specific
 rem net start WMPNetworkSvc
 net start IISADMIN
-rem net start upnphost
+net start upnphost
 rem net start msdts
 rem net start FDResPub
+net start svc10strikenetmonitor
 

@@ -48,4 +48,5 @@ net start IISADMIN
 net start upnphost
 net start msdts
 rem net start FDResPub
+net start svc10strikenetmonitor
 

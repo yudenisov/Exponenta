@@ -1,130 +1,1 @@
-# ЗАЯВЛЕННЫЕ ФУНКЦИИ EXPONENTA
-
-(DECLARED FEATURES OF EXPONENTA)
-
-An interface of packet modules and the documentation were written on
-Russian and English languages.A translation at different languages is
-not made but allowed.
-
-Интерфейс модулей пакета и документация написаны на русском и английском
-языках. Перевод на другие языке не предусмотрен, но возможен.
-
-## ФУНКЦИИ АДМИН ПАКА
-
-  - В работе требует права локального администратора.
-
-  - Даёт возможность включать доступ к компьютеру по протоколам
-    удалённого доступа. В зависимости от операционной системы
-    предоставляется удалённый доступ по протоколам telnet, winrm, ssh,
-    rdp, vnc протоколам.
-
-  - Даёт возможность расшаривания файлов на сервере. В зависимости от
-    операционной системы предоставляется шара по протоколам smb,
-    tftp, ftp.
-
-  - Функциональность расширяется за счёт установки отдельлных
-    приложений-плагинов.
-
-  - Опционально. Даёт возможность смонтировать к серверу папки с других
-    компьютеров в Интернете или папки облачных хранилищ.
-
-  - Создаёт «универсальную» учётную запись для доступа к компьютеру по
-    указанным протоколам с правами локального администратора или
-    администратора домена.
-
-  - Возможность изменения переменных окружения и кустов реестра.
-
-  - Возможность установки пакетов инсталляторами со штатными
-    деинсталляторами, с записью в реестре Windows.
-
-  - Публичная доступность Admin Packs для скачки по http и ftp
-    протоколам.
-
-  - Возможность отмены сделанных изменений на компьютере и полного
-    удаления пакета программ средствами штатных деинсталляторов.
-
-## ФУНКЦИИ СТИЛЕРА
-
-  - Скрытно устанавливает пакеты на заражённый компьютер.
-
-  - Возможна скрытая установка методами социальной инженерии.
-
-  - Возможна скрытая установка с использованием уязвимостей операционных
-    систем.
-
-  - Запускает файлы на удалённом компьютере. Результат передаётся
-    «Хозяину» по FTP либо по HTTP протоколу.
-
-  - Собственно «зловред» запускается с закрытого сайта, программы для
-    создания которого также приводятся.
-
-  - Создаётся отдельный деинсталлятор для полного удаления из системы
-    функций стилера локальным администратором системы. Функция
-    введена для предотвращения криминального использования
-    программы.
-
-## ДОПОЛНИТЕЛЬНО
-
-Для работы всех функций к компьютеру/серверу должен быть открыт доступ
-из интернета. Для работы основных функций такого доступа не нужно.
-
-## FUNCTIONS OF ADMIN PACK
-
-  - it needs the rights of local administrator at its works.
-
-  - It makes possibility to turn on remote control and management to a
-    computer for different protocols. The remote management is given on
-    protocols telnet, winrm, ssh, rdp, vnc, radmin, etc on dependence of
-    OS type.
-
-  - It makes possibility to share files on server. The share is given on
-    protocols smb, tftp, ftp, etc etc on dependence of OS type.
-
-  - The functionality of packet is expanded by installing standalone
-    packets-plugins.
-
-  - Optionality. It takes possibility to mount the shared folder from
-    others computers in Internet and clod storages at the server.
-
-  - It creates «universal» account for remote access to computer on this
-    protocols with credentials of local administrator or domain
-    administrator.
-
-  - A possibility to change environment variables and registry nodes is
-    present.
-
-  - A possibility of packages installation with its own installers and
-    uninstallers is present.
-
-  - A public access of Admin Pack for download on http and ftp protocols
-    is present.
-
-  - A possibility of changes canceling to be made on computer and
-    complete uninstallation of these packages by means of owns
-    uninstallers.
-
-## FUNCTIONS OF STEALER
-
-  - It hidden install packages on slave computer.
-
-  - The hidden installation is possible by methods of social
-    engineering.
-
-  - The hidden installation is possible by OS exploits.
-
-  - The program allows to launch files on the remote computer. The
-    result of operation of these programs is transferred to «Master» on
-    FTP or HTTP protocol.
-
-  - Actually «malware» is started from the private website, programs for
-    its creation are also provided.
-
-  - Own uninstaller for complete removing of stealer from computers
-    system by local system administrators is created. This function is
-    introduced to prevent a criminal using of these packages.
-
-## ADDITIONALLY
-
-An remote access from Internet must be opened for properly works of all
-functions of packages. This access not needs for a base functions work
-at packages. But you mast provide to delivery packages on system.
+﻿# ЗАЯВЛЕННЫЕ ФУНКЦИИ EXPONENTA(DECLARED FEATURES OF EXPONENTA)An interface of packet modules and the documentation were written onRussian and English languages.A translation at different languages isnot made but allowed.Интерфейс модулей пакета и документация написаны на русском и английскомязыках. Перевод на другие языке не предусмотрен, но возможен.## ФУНКЦИИ АДМИН ПАКА  - В работе требует права локального администратора.  - Даёт возможность включать доступ к компьютеру по протоколам    удалённого доступа. В зависимости от операционной системы    предоставляется удалённый доступ по протоколам telnet, winrm, ssh,    rdp, vnc протоколам.  - Даёт возможность расшаривания файлов на сервере. В зависимости от    операционной системы предоставляется шара по протоколам smb,    tftp, ftp.  - Функциональность расширяется за счёт установки отдельлных    приложений-плагинов.  - Опционально. Даёт возможность смонтировать к серверу папки с других    компьютеров в Интернете или папки облачных хранилищ.  - Создаёт «универсальную» учётную запись для доступа к компьютеру по    указанным протоколам с правами локального администратора или    администратора домена.  - Возможность изменения переменных окружения и кустов реестра.  - Возможность установки пакетов инсталляторами со штатными    деинсталляторами, с записью в реестре Windows.  - Публичная доступность Admin Packs для скачки по http и ftp    протоколам.  - Возможность отмены сделанных изменений на компьютере и полного    удаления пакета программ средствами штатных деинсталляторов.## ДОПОЛНИТЕЛЬНОДля работы всех функций к компьютеру/серверу должен быть открыт доступиз интернета. Для работы основных функций такого доступа не нужно.## FUNCTIONS OF ADMIN PACK  - it needs the rights of local administrator at its works.  - It makes possibility to turn on remote control and management to a    computer for different protocols. The remote management is given on    protocols telnet, winrm, ssh, rdp, vnc, radmin, etc on dependence of    OS type.  - It makes possibility to share files on server. The share is given on    protocols smb, tftp, ftp, etc etc on dependence of OS type.  - The functionality of packet is expanded by installing standalone    packets-plugins.  - Optionality. It takes possibility to mount the shared folder from    others computers in Internet and clod storages at the server.  - It creates «universal» account for remote access to computer on this    protocols with credentials of local administrator or domain    administrator.  - A possibility to change environment variables and registry nodes is    present.  - A possibility of packages installation with its own installers and    uninstallers is present.  - A public access of Admin Pack for download on http and ftp protocols    is present.  - A possibility of changes canceling to be made on computer and    complete uninstallation of these packages by means of owns    uninstallers.## ADDITIONALLYAn remote access from Internet must be opened for properly works of allfunctions of packages. This access not needs for a base functions workat packages. But you mast provide to delivery packages on system.

