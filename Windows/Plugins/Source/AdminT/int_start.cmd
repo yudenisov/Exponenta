@@ -36,6 +36,8 @@ rem net start php_cgi_2007
 rem net start nginx
 net start nginx-service
 net start php
+net start php73
+net start php56
 rem net start MySQL57
 net start MySQL
 net start i2p

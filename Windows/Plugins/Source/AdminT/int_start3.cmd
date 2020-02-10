@@ -1,4 +1,4 @@
-net start sshd
+rem net start sshd
 rem net start cygserver
 net start VMwareHostd
 rem net start VisualSVNServer
@@ -40,8 +40,8 @@ net start php73
 rem net start php56
 rem net start MySQL57
 net start MySQL
-net start i2p
-net start tor
+rem net start i2p
+rem net start tor
 net start TokenBroker
 rem net start "ProtonVPN Service"
 rem Windows 7 Specific

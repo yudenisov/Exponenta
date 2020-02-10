@@ -5,7 +5,7 @@
 
 [Setup]
 AppName=AdminT Exponenta Plugin
-AppVersion=0.5.5
+AppVersion=0.6.5
 AllowRootDirectory=yes
 AllowCancelDuringInstall=False
 ArchitecturesAllowed=x86 x64
@@ -22,13 +22,13 @@ AppCopyright=Copyright (c) yudenisov 2018-2019
 LicenseFile=..\..\..\..\LICENSE.md
 RestartIfNeededByRun=False
 SetupIconFile=..\..\..\SOURCE-MAIN\Resource\Exponentapic.ico
-AppPublisher=New Internet Technologies Ltd.
+AppPublisher=New Internet Technologies Inc.
 AppPublisherURL=http://anticriminalonline.ru/
 AppSupportURL=http://yudenisov.ru/
 AppContact=yudenisov@mail.ru
 AppSupportPhone=+79047071125
 UserInfoPage=True
-VersionInfoVersion=0.5.5
+VersionInfoVersion=0.6.5
 VersionInfoCompany=New Internet Technologies Inc.
 VersionInfoCopyright=Copyright (c) Yuri A. Denisov, 2018-2019
 VersionInfoProductName=AdminT Exponenta Plugin

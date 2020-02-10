@@ -34,6 +34,8 @@ rem net stop VMwareHostd
 rem net stop nginx
 net stop nginx-service
 net stop php
+net stop php73
+net stop php56
 net stop MySQL
 rem net stop MySQL57
 rem net stop cygserver
