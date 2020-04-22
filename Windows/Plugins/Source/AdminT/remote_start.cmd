@@ -10,3 +10,4 @@ rem Misc and from Windows 7
 net start tlntsvr
 rem net start smtpsvc
 rem net start wms
+net start RManService
