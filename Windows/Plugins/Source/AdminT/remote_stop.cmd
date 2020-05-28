@@ -14,4 +14,4 @@ rem Misc и из Windows 7 Лучше не включать
 net stop tlntsvr
 net stop smtpsvc
 net stop wms
-net stop RManService
+rem net stop RManService

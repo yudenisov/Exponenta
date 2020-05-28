@@ -3,12 +3,17 @@ net stop VisualSVNServer
 net stop vdfssvc
 rem net stop hMailServer
 net stop named
+net stop "Zabbix Agent"
+net stop INEDOPROGETSVC
 net stop WowzaStreamingEngineManager430
 net stop WowzaStreamingEngine430
 net stop SQLSERVERAGENT
 net stop SQLAGENT$SQLEXPRESS
 net stop SQLBrowser
 net stop SQLWriter
+net stop SQLTELEMETRY$INEDO
+net stop SQLAgent$INEDO
+net stop MSSQL$INEDO
 net stop mssql$sqlexpress
 net stop MSSQLSERVER
 rem net stop postgresql-x64-9.6

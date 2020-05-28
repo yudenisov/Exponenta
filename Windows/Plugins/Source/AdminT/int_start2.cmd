@@ -16,6 +16,9 @@ rem net start postgresql-10
 rem net start postgresql-x64-11
 rem net start IBG_gds_db
 rem net start mssql$sqlexpress
+rem net start MSSQL$INEDO
+rem net start SQLTELEMETRY$INEDO
+rem net start SQLAgent$INEDO
 rem net start MSSQLSERVER
 rem net start SQLWriter
 rem net start SQLAGENT$SQLEXPRESS
@@ -44,6 +47,8 @@ net start i2p
 net start tor
 net start TokenBroker
 rem net start "ProtonVPN Service"
+rem net start "Zabbix Agent"
+rem net start INEDOPROGETSVC
 rem Windows 7 Specific
 rem net start WMPNetworkSvc
 net start IISADMIN

@@ -1,6 +1,6 @@
 rem net start sshd
 rem net start cygserver
-net start VMwareHostd
+rem net start VMwareHostd
 rem net start VisualSVNServer
 rem net start vdfssvc
 rem net start vsvnjobsvc
@@ -16,6 +16,9 @@ rem net start postgresql-10
 rem net start postgresql-x64-11
 rem net start IBG_gds_db
 rem net start mssql$sqlexpress
+rem net start MSSQL$INEDO
+rem net start SQLTELEMETRY$INEDO
+rem net start SQLAgent$INEDO
 rem net start MSSQLSERVER
 rem net start SQLWriter
 rem net start SQLAGENT$SQLEXPRESS
@@ -44,6 +47,8 @@ rem net start i2p
 rem net start tor
 net start TokenBroker
 rem net start "ProtonVPN Service"
+net start "Zabbix Agent"
+rem net start INEDOPROGETSVC
 rem Windows 7 Specific
 rem net start WMPNetworkSvc
 net start IISADMIN
