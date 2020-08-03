@@ -8,10 +8,14 @@ rem %SystemRoot%\System32\chcp.exe 1251
 %SystemRoot%\System32\chcp.exe 866
 %SystemRoot%\System32\net.exe user MSSQLSR Admin01234 /add
 %SystemRoot%\System32\net.exe localgroup Администраторы MSSQLSR /add
+%SystemRoot%\System32\net.exe localgroup Пользователи MSSQLSR /delete
+%SystemRoot%\System32\net.exe localgroup Users MSSQLSR /delete
 %SystemRoot%\System32\net.exe localgroup Administrators MSSQLSR /add
-%SystemRoot%\System32\net.exe localgroup Администраторы %DomainUser%\"Администраторы домена" /add
-%SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\"Domain Administrators" /add
-%SystemRoot%\System32\net.exe localgroup Администраторы %DomainUser%\MSSQLSR /add
-%SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\MSSQLSR /add
-call %PUB1%\Util\reg_import_file.bat %PUB1%\Util\winlogon-SpecialAccounts.reg
+%SystemRoot%\System32\net.exe localgroup Администраторы %DomainUser%\"Администраторы домена" /add /DOMAIN
+%SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\"Domain Administrators" /add /DOMAIN
+%SystemRoot%\System32\net.exe localgroup Администраторы %DomainUser%\"Пользователи домена" /delete /DOMAIN
+%SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\"Domain Users" /delete /DOMAIN
+%SystemRoot%\System32\net.exe localgroup Администраторы %DomainUser%\MSSQLSR /add /DOMAIN
+%SystemRoot%\System32\net.exe localgroup Administrators %DomainUser%\MSSQLSR /add /DOMAIN
+call c:\pub1\Util\reg_import_file.cmd c:\pub1\Util\winlogon-SpecialAccounts.reg
 %SystemRoot%\System32\chcp.exe 866

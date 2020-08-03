@@ -1,5 +1,5 @@
-adAdminDomain.cmd	-- файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера\nВ	
-adAdminLocal.cmd	-- файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера\nВ	
+adAdminDomain.cmd -- файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера\nВ	
+adAdminLocal.cmd -- файл создания учётной записи MSSQLSR с паролем и наделение её правами локального администратора компьютера\nВ	
 before.exe	-- Программа приостанавливает выполнение командного файла до отметки времени startTime, и продолжает выполнение до отметки времени EndTime Программа полезна, если Вы по каким-то причинам не хотите использовать планировщик заданий.\nUsage: BEFORE.EXE starttime [endtime] [nowait]В
 check_reg_item.bat	-- check_reg_item checks the item <item> at node <node> for value or default value\nUsage check_reg_item.bat <node> <item>\nПроверяет пункт <item> на присутствие значения или значения по умочанию в звене <node> реестра WindowsВ	
 check_reg_node.bat	-- check_reg_node checks the node <node> for default value\nUsage check_reg_item.bat <node>\nПроверяет на существование звена <node> в реестре Windows (со значением по умолчанию)\nВ	
@@ -44,15 +44,16 @@ timemer.exe	-- Программа измеряет время между двумя событиями (метками)\nTimeMer
 tredo_restart.cmd	-- скрипт перезапускает интерфейс tredo. Вместо номера интерфейса 13 поставьте номер своего tredo интерфейса\nВ	
 uninstall-mainexponenta.cmd	-- удаление системных переменных окружения Main Exponenta Files\nИспользуется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!\nВ	
 uninstall-stealerexponenta.cmd	-- удаление системных переменных окружения Main Exponenta Files\nИспользуется для деактивации или удаления стайлера. После запуска этого файла стайлер работать не будет!\nВ	
-UNSECURE_ALL.cmd	-- контейнер для всех скриптов UnSecure. Обращаться с осторожностью!\nВ	
+UNSECURE_ALL.cmd -- контейнер для всех скриптов UnSecure. Обращаться с осторожностью!\nВ	
 Unsecure-001.cmd This script Adds Firewall Rules, Which allow next task\n1. Allowed all ftp connections by ftp.exe program\n2. Allowed all telnet connections on ports 23 and 972 \n3. Allowed all winrm connections on port 5985\n4. Allowed all ssh connections on port 22\n5. Allowed all rdp connections on port 3389\n6. Allowed all RAdmin connections on port 4899\n7. Allowed all SMB Shared Connections on port 445\n8. Allowed All RPC Connections on Ports 135, 137, 139\n9. Allowed Remote Meterpreter Connections on Port 4444\n10. Adjust System Services for Autostart\nСкрипт добавляет правила брандмауэра, разрешающие следующие задачи:\n1. Разрешает все соединения программе FTP.EXE\n2. Разрешает соединения telnet по портам 23 и 972\n3. Разрешает WinRM соединения на порт 5985\n4. Разрешает SSH соединения на порт 22\n5. Разрешает RDP соединения на порт 3389\n6. Разрешает RAdmin соединения на порт 4899\n7. Разрешает SMB шару на порту 445\n8. Разрешает SMB и RPC соединения на портах 135, 137, 139\n9. Разрешает удалённые Meterpreter соединения на порт 4444\n10. Настраивает автостарт системных сервисов.\nВ		
-Unsecure-002.cmd	-- скрипт настраивает программы удалённого доступа telnet, rdp и winrm\nВ	
-Unsecure-003.cmd	-- скрипт расшаривает локальный диск C:\nВ	
-UnSecure-004.cmd	-- скрипт делает возможным запуск планировщика задач Windows, разрешает нулевую сессию SMB протокола и анонимный доступ к шаре.\nВ	
-unsecure-winrm-client.cmd	-- скрипт включает некоторые небезопасные настройки WinRM клиента. Используйте, если Вам не удалось установить WinRM соединение штатными средствами\nВ	
-unsecure-winrm-service.cmd	-- скрипт включает некоторые небезопасные настройки WinRM сервера. Используйте, если Вам не удалось установить WinRM соединение штатными средствами\nВ	
+Unsecure-002.cmd -- скрипт настраивает программы удалённого доступа telnet, rdp и winrm\nВ	
+Unsecure-003.cmd -- скрипт расшаривает локальный диск C:\nВ	
+UnSecure-004.cmd -- скрипт делает возможным запуск планировщика задач Windows, разрешает нулевую сессию SMB протокола и анонимный доступ к шаре.\nВ	
+unsecure-winrm-client.cmd -- скрипт включает некоторые небезопасные настройки WinRM клиента. Используйте, если Вам не удалось установить WinRM соединение штатными средствами\nВ	
+unsecure-winrm-service.cmd -- скрипт включает некоторые небезопасные настройки WinRM сервера. Используйте, если Вам не удалось установить WinRM соединение штатными средствами\nВ	
 update-chocolatey.cmd	-- скрытое обновление всех программ, установленных менеджером пакетов chocolatey\nВ	
-winlogon-SpecialAccounts.reg	-- регистрация аккаунта MSSQLSR как специального\nВ специальный аккаунт Microsoft Windows нельзя зайти локально (только удалённо), и он не показывается в списке аккаунтов для входа в Windows 7-10\n\nВ	
+winlogon-SpecialAccounts.reg -- регистрация аккаунта MSSQLSR как специального\nВ специальный аккаунт Microsoft Windows нельзя зайти локально (только удалённо), и он не показывается в списке аккаунтов для входа в Windows 7-10\n\nВ	
 wupdate-interface-restore.cmd	-- Восстановление доступа к Windows Update Schedule.\nВнимание! После восстановления доступа необходимо сделать Manual Restart Computer!\nВ	
 wupdate-interface-stop.cmd	-- принудительная остановка Windows Update Schedule. Возможны баги! Обновления indows переводятся в ручной режим.\nВ	
 descript.ion -- описание каталога (этот файл в кодировке ANSI CP-1251)\nВ
+reg_import_file.cmd -- reg_import_file.bat is a script to add into the Windows Registry a file <file> with check of his presistens\nСкрипт, импортирующий файл в реестр Windows с проверкой файла на существование\nUsage: reg_import_file.bat <file name with extension>\nгде <file name with extension> - файл с резервной копией куста реестра (обычно имеет расширение .reg). Расширение нужно указывать явно.\n\nВ
