@@ -1,8 +1,0 @@
-6c\
-		## AllowOverride FileInfo AuthConfig Limit Indexes
-7c\
-		## Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
-8i\
-		AllowOverride All
-8i\
-		Options MultiViews SymLinksIfOwnerMatch IncludesNoExec

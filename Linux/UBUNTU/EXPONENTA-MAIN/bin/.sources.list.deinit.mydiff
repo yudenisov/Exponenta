@@ -1,9 +1,0 @@
-s/'deb http://deb.debian.org/debian stable main contrib'//
-s/'# deb-src http://deb.debian.org/debian stable main contrib'//
-s/'# deb http://deb.debian.org/debian testing main contrib'//
-s/'# deb-src http://deb.debian.org/debian testing main contrib'//
-s/'# deb http://deb.debian.org/debian unstable main contrib'//
-s/'# deb-src http://deb.debian.org/debian unstable main contrib'//
-s/'# deb http://download.webmin.com/download/repository sarge contrib'//
-s/'# deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib'//
-

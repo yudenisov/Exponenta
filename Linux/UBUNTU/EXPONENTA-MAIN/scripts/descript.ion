@@ -1,5 +1,0 @@
-new-ubuntuinit.in.sh -- скрипт, инициализирующий ubuntu (присутствует только в альфа-версии)\nВ
-new_userwebsite.in.sh -- создание пользовательскеого веб-сайта\nВ
-new-apache.in.sh -- создание Apache сервера\nВ
-new-proftpd.in.sh -- создание ftp ервера\nВ
-del_userwebsite.in.sh -- удаление пользовательского веб-сайта\nВ

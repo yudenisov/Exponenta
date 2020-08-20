@@ -1,4 +1,0 @@
-TFTP_USERNAME="tftp"
-TFTP_DIRECTORY="/var/tftp"
-TFTP_ADDRESS="0.0.0.0:69"
-TFTP_OPTIONS="--ipv4 --secure --create --umask 027 --permissive"
